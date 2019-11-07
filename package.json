@@ -70,6 +70,5 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "serve public/",
-    "now-build": "npm run build"
   }
 }
