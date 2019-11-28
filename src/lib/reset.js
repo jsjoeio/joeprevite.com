@@ -1,6 +1,6 @@
 import { css } from '@emotion/core'
 import { useTheme } from '../components/Theming'
-import typography, { fonts } from '../lib/typography'
+import typography, { fontStyles } from '../lib/typography'
 
 const ResetStyles = () => {
   const theme = useTheme()
