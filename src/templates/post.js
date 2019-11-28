@@ -1,12 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import SEO from 'components/SEO'
 import { css } from '@emotion/core'
 import Container from 'components/Container'
 import Layout from '../components/Layout'
-import { fonts } from '../lib/typography'
+import { fontStyles } from '../lib/typography'
 import Share from '../components/Share'
 import config from '../../config/website'
 import { bpMaxSM } from '../lib/breakpoints'
@@ -48,7 +48,7 @@ export default function Post({
                 text-align: center;
                 font-size: 15px;
                 opacity: 0.6;
-                font-family: ${fonts.regular}, sans-serif;
+                font: ${fontStyles.normal};
                 font-weight: normal;
                 margin: 0 5px;
               }

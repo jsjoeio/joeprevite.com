@@ -1,21 +1,26 @@
 import Typography from 'typography'
-import '../fonts/fonts.css'
 
-export const fonts = {
-  regular: 'Inter UI Regular',
-  regularItalic: 'Inter UI Regular Italic',
-  semibold: 'Inter UI Semibold',
-  semiboldItalic: 'Inter UI Semibold Italic',
-  bold: 'Inter UI Bold',
-  boldItalic: 'Inter UI Bold Italic',
+export const FONT_FACE = 'system-ui'
+
+export const fontStyles = {
+  light: `300 ${FONT_FACE}`,
+  lightItalic: `italic 300 ${FONT_FACE}`,
+  normal: `400 ${FONT_FACE}`,
+  normalItalic: `italic 400 ${FONT_FACE}`,
+  medium: `500 ${FONT_FACE}`,
+  mediumItalic: `italic 500 ${FONT_FACE}`,
+  bold: `700 ${FONT_FACE}`,
+  boldItalic: `italic 700 ${FONT_FACE}`,
 }
 
 const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.55,
   headerLineHeight: 1.4,
-  headerFontFamily: [fonts.bold, 'sans-serif'],
-  bodyFontFamily: [fonts.regular, 'sans-serif'],
+  headerFontFamily: [FONT_FACE, 'sans-serif'],
+  headerWeight: 700,
+  bodyFontFamily: [FONT_FACE, 'sans-serif'],
+  bodyWeight: 400,
   headerColor: 'hsla(0,0%,0%,0.9)',
   bodyColor: 'hsla(0,0%,0%,0.8)',
 
