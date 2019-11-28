@@ -3,6 +3,8 @@ import Button from './Button'
 import styled from '@emotion/styled'
 import { FiMoon, FiSun } from 'react-icons/fi'
 import { useTheme } from '../Theming'
+import { Moon } from './Moon'
+import { Sun } from './Sun'
 
 const DarkMode = styled(FiMoon)({
   display: 'flex',
@@ -31,8 +33,6 @@ const ThemeToggler = ({ toggleTheme, themeName }) => {
         alignItems: 'center',
         justifyContent: 'center',
         margin: 0,
-        borderStyle: 'solid',
-        borderWidth: '1px',
         color: theme.colors.white,
         background: theme.colors.headerBg,
         '@media (hover: hover)': {
@@ -50,9 +50,9 @@ const ThemeToggler = ({ toggleTheme, themeName }) => {
       onClick={() => toggleTheme(themeName === 'dark' ? 'default' : 'dark')}
     >
       {themeName === 'dark' ? (
-        <DefaultMode title="Switch to light mode" />
+        <Sun title="Switch to light mode" />
       ) : (
-        <DarkMode title="Switch to dark mode" />
+        <Moon title="Switch to dark mode" />
       )}
     </Button>
   )
