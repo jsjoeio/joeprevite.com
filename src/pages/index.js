@@ -57,8 +57,8 @@ const Hero = () => {
           {getDayGreeting(date)} 👋
         </p>
         <p>
-          I'm Joe. I like getting people excited to learn, particularly about
-          software development.
+          My name's Joe and I like getting people excited to learn, particularly
+          about software development.
         </p>
       </Container>
       <div
