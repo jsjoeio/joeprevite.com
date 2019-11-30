@@ -8,7 +8,7 @@ module.exports = {
   siteLogo: 'images/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
   siteDescription:
     'Joe Previte is a full-stack developer and teacher specializing JavaScript and TypeScript.',
-  author: 'Author', // Author for schemaORGJSONLD
+  author: 'Joe Previte', // Author for schemaORGJSONLD
   organization: 'jsjoeio',
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
