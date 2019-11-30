@@ -1,27 +1,13 @@
 import React from 'react'
 import Button from './Button'
-import styled from '@emotion/styled'
-import { FiMoon, FiSun } from 'react-icons/fi'
 import { useTheme } from '../Theming'
-import { Moon } from './Moon'
-import { Sun } from './Sun'
-
-const DarkMode = styled(FiMoon)({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  margin: '0',
-})
-
-const DefaultMode = styled(FiSun)({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  margin: '0',
-})
+import { ThemeIcon } from './ThemeIcon'
 
 const ThemeToggler = ({ toggleTheme, themeName }) => {
   const theme = useTheme()
+
+  const isDarkTheme = themeName === 'dark'
+
   return (
     <Button
       css={{
@@ -44,16 +30,13 @@ const ThemeToggler = ({ toggleTheme, themeName }) => {
           },
         },
       }}
-      aria-label={
-        themeName === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
-      }
-      onClick={() => toggleTheme(themeName === 'dark' ? 'default' : 'dark')}
+      aria-label={`Switch to ${isDarkTheme ? 'light' : 'dark'} mode`}
+      onClick={() => toggleTheme(isDarkTheme ? 'default' : 'dark')}
     >
-      {themeName === 'dark' ? (
-        <Sun title="Switch to light mode" />
-      ) : (
-        <Moon title="Switch to dark mode" />
-      )}
+      <ThemeIcon
+        title={`Switch to ${isDarkTheme ? 'light' : 'dark'} mode`}
+        isDarkTheme={isDarkTheme}
+      />
     </Button>
   )
 }
