@@ -8,13 +8,13 @@ import { bpMaxSM } from '../../lib/breakpoints'
 import Message from '../ConfirmMessage/Message'
 import { PleaseConfirmIllustration } from '../ConfirmMessage/Illustrations'
 
-const FORM_ID = process.env.CONVERTKIT_SIGNUP_FORM
+const BUTTONDOWN_API_URL = ' https://api.buttondown.email/v1/subscribers'
+const BUTTONDOWN_API_TOKEN = process.env.BUTTONDOWN_API_TOKEN
 
 const SubscribeSchema = Yup.object().shape({
   email_address: Yup.string()
     .email('Invalid email address')
     .required('Required'),
-  first_name: Yup.string(),
 })
 
 const PostSubmissionMessage = ({ response }) => {
@@ -23,7 +23,7 @@ const PostSubmissionMessage = ({ response }) => {
       <Message
         illustration={PleaseConfirmIllustration}
         title={`Great, one last thing...`}
-        body={`I just sent you an email with the confirmation link. 
+        body={`I just sent you an email with the confirmation link.
           **Please check your inbox!**`}
       />
     </div>
@@ -36,19 +36,18 @@ class SignUp extends React.Component {
   }
 
   async handleSubmit(values) {
+    const data = { ...values, referrer_url: 'https://joeprevite.com' }
     this.setState({ submitted: true })
     try {
-      const response = await fetch(
-        `https://app.convertkit.com/forms/${FORM_ID}/subscriptions`,
-        {
-          method: 'post',
-          body: JSON.stringify(values, null, 2),
-          headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-          },
+      const response = await fetch(BUTTONDOWN_API_URL, {
+        data,
+        method: 'post',
+        headers: {
+          Accept: 'application/json',
+          Authorization: `TOken ${BUTTONDOWN_API_TOKEN}`,
+          'Content-Type': 'application/json',
         },
-      )
+      })
 
       const responseJson = await response.json()
 
@@ -73,20 +72,23 @@ class SignUp extends React.Component {
     return (
       <div>
         {!successful && (
-          <h2
-            css={css`
-              margin-bottom: ${rhythm(1)};
-              margin-top: 0;
-            `}
-          >
-            Join the Newsletter
-          </h2>
+          <>
+            <h2>Join the Newsletter</h2>
+            <p
+              css={css`
+                margin-bottom: ${rhythm(1)};
+                margin-top: 0;
+              `}
+            >
+              I send a few emails per month to share things I'm excited about.
+              I'd be delighted if you signed up.
+            </p>
+          </>
         )}
 
         <Formik
           initialValues={{
             email_address: '',
-            first_name: '',
           }}
           validationSchema={SubscribeSchema}
           onSubmit={values => this.handleSubmit(values)}
@@ -126,29 +128,6 @@ class SignUp extends React.Component {
                     }
                   `}
                 >
-                  <label htmlFor="first_name">
-                    <div
-                      css={css`
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: flex-end;
-                      `}
-                    >
-                      First Name
-                      <ErrorMessage
-                        name="first_name"
-                        component="span"
-                        className="field-error"
-                      />
-                    </div>
-                    <Field
-                      aria-label="your first name"
-                      aria-required="false"
-                      name="first_name"
-                      placeholder="Jane"
-                      type="text"
-                    />
-                  </label>
                   <label
                     htmlFor="email"
                     css={css`
@@ -173,7 +152,7 @@ class SignUp extends React.Component {
                       aria-label="your email address"
                       aria-required="true"
                       name="email_address"
-                      placeholder="jane@acme.com"
+                      placeholder="peterparker@gmail.com"
                       type="email"
                     />
                   </label>
@@ -187,8 +166,9 @@ class SignUp extends React.Component {
                   </button>
                 </Form>
               )}
-              {submitted &&
-                !isSubmitting && <PostSubmissionMessage response={response} />}
+              {submitted && !isSubmitting && (
+                <PostSubmissionMessage response={response} />
+              )}
               {errorMessage && <div>{errorMessage}</div>}
             </>
           )}
