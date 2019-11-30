@@ -4,6 +4,7 @@ import { css } from '@emotion/core'
 import { useTheme } from '../Theming'
 import { bpMaxSM } from '../../lib/breakpoints'
 import MobileMenu from './MobileMenu'
+import ThemeToggler from './ThemeToggler'
 import Links from './Links'
 import { Logo } from './Logo'
 
@@ -65,16 +66,24 @@ const Header = ({ siteTitle, siteTitleShort }) => {
               css={css`
                 display: flex;
                 align-items: center;
-                ${bpMaxSM} {
-                  display: none;
-                }
+                // Leaving this in just in case
+                // ${bpMaxSM} {
+                //   display: none;
+                // }
               `}
             >
-              <Links />
+              <ThemeToggler
+                css={{}}
+                toggleTheme={theme.toggleTheme}
+                themeName={theme.themeName}
+              />
+              {/* Keeping Links just in case */}
+              {/* <Links /> */}
             </div>
-            <MobileMenu>
+            {/* Keeping MobileMenu here just in case */}
+            {/* <MobileMenu>
               <Links />
-            </MobileMenu>
+            </MobileMenu> */}
           </div>
         </nav>
       </Container>

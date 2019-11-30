@@ -6,16 +6,31 @@ import Layout from 'components/Layout'
 import Link from 'components/Link'
 import { useTheme } from 'components/Theming'
 import Container from 'components/Container'
-import { rhythm } from '../lib/typography'
+import { rhythm, scale, fontStyles } from '../lib/typography'
+
+/**
+ * @param date {Date}
+ * @description returns "Happy {weekday}!"
+ */
+function getDayGreeting(date) {
+  // Get date
+  const currentDate = new Date(date)
+  // Returns day such as "Monday"
+  const day = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(
+    currentDate,
+  )
+  return `Happy ${day}!`
+}
 
 const Hero = () => {
   const theme = useTheme()
+  const date = new Date()
+
   return (
     <section
       css={css`
-        color: ${theme.colors.white};
+        color: ${theme.colors.black};
         width: 100%;
-        background: ${theme.colors.primary};
         padding: 20px 0 30px 0;
         display: flex;
       `}
@@ -26,18 +41,25 @@ const Hero = () => {
           flex-direction: column;
         `}
       >
-        <h1
+        <p
           css={css`
-            color: ${theme.colors.white};
+            color: ${theme.colors.black};
             position: relative;
             z-index: 5;
             line-height: 1.5;
-            margin: 0;
+            margin-bottom: ${rhythm(0.15)};
             max-width: ${rhythm(15)};
+            font-weight: 500;
+            font: ${fontStyles.bold};
+            ${scale(0.45)};
           `}
         >
-          Your blog says the things you want to say.
-        </h1>
+          {getDayGreeting(date)} 👋
+        </p>
+        <p>
+          I'm Joe. I like getting people excited to learn, particularly about
+          software development.
+        </p>
       </Container>
       <div
         css={css`
