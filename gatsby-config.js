@@ -10,6 +10,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: config.siteUrl + pathPrefix,
     title: config.siteTitle,
+    titleShort: config.siteTitleShort,
     twitterHandle: config.twitterHandle,
     description: config.siteDescription,
     keywords: ['Video Blogger'],
@@ -18,7 +19,7 @@ module.exports = {
     author: {
       name: config.author,
       minibio: `
-        <strong>egghead</strong> is the premier place on the internet for 
+        <strong>egghead</strong> is the premier place on the internet for
         experienced developers to enhance their skills and stay current
         in the fast-faced field of web development.
       `,
@@ -128,7 +129,7 @@ module.exports = {
                   edges {
                     node {
                       excerpt(pruneLength: 250)
-                      fields { 
+                      fields {
                         slug
                         date
                       }

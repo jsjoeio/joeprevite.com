@@ -5,10 +5,11 @@ import { useTheme } from '../Theming'
 import { bpMaxSM } from '../../lib/breakpoints'
 import MobileMenu from './MobileMenu'
 import Links from './Links'
+import { Logo } from './Logo'
 
 import Container from '../Container'
 
-const Header = ({ siteTitle }) => {
+const Header = ({ siteTitle, siteTitleShort }) => {
   const theme = useTheme()
   return (
     <header
@@ -40,7 +41,7 @@ const Header = ({ siteTitle }) => {
               }
             `}
           >
-            {siteTitle}
+            <Logo title={siteTitle} /> {siteTitleShort}
           </Link>
           <div
             css={css`
@@ -88,12 +89,17 @@ const ConnectedHeader = props => (
         site {
           siteMetadata {
             title
+            titleShort
           }
         }
       }
     `}
     render={data => (
-      <Header siteTitle={data.site.siteMetadata.title} {...props} />
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        siteTitleShort={data.site.siteMetadata.titleShort}
+        {...props}
+      />
     )}
   />
 )
