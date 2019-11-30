@@ -2,6 +2,7 @@ import React from 'react'
 import Button from './Button'
 import { useTheme } from '../Theming'
 import { ThemeIcon } from './ThemeIcon'
+import colors from '../../lib/colors'
 
 const ThemeToggler = ({ toggleTheme, themeName }) => {
   const theme = useTheme()
@@ -20,13 +21,10 @@ const ThemeToggler = ({ toggleTheme, themeName }) => {
         justifyContent: 'center',
         margin: 0,
         color: theme.colors.white,
-        background: theme.colors.headerBg,
+        background: colors.transparent,
         '@media (hover: hover)': {
           ':hover': {
-            background:
-              theme.themeName === 'default'
-                ? theme.colors.text
-                : theme.colors.primary,
+            background: theme.colors.bodyBg,
           },
         },
       }}

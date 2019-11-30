@@ -9,7 +9,7 @@ const themes = {
       primary: colors.blue,
       text: colors.black,
       bodyBg: colors.gray,
-      headerBg: colors.blue,
+      headerBg: colors.gray,
       link: colors.blue,
       ...colors,
     },

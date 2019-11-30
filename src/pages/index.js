@@ -29,7 +29,7 @@ const Hero = () => {
   return (
     <section
       css={css`
-        color: ${theme.colors.black};
+        color: ${theme.colors.text};
         width: 100%;
         padding: 20px 0 30px 0;
         display: flex;
@@ -43,7 +43,7 @@ const Hero = () => {
       >
         <p
           css={css`
-            color: ${theme.colors.black};
+            color: ${theme.colors.text};
             position: relative;
             z-index: 5;
             line-height: 1.5;
