@@ -26,8 +26,8 @@ export const ThemeIcon = ({ title, isDarkTheme }) => (
         fill={isDarkTheme ? colors.transparent : colors.saffron}
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M14.8701 29.2225L14.8301 29.2695C16.8767 31.0106 19.5312 31.8674 22.2096 31.6514C24.8879 31.4353 27.3708 30.1642 29.1119 28.1175C30.853 26.0709 31.7098 23.4164 31.4938 20.738C31.2804 18.0931 30.0381 15.6388 28.0362 13.9012C30.6485 18.2046 29.0446 24.1737 24.2972 27.465C21.3419 29.5138 17.8423 30.0579 14.8701 29.2225Z"
         fill={isDarkTheme ? colors.heather : colors.lightningYellow}
       />

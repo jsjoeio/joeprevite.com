@@ -12,7 +12,7 @@ const BUTTONDOWN_API_URL = ' https://api.buttondown.email/v1/subscribers'
 const BUTTONDOWN_API_TOKEN = process.env.BUTTONDOWN_API_TOKEN
 
 const SubscribeSchema = Yup.object().shape({
-  email_address: Yup.string()
+  email: Yup.string()
     .email('Invalid email address')
     .required('Required'),
 })
@@ -36,6 +36,7 @@ class SignUp extends React.Component {
   }
 
   async handleSubmit(values) {
+    console.log('handle submit being called')
     const data = { ...values, referrer_url: 'https://joeprevite.com' }
     this.setState({ submitted: true })
     try {
@@ -44,7 +45,7 @@ class SignUp extends React.Component {
         method: 'post',
         headers: {
           Accept: 'application/json',
-          Authorization: `TOken ${BUTTONDOWN_API_TOKEN}`,
+          Authorization: `Token ${BUTTONDOWN_API_TOKEN}`,
           'Content-Type': 'application/json',
         },
       })
@@ -88,7 +89,7 @@ class SignUp extends React.Component {
 
         <Formik
           initialValues={{
-            email_address: '',
+            email: '',
           }}
           validationSchema={SubscribeSchema}
           onSubmit={values => this.handleSubmit(values)}
@@ -128,12 +129,7 @@ class SignUp extends React.Component {
                     }
                   `}
                 >
-                  <label
-                    htmlFor="email"
-                    css={css`
-                      margin-left: 10px;
-                    `}
-                  >
+                  <label htmlFor="email">
                     <div
                       css={css`
                         display: flex;
@@ -143,7 +139,7 @@ class SignUp extends React.Component {
                     >
                       Email
                       <ErrorMessage
-                        name="email_address"
+                        name="email"
                         component="span"
                         className="field-error"
                       />
@@ -151,7 +147,8 @@ class SignUp extends React.Component {
                     <Field
                       aria-label="your email address"
                       aria-required="true"
-                      name="email_address"
+                      name="email"
+                      id
                       placeholder="peterparker@gmail.com"
                       type="email"
                     />
@@ -160,6 +157,9 @@ class SignUp extends React.Component {
                     data-element="submit"
                     type="submit"
                     disabled={isSubmitting}
+                    css={css`
+                      margin-bottom: 0.5rem;
+                    `}
                   >
                     {!isSubmitting && 'Submit'}
                     {isSubmitting && 'Submitting...'}
