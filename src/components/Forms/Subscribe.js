@@ -39,9 +39,10 @@ class SignUp extends React.Component {
     console.log('handle submit being called')
     const data = { ...values, referrer_url: 'https://joeprevite.com' }
     this.setState({ submitted: true })
+    console.log('what are the values', values)
     try {
       const response = await fetch(BUTTONDOWN_API_URL, {
-        data,
+        body: JSON.stringify(data),
         method: 'post',
         headers: {
           Accept: 'application/json',
@@ -51,6 +52,7 @@ class SignUp extends React.Component {
       })
 
       const responseJson = await response.json()
+      console.log('responseJson', responseJson)
 
       this.setState({
         submitted: true,
@@ -68,7 +70,7 @@ class SignUp extends React.Component {
   render() {
     const { submitted, response, errorMessage } = this.state
     const { theme } = this.props
-    const successful = response && response.status === 'success'
+    const successful = response && response.creation_date
 
     return (
       <div>
@@ -148,7 +150,7 @@ class SignUp extends React.Component {
                       aria-label="your email address"
                       aria-required="true"
                       name="email"
-                      id
+                      id="email"
                       placeholder="peterparker@gmail.com"
                       type="email"
                     />
@@ -170,6 +172,16 @@ class SignUp extends React.Component {
                 <PostSubmissionMessage response={response} />
               )}
               {errorMessage && <div>{errorMessage}</div>}
+              {successful && (
+                <p
+                  css={css`
+                    margin: 0;
+                  `}
+                >
+                  Thanks for signing up! We sent you a confirmation email. Once
+                  you confirm, you'll start receiving the newsletter goods!
+                </p>
+              )}
             </>
           )}
         />
