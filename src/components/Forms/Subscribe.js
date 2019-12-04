@@ -6,6 +6,7 @@ import { withTheme } from '../Theming'
 import { rhythm } from '../../lib/typography'
 import { bpMaxSM } from '../../lib/breakpoints'
 import Message from '../ConfirmMessage/Message'
+import Button from '../Header/Button'
 import { PleaseConfirmIllustration } from '../ConfirmMessage/Illustrations'
 
 const BUTTONDOWN_API_URL = ' https://api.buttondown.email/v1/subscribers'
@@ -155,17 +156,19 @@ class SignUp extends React.Component {
                       type="email"
                     />
                   </label>
-                  <button
+                  <Button
                     data-element="submit"
                     type="submit"
                     disabled={isSubmitting}
                     css={css`
+                      box-sizing: border-box;
                       margin-bottom: 0.5rem;
+                      padding: 6px 15px;
                     `}
                   >
                     {!isSubmitting && 'Submit'}
                     {isSubmitting && 'Submitting...'}
-                  </button>
+                  </Button>
                 </Form>
               )}
               {submitted && !isSubmitting && (

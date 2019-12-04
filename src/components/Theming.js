@@ -21,7 +21,7 @@ const themes = {
       text: colors.white,
       bodyBg: colors.black,
       headerBg: colors.black,
-      link: lighten(0.05, colors.blue),
+      link: lighten(0.25, colors.blue),
       ...colors,
     },
   },

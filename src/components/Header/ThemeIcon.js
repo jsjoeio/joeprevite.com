@@ -9,7 +9,6 @@ export const ThemeIcon = ({ title, isDarkTheme }) => (
       alignItems: 'center',
       justifyContent: 'center',
       margin: '0',
-      transition: 'all 0.3s ease',
     }}
   >
     <svg

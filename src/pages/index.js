@@ -31,7 +31,7 @@ const Hero = () => {
       css={css`
         color: ${theme.colors.text};
         width: 100%;
-        padding: 20px 0 30px 0;
+        padding: 0;
         display: flex;
       `}
     >
@@ -39,6 +39,7 @@ const Hero = () => {
         css={css`
           display: flex;
           flex-direction: column;
+          padding-bottom: 0;
         `}
       >
         <p
@@ -86,6 +87,16 @@ export default function Index({ data: { site, allMdx } }) {
           padding-bottom: 0;
         `}
       >
+        <h2
+          css={css`
+            margin-top: 0;
+          `}
+        >
+          Latest Articles
+        </h2>
+        <p>
+          I love sharing what I learn. Here are some things I’ve written lately:
+        </p>
         {allMdx.edges.map(({ node: post }) => (
           <div
             key={post.id}
@@ -93,7 +104,7 @@ export default function Index({ data: { site, allMdx } }) {
               margin-bottom: 40px;
             `}
           >
-            <h2
+            <h3
               css={css({
                 marginBottom: rhythm(0.3),
                 transition: 'all 150ms ease',
@@ -108,20 +119,11 @@ export default function Index({ data: { site, allMdx } }) {
               >
                 {post.frontmatter.title}
               </Link>
-            </h2>
-            <Description>
-              {post.excerpt}{' '}
-              <Link
-                to={post.frontmatter.slug}
-                aria-label={`View ${post.frontmatter.title}`}
-              >
-                Read Article →
-              </Link>
-            </Description>
+            </h3>
           </div>
         ))}
         <Link to="/blog" aria-label="Visit blog page">
-          View all articles
+          👉 See all articles
         </Link>
         <hr />
       </Container>
@@ -144,7 +146,6 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 190)
           id
           fields {
             title

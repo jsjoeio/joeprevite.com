@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import { MDXProvider } from '@mdx-js/react'
-import { lighten } from 'polished'
+import { lighten, darken } from 'polished'
 import { Global, css } from '@emotion/core'
 import { ThemeProvider, themes } from './Theming'
 import { bpMaxSM } from '../lib/breakpoints'
@@ -41,13 +41,6 @@ const getGlobalStyles = theme => {
     h5,
     h6 {
       color: ${theme.colors.text};
-      a {
-        color: ${theme.colors.text};
-        &:hover,
-        &:focus {
-          color: ${theme.colors.text};
-        }
-      }
     }
     ${bpMaxSM} {
       p,
@@ -57,9 +50,6 @@ const getGlobalStyles = theme => {
       }
       h1 {
         font-size: 30px;
-      }
-      h2 {
-        font-size: 24px;
       }
     }
     hr {

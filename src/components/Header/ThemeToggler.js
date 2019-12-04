@@ -1,8 +1,19 @@
 import React from 'react'
+import { keyframes } from '@emotion/core'
 import Button from './Button'
 import { useTheme } from '../Theming'
 import { ThemeIcon } from './ThemeIcon'
 import colors from '../../lib/colors'
+
+const spin = keyframes`
+  from {
+    transform: rotate (0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`
 
 const ThemeToggler = ({ toggleTheme, themeName }) => {
   const theme = useTheme()
@@ -24,7 +35,11 @@ const ThemeToggler = ({ toggleTheme, themeName }) => {
         background: colors.transparent,
         '@media (hover: hover)': {
           ':hover': {
-            background: theme.colors.bodyBg,
+            background: colors.transparent,
+            animation: `${spin} 3s linear infinite`,
+          },
+          ':active': {
+            background: colors.transparent,
           },
         },
       }}
