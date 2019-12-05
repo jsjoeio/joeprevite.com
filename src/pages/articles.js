@@ -9,12 +9,50 @@ import Link from '../components/Link'
 import { bpMaxSM, bpMaxMD } from '../lib/breakpoints'
 
 const Articles = ({ data: { site, allMdx } }) => {
-  const posts = allMdx.edges.map(post => post)
+  const allPosts = allMdx.edges
+
+  const emptyQuery = ''
+
+  const [state, setState] = React.useState({
+    filteredData: [],
+    query: emptyQuery,
+  })
+
+  const handleInputChange = event => {
+    console.log(event.target.value)
+    const query = event.target.value
+
+    const posts = allPosts || []
+
+    const filteredData = posts.filter(({ node: post }) => {
+      const title = post.frontmatter.title || ''
+      const excerpt = post.excerpt || ''
+      return (
+        excerpt.toLowerCase().includes(query.toLowerCase()) ||
+        title.toLowerCase().includes(query.toLowerCase())
+      )
+    })
+
+    setState({
+      query,
+      filteredData,
+    })
+  }
+
+  const { filteredData, query } = state
+  const hasSearchResults = filteredData && query !== emptyQuery
+  const posts = hasSearchResults ? filteredData : allPosts
 
   return (
     <Layout site={site}>
       <SEO />
       <Container noVerticalPadding>
+        <input
+          type="text"
+          id="filter"
+          placeholder="Type to filter posts..."
+          onChange={handleInputChange}
+        />
         {posts.map(({ node: post }) => (
           <div
             key={post.id}
@@ -43,7 +81,7 @@ const Articles = ({ data: { site, allMdx } }) => {
               flex-direction: column;
             `}
           >
-            {post.frontmatter.banner && (
+            {/* {post.frontmatter.banner && (
               <div
                 css={css`
                   padding: 60px 60px 40px 60px;
@@ -59,7 +97,7 @@ const Articles = ({ data: { site, allMdx } }) => {
                   <Img sizes={post.frontmatter.banner.childImageSharp.fluid} />
                 </Link>
               </div>
-            )}
+            )} */}
             <h2
               css={css`
                 margin-top: 30px;
