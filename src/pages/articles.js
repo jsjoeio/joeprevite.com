@@ -8,15 +8,8 @@ import Layout from '../components/Layout'
 import Link from '../components/Link'
 import { bpMaxSM, bpMaxMD } from '../lib/breakpoints'
 
-const Blog = ({
-  data: { site, allMdx },
-  pageContext: { pagination, categories },
-}) => {
-  const { page, nextPagePath, previousPagePath } = pagination
-
-  const posts = page
-    .map(id => allMdx.edges.find(edge => edge.node.id === id))
-    .filter(post => post !== undefined)
+const Articles = ({ data: { site, allMdx } }) => {
+  const posts = allMdx.edges.map(post => post)
 
   return (
     <Layout site={site}>
@@ -96,18 +89,6 @@ const Blog = ({
             </Link>
           </div>
         ))}
-        <div css={css({ marginTop: '30px' })}>
-          {nextPagePath && (
-            <Link to={nextPagePath} aria-label="View next page">
-              Next Page →
-            </Link>
-          )}
-          {previousPagePath && (
-            <Link to={previousPagePath} aria-label="View previous page">
-              ← Previous Page
-            </Link>
-          )}
-        </div>
         <hr
           css={css`
             margin: 50px 0;
@@ -118,7 +99,7 @@ const Blog = ({
   )
 }
 
-export default Blog
+export default Articles
 
 export const pageQuery = graphql`
   query {

@@ -71,9 +71,9 @@ exports.createPages = ({ actions, graphql }) =>
     const { edges } = data.allMdx
     const { createRedirect, createPage } = actions
     createPosts(createPage, createRedirect, edges)
-    createPaginatedPages(actions.createPage, edges, '/blog', {
-      categories: [],
-    })
+    // createPaginatedPages(actions.createPage, edges, '/blog', {
+    //   categories: [],
+    // })
   })
 
 exports.onCreateWebpackConfig = ({ actions }) => {
@@ -200,7 +200,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       name: 'isPost',
       node,
-      value: true
+      value: true,
     })
   }
 }

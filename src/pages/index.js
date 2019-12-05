@@ -122,7 +122,7 @@ export default function Index({ data: { site, allMdx } }) {
             </h3>
           </div>
         ))}
-        <Link to="/blog" aria-label="Visit blog page">
+        <Link to="/articles" aria-label="Visit articles page">
           👉 See all articles
         </Link>
         <hr />
