@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import { css } from '@emotion/core'
 import Container from 'components/Container'
 import SEO from '../components/SEO'
@@ -19,7 +18,6 @@ const Articles = ({ data: { site, allMdx } }) => {
   })
 
   const handleInputChange = event => {
-    console.log(event.target.value)
     const query = event.target.value
 
     const posts = allPosts || []
@@ -47,12 +45,36 @@ const Articles = ({ data: { site, allMdx } }) => {
     <Layout site={site}>
       <SEO />
       <Container noVerticalPadding>
-        <input
-          type="text"
-          id="filter"
-          placeholder="Type to filter posts..."
-          onChange={handleInputChange}
-        />
+        <div
+          css={css`
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+          `}
+        >
+          <input
+            type="text"
+            id="filter"
+            placeholder="Type to filter posts..."
+            onChange={handleInputChange}
+            css={css`
+              margin-top: 0;
+              width: 85%;
+            `}
+          />
+          <span
+            css={css`
+              font-weight: bold;
+              text-align: center;
+              width: 5%;
+            `}
+          >
+            {posts.length}
+          </span>
+        </div>
         {posts.map(({ node: post }) => (
           <div
             key={post.id}
