@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from '@emotion/core'
 import { useTheme } from './Theming'
 
-import { TwitterShareButton, FacebookShareButton } from 'react-share'
+import { TwitterShareButton } from 'react-share'
 
 const Share = ({ url, title, twitterHandle }) => {
   const theme = useTheme()
