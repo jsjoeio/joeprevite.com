@@ -42,7 +42,7 @@ const Share = ({ url, title, twitterHandle }) => {
       >
         Twitter
       </TwitterShareButton>
-      <FacebookShareButton
+      {/* <FacebookShareButton
         url={url}
         quote={title}
         via={twitterHandle.split('@').join('')}
@@ -51,7 +51,7 @@ const Share = ({ url, title, twitterHandle }) => {
         `}
       >
         Facebook
-      </FacebookShareButton>
+      </FacebookShareButton> */}
     </div>
   )
 }
