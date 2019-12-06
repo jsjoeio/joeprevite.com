@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
-import styled from '@emotion/styled'
 import Layout from 'components/Layout'
 import Link from 'components/Link'
 import { useTheme } from 'components/Theming'
@@ -55,7 +54,10 @@ const Hero = () => {
             ${scale(0.45)};
           `}
         >
-          {getDayGreeting(date)} 👋
+          {getDayGreeting(date)}{' '}
+          <span role="img" aria-label="hand waving hello">
+            👋
+          </span>
         </p>
         <p>
           My name's Joe and I like getting people excited to learn, particularly
@@ -71,11 +73,6 @@ const Hero = () => {
     </section>
   )
 }
-
-const Description = styled.p`
-  margin-bottom: 10px;
-  display: inline-block;
-`
 
 export default function Index({ data: { site, allMdx } }) {
   const theme = useTheme()
@@ -123,7 +120,10 @@ export default function Index({ data: { site, allMdx } }) {
           </div>
         ))}
         <Link to="/articles" aria-label="Visit articles page">
-          👉 See all articles
+          <span role="img" aria-label="finger pointing to text">
+            👉
+          </span>{' '}
+          See all articles
         </Link>
         <hr />
       </Container>
