@@ -3,7 +3,7 @@ slug: 'new-blog-same-me'
 date: '2019-12-07'
 title: "Hello, it's me"
 description: 'Welcome to the new revised joeprevite.com!'
-published: false
+published: true
 ---
 
 I finally revised my old website and have updated my blog! 😄
