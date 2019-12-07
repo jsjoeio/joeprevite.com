@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-egghead-blog",
-  "description": "This is a starter for egghead content creator blogs",
+  "name": "joeprevite-dot-com",
+  "description": "Joe Previte's personal website.",
   "version": "1.0.0",
-  "author": "egghead.io <support@egghead.io> (https://egghead.io)",
-  "repository": "https://github.com/eggheadio/gatsby-starter-egghead-blog",
+  "author": "Joe Previte",
+  "repository": "https://github.com/jsjoeio/joeprevite.com",
   "dependencies": {
     "@callstack/react-theme-provider": "^3.0.5",
     "@emotion/core": "^10.0.22",
