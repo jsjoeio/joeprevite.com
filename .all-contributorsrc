@@ -60,6 +60,17 @@
       "contributions": [
         "ideas"
       ]
+    },
+    {
+      "login": "eggheadio",
+      "name": "egghead.io",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/5975001?v=4",
+      "profile": "http://egghead.io",
+      "contributions": [
+        "code",
+        "ideas",
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7,
