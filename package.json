@@ -59,6 +59,7 @@
   },
   "devDependencies": {
     "babel-preset-gatsby": "^0.2.20",
+    "hygen": "^5.0.3",
     "prettier": "1.18.2"
   },
   "keywords": [
@@ -68,6 +69,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
+    "new:post": "hygen post new",
     "dev": "gatsby develop",
     "start": "serve public/"
   }
