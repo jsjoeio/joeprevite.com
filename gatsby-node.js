@@ -3,6 +3,7 @@ const path = require('path')
 const _ = require('lodash')
 const paginate = require('gatsby-awesome-pagination')
 const PAGINATION_OFFSET = 7
+const IS_DEV_MODE = process.env.NODE_ENV === 'development'
 
 const createPosts = (createPage, createRedirect, edges) => {
   edges.forEach(({ node }, i) => {
@@ -33,33 +34,62 @@ const createPosts = (createPage, createRedirect, edges) => {
   })
 }
 
-exports.createPages = ({ actions, graphql }) =>
-  graphql(`
-    query {
-      allMdx(
-        filter: { frontmatter: { published: { ne: false } } }
-        sort: { order: DESC, fields: [frontmatter___date] }
-      ) {
-        edges {
-          node {
-            id
-            parent {
-              ... on File {
-                name
-                sourceInstanceName
-              }
-            }
-            excerpt(pruneLength: 250)
-            fields {
-              title
-              slug
-              date
-            }
+const POSTS_QUERY_STRING = IS_DEV_MODE
+  ? `
+query {
+  allMdx(
+    sort: { order: DESC, fields: [frontmatter___date] }
+  ) {
+    edges {
+      node {
+        id
+        parent {
+          ... on File {
+            name
+            sourceInstanceName
           }
+        }
+        excerpt(pruneLength: 250)
+        fields {
+          title
+          slug
+          date
         }
       }
     }
-  `).then(({ data, errors }) => {
+  }
+}
+`
+  : `
+query {
+  allMdx(
+    filter: { frontmatter: { published: { ne: false } } }
+    sort: { order: DESC, fields: [frontmatter___date] }
+  ) {
+    edges {
+      node {
+        id
+        parent {
+          ... on File {
+            name
+            sourceInstanceName
+          }
+        }
+        excerpt(pruneLength: 250)
+        fields {
+          title
+          slug
+          date
+        }
+      }
+    }
+  }
+}
+`
+
+exports.createPages = ({ actions, graphql }) =>
+  graphql(POSTS_QUERY_STRING).then(({ data, errors }) => {
+    console.log('what mdoe are we in', process.env.NODE_ENV)
     if (errors) {
       return Promise.reject(errors)
     }
