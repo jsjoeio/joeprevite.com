@@ -19,7 +19,7 @@ module.exports = {
     author: {
       name: config.author,
       minibio: `
-        <strong>Joe Previte</strong> is a full-stack developer and teacher specializing JavaScript and TypeScript.
+        <strong>Joe Previte</strong> is a full-stack developer and teacher specializing in JavaScript and TypeScript.
       `,
     },
     organization: {

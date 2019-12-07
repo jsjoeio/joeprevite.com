@@ -7,7 +7,7 @@ module.exports = {
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: 'images/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
   siteDescription:
-    'Joe Previte is a full-stack developer and teacher specializing JavaScript and TypeScript.',
+    'Joe Previte is a full-stack developer and teacher specializing in JavaScript and TypeScript.',
   author: 'Joe Previte', // Author for schemaORGJSONLD
   organization: 'jsjoeio',
 
