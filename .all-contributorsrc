@@ -71,6 +71,18 @@
         "ideas",
         "infra"
       ]
+    },
+    {
+      "login": "gatsbyjs",
+      "name": "Gatsby",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12551863?v=4",
+      "profile": "https://gatsbyjs.org",
+      "contributions": [
+        "infra",
+        "platform",
+        "ideas",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
