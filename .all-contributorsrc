@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "maxcell",
+      "name": "Prince Wilson",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/8431042?v=4",
+      "profile": "https://prince.dev",
+      "contributions": [
+        "ideas",
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "joeprevite.com",
+  "projectOwner": "jsjoeio",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
