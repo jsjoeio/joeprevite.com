@@ -52,6 +52,7 @@ const Articles = ({ data: { site, allMdx } }) => {
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            margin-top: 10px;
             width: 100%;
           `}
         >
@@ -62,14 +63,14 @@ const Articles = ({ data: { site, allMdx } }) => {
             onChange={handleInputChange}
             css={css`
               margin-top: 0;
-              width: 85%;
+              width: 90%;
             `}
           />
           <span
             css={css`
               font-weight: bold;
               text-align: center;
-              width: 5%;
+              width: 10%;
             `}
           >
             {posts.length}
@@ -80,18 +81,12 @@ const Articles = ({ data: { site, allMdx } }) => {
             key={post.id}
             css={css`
               :not(:first-of-type) {
-                margin-top: 60px;
-                ${bpMaxMD} {
-                  margin-top: 40px;
-                }
-                ${bpMaxSM} {
-                  margin-top: 20px;
-                }
+                margin-top: 10px;
               }
               :first-of-type {
-                margin-top: 20px;
+                margin-top: 10px;
                 ${bpMaxSM} {
-                  margin-top: 20px;
+                  margin-top: 10px;
                 }
               }
               .gatsby-image-wrapper {
