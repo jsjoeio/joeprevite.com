@@ -1,6 +1,6 @@
 import { css } from '@emotion/core'
 import { useTheme } from '../components/Theming'
-import typography, { fontStyles } from '../lib/typography'
+import typography from '../lib/typography'
 
 const ResetStyles = () => {
   const theme = useTheme()
@@ -21,7 +21,7 @@ const ResetStyles = () => {
     }
     html,
     body {
-      font: ${fontStyles.normal};
+      font-weight: 400;
       font-style: normal;
       padding: 0;
       margin: 0;

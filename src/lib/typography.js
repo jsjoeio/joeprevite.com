@@ -2,24 +2,25 @@ import Typography from 'typography'
 
 export const FONT_FACE = 'system-ui'
 
-export const fontStyles = {
-  light: `300 ${FONT_FACE}`,
-  lightItalic: `italic 300 ${FONT_FACE}`,
-  normal: `400 ${FONT_FACE}`,
-  normalItalic: `italic 400 ${FONT_FACE}`,
-  medium: `500 ${FONT_FACE}`,
-  mediumItalic: `italic 500 ${FONT_FACE}`,
-  bold: `700 ${FONT_FACE}`,
-  boldItalic: `italic 700 ${FONT_FACE}`,
-}
+const SYSTEM_FONT_STACK = [
+  '-apple-system',
+  'BlinkMacSystemFont',
+  'Segoe UI',
+  'Roboto',
+  'Oxygen-Sans',
+  'Ubuntu',
+  'Cantarell',
+  'Helvetica Neue',
+  'sans-serif',
+]
 
 const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.55,
   headerLineHeight: 1.4,
-  headerFontFamily: [FONT_FACE, 'sans-serif'],
+  headerFontFamily: SYSTEM_FONT_STACK,
   headerWeight: 700,
-  bodyFontFamily: [FONT_FACE, 'sans-serif'],
+  bodyFontFamily: SYSTEM_FONT_STACK,
   bodyWeight: 400,
   headerColor: 'hsla(0,0%,0%,0.9)',
   bodyColor: 'hsla(0,0%,0%,0.8)',

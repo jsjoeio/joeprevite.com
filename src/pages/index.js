@@ -5,7 +5,7 @@ import Layout from 'components/Layout'
 import Link from 'components/Link'
 import { useTheme } from 'components/Theming'
 import Container from 'components/Container'
-import { rhythm, scale, fontStyles } from '../lib/typography'
+import { rhythm, scale } from '../lib/typography'
 
 /**
  * @param date {Date}
@@ -50,7 +50,6 @@ const Hero = () => {
             margin-bottom: ${rhythm(0.15)};
             max-width: ${rhythm(15)};
             font-weight: 500;
-            font: ${fontStyles.bold};
             ${scale(0.45)};
           `}
         >

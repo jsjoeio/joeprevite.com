@@ -9,13 +9,14 @@ import { bpMaxSM } from '../lib/breakpoints'
 import mdxComponents from './mdx'
 import Header from './Header'
 import reset from '../lib/reset'
-import { fontStyles } from '../lib/typography'
 import config from '../../config/website'
 import Footer from '../components/Footer'
 
 const getGlobalStyles = theme => {
   return css`
     body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
       background: ${theme.colors.bodyBg};
       color: ${theme.colors.text};
     }
@@ -59,11 +60,13 @@ const getGlobalStyles = theme => {
       background: none;
     }
     em {
-      font: ${fontStyles.normalItalic};
+      font-weight: 400;
+      font-style: italic;
     }
     strong {
       em {
-        font: ${fontStyles.mediumItalic};
+        font-weight: 500;
+        font-style: italic;
       }
     }
     input {
@@ -71,7 +74,7 @@ const getGlobalStyles = theme => {
       border: 1px solid ${theme.colors.gray};
       padding: 5px 10px;
       box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-      font: ${fontStyles.normal};
+      font-weight: 400;
       margin-top: 5px;
       ::placeholder {
         opacity: 0.4;
