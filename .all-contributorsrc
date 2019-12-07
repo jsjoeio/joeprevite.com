@@ -14,6 +14,16 @@
         "ideas",
         "design"
       ]
+    },
+    {
+      "login": "m0nica",
+      "name": "Monica Powell",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6998954?v=4",
+      "profile": "https://www.aboutmonica.com",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
