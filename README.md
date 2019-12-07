@@ -1,40 +1,26 @@
-# egghead.io creator MDX Blog Starter Project
+# joeprevite.com
 
-This is based on Robin Wieruch's https://github.com/rwieruch/gatsby-mdx-blog-starter-project
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Lots of nice pieces are also borrowed from Jason Lengstorf https://github.com/jlengstorf/lengstorf.com
-
-A starter project in [Gatsby.js](https://www.gatsbyjs.org/) with [MDX](https://github.com/mdx-js/mdx).
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/eggheadio/gatsby-starter-egghead-blog)
+Joe's personal website running on Gatsby, React, and Node.js.
 
 ## Features
 
-- MDX: JavaScript/React in Markdown
-- Prism.js: Syntax Highlighting
-- Pagination
-- Emotion
-- Typography.js
-- Self-hosted fonts ([Inter UI](https://rsms.me/inter/))
-- Social media share buttons
-- Site & Theme config files
-- ConvertKit subscribe form (Formik and Yup)
-- Placeholder illustrations by [Katerina Limpitsouni](https://twitter.com/ninalimpi) from [undraw.co](https://undraw.co/)
+- Posts in Markdown
+- Dark mode
 
-## [➞ Demo](https://egghead-gatsby-starter.netlify.com/)
+## Contributing
 
-## Setup
+If you see any typos or formatting errors in a post, or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!
 
-- `git clone git@github.com:eggheadio/gatsby-starter-egghead-blog.git`
-- `cd gatsby-starter-egghead-blog`
-- `yarn`
-- `gatsby develop`
-- visit http://localhost:8000
+## Acknowledgements
 
-## Setup via Gatsby CLI
+- Egghead - [Gatsby Starter Egghead Blog](https://github.com/eggheadio/gatsby-starter-egghead-blog)
 
-- `gatsby new gatsby-starter-egghead-blog git@github.com:eggheadio/gatsby-starter-egghead-blog.git`
-- `cd gatsby-starter-egghead-blog`
-- `yarn`
-- `gatsby develop`
-- visit http://localhost:8000
+## Author
+
+- [Joe Previte](https://joeprevite.com)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
