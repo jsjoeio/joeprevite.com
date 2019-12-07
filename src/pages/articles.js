@@ -168,7 +168,10 @@ export const pageQuery = graphql`
     }
     allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fields: { isPost: { eq: true } } }
+      filter: {
+        fields: { isPost: { eq: true } }
+        frontmatter: { published: { ne: false } }
+      }
     ) {
       edges {
         node {
