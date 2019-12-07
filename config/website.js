@@ -3,7 +3,7 @@ module.exports = {
   siteTitle: 'Joe Previte - Developer and Teacher', // Navigation and Site Title
   siteTitleAlt: 'The blog of a developer and teacher', // Alternative Site title for SEO
   siteTitleShort: 'Joe Previte', // short_name for manifest
-  siteUrl: 'https://your-site.io', // Domain of your site. No trailing slash!
+  siteUrl: 'https://joeprevite.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: 'images/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
   siteDescription:
