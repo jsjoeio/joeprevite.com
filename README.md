@@ -1,6 +1,7 @@
 # joeprevite.com
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2d214a83-1fea-4154-bb6a-af97854ecc1a/deploy-status)](https://app.netlify.com/sites/keen-roentgen-cafcb7/deploys)
 
 Joe's personal website running on Gatsby, React, and Node.js.
 
