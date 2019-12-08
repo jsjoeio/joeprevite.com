@@ -37,10 +37,8 @@ class SignUp extends React.Component {
   }
 
   async handleSubmit(values) {
-    console.log('handle submit being called')
     const data = { ...values, referrer_url: 'https://joeprevite.com' }
     this.setState({ submitted: true })
-    console.log('what are the values', values)
     try {
       const response = await fetch(BUTTONDOWN_API_URL, {
         body: JSON.stringify(data),
@@ -53,7 +51,6 @@ class SignUp extends React.Component {
       })
 
       const responseJson = await response.json()
-      console.log('responseJson', responseJson)
 
       this.setState({
         submitted: true,

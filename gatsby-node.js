@@ -89,7 +89,6 @@ query {
 
 exports.createPages = ({ actions, graphql }) =>
   graphql(POSTS_QUERY_STRING).then(({ data, errors }) => {
-    console.log('what mdoe are we in', process.env.NODE_ENV)
     if (errors) {
       return Promise.reject(errors)
     }
