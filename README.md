@@ -1,5 +1,5 @@
 # joeprevite.com
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END -->
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2d214a83-1fea-4154-bb6a-af97854ecc1a/deploy-status)](https://app.netlify.com/sites/keen-roentgen-cafcb7/deploys)
@@ -46,6 +46,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://gatsbyjs.org"><img src="https://avatars1.githubusercontent.com/u/12551863?v=4" width="100px;" alt="Gatsby"/><br /><sub><b>Gatsby</b></sub></a><br /><a href="#infra-gatsbyjs" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#platform-gatsbyjs" title="Packaging/porting to new platform">📦</a> <a href="#ideas-gatsbyjs" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/jsjoeio/joeprevite.com/commits?author=gatsbyjs" title="Code">💻</a></td>
+    <td align="center"><a href="https://capecod.world"><img src="https://avatars2.githubusercontent.com/u/26460352?v=4" width="100px;" alt="Peter Cruckshank"/><br /><sub><b>Peter Cruckshank</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/issues?q=author%3Apetercr" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
