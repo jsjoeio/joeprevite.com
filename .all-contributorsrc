@@ -83,6 +83,15 @@
         "ideas",
         "code"
       ]
+    },
+    {
+      "login": "petercr",
+      "name": "Peter Cruckshank",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/26460352?v=4",
+      "profile": "https://capecod.world",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
