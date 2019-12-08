@@ -10,7 +10,7 @@ import Button from '../Header/Button'
 import { PleaseConfirmIllustration } from '../ConfirmMessage/Illustrations'
 
 const BUTTONDOWN_API_URL = ' https://api.buttondown.email/v1/subscribers'
-const BUTTONDOWN_API_TOKEN = process.env.BUTTONDOWN_API_TOKEN
+const BUTTONDOWN_API_TOKEN = process.env.GATSBY_BUTTONDOWN_API_TOKEN
 
 const SubscribeSchema = Yup.object().shape({
   email: Yup.string()
