@@ -2,8 +2,8 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import SEO from 'components/SEO'
 import { css } from '@emotion/core'
+import SEO from 'components/SEO'
 import Container from 'components/Container'
 import Layout from '../components/Layout'
 import Share from '../components/Share'
@@ -17,6 +17,9 @@ export default function Post({
   const date = mdx.frontmatter.date
   const title = mdx.frontmatter.title
   const banner = mdx.frontmatter.banner
+  const editLink = mdx.fields.editLink
+  const slug = mdx.frontmatter.slug
+  const blogPostUrl = `${config.siteUrl}/${slug}/`
 
   return (
     <Layout site={site} frontmatter={mdx.frontmatter}>
@@ -74,6 +77,29 @@ export default function Post({
         </Container>
         {/* <SubscribeForm /> */}
       </article>
+      {/*
+        Shamelessly borrowed from @kentcdodds
+        Source: https://github.com/kentcdodds/kentcdodds.com/blob/master/src/templates/post.js
+      */}
+      <Container noVerticalPadding>
+        <p css={{ textAlign: 'right' }}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            // using mobile.twitter.com because if people haven't upgraded
+            // to the new experience, the regular URL wont work for them
+            href={`https://mobile.twitter.com/search?q=${encodeURIComponent(
+              blogPostUrl,
+            )}`}
+          >
+            Discuss on Twitter
+          </a>
+          <span css={{ marginLeft: 10, marginRight: 10 }}>{` • `}</span>
+          <a target="_blank" rel="noopener noreferrer" href={editLink}>
+            Edit post on GitHub
+          </a>
+        </p>
+      </Container>
       <Container noVerticalPadding>
         <Share
           url={`${config.siteUrl}/${mdx.frontmatter.slug}/`}
@@ -105,6 +131,9 @@ export const pageQuery = graphql`
         }
         slug
         keywords
+      }
+      fields {
+        editLink
       }
       body
     }

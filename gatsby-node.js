@@ -231,5 +231,14 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       value: true,
     })
+
+    createNodeField({
+      name: 'editLink',
+      node,
+      value: `https://github.com/jsjoeio/joeprevite.com/edit/master${node.fileAbsolutePath.replace(
+        __dirname,
+        '',
+      )}`,
+    })
   }
 }
