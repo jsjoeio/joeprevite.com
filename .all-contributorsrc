@@ -92,6 +92,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "dependabot",
+      "name": "Dependabot",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/27347476?v=4",
+      "profile": "https://dependabot.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
