@@ -3,7 +3,7 @@ slug: 'book-review-effective-typescript'
 date: '2019-12-31'
 title: 'Book Review: Effective Typescript'
 description: 'My notes and thoughts on &#34;effective typescript&#34; by dan vanderkam'
-published: false
+published: true
 banner: ''
 ---
 
