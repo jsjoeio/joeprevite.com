@@ -42,6 +42,12 @@ const getGlobalStyles = theme => {
     h5,
     h6 {
       color: ${theme.colors.text};
+      position: relative;
+      &:hover {
+        .remark-header-link {
+          visibility: visible;
+        }
+      }
     }
     ${bpMaxSM} {
       p,
@@ -93,7 +99,7 @@ const getGlobalStyles = theme => {
       cursor: pointer;
       border: 1px solid ${theme.colors.primary};
       transition: all 150ms;
-      :hover {
+      &:hover {
         background: ${lighten(0.05, theme.colors.primary)};
         border: 1px solid ${lighten(0.05, theme.colors.primary)};
       }
@@ -119,6 +125,20 @@ const getGlobalStyles = theme => {
       ::-webkit-scrollbar-thumb {
         background: #888;
         border-radius: 5px;
+      }
+    }
+    .remark-header-link {
+      position: absolute;
+      left: -20px;
+      visibility: hidden;
+
+      /* Show but hide icon on mobile */
+      ${bpMaxSM} {
+        visibility: visible;
+        left: 0;
+        svg {
+          visibility: hidden;
+        }
       }
     }
   `
