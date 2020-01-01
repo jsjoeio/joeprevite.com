@@ -5,7 +5,7 @@ import Container from 'components/Container'
 import SEO from '../components/SEO'
 import Layout from '../components/Layout'
 import Link from '../components/Link'
-import { bpMaxSM, bpMaxMD } from '../lib/breakpoints'
+import { bpMaxSM } from '../lib/breakpoints'
 
 const Articles = ({ data: { site, allMdx } }) => {
   const allPosts = allMdx.edges
