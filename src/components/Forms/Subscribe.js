@@ -149,7 +149,7 @@ class SignUp extends React.Component {
                       aria-required="true"
                       name="email"
                       id="email"
-                      placeholder="peterparker@gmail.com"
+                      placeholder="lukeskywalker@gmail.com"
                       type="email"
                     />
                   </label>
