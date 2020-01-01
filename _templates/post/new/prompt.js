@@ -17,7 +17,14 @@ module.exports = {
           },
         ])
         .then(({ title, description }) => {
-          const date = new Date().toISOString().split('T')[0]
+          // Source: https://tecadmin.net/get-current-date-time-javascript/
+          const today = new Date()
+          const date =
+            today.getFullYear() +
+            '-' +
+            (today.getMonth() + 1) +
+            '-' +
+            today.getDate()
           const slug = slugify(title)
           const folderName = `${date}-${slug}`
           resolve({ title, description, date, slug, folderName })
