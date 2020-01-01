@@ -56,7 +56,7 @@
     "serve": "^11.2.0",
     "typescript": "^3.7.4",
     "typography": "^0.16.19",
-    "yup": "^0.27.0"
+    "yup": "^0.28.0"
   },
   "devDependencies": {
     "babel-preset-gatsby": "^0.2.20",
