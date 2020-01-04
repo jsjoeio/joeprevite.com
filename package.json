@@ -60,7 +60,9 @@
   },
   "devDependencies": {
     "babel-preset-gatsby": "^0.2.20",
+    "dayjs": "^1.8.18",
     "hygen": "^5.0.3",
+    "open": "^7.0.0",
     "prettier": "1.19.1"
   },
   "keywords": [
@@ -70,7 +72,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "new:post": "hygen post new",
+    "g:post": "hygen post new",
     "dev": "gatsby develop",
     "start": "serve public/"
   }

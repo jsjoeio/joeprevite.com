@@ -1,4 +1,6 @@
 const { slugify } = require('./slugify')
+const dayjs = require('dayjs')
+const open = require('open')
 
 module.exports = {
   prompt: ({ prompter }) => {
@@ -18,16 +20,15 @@ module.exports = {
         ])
         .then(({ title, description }) => {
           // Source: https://tecadmin.net/get-current-date-time-javascript/
-          const today = new Date()
-          const date =
-            today.getFullYear() +
-            '-' +
-            (today.getMonth() + 1) +
-            '-' +
-            today.getDate()
+          const date = dayjs().format('YYYY-MM-DD')
           const slug = slugify(title)
           const folderName = `${date}-${slug}`
           resolve({ title, description, date, slug, folderName })
+          return slug
+        })
+        .then(slug => {
+          // Open in default browser
+          open(`http://localhost:8000/${slug}`)
         })
     })
   },
