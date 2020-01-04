@@ -130,6 +130,7 @@ If you still want something that is similar in concept to dip, here are similar 
 - [https://getmakerlog.com/](https://getmakerlog.com/) - "collaborative task log"
 - [https://codebuddies.org/](https://codebuddies.org/) - "CodeBuddies is a global community of amazing people who help each other become better at software development"
 - [https://indiemakers.net/](https://indiemakers.net/) - "Build products, together"
+- [:party-corgi: group](https://t.co/gb1Xutdezv?amp=1) - Group of Twitch streamers, developers, and awesome people
 - [https://www.indiehackers.com/](https://www.indiehackers.com/) - "Work together to build profitable online businesses"
 - [https://www.cowop.org/](https://www.cowop.org/) - "The community that helps you grow your company"
 
