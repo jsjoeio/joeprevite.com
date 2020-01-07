@@ -1,9 +1,10 @@
 name: Audit pull request
-on: pull_request
-
+on:
+  status
 jobs:
   audit:
     runs-on: ubuntu-latest
+    if: github.event.context == 'netlify/deploy-preview' && github.event.state == 'success'
     steps:
       - name: Audit Netlify deploy preview
         uses: jakejarvis/lighthouse-action@master
