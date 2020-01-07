@@ -22,7 +22,7 @@ jobs:
         uses: jakepartusch/wait-for-netlify-action@v1
         id: waitFor200
         with:
-          site_name: 'joeprevite'
+          site_name: 'keen-roentgen-cafcb7'
       - name: Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.3.x
