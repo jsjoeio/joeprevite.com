@@ -1,6 +1,6 @@
 # joeprevite.com
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -50,6 +50,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://gatsbyjs.org"><img src="https://avatars1.githubusercontent.com/u/12551863?v=4" width="100px;" alt=""/><br /><sub><b>Gatsby</b></sub></a><br /><a href="#infra-gatsbyjs" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#platform-gatsbyjs" title="Packaging/porting to new platform">📦</a> <a href="#ideas-gatsbyjs" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/jsjoeio/joeprevite.com/commits?author=gatsbyjs" title="Code">💻</a></td>
     <td align="center"><a href="https://capecod.world"><img src="https://avatars2.githubusercontent.com/u/26460352?v=4" width="100px;" alt=""/><br /><sub><b>Peter Cruckshank</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/issues?q=author%3Apetercr" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://dependabot.com"><img src="https://avatars1.githubusercontent.com/u/27347476?v=4" width="100px;" alt=""/><br /><sub><b>Dependabot</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/commits?author=dependabot" title="Code">💻</a></td>
+    <td align="center"><a href="https://in.linkedin.com/in/kuldeepkeshwar"><img src="https://avatars1.githubusercontent.com/u/10448534?v=4" width="100px;" alt=""/><br /><sub><b>anotherjsguy</b></sub></a><br /><a href="#infra-kuldeepkeshwar" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
   </tr>
 </table>
 
