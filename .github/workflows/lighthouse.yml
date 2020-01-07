@@ -4,11 +4,8 @@ on:
 jobs:
   audit:
     runs-on: ubuntu-latest
+    if: github.event.context == 'netlify/deploy-preview' && github.event.state == 'success'
     steps:
-      - name: Print GITHUB_CONTEXT
-        env:
-            GITHUB_CONTEXT: ${{ toJson(github.event) }}
-        run: echo "$GITHUB_CONTEXT" 
       - name: Audit Netlify deploy preview
         uses: jakejarvis/lighthouse-action@master
         with:
