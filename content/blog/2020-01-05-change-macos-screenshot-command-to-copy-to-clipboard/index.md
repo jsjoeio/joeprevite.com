@@ -16,6 +16,6 @@ banner: ''
 
 That's it! Now, you can easily take screenshots and share them in things like PR comments or tweets by pasting them from your clipboard.
 
-_Note: if your preferred learning method is video, I have a [walkthrough on egghead](https://egghead.io/lessons/egghead-change-default-screenshot-key-to-copy-to-clipboard)_
+_Note: if your preferred learning method is video, I have a [walkthrough on egghead](https://egghead.io/lessons/egghead-change-default-screenshot-key-to-copy-to-clipboard?af=fd8rz3)_
 
 Credit to [Chris Ball](https://twitter.com/cball_) for sharing this tip with me.
