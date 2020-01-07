@@ -1,5 +1,6 @@
 name: Audit pull request
-on: pull_request
+on:
+  status: deploy/netlify
 
 jobs:
   audit:
