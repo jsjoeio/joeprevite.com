@@ -1,31 +1,22 @@
-name: Lighthouse
-
-on: pull_request
+name: Test Lighthouse Check
+on: [pull_request]
 
 jobs:
-  build:
+  lighthouse-check:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@master
+      - run: mkdir /tmp/artifacts
+      - name: Run Lighthouse
+        uses: foo-software/lighthouse-check-action@master
         with:
-          node-version: 12.x
-      - name: Install
-        run: |
-          yarn
-      - name: Build
-        run: |
-          yarn build
-      - name: Waiting for 200 from the Netlify Preview
-        uses: jakepartusch/wait-for-netlify-action@v1
-        id: waitFor200
+          accessToken: ${{ secrets.LIGHTHOUSE_CHECK_GITHUB_ACCESS_TOKEN }}
+          author: ${{ github.actor }}
+          branch: ${{ github.ref }}
+          outputDirectory: /tmp/artifacts
+          urls: 'https://www.foo.software,https://www.foo.software/contact'
+      - name: Upload artifacts
+        uses: actions/upload-artifact@master
         with:
-          site_name: 'keen-roentgen-cafcb7'
-      - name: Lighthouse CI
-        run: |
-          npm install -g @lhci/cli@0.3.x
-          lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.waitFor200.outputs.url }} || echo "LHCI failed!"
-        env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+          name: Lighthouse reports
+          path: /tmp/artifacts
