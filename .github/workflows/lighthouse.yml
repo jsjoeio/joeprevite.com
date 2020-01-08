@@ -7,6 +7,11 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - run: mkdir /tmp/artifacts
+      - name: Waiting for 200 from the Netlify Preview
+        uses: jakepartusch/wait-for-netlify-action@v1
+        id: waitFor200
+        with:
+          site_name: 'keen-roentgen-cafcb7'
       - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@master
         with:
@@ -14,7 +19,7 @@ jobs:
           author: ${{ github.actor }}
           branch: ${{ github.ref }}
           outputDirectory: /tmp/artifacts
-          urls: 'https://www.foo.software,https://www.foo.software/contact'
+          urls: 'https://deploy-preview-${{ github.head_ref }}--keen-roentgen-cafcb7.netlify.com'
       - name: Upload artifacts
         uses: actions/upload-artifact@master
         with:
