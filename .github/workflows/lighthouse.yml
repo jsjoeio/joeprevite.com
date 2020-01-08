@@ -1,17 +1,27 @@
-name: Audit pull request
-on:
-  status
+name: Test Lighthouse Check
+on: [pull_request]
+
 jobs:
-  audit:
+  lighthouse-check:
     runs-on: ubuntu-latest
-    if: github.event.context == 'netlify/deploy-preview' && github.event.state == 'success'
     steps:
-      - name: Audit Netlify deploy preview
-        uses: jakejarvis/lighthouse-action@master
+      - uses: actions/checkout@master
+      - run: mkdir /tmp/artifacts
+      - name: Waiting for 200 from the Netlify Preview
+        uses: jakepartusch/wait-for-netlify-action@v1
+        id: waitFor200
         with:
-          netlify_site: 'keen-roentgen-cafcb7.netlify.com'
-          url: 'https://deploy-preview-[[PR_NUMBER]]--[[NETLIFY_SITE]].netlify.com'
-      - uses: actions/upload-artifact@master
+          site_name: 'keen-roentgen-cafcb7'
+      - name: Run Lighthouse
+        uses: foo-software/lighthouse-check-action@master
         with:
-          name: report
-          path: './report'
+          accessToken: ${{ secrets.LIGHTHOUSE_CHECK_GITHUB_ACCESS_TOKEN }}
+          author: ${{ github.actor }}
+          branch: ${{ github.ref }}
+          outputDirectory: /tmp/artifacts
+          urls: 'https://deploy-preview-${{ github.event.pull_request.number }}--keen-roentgen-cafcb7.netlify.com'
+      - name: Upload artifacts
+        uses: actions/upload-artifact@master
+        with:
+          name: Lighthouse reports
+          path: /tmp/artifacts
