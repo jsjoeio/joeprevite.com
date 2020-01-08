@@ -19,7 +19,7 @@ jobs:
           author: ${{ github.actor }}
           branch: ${{ github.ref }}
           outputDirectory: /tmp/artifacts
-          urls: 'https://deploy-preview-${{ github.head_ref }}--keen-roentgen-cafcb7.netlify.com'
+          urls: 'https://deploy-preview-${{ github.event.pull_request.number }}--keen-roentgen-cafcb7.netlify.com'
       - name: Upload artifacts
         uses: actions/upload-artifact@master
         with:
