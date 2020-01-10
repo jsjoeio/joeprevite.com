@@ -75,5 +75,8 @@
     "g:post": "hygen post new",
     "dev": "gatsby develop",
     "start": "serve public/"
+  },
+  "resolutions": {
+    "react-helmet/react-side-effect": "2.1.0"
   }
 }
