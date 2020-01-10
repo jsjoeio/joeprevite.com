@@ -85,6 +85,10 @@ const getGlobalStyles = theme => {
       ::placeholder {
         opacity: 0.4;
       }
+      &:focus {
+        border-color: ${theme.colors.link};
+        box-shadow: ${theme.colors.link} 0px 0px 0px 1px;
+      }
     }
     .gatsby-resp-image-image {
       background: none !important;
