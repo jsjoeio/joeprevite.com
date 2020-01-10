@@ -1,6 +1,6 @@
 # joeprevite.com
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -53,6 +53,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://in.linkedin.com/in/kuldeepkeshwar"><img src="https://avatars1.githubusercontent.com/u/10448534?v=4" width="100px;" alt=""/><br /><sub><b>anotherjsguy</b></sub></a><br /><a href="#infra-kuldeepkeshwar" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://jake.partus.ch/"><img src="https://avatars0.githubusercontent.com/u/6424140?v=4" width="100px;" alt=""/><br /><sub><b>Jake Partusch</b></sub></a><br /><a href="#infra-JakePartusch" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://www.foo.software"><img src="https://avatars0.githubusercontent.com/u/34385368?v=4" width="100px;" alt=""/><br /><sub><b>Foo Software</b></sub></a><br /><a href="#infra-foo-software" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="http://blog.sethcorker.com"><img src="https://avatars1.githubusercontent.com/u/2019236?v=4" width="100px;" alt=""/><br /><sub><b>Seth</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/issues?q=author%3ADarth-Knoppix" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
