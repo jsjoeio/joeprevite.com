@@ -86,14 +86,14 @@ class SignUp extends React.Component {
             </p>
           </>
         )}
-
         <Formik
           initialValues={{
             email: '',
           }}
           validationSchema={SubscribeSchema}
           onSubmit={values => this.handleSubmit(values)}
-          render={({ errors, touched, isSubmitting }) => (
+        >
+          {({ errors, touched, isSubmitting }) => (
             <>
               {!successful && (
                 <Form
@@ -178,13 +178,13 @@ class SignUp extends React.Component {
                     margin: 0;
                   `}
                 >
-                  Thanks for signing up! We sent you a confirmation email. Once
-                  you confirm, you'll start receiving the newsletter goods!
+                  Thanks for signing up! After confirming , you'll start
+                  receiving the newsletter goods!
                 </p>
               )}
             </>
           )}
-        />
+        </Formik>
       </div>
     )
   }
