@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
+import { lighten } from 'polished'
 import { css } from '@emotion/core'
 import { useTheme } from '../Theming'
 import { bpMaxSM } from '../../lib/breakpoints'
@@ -35,9 +36,9 @@ const Header = ({ siteTitle, siteTitleShort }) => {
             to="/"
             aria-label="go to homepage"
             css={css`
-              color: white;
+              color: ${theme.colors.text};
               &:hover {
-                color: white;
+                color: ${lighten(0.25, theme.colors.text)};
                 text-decoration: none;
               }
             `}
