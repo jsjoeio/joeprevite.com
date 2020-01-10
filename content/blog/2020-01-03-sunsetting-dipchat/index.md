@@ -126,6 +126,7 @@ Where messages were sent.
 
 If you still want something that is similar in concept to dip, here are similar communities and groups you might want to check out:
 
+- [https://womenmake.com/](https://womenmake.com/) - "a community created so we have a place to chat with other women entrepreneurs, help each other out and have fun"
 - [https://wip.chat/](https://wip.chat/) - advertised as a "maker community"
 - [https://getmakerlog.com/](https://getmakerlog.com/) - "collaborative task log"
 - [https://codebuddies.org/](https://codebuddies.org/) - "CodeBuddies is a global community of amazing people who help each other become better at software development"
