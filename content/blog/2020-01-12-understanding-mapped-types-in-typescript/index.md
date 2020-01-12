@@ -1,7 +1,7 @@
 ---
 slug: 'understanding-mapped-types-in-typescript'
 date: '2020-01-12'
-title: 'Understanding Mapped Types in Typescript'
+title: 'Understanding Mapped Types in TypeScript'
 description: 'In this post, we recreate the readonly and partial utility types to understand mapped types.'
 published: true
 banner: ''
