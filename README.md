@@ -38,7 +38,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://prince.dev"><img src="https://avatars1.githubusercontent.com/u/8431042?v=4" width="100px;" alt=""/><br /><sub><b>Prince Wilson</b></sub></a><br /><a href="#ideas-maxcell" title="Ideas, Planning, & Feedback">🤔</a> <a href="#design-maxcell" title="Design">🎨</a></td>
+    <td align="center"><a href="https://prince.dev"><img src="https://avatars1.githubusercontent.com/u/8431042?v=4" width="100px;" alt=""/><br /><sub><b>Prince Wilson</b></sub></a><br /><a href="#ideas-maxcell" title="Ideas, Planning, & Feedback">🤔</a> <a href="#design-maxcell" title="Design">🎨</a> <a href="https://github.com/jsjoeio/joeprevite.com/issues?q=author%3Amaxcell" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://www.aboutmonica.com"><img src="https://avatars0.githubusercontent.com/u/6998954?v=4" width="100px;" alt=""/><br /><sub><b>Monica Powell</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/commits?author=m0nica" title="Code">💻</a> <a href="#ideas-m0nica" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="http://joelhooks.com"><img src="https://avatars0.githubusercontent.com/u/86834?v=4" width="100px;" alt=""/><br /><sub><b>Joel Hooks</b></sub></a><br /><a href="#ideas-joelhooks" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://www.taniarascia.com"><img src="https://avatars3.githubusercontent.com/u/11951801?v=4" width="100px;" alt=""/><br /><sub><b>Tania Rascia</b></sub></a><br /><a href="#ideas-taniarascia" title="Ideas, Planning, & Feedback">🤔</a></td>
