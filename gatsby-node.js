@@ -191,6 +191,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
 
     createNodeField({
+      name: 'tagline',
+      node,
+      value: node.frontmatter.tagline,
+    })
+
+    createNodeField({
       name: 'slug',
       node,
       value: slug,

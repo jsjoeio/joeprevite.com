@@ -17,13 +17,18 @@ module.exports = {
             name: 'description',
             message: 'What is the description?',
           },
+          {
+            type: 'input',
+            name: 'tagline',
+            message: 'What is the tagline (for social image)?',
+          },
         ])
         .then(({ title, description }) => {
           // Source: https://tecadmin.net/get-current-date-time-javascript/
           const date = dayjs().format('YYYY-MM-DD')
           const slug = slugify(title)
           const folderName = `${date}-${slug}`
-          resolve({ title, description, date, slug, folderName })
+          resolve({ title, description, tagline, date, slug, folderName })
           return slug
         })
         .then(slug => {

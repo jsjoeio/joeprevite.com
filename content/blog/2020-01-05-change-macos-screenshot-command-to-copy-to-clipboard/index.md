@@ -3,6 +3,7 @@ slug: 'change-macos-screenshot-command-to-copy-to-clipboard'
 date: '2020-01-05'
 title: 'Change macOS Screenshot Command to Copy to Clipboard'
 description: 'Save yourself some time by copying screenshots to your clipboard.'
+tagline: 'Up your productivity'
 published: true
 banner: ''
 ---
