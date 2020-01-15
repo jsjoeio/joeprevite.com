@@ -2,6 +2,7 @@
 slug: 'sunsetting-dipchat'
 date: '2020-01-03'
 title: 'Sunsetting dip.chat'
+tagline: 'Goodbye after less than 6 months'
 description: 'Why I decided to sunset dip.chat after less than 6 months'
 published: true
 banner: ''
