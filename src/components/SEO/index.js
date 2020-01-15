@@ -1,6 +1,7 @@
 import path from 'path'
 import React from 'react'
 import Helmet from 'react-helmet'
+import getSharingImage from '@jlengstorf/get-share-image'
 import { StaticQuery, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import SchemaOrg from './SchemaOrg'
@@ -36,13 +37,24 @@ const SEO = ({ postData, frontmatter = {}, postImage, isBlogPost }) => (
       const postMeta =
         frontmatter || postData.childMarkdownRemark.frontmatter || {}
       const title = isBlogPost ? postMeta.title : config.siteTitle
+      const tagline = postMeta.tagline || 'Read more'
       const description = postMeta.description || seo.description
-      const image = postImage ? `${seo.canonicalUrl}${postImage}` : seo.image
       const url = postMeta.slug
         ? `${seo.canonicalUrl}${path.sep}${postMeta.slug}`
         : seo.canonicalUrl
       const datePublished = isBlogPost ? postMeta.datePublished : false
 
+      const socialImage = getSharingImage({
+        title,
+        tagline,
+        cloudName: 'jsjoeio',
+        imagePublicID: 'joeprevite-blog-post-card',
+        titleFont: 'Roboto',
+        titleExtraConfig: '_bold',
+        taglineFont: 'Roboto',
+      })
+
+      const image = isBlogPost ? socialImage : seo.image
       return (
         <React.Fragment>
           <Helmet>
