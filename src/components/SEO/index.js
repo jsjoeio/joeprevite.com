@@ -47,14 +47,15 @@ const SEO = ({ postData, frontmatter = {}, postImage, isBlogPost }) => (
       const socialImage = getSharingImage({
         title,
         tagline,
-        cloudName: 'jsjoeio',
-        imagePublicID: 'joeprevite-blog-post-card',
+        cloudName: config.cloudinaryCloudName,
+        imagePublicID: config.cloudinaryImagePublicID,
         titleFont: 'Roboto',
         titleExtraConfig: '_bold',
         taglineFont: 'Roboto',
       })
 
       const image = isBlogPost ? socialImage : seo.image
+      console.log(image, 'hi image')
       return (
         <React.Fragment>
           <Helmet>

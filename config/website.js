@@ -26,4 +26,6 @@ module.exports = {
   twitterHandle: '@jsjoeio',
   github: 'https://github.com/jsjoeio/',
   linkedin: '',
+  cloudinaryCloudName: 'jsjoeio',
+  cloudinaryImagePublicID: 'jp-blog-post-card',
 }
