@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { css } from '@emotion/core'
 import SEO from 'components/SEO'
@@ -8,7 +7,6 @@ import Container from 'components/Container'
 import Layout from '../components/Layout'
 import Share from '../components/Share'
 import config from '../../config/website'
-import { bpMaxSM } from '../lib/breakpoints'
 
 export default function Post({
   data: { site, mdx },
@@ -16,7 +14,7 @@ export default function Post({
 }) {
   const date = mdx.frontmatter.date
   const title = mdx.frontmatter.title
-  const banner = mdx.frontmatter.banner
+  // const banner = mdx.frontmatter.banner
   const editLink = mdx.fields.editLink
   const slug = mdx.frontmatter.slug
   const blogPostUrl = `${config.siteUrl}/${slug}/`
@@ -57,7 +55,7 @@ export default function Post({
           >
             {date && <h3>{date}</h3>}
           </div>
-          {banner && (
+          {/* {banner && (
             <div
               css={css`
                 padding: 30px;
@@ -71,7 +69,7 @@ export default function Post({
                 alt={site.siteMetadata.keywords.join(', ')}
               />
             </div>
-          )}
+          )} */}
           <br />
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </Container>
@@ -120,6 +118,8 @@ export const pageQuery = graphql`
     mdx(fields: { id: { eq: $id } }) {
       frontmatter {
         title
+        description
+        tagline
         date(formatString: "MMMM DD, YYYY")
         author
         slug
