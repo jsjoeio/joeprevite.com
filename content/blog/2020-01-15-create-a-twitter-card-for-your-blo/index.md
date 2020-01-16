@@ -47,7 +47,7 @@ yarn add @jlengstorf/get-share-image
 import getSharingImage from '@jlengstorf/get-share-image'
 
 const socialImage = getSharingImage({
-  title: 'How to be a 10x developer'
+  title: 'How to be a x developer',
   tagline: 'Learn all the tips from this one post',
   // This is the name you see in your url
   // https://res.cloudinary.com/<Your cloud name will be here>/image/upload/v1579118925/jp-blog-post-card.png
@@ -71,7 +71,7 @@ Use your new image in your `meta` tag:
 
 Once your code is ready, push it to production then check to see if it's working using something like [Twitter's Card validator](https://cards-dev.twitter.com/validator). If it works, you should see your template in action like this:
 
-![Screenshot of seo card for blog post](example-card.png)
+![Screenshot of seo card for blog post](10x-developer.png)
 
 8. **Celebrate!**
 
