@@ -7,11 +7,11 @@ tagline: 'Automate with npm package and cloudinary'
 published: true
 ---
 
-As @swyx puts it, the Twitter card or more importantly `og:image` is important because
+As [@swyx](https://twitter.com/swyx) puts it, the Twitter card or more importantly `og:image` is important because
 
 > this is THE FIRST THING newcomers to your blog see, not your actual blog
 
-You can set yours up fairly quickly thanks to a package called [`@jlengstorf/get-share-image`](https://www.npmjs.com/package/@jlengstorf/get-share-image) by [Jason Lengstorf](https://www.learnwithjason.dev).
+You can set yours up fairly quickly thanks to a package called [`@jlengstorf/get-share-image`](https://www.npmjs.com/package/@jlengstorf/get-share-image) by [Jason Lengstorf](https://twitter.com/jlengstorf).
 
 Jason wrote an awesome blog post called ["Automatically Generate Social Images for Blog Posts"](https://www.learnwithjason.dev/blog/auto-generate-social-image/). Assuming you've read his blog post, here's how you can set your Twitter/og card up quickly.
 
