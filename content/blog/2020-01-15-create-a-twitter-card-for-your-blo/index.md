@@ -13,7 +13,7 @@ As [@swyx](https://twitter.com/swyx) puts it, the Twitter card or more important
 
 You can set yours up fairly quickly thanks to a package called [`@jlengstorf/get-share-image`](https://www.npmjs.com/package/@jlengstorf/get-share-image) by [Jason Lengstorf](https://twitter.com/jlengstorf).
 
-Jason wrote an awesome blog post called ["Automatically Generate Social Images for Blog Posts"](https://www.learnwithjason.dev/blog/auto-generate-social-image/). Assuming you've read his blog post, here's how you can set your Twitter/og card up quickly.
+Jason wrote an awesome blog post called ["Automatically Generate Social Images for Blog Posts"](https://www.learnwithjason.dev/blog/auto-generate-social-image/). Assuming you've read his blog post, here's how you can set your Twitter/og:image up quickly.
 
 ## How to create your own
 
