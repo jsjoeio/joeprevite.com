@@ -7,6 +7,7 @@ import { useTheme } from 'components/Theming'
 import Container from 'components/Container'
 import { rhythm, scale } from '../lib/typography'
 import HandWave from 'components/HandWave'
+import FingerPoint from 'components/FingerPoint'
 
 /**
  * @param date {Date}
@@ -117,10 +118,7 @@ export default function Index({ data: { site, allMdx } }) {
           </div>
         ))}
         <Link to="/articles" aria-label="Visit articles page">
-          <span role="img" aria-label="finger pointing to text">
-            👉
-          </span>{' '}
-          See all articles
+          <FingerPoint /> See all articles
         </Link>
         <hr />
       </Container>
