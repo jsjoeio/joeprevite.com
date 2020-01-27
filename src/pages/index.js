@@ -6,6 +6,7 @@ import Link from 'components/Link'
 import { useTheme } from 'components/Theming'
 import Container from 'components/Container'
 import { rhythm, scale } from '../lib/typography'
+import HandWave from 'components/HandWave'
 
 /**
  * @param date {Date}
@@ -53,10 +54,7 @@ const Hero = () => {
             ${scale(0.45)};
           `}
         >
-          {getDayGreeting(date)}{' '}
-          <span role="img" aria-label="hand waving hello">
-            👋
-          </span>
+          {getDayGreeting(date)} <HandWave />
         </p>
         <p>
           My name's Joe and I like getting people excited to learn, particularly
