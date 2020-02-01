@@ -11,7 +11,7 @@
     "@hot-loader/react-dom": "16.11.0",
     "@jlengstorf/get-share-image": "^0.4.0",
     "@mdx-js/mdx": "^1.5.1",
-    "@mdx-js/react": "^1.5.1",
+    "@mdx-js/react": "^1.5.5",
     "core-js": "^3.3.3",
     "dotenv": "^8.2.0",
     "dotenv-parse-variables": "^0.2.3",
