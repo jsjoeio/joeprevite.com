@@ -9,7 +9,7 @@
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.22",
     "@hot-loader/react-dom": "16.11.0",
-    "@jlengstorf/get-share-image": "^0.4.0",
+    "@jlengstorf/get-share-image": "^0.5.0",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.5",
     "core-js": "^3.3.3",
