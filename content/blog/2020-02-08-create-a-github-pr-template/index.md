@@ -9,6 +9,8 @@ published: true
 
 PR Templates are one of my favorite features. I can't remember when I first learned about them but essentially, it's a template which appears when someone opens a pull request on your project. This comes in handy for projects with multiple contributors.
 
+If you prefer to learn by watching, you can find this on [egghead](https://egghead.io/lessons/github-create-a-github-pr-template?af=fd8rz3).
+
 Here's how you can set it up:
 
 1. Create a `.github` directory at the root of your project
