@@ -1,6 +1,6 @@
 # joeprevite.com
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -57,6 +57,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://learnwithjason.dev"><img src="https://avatars2.githubusercontent.com/u/163561?v=4" width="100px;" alt=""/><br /><sub><b>Jason Lengstorf</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/commits?author=jlengstorf" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/wjohnson85"><img src="https://avatars2.githubusercontent.com/u/40403549?v=4" width="100px;" alt=""/><br /><sub><b>William Johnson</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/commits?author=wjohnson85" title="Code">💻</a></td>
   </tr>
 </table>
 
