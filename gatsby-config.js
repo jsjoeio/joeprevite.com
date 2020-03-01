@@ -33,6 +33,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-twitter`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
