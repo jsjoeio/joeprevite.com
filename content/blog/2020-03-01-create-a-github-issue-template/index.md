@@ -1,7 +1,7 @@
 ---
-slug: 'create-github-issue-template'
+slug: 'github-issue-template'
 date: '2020-03-01'
-title: 'Create a Github Issue Template'
+title: 'Create a GitHub Issue Template'
 description: 'A short tutorial on how to add a GitHub issue template to your project.'
 tagline: 'A handy way to standarize contributions'
 published: true
