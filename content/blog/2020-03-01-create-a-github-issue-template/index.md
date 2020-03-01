@@ -11,6 +11,8 @@ Similar to [PR templates](https://joeprevite.com/github-pr-template), issue temp
 
 ![Gif showing issue template](example-issue-template.gif)
 
+If you prefer to learn by watching, you can find this on [egghead](https://egghead.io/lessons/github-create-a-github-issue-template?af=fd8rz3).
+
 Here's how you can set it up:
 
 1. Create a `.github` directory at the root of your project
