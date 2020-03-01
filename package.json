@@ -6,7 +6,7 @@
   "repository": "https://github.com/jsjoeio/joeprevite.com",
   "dependencies": {
     "@callstack/react-theme-provider": "^3.0.5",
-    "@emotion/core": "^10.0.22",
+    "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.22",
     "@hot-loader/react-dom": "16.11.0",
     "@jlengstorf/get-share-image": "^0.5.0",
