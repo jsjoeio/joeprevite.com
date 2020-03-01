@@ -6,7 +6,7 @@
   "repository": "https://github.com/jsjoeio/joeprevite.com",
   "dependencies": {
     "@callstack/react-theme-provider": "^3.0.5",
-    "@emotion/core": "^10.0.22",
+    "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.22",
     "@hot-loader/react-dom": "16.11.0",
     "@jlengstorf/get-share-image": "^0.5.0",
@@ -55,10 +55,10 @@
     "react-icons": "^3.7.0",
     "react-live": "^2.2.1",
     "react-markdown": "^4.3.1",
-    "react-share": "^3.0.1",
+    "react-share": "^4.0.1",
     "react-typography": "^0.16.19",
     "serve": "^11.2.0",
-    "typescript": "^3.7.4",
+    "typescript": "^3.8.3",
     "typography": "^0.16.19",
     "yup": "^0.28.0"
   },
