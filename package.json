@@ -39,7 +39,7 @@
     "gatsby-plugin-twitter": "^2.1.19",
     "gatsby-plugin-typography": "^2.3.14",
     "gatsby-remark-autolink-headers": "^2.1.21",
-    "gatsby-remark-copy-linked-files": "^2.1.28",
+    "gatsby-remark-copy-linked-files": "^2.1.37",
     "gatsby-remark-images": "^3.1.43",
     "gatsby-remark-prismjs": "^3.3.28",
     "gatsby-source-filesystem": "^2.1.47",
@@ -79,8 +79,5 @@
     "g:post": "hygen post new",
     "dev": "gatsby develop",
     "start": "serve public/"
-  },
-  "resolutions": {
-    "react-helmet/react-side-effect": "2.1.0"
   }
 }
