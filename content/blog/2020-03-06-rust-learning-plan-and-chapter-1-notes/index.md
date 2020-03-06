@@ -17,7 +17,7 @@ Beyond that though, I am personally excited about Rust because:
 - it has excellent documentation 
 - it has a strong community 
 
-I dabbled a bit about a year ago doing some exercises on [ exercism ](https://exercism.io/) but now learning Rust is a high priority. 
+I dabbled a bit about a year ago doing some exercises on [exercism](https://exercism.io/) but now learning Rust is a high priority. 
 
 You might be interested in Rust because you can build:
 CLI tools
@@ -35,18 +35,18 @@ Learn enough Rust to be dangerous, measured by:
 - ability to build and ship a small project in Rust
 
 I’ve taken these objectives and broken them out into actionable tasks. They are as follows:
-- Read Chapters 1-3 of the [ Rust Lang Book ](https://doc.rust-lang.org/book/title-page.html) (by Steve Klabnik and Carol Nichols, with contributions from the Rust Community)
+- Read Chapters 1-3 of the [Rust Lang Book](https://doc.rust-lang.org/book/title-page.html) (by Steve Klabnik and Carol Nichols, with contributions from the Rust Community)
 - Write 3 blog posts
 - Contribute to an open source project (bug fix or docs)
-- Build a small web server app ([ bunny1 ](https://github.com/ccheever/bunny1) clone)
+- Build a small web server app ([bunny1](https://github.com/ccheever/bunny1) clone)
 
-This is the first blog post in the series, which covers my notes and thoughts on Chapter 1 of the Rust Lang Book. If you read Chapter 1 and would like to discuss, let’s have a conversation! Tweet @ me or shoot me a DM on [ Twitter ](https://twitter.com/jsjoeio).
+This is the first blog post in the series, which covers my notes and thoughts on Chapter 1 of the Rust Lang Book. If you read Chapter 1 and would like to discuss, let’s have a conversation! Tweet @ me or shoot me a DM on [Twitter](https://twitter.com/jsjoeio).
 
 ## Notes on Chapter 1
-The [ first chapter in the Rust Lang Book ](https://doc.rust-lang.org/book/ch01-00-getting-started.html) is a friendly introduction to Rust. It covers enough of the basics to get started. You download Rust and then write your first program, which prints “Hello, World!” Here are things I wrote down while reading the first chapter online:
+The [first chapter in the Rust Lang Book](https://doc.rust-lang.org/book/ch01-00-getting-started.html) is a friendly introduction to Rust. It covers enough of the basics to get started. You download Rust and then write your first program, which prints “Hello, World!” Here are things I wrote down while reading the first chapter online:
 
 ### rustup is the preferred version manager 
-Coming from the JavaScript world, I’m used to scouring the internet for a decent node version manager. The common goto is [`nvm`](https://github.com/nvm-sh/nvm). Lucky for us, the Rust team supplies an official version manager and it’s called [ `rustup` ](https://rustup.rs/). 
+Coming from the JavaScript world, I’m used to scouring the internet for a decent node version manager. The common goto is [`nvm`](https://github.com/nvm-sh/nvm). Lucky for us, the Rust team supplies an official version manager and it’s called [`rustup`](https://rustup.rs/). 
 Free, offline docs - out-of-the-box
 I noted this after rereading some of Chapter 1. `rustup` comes with a version of the docs that you can launch and read offline 😱 How genius is that?!
 ```sh
@@ -54,7 +54,7 @@ rustup doc
 ```
 
 ### cargo commands are like npm commands
-Similar to how we use `npm` in the JS world for packaging and building our projects, [ `cargo` ](https://github.com/rust-lang/cargo) serves a similar purpose for Rust.  
+Similar to how we use `npm` in the JS world for packaging and building our projects, [`cargo`](https://github.com/rust-lang/cargo) serves a similar purpose for Rust.  
 
 ### Rust leans towards snake_case
 In JS, I used camelCase when naming things. It seems like the Rust community leans towards snake_case. This was evident during the hello world exercise. We named the project directory `hello_world`. My assumption may be premature.
@@ -81,15 +81,15 @@ const firstName = () => "Rusty"
 ```
 
 ### Rust has an official code formatter
-If you’re not familiar with the [ Prettier ](https://prettier.io), it’s an opinionated code formatter. It supports a lot of different languages. I believe it’s the most used one in JavaScript. A positive note about Rust is that they have an official formatter called [ `rustfmt` ](https://github.com/rust-lang/rustfmt). And even better, the Rust book says,
+If you’re not familiar with the [Prettier](https://prettier.io), it’s an opinionated code formatter. It supports a lot of different languages. I believe it’s the most used one in JavaScript. A positive note about Rust is that they have an official formatter called [`rustfmt`](https://github.com/rust-lang/rustfmt). And even better, the Rust book says,
 > The Rust team plans to eventually include this tool with the standard Rust distribution
 
 Official formatting - hooray! Another thing we don’t have to worry about.
 
 ### Rust uses macros 
-I wasn’t familiar with this because JavaScript does not have them. They look like functions, but [ according to Computer Hope ](https://www.computerhope.com/jargon/m/macro.htm), macros are “a tool that allows a developer to re-use code.” I thought it was like a function, but they have a note saying,
+I wasn’t familiar with this because JavaScript does not have them. They look like functions, but [according to Computer Hope](https://www.computerhope.com/jargon/m/macro.htm), macros are “a tool that allows a developer to re-use code.” I thought it was like a function, but they have a note saying,
 
-> A macro is not the same as a [ function ](https://www.computerhope.com/jargon/f/function.htm). Functions require special instructions and computational overhead to safely pass arguments and return values. A macro is a way to repeat frequently-used lines of code. 
+> A macro is not the same as a [function](https://www.computerhope.com/jargon/f/function.htm). Functions require special instructions and computational overhead to safely pass arguments and return values. A macro is a way to repeat frequently-used lines of code. 
 
 Here is an example using the `println!` macro in Rust:
 ```rust
@@ -104,9 +104,7 @@ After learning about macros, I asked myself, “But how do you know if it’s a 
 I’ve heard the term “binary executable.” I know what “binary” means and I know what “executable” means, but I highlighted this anyway. In layperson terms, it means the computer can read and execute it without anyone’s help. 
 
 ### Compile before you run, you must 
-When I learned JavaScript, the whole compiled vs. runtime lingo didn’t make sense to me. I thought, “What do you mean it’s interpreted at runtime?” Well, now I get it. JavaScript is an interpreted In JS, we write it and then run it. 
-
-When I learned JavaScript, I never fully understood the whole compiled vs interpreted lingo. Well, now I have a basic understanding. In most cases, a JavaScript engine (like V8) [ “compiles JavaScript code into machine code at execution by implementing a JIT (Just-In-Time) compiler.” ](https://blog.sessionstack.com/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e) Notice though, the JS engine does this, not the developer. 
+When I learned JavaScrpt, I never fully understood the whole compiled vs interpreted lingo. Well, now I have a basic understanding. In most cases, a JavaScript engine (like V8) [“compiles JavaScript code into machine code at execution by implementing a JIT (Just-In-Time) compiler.”](https://blog.sessionstack.com/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e) Notice though, the JS engine does this, not the developer. 
 
 
 In Rust (and many other languages), there is a compile step that you, the developer, must do. So you must compile your code before you can run it. 
@@ -118,12 +116,12 @@ I hadn’t previously heard this phrase “ahead-of-time compilation” but now 
 Going back to our `npm` comparison, it is like `npm init` and creates a new Rust project. What makes it even better though is that it includes a `.gitignore` file for you. It’s fantastic.  
 
 ### crates are like npm packages
-Crates are bundled up pieces of code. Similar to the JS world, you install a package from npm, you do the same with Rust, but with crates. I love the term “crate.” It’s kind of fun to say and isn’t an everyday term like “packages”. The official crates registry is [ crates.io ](https://crates.io/).
+Crates are bundled up pieces of code. Similar to the JS world, you install a package from npm, you do the same with Rust, but with crates. I love the term “crate.” It’s kind of fun to say and isn’t an everyday term like “packages”. The official crates registry is [crates.io](https://crates.io/).
 
-The other differentiating factor is that [ crates.io ](https://crates.io/) is [ “managed by members of the Crates.io and Rust core teams.” ](https://www.rust-lang.org/policies/privacy) I hope this means it’s more sustainable and community-driven.
+The other differentiating factor is that [crates.io](https://crates.io/) is [“managed by members of the Crates.io and Rust core teams.”](https://www.rust-lang.org/policies/privacy) I hope this means it’s more sustainable and community-driven.
 
 ### Rust encourages project folder structure
-Coming from the JS world, you can put your files in any directory you want (most of the time). You then tell your bundler where to look. What I like about Rust is that it encourages a project folder structure out the gate. According to the book, “Cargo expects your source files to live inside the `src` directory.” This is great! One less thing for us to think about. You can, of course,  override this by [ setting the path value ](https://doc.rust-lang.org/cargo/reference/manifest.html#configuring-a-target) in your `cargo.toml` (I googled out of curiosity).
+Coming from the JS world, you can put your files in any directory you want (most of the time). You then tell your bundler where to look. What I like about Rust is that it encourages a project folder structure out the gate. According to the book, “Cargo expects your source files to live inside the `src` directory.” This is great! One less thing for us to think about. You can, of course,  override this by [setting the path value](https://doc.rust-lang.org/cargo/reference/manifest.html#configuring-a-target) in your `cargo.toml` (I googled out of curiosity).
 
 ### cargo check - “Am I doing this right?”
 `cargo check` will check your source code without building it. This is a good way to iterate quickly.
@@ -138,9 +136,9 @@ cargo build --release
 In JavaScript, we have to use seven keystrokes to declare a function. That’s a lot! But in Rust, we only need to write two: `fn`. How cool is that? We’re five keystrokes richer in Rust.
 
 ## What’s next?
-As previously mentioned, next up for me is [ Chapter 2 of the Rust Lang Book ](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html). Here, they’ll walk us through programming a guessing game - hooray!  I’m excited about this. 
+As previously mentioned, next up for me is [Chapter 2 of the Rust Lang Book](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html). Here, they’ll walk us through programming a guessing game - hooray!  I’m excited about this. 
 
-The next blog post in this series will cover my notes on building my first real project in Rust. Until then, happy coding my fellow [ Rustaceans ](https://doc.rust-lang.org/book/ch01-01-installation.html?highlight=rustacean#troubleshooting)! 🦀
+The next blog post in this series will cover my notes on building my first real project in Rust. Until then, happy coding my fellow [Rustaceans](https://doc.rust-lang.org/book/ch01-01-installation.html?highlight=rustacean#troubleshooting)! 🦀
 
 P.S. - I included a glossary and cheatsheet at the end here. Enjoy!
 
@@ -151,11 +149,11 @@ I covered a decent number of new words (at least for me) in this post. I find it
 - Cargo - Rust’s official build system and package manager 
 - crate - a bundle of code that you can use in your project
 - crates.io - the official Rust package registry 
-- developer advocate - someone who can talk about and write code and [ works with the dev community ](https://medium.com/@joelmarcey/hello-i-am-a-developer-advocate-ff7db13058c7)
+- developer advocate - someone who can talk about and write code and [works with the dev community](https://medium.com/@joelmarcey/hello-i-am-a-developer-advocate-ff7db13058c7)
 - macro - it’s like a global function
 - Rustacean - a Rust community member
 - rustup - the official Rust version manager
-- WASM - [ Web Assembly ](https://webassembly.org)
+- WASM - [Web Assembly](https://webassembly.org)
 
 ## Cheatsheet 
 Most of the commands that were covered in Chapter 1:
