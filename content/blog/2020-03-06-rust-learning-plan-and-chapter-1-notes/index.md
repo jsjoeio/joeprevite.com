@@ -213,5 +213,5 @@ cargo run
 
 ### Build a Rust program for production
 ```sh
-cargo build --production
+cargo build --release
 ```
