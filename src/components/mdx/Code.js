@@ -1,7 +1,14 @@
 import React from 'react'
-import theme from 'prism-react-renderer/themes/oceanicNext'
+import theme from '../../lib/theme'
 import Highlight, { defaultProps } from 'prism-react-renderer'
+import Prism from 'prism-react-renderer/prism'
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
+
+// Following advice from this issue https://github.com/FormidableLabs/prism-react-renderer/issues/53
+;(typeof global !== 'undefined' ? global : window).Prism = Prism
+
+// Add syntax highlighting support for Rust
+require('prismjs/components/prism-rust')
 
 const Code = ({
   children,
@@ -27,7 +34,10 @@ const Code = ({
         theme={theme}
       >
         {({ className, style, tokens, getLineProps, getTokenProps }) => (
-          <pre className={className} style={{ ...style, padding: '20px' }}>
+          <pre
+            className={className}
+            style={{ ...style, padding: '20px', margin: '0' }}
+          >
             {tokens.map((line, i) => (
               <div key={i} {...getLineProps({ line, key: i })}>
                 {line.map((token, key) => (
