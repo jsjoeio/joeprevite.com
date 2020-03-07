@@ -1,7 +1,14 @@
 import React from 'react'
 import theme from 'prism-react-renderer/themes/oceanicNext'
 import Highlight, { defaultProps } from 'prism-react-renderer'
+import Prism from 'prism-react-renderer/prism'
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
+
+// Following advice from this issue https://github.com/FormidableLabs/prism-react-renderer/issues/53
+(typeof global !== 'undefined' ? global : window).Prism = Prism
+
+// Add syntax highlighting support for Rust
+require('prismjs/components/prism-rust')
 
 const Code = ({
   children,
