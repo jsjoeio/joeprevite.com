@@ -2,7 +2,7 @@
 slug: "rust-learning-plan-chapter-1-notes"
 date: "2020-03-06"
 title: "Rust Learning Plan & Chapter 1 Notes"
-description: "My plan for learning rust and notes from Chapter 1 of the rust lang book."
+description: "My plan for learning Rust and notes from Chapter 1 of the Rust Lang Book."
 tagline: "Learning plan and Chapter 1 notes"
 published: true
 ---
@@ -215,3 +215,7 @@ cargo run
 ```sh
 cargo build --release
 ```
+
+## Thank you!
+
+A special thank you to [Cami Williams](https://twitter.com/cwillycs) for review, providing explanations/examples on some of these topics and suggesting readings for further learning. 
