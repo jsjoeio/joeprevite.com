@@ -81,7 +81,7 @@ class SignUp extends React.Component {
                 margin-top: 0;
               `}
             >
-              I send a few emails per month to share things I'm excited about.
+              I send an email or two per month to share things I'm excited about.
               I'd be delighted if you signed up.
             </p>
           </>
