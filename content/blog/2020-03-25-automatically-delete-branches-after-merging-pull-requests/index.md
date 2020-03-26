@@ -2,7 +2,7 @@
 slug: 'automatically-delete-branches-after-merging-pull-requests'
 date: '2020-03-25'
 title: 'Automatically Delete Branches After Merging Pull Requests'
-description: 'A short tutorial on how to automatically delete branches after merging pull requests on github.'
+description: 'A short tutorial on how to automatically delete branches after merging pull requests on GitHub.'
 tagline: 'Keep your branches in order'
 published: true
 ---
