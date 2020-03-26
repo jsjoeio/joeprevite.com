@@ -34,7 +34,7 @@ In Rust, there is a keyword `const` and no, it is not your JavaScript `const`. T
 
 *   Can’t use the `mut` keyword
 *   Type has to be annotated 
-*   Value must be known at runtime 
+*   Value must be known at compile time[^1]
 
 Sounds like they are good for values that are never going to change, like your birthday:
 
@@ -404,4 +404,6 @@ let a = [3; 5];
 
 ## Thank you!
 
-A special thank you to [Cami Williams](https://twitter.com/cwillycs), [Aaron Abramov](https://twitter.com/aarondjents), David Tolnay and Jeremy Fitzhardinge for helping me understand some of the more difficult topics in this chapter! 
+A special thank you to [Cami Williams](https://twitter.com/cwillycs), [Aaron Abramov](https://twitter.com/aarondjents), David Tolnay, Jeremy Fitzhardinge and Qingwei Lan for helping me understand some of the more difficult topics in this chapter! 
+
+[^1]: "constants may be set only to a constant expression, not the result of a function call or any other value that could only be computed at runtime" ([Source](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html)) - thanks for catching this, Qingwei Lan.
