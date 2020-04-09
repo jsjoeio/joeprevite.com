@@ -43,7 +43,7 @@ const Header = ({ siteTitle, siteTitleShort }) => {
               }
             `}
           >
-            <Logo title={siteTitle} /> {siteTitleShort}
+            <Logo title={siteTitle} siteTitleShort={siteTitleShort} />
           </Link>
           <div
             css={css`
