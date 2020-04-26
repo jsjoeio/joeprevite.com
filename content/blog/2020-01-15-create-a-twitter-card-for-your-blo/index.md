@@ -43,6 +43,8 @@ yarn add @jlengstorf/get-share-image
 
 5. **Add the code to generate the URL**
 
+I have an `<SEO />` on my site, which you can see [here](https://github.com/jsjoeio/joeprevite.com/blob/master/src/components/SEO/index.js) as an example of where to put this code.
+
 ```javascript
 import getSharingImage from '@jlengstorf/get-share-image'
 
