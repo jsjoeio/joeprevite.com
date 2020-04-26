@@ -30,19 +30,9 @@ module.exports = {
           const slug = slugify(title)
           const folderName = `${date}-${slug}`
           resolve({ title, description, tagline, date, slug, folderName })
-          return { slug, folderName }
+          return slug
         })
-        .then(({ slug, folderName }) => {
-          const pathToFile = `content/blog/${folderName}/index.md`
-          // Assuming we have yet to start the dev server
-
-          // Open the markdown file in VSCode
-          try {
-            execSync(`code ${pathToFile}`)
-          } catch (error) {
-            console.error('Oh no, something went wrong.')
-          }
-
+        .then(slug => {
           // Open in default browser
           open(`http://localhost:8000/${slug}`)
         })
