@@ -1,5 +1,5 @@
 ---
-to: content/blog/<%= folderName %>/index.md
+to: content/<%= folderName %>/index.md
 ---
 ---
 slug: "<%= slug %>"
