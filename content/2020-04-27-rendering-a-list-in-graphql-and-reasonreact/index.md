@@ -81,6 +81,7 @@ Here's what the code looked like after getting things to work:
 
 ```reason
 open ApolloHooks;
+open Belt;
 
 module GetExchangeRates = [%graphql
   {|
@@ -101,29 +102,27 @@ let make = () => {
     {switch (simple) {
      | Loading => <p> {React.string("Loading...")} </p>
      | Data(data) =>
-       let currencies =
-         switch (data##rates) {
-         | Some(rates) =>
-           Array.map(
-             rate =>
-               switch (rate) {
-               | Some(rate) =>
-                 switch (rate##currency) {
-                 | Some(currency) => <p> {React.string(currency)} </p>
-                 | None => React.null
-                 }
-               | None => React.null
-               },
-             rates,
-           )
-         | None => [|React.null|]
-         };
+        let currencies =
+          switch (data##rates) {
+          | Some(rates) =>
+            rates->Array.map(rate =>
+              rate
+              ->Option.map(rate => rate##currency)
+              ->Option.mapWithDefault(React.null, currency =>
+                  switch (currency) {
+                  | Some(currency) => <p> {React.string(currency)} </p>
+                  | None => React.null
+                  }
+                )
+            )
+          | None => [||]
+          };
        React.array(currencies);
      | NoData
      | Error(_) => <p> {React.string("Get off my lawn!")} </p>
      }}
   </div>;
-}
+};
 ```
 
 I wouldn't call it pretty, but it's certainly functional!
@@ -132,25 +131,28 @@ The hurdle I fought to get over was handling the different nullable cases. If we
 
 1. Rates either returns an array or `null` so we need to switch on it
    1. If it returns some data, we map over that data
-   2. If it returns no data, we return an array of `null` 
+   2. If it returns no data, we return an empty array
 2. Mapping over rates, we switch on rate because it could be a value or `null`
    1. If we have a rate, we move into currency
    2. If we don't, we return `null`
-3. With the `rate##currency`, we switch on some data or none
+3. With the `currency`, we switch on some data or none
    1. With some, we can finally use the currency string inside a `<p>` tag
    2. With no data, we return `null`
 
 Struggling through this, I realized a few gaps in my knowledge:
 - I wasn't comfortable with pattern matching in Reason
 - I didn't understand the option type
+- I didn't know about utilities like `Belt`
 
 Once I received an explanation from members of the Reason community and suggestions, I saw my data rendered on the screen and it felt magical.
 
-If you want to see the full repo, you can view the source at [this commit](https://github.com/jsjoeio/goal-app/tree/0b9c492afaaf94c2de518ed7d22938c67a20c218).
+If you want to see this code in the original repo, you can view the source at [this commit](https://github.com/jsjoeio/goal-app/blob/fd518d581491297ff34c9e18635d19ae11ccec2f/src/Components/Example.re).
 
 ## Summary
 
 I learned that having a good understanding of pattern matching and the option type are important when working with GraphQL in ReasonReact. I am excited to continue learning Reason and using it in future projects. Hopefully this is the first post of many!
+
+I've heard there are a lot of exciting things coming up in the newest release([0.8.0](https://github.com/reasonml/reason-react/blob/master/HISTORY.md#080-042020)) of ReasonReact including documentation fixes (and an Apollo/GraphQL recipe!).
 
 Thanks for reading!
 
@@ -162,4 +164,5 @@ Lastly, I want to give thanks to members of the Reason community who helped me u
 - @anmonteiro
 - @sgrove
 - @the__spyder
+- [@fhammerschmidt](https://github.com/fhammerschmidt)
  
