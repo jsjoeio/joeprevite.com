@@ -70,7 +70,10 @@ To my surprise, people were quick to help me! At first, I didn't understand the 
 
 With a little bit of extra help for rendering an array of `null` (due to the way the API was designed + the types Reason wanted), I figured out the solution!
 
-![Some data or none, drawing](some-data-or-none.png)
+![Some data or none, drawing](drawing-data.png)
+<small>
+    Open this drawing in <a href="https://excalidraw.com/#json=4900521227845632,zu4fe5MiNz4AHPb76JnA6A" target="_blank">Excalidraw</a> 
+</small>
 
 ## Solution
 
