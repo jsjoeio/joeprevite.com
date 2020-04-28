@@ -175,6 +175,15 @@
         "bug",
         "blog"
       ]
+    },
+    {
+      "login": "fhammerschmidt",
+      "name": "Florian Hammerschmidt",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/18074327?v=4",
+      "profile": "https://github.com/fhammerschmidt",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
