@@ -1,22 +1,24 @@
 ---
-slug: "render-data-graphql-api-reasonreact"
-date: "2020-04-27"
-title: "How to Render Data from a GraphQL API in ReasonReact"
-description: "A short post explaining how to render data from a GraphQL API in ReasonReact."
-tagline: "Fighting nullable types in your data"
+slug: 'render-data-graphql-api-reasonreact'
+date: '2020-04-27'
+title: 'How to Render Data from a GraphQL API in ReasonReact'
+description: 'A short post explaining how to render data from a GraphQL API in ReasonReact.'
+tagline: 'Fighting nullable types in your data'
 published: true
 ---
+
 Recently, I decided to start learning [ReasonReact](https://reasonml.github.io/reason-react/). I chose it because my friend [Sean Grove](https://twitter.com/sgrove) recommended it, but also because I've been looking for an excuse to use Reason on a project.
 
-I like that ReasonReact is 
+I like that ReasonReact is
+
 - similar to React
 - type-safe (like TypeScript, but out-of-the-box)
 
 There are more benefits that I'm surely not yet aware of, but that's not what this post is about.
 
-This post is me attempting to understand something I took for granted working with React: 
+This post is me attempting to understand something I took for granted working with React:
 
-> Query a GraphQL API for some data and render that list of data 
+> Query a GraphQL API for some data and render that list of data
 
 Seems pretty easy, right? I thought so too! But without properly understanding primitives in Reason, like [option](https://reasonml.org/docs/manual/latest/null-undefined-option), it proved to be a bit more difficult.
 
@@ -34,13 +36,13 @@ So that's what I did. I followed [their tutorial](https://www.apollographql.com/
 
 ### What went well
 
-Things started off well. 
+Things started off well.
 
-I found [`reason-apollo-hooks`](https://github.com/Astrocoders/reason-apollo-hooks), which were the bindings for `@apollo/react-hooks` (thank you [@Astrocoders](https://github.com/Astrocoders)!). 
+I found [`reason-apollo-hooks`](https://github.com/Astrocoders/reason-apollo-hooks), which were the bindings for `@apollo/react-hooks` (thank you [@Astrocoders](https://github.com/Astrocoders)!).
 
-Following their `README`, I set everything up and it looked good! 
+Following their `README`, I set everything up and it looked good!
 
-I was even able to log my data to the console with `Js.log2("my data", data)` and it worked! 
+I was even able to log my data to the console with `Js.log2("my data", data)` and it worked!
 
 If only rendering data was as easy as logging in...
 
@@ -48,7 +50,7 @@ If only rendering data was as easy as logging in...
 
 When it came to rendering data, I struggled. The GraphQL API I was working with had a lot of nullable data. In regular vanilla React, I don't really worry about this kind of thing. Or at least, I don't think I do.
 
-However, because Reason is typed, I do have to worry about it. And this is where I got stuck. 
+However, because Reason is typed, I do have to worry about it. And this is where I got stuck.
 
 I was stuck on this particular error message:
 
@@ -72,7 +74,7 @@ With a little bit of extra help for rendering an array of `null` (due to the way
 
 ![Some data or none, drawing](drawing-data.png)
 <small>
-    Open this drawing in <a href="https://excalidraw.com/#json=4900521227845632,zu4fe5MiNz4AHPb76JnA6A" target="_blank">Excalidraw</a> 
+Open this drawing in <a href="https://excalidraw.com/#json=4900521227845632,zu4fe5MiNz4AHPb76JnA6A" target="_blank">Excalidraw</a>
 </small>
 
 ## Solution
@@ -102,21 +104,18 @@ let make = () => {
     {switch (simple) {
      | Loading => <p> {React.string("Loading...")} </p>
      | Data(data) =>
-        let currencies =
-          switch (data##rates) {
-          | Some(rates) =>
-            rates->Array.map(rate =>
-              rate
-              ->Option.map(rate => rate##currency)
-              ->Option.mapWithDefault(React.null, currency =>
-                  switch (currency) {
-                  | Some(currency) => <p> {React.string(currency)} </p>
-                  | None => React.null
-                  }
-                )
-            )
-          | None => [||]
-          };
+       let currencies =
+         switch (data##rates) {
+         | Some(rates) =>
+           rates->Array.map(rate =>
+             rate
+             ->Option.flatMap(rate => rate##currency)
+             ->Option.mapWithDefault(React.null, currency =>
+                 <p> {React.string(currency)} </p>
+               )
+           )
+         | None => [||]
+         };
        React.array(currencies);
      | NoData
      | Error(_) => <p> {React.string("Get off my lawn!")} </p>
@@ -132,21 +131,20 @@ The hurdle I fought to get over was handling the different nullable cases. If we
 1. Rates either returns an array or `null` so we need to switch on it
    1. If it returns some data, we map over that data
    2. If it returns no data, we return an empty array
-2. Mapping over rates, we switch on rate because it could be a value or `null`
-   1. If we have a rate, we move into currency
-   2. If we don't, we return `null`
-3. With the `currency`, we switch on some data or none
-   1. With some, we can finally use the currency string inside a `<p>` tag
-   2. With no data, we return `null`
+2. Mapping over rates, we have rate. we pipe that through `Option.flatMap`
+3. We pipe that through `Option.mapWithDefault` which does this:
+   1. By default, we return `React.null`
+   2. Otherwise with data, we can finally use the currency string inside a `<p>` tag
 
 Struggling through this, I realized a few gaps in my knowledge:
+
 - I wasn't comfortable with pattern matching in Reason
 - I didn't understand the option type
 - I didn't know about utilities like `Belt`
 
 Once I received an explanation from members of the Reason community and suggestions, I saw my data rendered on the screen and it felt magical.
 
-If you want to see this code in the original repo, you can view the source at [this commit](https://github.com/jsjoeio/goal-app/blob/fd518d581491297ff34c9e18635d19ae11ccec2f/src/Components/Example.re).
+If you want to see this code in the original repo, you can view the source at [this commit](https://github.com/jsjoeio/goal-app/blob/3881216e9c5ef52d46916d95898f4151e419f982/src/Components/Example.re).
 
 ## Summary
 
@@ -163,6 +161,5 @@ Lastly, I want to give thanks to members of the Reason community who helped me u
 - @yawaramin
 - @anmonteiro
 - @sgrove
-- @the__spyder
+- @the\_\_spyder
 - [@fhammerschmidt](https://github.com/fhammerschmidt)
- 
