@@ -67,7 +67,7 @@
     "babel-preset-gatsby": "^0.2.20",
     "dayjs": "^1.8.18",
     "hygen": "^5.0.3",
-    "open": "^7.0.0",
+    "open": "^7.0.3",
     "prettier": "1.19.1"
   },
   "keywords": [
