@@ -145,6 +145,15 @@ const getGlobalStyles = theme => {
       padding: 2px 4px;
       white-space: nowrap;
     }
+    .highlight-line {
+      background-color: rgb(53, 59, 69);
+      display: block;
+      margin-right: -1em;
+      margin-left: -1em;
+      padding-right: 1em;
+      padding-left: 0.75em;
+      border-left: 0.3em solid #f99;
+    }
     .remark-header-link {
       position: absolute;
       left: -20px;

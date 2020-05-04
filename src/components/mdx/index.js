@@ -9,6 +9,6 @@ export default {
   h1: props => <Title {...props} />,
   h2: props => <Subtitle {...props} />,
   p: props => <Paragraph {...props} />,
-  code: Code,
+  code: props => <Code {...props} />,
   pre: preProps => <pre {...preProps} />,
 }
