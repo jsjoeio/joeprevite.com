@@ -12,11 +12,11 @@ export default function Post({
   data: { site, mdx },
   pageContext: { next, prev },
 }) {
-  const date = mdx.frontmatter.date
-  const title = mdx.frontmatter.title
+  const date = mdx?.frontmatter.date
+  const title = mdx?.frontmatter.title
   // const banner = mdx.frontmatter.banner
-  const editLink = mdx.fields.editLink
-  const slug = mdx.frontmatter.slug
+  const editLink = mdx?.fields.editLink
+  const slug = mdx?.frontmatter.slug
   const blogPostUrl = `${config.siteUrl}/${slug}/`
 
   return (
