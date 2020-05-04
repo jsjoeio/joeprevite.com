@@ -34,7 +34,6 @@ const Code = ({
   ...props
 }) => {
   const language = className.replace(/language-/, '')
-  console.log('metastring', metastring)
   const shouldHighlightLine = calculateLinesToHighlight(metastring)
   if (props['react-live']) {
     return (
