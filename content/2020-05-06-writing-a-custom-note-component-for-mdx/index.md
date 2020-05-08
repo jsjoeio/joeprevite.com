@@ -2,12 +2,12 @@
 slug: 'writing-custom-note-component-mdx'
 date: '2020-05-06'
 title: 'Writing a Custom Note Component for MDX'
-description: 'A short post exploring how i wroe a custom note component for mdx.'
-tagline: 'Building for my blog'
+description: 'A short post exploring how I wrote a custom note component for MDX.'
+tagline: 'MDX for the win'
 published: true
 ---
 
-import { Note } from './Note'
+import { Note } from '../../src/components/Note'
 
 Back when I was looking for inspiration while building my personal website and blog, I stumbled upon [Tania Rascia's site](https://www.taniarascia.com/understanding-generators-in-javascript/).
 
@@ -23,12 +23,12 @@ Code:
 
 ```jsx
 <Note>
-  <h1>hello</h1>
+  <p>hello</p>
 </Note>>
 ```
 
 Rendered:
-<Note><h1>hello</h1></Note>
+<Note><p>hello</p></Note>
 
 This works and it's intuitive, but it feels like a lot of work! I'd rather write Markdown and let MDX handle the rest for me.
 
@@ -40,15 +40,14 @@ Code:
 
 ```markdown
 <Note>
-  **Note:** You _might_ want to check this out!
-  [Link](http://localhost:8000/writing-a-custom-note-component-for-mdx)
+  **Note:** You _might_ want to check this out! [Link](https://freecodecamp.org/)
 </Note>
 ```
 
 Rendered:
 <Note>
 
-**Note:** You _might_ want to check this out! [Link](http://localhost:8000/writing-a-custom-note-component-for-mdx)
+**Note:** You _might_ want to check this out! [Link](https://freecodecamp.org/)
 
 </Note>
 
