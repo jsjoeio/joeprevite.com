@@ -15,6 +15,3 @@ jobs:
       - run: yarn build
         env:
           CI: true
-
-- name: Check Spelling (JS, Vue, HTML, Markdown, Text)
-  uses: UnicornGlobal/spellcheck-github-actions@0.4.0

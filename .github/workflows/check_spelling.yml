@@ -1,9 +1,7 @@
 # .github/workflows/check_spelling.yml
 name: Check Spelling
-on:
-  pull_request:
-    paths:
-      - '/content/**/**.md'
+on: [pull_request]
+
 jobs:
   spelling:
     runs-on: ubuntu-latest
