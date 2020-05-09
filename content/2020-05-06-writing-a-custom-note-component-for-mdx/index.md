@@ -13,7 +13,7 @@ Back when I was looking for inspiration while building my personal website and b
 
 One of my favorite parts were her "custom blocks" - colorful components used to annoate or add helpful information to her articles. I made a note to create some for mine when I had the time.
 
-Now that I've found the time, I've learned there are multiple ways to do it. In his post, I'll explain a couple of ways to wrie a custom `<Note />` component for MDX.
+Now that I've found the time, I've learned there are multiple ways to do it. In this post, I'll explain a couple of ways to write a custom `<Note />` component for MDX.
 
 ## JSX
 
