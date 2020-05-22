@@ -152,9 +152,184 @@ You know how in languages like Rust or Python, people use `snake_case` for their
 
 #### skipWhitespace 
 
-page 25
+In the language we write, whitespace serves only to separate tokens. For example, in this line `let name = "Joe";` the whitespace between `let` and `name` separate the two, but do nothing more. During lexical analysis, we want to skip the whitespace so we write a helper function called `skipWhitespace`. I highlighted this as a reminder, but also because Thorsten pointed out that this same helper function is sometimes called `eatWhitespace` or `consumeWhitespace` which I found funny.
+
+#### keywords
+
+These are reserved words like "function" and "let" in our language. Similar to how "mut" is reserved in Rust, but not JavaScript.
+
+#### repl means something
+
+I remember a few years ago hearing about [repl.it](https://repl.it/) and thinking to myself, "What a strange name!" It was only then in 1.5 of this book where Thorsten enlightened me. It stands for "read evaluate print loop." 
+
+>  Python has a REPL, Ruby has one, JavaScript runtime has one, most Lisps have one and a lot of other languages too.
+>
+> -Ball 33
+
+It reads your input, lets the interpreter evaluate it, prints the result or output and then repeats. Another aha moment from this book.
 
 ### Chapter 2 - Parsing
+
+The parser is the "software component that takes input data (frequently text) and builds a data structure" (Ball 36).
+
+> "Code is data, data is code" is something you hear a lot from Lisp programmers.
+>
+> -Ball 37
+
+#### serialization languages
+
+I don't think I had heard this term/concept mentioned before, but he was referring to JSON, YAML, TOML, INI, etc.
+
+#### syntactic analysis
+
+Again, I don't think I had heard this before.
+
+> ...the process of parsing is also call syntactic analysis
+>
+> -Ball 39
+
+#### parser generator
+
+Another new term, Thorsten explains that parser generators are "tools that, when fed with a formal description of a language, produce parsers as their output" (Ball 39).
+
+To be honest, this is still a bit foreign to me. Of course when I google it, the term "[compiler-compiler](https://en.wikipedia.org/wiki/Compiler-compiler)" comes up which doesn't help. I think I'll leave it at that for now, but may revisit.
+
+> Parsing is one of he most well-understood branches of computer science...
+>
+> -Ball 40
+
+#### top-down vs bottom-up vs recursive decent parsing
+
+I bet I could write a blog post on this alone (I don't know all of the differences, and won't explore them here). The method we take in the book is recursive decent parsing which he mentions is a "top down operator precedence" parser and also called "Pratt parser" afer Vaughan Pratt. 
+
+#### binding vs identifier vs expression
+
+I wrote a note to myself "define binding identifier vs. expression." Let's give it a shot. Let statments like `let x = 5;` bind the expression "5" to the identifier "x". And as Thorsten reminds us, "Expressions produce values, statments don't" (Ball 42). To be clear, if we take this `let x = 5;` it is a statement because it does not produce a value. However, this `5` does produce a value. It's like a tupperware container with some food inside. The tupperware doesn't give us food, but if we go inside and look, we get food. 
+
+#### AST with Nodes
+
+> The AST we are goign to construct consists solely of `Nodes` that are connected to each other - it's a tree after all.
+>
+> -Ball 43
+
+I wrote that down as a reminder that our AST has a root Node, which has other nodes connected to it. Yay trees!
+
+#### operator precedence
+
+I remember algebra and learned about operator precedence. For example, let's say I have this `let x = 1 + 2 * 3`. In math, we would first do `2 * 3` because multiplication precedes addition so our answer evaluates to `7` and not `9`. To be explicit, we can throw in parens like this `let x = 1 + (2 * 3)`. When we parse an expression like the one here, we need to make sure the parser knows these rules like multiplication precedes addition. Hopefully that makes sense. 
+
+#### prefix vs infix operators
+
+Take a look at this line: `-5 - 10`. Can you guess which `-` is a prefix and which is an infix? 
+
+Correct! The `-` in front of the `5` is a prefix operator because it's next to the integer and denotes negativity. The `-` in between the two integers is the infix operator and denoes subtraction. 
+
+#### binary operators
+
+The `+`, `-`, `*` and `/` are all types of infix operators, or binary operators, meaning they operate with two operands. 
+
+#### Vaughan Pratt
+
+Professor at Stanford born in 1944. You can read more about him on [Wikipedia](https://en.wikipedia.org/wiki/Vaughan_Pratt).
+
+His parsing metho is explained in his paper "Top Down Operator Precedence" which was published in 1973 (gasp!) and can be read [here](https://dl.acm.org/doi/10.1145/512927.512931).
+
+As a reminder to myself, `prefixParseFns` is used in the book and is the same as "nuds" for "null denotations" by Pratt. `infixParseFns` is equivalent to "leds" or "left denotations" by Pratt.
+
+#### terminology
+
+Thorsten points out some useful terms on page 63:
+
+- **prefix operator** - in front of operand
+- **postfix operator** - after operand like `foobar++`
+- **infix operator** - in between operands
+- **binary expressions** - the operator has two operands like `5 * 8`
+- **operator precedence** - also called "order of operations" (ring a bell?)
+
+#### IntegerLiteral
+
+I wrote a note to show an example of what an integer literal data structure looks like in our language:
+
+```go
+type IntegerLiteral struct {
+  Token token.Token
+  Value int64
+}
+```
+
+As you can see, we store the token type and the actual value. For example, `5` would look like this:
+
+```go
+{
+  Token: token.INT, // integer
+  Value: "5"
+}
+```
+
+Pretty cool, huh?
+
+Sidenote: I love that he abbreviates literal to `lit` in our helper functions. I laugh because it reminds me of the colloquial saying, "that's so [lit](https://www.urbandictionary.com/define.php?term=lit)!"
+
+#### prefixParseFns and infixParseFns
+
+I found this part of the book a bit confusing. I'm struggling to even explain what I don't know...If I have the integer `5`, why do I call `prefixParseFns`? Is it because I need to check if `5` has a prefix such as a minus sign "-"? Ah...now that I'm writing this, I think that's it. Because as a human, I can look at `-5` and say, "Yes, that has a prefix we need to parse." But as a machine, I don' know that from looking at the token alone because these tokens `5` and `-5` are the same token type but have different values. 
+
+This is also the part of the parser where we look at precedence, which also confused me.
+
+If I were to spend more time on this book, I would focus on section 2.7 - How Pratt Parsing Works because it's clear to me as I write this that I don't fully comprehend what is happening.
+
+#### parseBoolean
+
+Inside our `parser/parser.go` file, we add a helper function:
+
+```go
+func (p *Parser) parseBoolean() ast.Expression {
+  return &ast.Boolean{Token: p.curToken, Value: p.curTokenIs(token.TRUE)}
+}
+```
+
+I wrote a question mark next to the `token.TRUE` because I was confused on why this works even when parsing a `false` boolean. Again, this is probably do to my lack of understanding here and another area I would focus on again.
+
+#### grouped expressions
+
+Some how, we can group expressions like `(5 + 5) * 2` to influence the parsing to our liking. We add a function called `parseGroupedExpression` and it "just works." I couldn't tell you why though. Here's the function in case you can figure it out:
+
+```go
+func (p *Parser) parseGroupedExpression() ast.Expression {
+  p.nextToken()
+  exp := p.parseExpression(LOWEST) // this LOWEST thing I don't get
+  
+  if !p.expectPeek(token.RPAREN) {
+    return nil
+  }
+  
+  return exp
+}
+```
+
+#### block statements
+
+These are a series of statements which are surrounded by `{` and `}`. 
+
+#### infix parse functions
+
+I wroet a note later where he says, 
+
+> Yes, we need to register an `infixParseFn` for `token.LPAREN`. This way we parse the expression that is the function (either an identifier, or a function literal), then check for an `infixParseFn` associated with `token.LPAREN` and call it with the already parsed expression as argument. And in this `infixParseFn` we can then parse the argument list.
+>
+> -Ball 122
+
+I'm blocking myself here. In my mind, I think "infix === things like +, -, *, /" so it feels strange here to use an LPAREN or "(" as an infix, but I guess infix can also mean in between two other characters. Example: `add(5, 5)` where the `(` is in between the "d" and the "5". Still, future me should revisit this. 
+
+#### serialization
+
+Thorsten mentions this,
+
+> What we want is an AST that (serialized as a string)...
+>
+> -Ball 89
+
+And I thought, "Do I really know what this means?" And the answer is no, no I do not. Wikipedia [explains it](https://en.wikipedia.org/wiki/Serialization) well. I'll summarize it as taking something, translating it into a data structure or object and storing it for later use (possibly restructuring it).
 
 ### Chapter 3 - Evaluation
 
