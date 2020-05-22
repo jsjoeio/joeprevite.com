@@ -10,4 +10,5 @@ tagline: "<%= h.inflection.capitalize(tagline) %>"
 published: false
 ---
 
+
 Go forth, and write thee blog post!
