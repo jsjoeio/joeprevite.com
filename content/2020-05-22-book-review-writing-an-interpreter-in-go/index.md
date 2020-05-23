@@ -391,7 +391,74 @@ This stuck out to me because I realized Go, the language in which we were writin
 >
 > -Ball 136
 
+#### two instances of boolean
 
+One neat thing we did was create an instance of `object.Boolean` which could be `true` or `false` so that we weren't allocating new `object.Boolean` everytime. 
+
+#### unary operator expression
+
+This is described where "one operand follows the operator" (Ball 148). Computer Hope [defines it](https://www.computerhope.com/jargon/u/unary-operator.htm) as,
+
+>  an [operator](https://www.computerhope.com/jargon/o/operator.htm) that takes only one [value](https://www.computerhope.com/jargon/v/value.htm) for its operation.
+
+In the book, the example we use first is the `!` which can be used to convert and operand to a boolean value and negate it.
+
+#### eight infix operators
+
+The language we make, Monkey, supports 8 operators:
+
+- "+"
+- "-"
+- "*"
+- "/"
+- ">"
+- "<"
+- "=="
+- "!="
+
+The last four produce a boolean result.
+
+#### comparing values directly
+
+> We can't compare these pointers to different instances, othewise `5 == 5` would be false, which is not what we want. In this case we want to explicitly compare the values and not the objects that wrap these values.
+>
+> -Ball 158
+
+I highlighted that as a reminder. 
+
+#### return statements
+
+> return statements stop the evaluation of a series of statements and leave behing the value their expression has evaluated to.
+>
+> -Ball 162
+
+Good reminder! 
+
+#### bindings
+
+Later in Chapter 3, we add support for let statements, but Thorsten describes it as "bindings" (Ball 173). This is a reminder that in this situation, we're referring to "let bindings" or binding an identifier (variable) to a value.
+
+#### environment
+
+> The environment is what we use to keep track of value by associating them with a name.
+>
+> -Ball 175
+
+This was interesting! I thought it would be more complicated, but Thorsten explains that it's just a "hash map that associates string with objects." Another aha moment. It also helps understand scope and closures a bit more. 
+
+He even touches on it by saying, 
+
+> ...functions in Monkey carry their own environment with them. That allows for closures, which "close over" the environment they're defined in and can later access it.
+>
+> -Ball 181
+
+When it's checking if a value exists for an identifier, it starts at the inner-most scope, or the environment where it's currently running. If it doesn't find it, it moves outside to the next environment. If not there, it goes up again. It does this until there are no more environments to check.
+
+Wording to keep in mind:
+
+> The outer scope *encloses* the innter scope. And the inner scope *extends* the outer one.
+>
+> -Ball 186
 
 ### Chapter 4 - Extending the Interpreter
 
