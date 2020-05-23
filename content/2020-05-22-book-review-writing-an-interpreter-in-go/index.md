@@ -200,11 +200,11 @@ To be honest, this is still a bit foreign to me. Of course when I google it, the
 
 #### top-down vs bottom-up vs recursive decent parsing
 
-I bet I could write a blog post on this alone (I don't know all of the differences, and won't explore them here). The method we take in the book is recursive decent parsing which he mentions is a "top down operator precedence" parser and also called "Pratt parser" afer Vaughan Pratt. 
+I bet I could write a blog post on this alone (I don't know all of the differences, and won't explore them here). The method we take in the book is recursive decent parsing which he mentions is a "top down operator precedence" parser and also called "Pratt parser" after Vaughan Pratt. 
 
 #### binding vs identifier vs expression
 
-I wrote a note to myself "define binding identifier vs. expression." Let's give it a shot. Let statments like `let x = 5;` bind the expression "5" to the identifier "x". And as Thorsten reminds us, "Expressions produce values, statments don't" (Ball 42). To be clear, if we take this `let x = 5;` it is a statement because it does not produce a value. However, this `5` does produce a value. It's like a tupperware container with some food inside. The tupperware doesn't give us food, but if we go inside and look, we get food. 
+I wrote a note to myself "define binding identifier vs. expression." Let's give it a shot. Let statements like `let x = 5;` bind the expression "5" to the identifier "x". And as Thorsten reminds us, "Expressions produce values, statments don't" (Ball 42). To be clear, if we take this `let x = 5;` it is a statement because it does not produce a value. However, this `5` does produce a value. It's like a tupperware container with some food inside. The tupperware doesn't give us food, but if we go inside and look, we get food. 
 
 #### AST with Nodes
 
@@ -313,7 +313,7 @@ These are a series of statements which are surrounded by `{` and `}`.
 
 #### infix parse functions
 
-I wroet a note later where he says, 
+I wrote a note later where he says, 
 
 > Yes, we need to register an `infixParseFn` for `token.LPAREN`. This way we parse the expression that is the function (either an identifier, or a function literal), then check for an `infixParseFn` associated with `token.LPAREN` and call it with the already parsed expression as argument. And in this `infixParseFn` we can then parse the argument list.
 >
@@ -332,6 +332,66 @@ Thorsten mentions this,
 And I thought, "Do I really know what this means?" And the answer is no, no I do not. Wikipedia [explains it](https://en.wikipedia.org/wiki/Serialization) well. I'll summarize it as taking something, translating it into a data structure or object and storing it for later use (possibly restructuring it).
 
 ### Chapter 3 - Evaluation
+
+This is the part where the abstract syntax trees are turned into something meaningful. 
+
+#### interpreters vs compilers 
+
+> The notion of an interpreter as something that doesn't leave executable artifacts behind (in contract to a compiler, which does just that) gets fuzzy real fast when looking at the implementations of real-world and highly-optimized programming languages.
+>
+> -Ball 132
+
+I found this super helpful (at least comparing it to say Rust). Interpreter has one-step. Compilers have two. 
+
+#### tree-walking interpreters
+
+I wrote down this because I wanted to look up a few examples of programming languages that fall into this category. I don't know how trustworthy [these Reddit comments](https://www.reddit.com/r/ProgrammingLanguages/comments/dfi9lk/viability_of_treewalk_interpreters/) are but here are a few notes:
+
+> Ruby was a tree-walk interpreter before version 1.9 (I think) and was  used in production quite a bit, albeit with a reputation for being very  slow and consuming a lot of RAM.
+
+> R was also a tree-walking interpreter for around 20 years!  It only changed in the last 5 or so years, a similar time as Ruby.
+
+> It seems Perl still is a tree-walk interpreter.
+
+A bit later, Thorsten does touch on a few. He mentions the Ruby example. 
+
+#### intermediate representation
+
+I hadn't heard this term before. According to [Wikipedia](https://en.wikipedia.org/wiki/Intermediate_representation), 
+
+> intermediate representation is the [data structure](https://en.wikipedia.org/wiki/Data_structure) or code used internally by a [compiler](https://en.wikipedia.org/wiki/Compiler) or [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine) to represent [source code](https://en.wikipedia.org/wiki/Source_code).
+
+#### just in time
+
+He also mentions on page 133 a JIT, or "just in time" interpreter/compiler. From what I can tell, [JavaScript](https://blog.sessionstack.com/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e) usually uses this technique. 
+
+One thing to note as well,
+
+> An interpreter that compiles to byte code and uses a virtual machine to evaluate said bytecode is going to be a lot faster.
+>
+> -Ball 133
+
+This is compared to a "tree-walking interpreter that recursively evaluates an AST."
+
+He also mentions WebKit JavaScript engine JavaScriptCore and the interpreter "SquirrelFish" (weird name, right?). This one has "four different stages of JIT compilation."
+
+Lua is another languages that adopted a JIT, but 12 years after the first release (Ball 134).
+
+#### host language
+
+It was interesting that for our evaluator, Thorsten said we only needed two things,
+
+> a tree-walking evaluator and a way to represent Monkey values in our host language Go.
+>
+> -Ball 135
+
+This stuck out to me because I realized Go, the language in which we were writing the language, is this said host language. It made me think of Reason, whose host language is OCaml. But I believe when you look at Rust, it's host language is Rust. And same with TypeScript whose host language is TypeScript. Weird, but cool! 
+
+> How you represent a string of your interpreted language depends on how a string can be represented in the langauge the interpreter is implemented in.
+>
+> -Ball 136
+
+
 
 ### Chapter 4 - Extending the Interpreter
 
