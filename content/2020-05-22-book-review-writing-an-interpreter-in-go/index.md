@@ -25,7 +25,7 @@ I believe it was [@sugarpirate](https://twitter.com/sugarpirate_) who originally
 
 ## Notes
 
-This is a collection of my thoughts from each chapter in the book, along with my overall thoughts and recommendations.
+This is a collection of my notes from each chapter in the book, along with my overall thoughts and recommendations.
 
 ### Introduction
 
@@ -460,14 +460,47 @@ Wording to keep in mind:
 >
 > -Ball 186
 
+#### first-class citizens 
+
+I heard this often, but have never stopped to understand what it *actually* means. Here's what [Wikipedia](https://en.wikipedia.org/wiki/First-class_citizen) says,
+
+> a **first-class citizen** (also **type**, **object**, **entity**, or **value**) in a given [programming language](https://en.wikipedia.org/wiki/Programming_language) is an entity which supports all the operations generally available to other entities.
+
+The context where this is mentioned in the book is for functions because they're first-class in the language we build.
+
 ### Chapter 4 - Extending the Interpreter
+
+This chapter is where we add in a few more things.
+
+#### built-in functions
+
+These are part of the language and have access to the inner workings. For example, we add one called `len` which returns the length of a string. 
+
+#### validate hash keys in evaluation stage
+
+Thorsten explains that we can't do this because it would prevent this:
+
+```go
+let key = "name";
+let hash = {key: "Monkey"};
+```
+
+> In order to allow this, we need to allow any expression as a key and any expression as a value in a hash literal.
+>
+> -Ball 234
 
 ### Chapter 5 - Macro System
 
 In case you didn't know, Thorsten added a fifth chapter for free [online](https://interpreterbook.com/lost/).
 
-### Overall Thoughts
+## Overall Thoughts
 
-### Recommend the Book?
+Good way
 
-## Purcahse the Book
+## Recommend the Book?
+
+yes. 
+
+## Purchase the Book
+
+here...
