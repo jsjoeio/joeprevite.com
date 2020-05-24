@@ -7,14 +7,6 @@ tagline: 'My notes and thoughts'
 published: true
 ---
 
-TODOS
-
-- [x] Find cover image for book
-- [ ] Add support for Go syntax highlighting
-- [ ] Add excalidraw embed support
-
----
-
 ![Writing an interpreter in go paperback on wood](./book_cover.jpg)
 
 When I started my new job, I was told that I would be the "Programming Languages" person. I knew I wanted to learn more not only about specific programming languages like Rust and Reason, but understand them on a higher level.
@@ -286,7 +278,10 @@ Inside our `parser/parser.go` file, we add a helper function:
 
 ```go
 func (p *Parser) parseBoolean() ast.Expression {
-  return &ast.Boolean{Token: p.curToken, Value: p.curTokenIs(token.TRUE)}
+  return &ast.Boolean{
+    Token: p.curToken,
+    Value: p.curTokenIs(token.TRUE)
+    }
 }
 ```
 
@@ -482,9 +477,9 @@ These are part of the language and have access to the inner workings. For exampl
 
 Thorsten explains that we can't do this because it would prevent this:
 
-```go
-let key = "name";
-let hash = {key: "Monkey"};
+```javascript
+let key = 'name'
+let hash = { key: 'Monkey' }
 ```
 
 > In order to allow this, we need to allow any expression as a key and any expression as a value in a hash literal.
