@@ -5,11 +5,26 @@ const paginate = require('gatsby-awesome-pagination')
 const PAGINATION_OFFSET = 7
 const IS_DEV_MODE = process.env.NODE_ENV === 'development'
 
-const createPosts = (createPage, createRedirect, edges) => {
+const createPosts = (createPage, createRedirect, edges, reporter) => {
   edges.forEach(({ node }, i) => {
     const prev = i === 0 ? null : edges[i - 1].node
     const next = i === edges.length - 1 ? null : edges[i + 1].node
     const pagePath = node.fields.slug
+
+    /*
+    Okay I figured out what I need to do. Here are the next steps:
+
+    1. Change "categories" to "tags"
+    2. Add function to validateTags(tags, callback)
+    3. Add logic to check and if it fails, callback(`warning`)
+    4. Check to see what happens when no categories
+    5. Check to see what happens if spelled incorrectly.
+    /*
+    // TODO finish adding logic here.
+    // const ALLOWED_CATEGORIES = new Set([`javascript`])
+    // if (i === 0) {
+    //   reporter.error(`Bad category`)
+    // }
 
     if (node.fields.redirects) {
       node.fields.redirects.forEach(fromPath => {
@@ -87,7 +102,7 @@ query {
 }
 `
 
-exports.createPages = ({ actions, graphql }) =>
+exports.createPages = ({ actions, graphql, reporter }) =>
   graphql(POSTS_QUERY_STRING).then(({ data, errors }) => {
     if (errors) {
       return Promise.reject(errors)
@@ -99,7 +114,7 @@ exports.createPages = ({ actions, graphql }) =>
 
     const { edges } = data.allMdx
     const { createRedirect, createPage } = actions
-    createPosts(createPage, createRedirect, edges)
+    createPosts(createPage, createRedirect, edges, reporter)
     // createPaginatedPages(actions.createPage, edges, '/blog', {
     //   categories: [],
     // })
