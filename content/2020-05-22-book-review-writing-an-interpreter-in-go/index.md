@@ -11,7 +11,7 @@ published: true
 
 When I started my new job, I was told that I would be the "Programming Languages" person. I knew I wanted to learn more not only about specific programming languages like Rust and Reason, but understand them on a higher level.
 
-I believe it was [@sugarpirate](https://twitter.com/sugarpirate_) who originally recommended both this book and the sequel "[Writing a Compiler in Go](https://compilerbook.com/)" by Thorsten Ball. I was hesitatant to purchase the book because I had never written Go before and wasn't planning to. However, others insisted that you didn't need to know Go to read this book.
+I believe it was [@sugarpirate](https://twitter.com/sugarpirate_) who originally recommended both this book and the sequel "[Writing a Compiler in Go](https://compilerbook.com/)" by Thorsten Ball. I was hesitant to purchase the book because I had never written Go before and wasn't planning to. However, others insisted that you didn't need to know Go to read this book.
 
 I took their word. And now I can say, they were right.
 
@@ -111,7 +111,7 @@ In the book (which uses Go), the author refers to it as a hash. In JavaScript, I
 
 #### first class functions
 
-I wrote a note to myself, "definte this in your own words." It's when a programming language supports functions out of the box? No, it has to be more than that (don't most programming languages support first class functions?).
+I wrote a note to myself, "define this in your own words." It's when a programming language supports functions out of the box? No, it has to be more than that (don't most programming languages support first class functions?).
 
 Pulling from MDN [they say](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function),
 
@@ -153,7 +153,7 @@ https://excalidraw.com/#json=5086916491870208,sLUFfW5oMgrO3ApQwe4YQw
 >
 > -Ball 15
 
-I wrote this down to highlight **lex** and remind myself how to use it in a sentence. An example, "The first thing our interpreter does is lex the source code to generate tokens. The tokens are then parsed into an abstract synax tree."
+I wrote this down to highlight **lex** and remind myself how to use it in a sentence. An example, "The first thing our interpreter does is lex the source code to generate tokens. The tokens are then parsed into an abstract syntax tree."
 
 #### identifiers
 
@@ -256,7 +256,7 @@ I wrote a note to myself "define binding identifier vs. expression." Let's give 
 
 #### AST with Nodes
 
-> The AST we are goign to construct consists solely of `Nodes` that are connected to each other - it's a tree after all.
+> The AST we are going to construct consists solely of `Nodes` that are connected to each other - it's a tree after all.
 >
 > -Ball 43
 
@@ -270,7 +270,7 @@ I remember algebra and learned about operator precedence. For example, let's say
 
 Take a look at this line: `-5 - 10`. Can you guess which `-` is a prefix and which is an infix?
 
-Correct! The `-` in front of the `5` is a prefix operator because it's next to the integer and denotes negativity. The `-` in between the two integers is the infix operator and denoes subtraction.
+Correct! The `-` in front of the `5` is a prefix operator because it's next to the integer and denotes negativity. The `-` in between the two integers is the infix operator and denotes subtraction.
 
 #### binary operators
 
@@ -438,7 +438,7 @@ It was interesting that for our evaluator, Thorsten said we only needed two thin
 
 This stuck out to me because I realized Go, the language in which we were writing the language, is this said host language. It made me think of Reason, whose host language is OCaml. But I believe when you look at Rust, it's host language is Rust. And same with TypeScript whose host language is TypeScript. Weird, but cool!
 
-> How you represent a string of your interpreted language depends on how a string can be represented in the langauge the interpreter is implemented in.
+> How you represent a string of your interpreted language depends on how a string can be represented in the language the interpreter is implemented in.
 >
 > -Ball 136
 
@@ -471,7 +471,7 @@ The last four produce a boolean result.
 
 #### comparing values directly
 
-> We can't compare these pointers to different instances, othewise `5 == 5` would be false, which is not what we want. In this case we want to explicitly compare the values and not the objects that wrap these values.
+> We can't compare these pointers to different instances, otherwise `5 == 5` would be false, which is not what we want. In this case we want to explicitly compare the values and not the objects that wrap these values.
 >
 > -Ball 158
 
@@ -479,7 +479,7 @@ I highlighted that as a reminder.
 
 #### return statements
 
-> return statements stop the evaluation of a series of statements and leave behing the value their expression has evaluated to.
+> return statements stop the evaluation of a series of statements and leave behind the value their expression has evaluated to.
 >
 > -Ball 162
 
@@ -507,7 +507,7 @@ When it's checking if a value exists for an identifier, it starts at the inner-m
 
 Wording to keep in mind:
 
-> The outer scope _encloses_ the innter scope. And the inner scope _extends_ the outer one.
+> The outer scope _encloses_ the inner scope. And the inner scope _extends_ the outer one.
 >
 > -Ball 186
 
