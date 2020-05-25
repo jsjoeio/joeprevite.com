@@ -6,3 +6,11 @@ excluded_files:
   - 'config/**/*'
   - 'yarn.lock'
   - '.typo-ci.yml'
+
+excluded_words:
+  - prefixParseFns
+  - nuds
+  - leds
+  - prefixParseFns
+  - lexing
+  
