@@ -11,6 +11,9 @@ excluded_words:
   - prefixParseFns
   - nuds
   - leds
-  - prefixParseFns
+  - infixParseFns
   - lexing
+  - Thorsten
+  - Yay
+  - Reddit
   

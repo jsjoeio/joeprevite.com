@@ -163,7 +163,7 @@ https://excalidraw.com/#json=5643057177296896,5i_HmKWn3lDRcBRDh9UMdw
 
 #### token types
 
-One of my favorite parts was learning about the limited token types. Thorsten had us create these token types as constants and each one coud be used for different characters in our programming language. Here are some examples:
+One of my favorite parts was learning about the limited token types. Thorsten had us create these token types as constants and each one could be used for different characters in our programming language. Here are some examples:
 
 ```go
 const (
