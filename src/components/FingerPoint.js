@@ -11,7 +11,7 @@ const FingerPoint = () => (
     xmlns="http://www.w3.org/2000/svg"
   >
     <title id="finger-point">Finger pointing icon.</title>
-    <g clip-path="url(#clip0)">
+    <g clipPath="url(#clip0)">
       <path
         d="M31.8043 19.3637L37.5308 17.8061L38.0002 14.463L20.5278 18.9096L19.9747 17.5645L26.4211 14.4627L24.4352 10.756L17.4222 13.7258L13.5978 16.9852L13.4827 19.3638L15.9607 24.5431L22.9485 21.1135L31.8043 19.3637Z"
         fill="#F7CC42"
