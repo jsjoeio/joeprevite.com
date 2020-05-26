@@ -5,6 +5,33 @@ const paginate = require('gatsby-awesome-pagination')
 const PAGINATION_OFFSET = 7
 const IS_DEV_MODE = process.env.NODE_ENV === 'development'
 
+// keep alphabetical
+const VALID_TAGS = new Set([
+  `Book`,
+  `GitHub`,
+  `JavaScript`,
+  `macOS`,
+  `Reason`,
+  `Rust`,
+  `TypeScript`,
+])
+
+/**
+ * validates the tags used in content frontmatter
+ * @param tags {string[]} the tags you want to validate
+ * @param onError {function} the function to call if it encounters an invalid tags
+ */
+function validateTags(tags, onError) {
+  tags.forEach(tag => {
+    const invalidTag = !VALID_TAGS.has(tag)
+
+    if (invalidTag) {
+      // Call the callback
+      onError()
+    }
+  })
+}
+
 const createPosts = (createPage, createRedirect, edges, reporter) => {
   edges.forEach(({ node }, i) => {
     const prev = i === 0 ? null : edges[i - 1].node
@@ -26,6 +53,16 @@ const createPosts = (createPage, createRedirect, edges, reporter) => {
     //   reporter.error(`Bad category`)
     // }
     */
+   console.log('here are the tags', node.fields.tags)
+   // STOPPED here
+   /*
+   next step is to call the validateTags function with node.fields.tags
+   and see if it works
+
+   use the reporter
+
+   also use it for success
+   */
 
     if (node.fields.redirects) {
       node.fields.redirects.forEach(fromPath => {
@@ -70,6 +107,7 @@ query {
           title
           slug
           date
+          tags
         }
       }
     }
@@ -96,6 +134,7 @@ query {
           title
           slug
           date
+          tags
         }
       }
     }
