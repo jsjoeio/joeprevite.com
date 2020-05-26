@@ -14,7 +14,7 @@ const createPosts = (createPage, createRedirect, edges, reporter) => {
     /*
     Okay I figured out what I need to do. Here are the next steps:
 
-    1. Change "categories" to "tags"
+    1. [X] Change "categories" to "tags"
     2. Add function to validateTags(tags, callback)
     3. Add logic to check and if it fails, callback(`warning`)
     4. Check to see what happens when no categories
@@ -25,6 +25,7 @@ const createPosts = (createPage, createRedirect, edges, reporter) => {
     // if (i === 0) {
     //   reporter.error(`Bad category`)
     // }
+    */
 
     if (node.fields.redirects) {
       node.fields.redirects.forEach(fromPath => {
@@ -230,9 +231,17 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
 
     createNodeField({
-      name: 'categories',
+      name: 'tags',
       node,
-      value: node.frontmatter.categories || [],
+      value: node.frontmatter.tags || [],
+    })
+
+    // TODO - validate types somewhere
+    // should support: post, page, snippet
+    createNodeField({
+      name: 'type',
+      node,
+      value: node.frontmatter.type || '',
     })
 
     createNodeField({
