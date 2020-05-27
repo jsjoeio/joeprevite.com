@@ -184,6 +184,15 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "mrnugget",
+      "name": "Thorsten Ball",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1185253?v=4",
+      "profile": "https://thorstenball.com",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
