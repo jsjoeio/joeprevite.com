@@ -11,7 +11,7 @@ published: true
 
 When I started my new job, I was told that I would be the "Programming Languages" person. I knew I wanted to learn more not only about specific programming languages like Rust and Reason, but understand them on a higher level.
 
-I believe it was [@sugarpirate](https://twitter.com/sugarpirate_) who originally recommended both this book and the sequel "[Writing a Compiler in Go](https://compilerbook.com/)" by Thorsten Ball. I was hesitant to purchase the book because I had never written Go before and wasn't planning to. However, others insisted that you didn't need to know Go to read this book.
+I believe it was [@sugarpirate](https://twitter.com/sugarpirate_) who originally recommended both [this book](https://interpreterbook.com) and the sequel "[Writing a Compiler in Go](https://compilerbook.com/)" by Thorsten Ball. I was hesitant to purchase the book because I had never written Go before and wasn't planning to. However, others insisted that you didn't need to know Go to read this book.
 
 I took their word. And now I can say, they were right.
 
