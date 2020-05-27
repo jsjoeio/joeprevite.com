@@ -252,7 +252,7 @@ I bet I could write a blog post on this alone (I don't know all of the differenc
 
 #### binding vs identifier vs expression
 
-I wrote a note to myself "define binding identifier vs. expression." Let's give it a shot. Let statements like `let x = 5;` bind the expression "5" to the identifier "x". And as Thorsten reminds us, "Expressions produce values, statments don't" (Ball 42). To be clear, if we take this `let x = 5;` it is a statement because it does not produce a value. However, this `5` does produce a value. It's like a tupperware container with some food inside. The tupperware doesn't give us food, but if we go inside and look, we get food.
+I wrote a note to myself "define binding identifier vs. expression." Let's give it a shot. Let statements like `let x = 5;` bind the expression "5" to the identifier "x". And as Thorsten reminds us, "Expressions produce values, statements don't" (Ball 42). To be clear, if we take this `let x = 5;` it is a statement because it does not produce a value. However, this `5` does produce a value. It's like a tupperware container with some food inside. The tupperware doesn't give us food, but if we go inside and look, we get food.
 
 #### AST with Nodes
 
