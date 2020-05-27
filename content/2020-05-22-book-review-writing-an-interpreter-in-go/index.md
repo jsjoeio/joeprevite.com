@@ -320,7 +320,7 @@ Sidenote: I love that he abbreviates literal to `lit` in our helper functions. I
 
 #### prefixParseFns and infixParseFns
 
-I found this part of the book a bit confusing. I'm struggling to even explain what I don't know...If I have the integer `5`, why do I call `prefixParseFns`? Is it because I need to check if `5` has a prefix such as a minus sign "-"? Ah...now that I'm writing this, I think that's it. Because as a human, I can look at `-5` and say, "Yes, that has a prefix we need to parse." But as a machine, I don' know that from looking at the token alone because these tokens `5` and `-5` are the same token type but have different values.
+I found this part of the book a bit confusing. I'm struggling to even explain what I don't know...If I have the integer `5`, why do I call `prefixParseFns`? Is it because I need to check if `5` has a prefix such as a minus sign "-"? Ah...now that I'm writing this, I think that's it. Because as a human, I can look at `-5` and say, "Yes, that has a prefix we need to parse." But as a machine, I don't know that from looking at the token alone because these tokens `5` and `-5` are the same token type but have different values.
 
 This is also the part of the parser where we look at precedence, which also confused me.
 
