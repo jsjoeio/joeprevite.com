@@ -71,6 +71,7 @@ I took their word. And now I can say, they were right.
 - [Overall Thoughts](#overall-thoughts)
 - [Recommend the Book?](#recommend-the-book)
 - [Purchase the Book](#purchase-the-book)
+- [Thank you](#thank-you)
 
 </details>
 
@@ -618,3 +619,7 @@ It's fantastic way to learn what it takes to write your own language. And at the
 ## Purchase the Book
 
 If you want to purchase the book, you can do so here at [interpreterbook.com](https://interpreterbook.com/). You can even buy this book plus his [compiler book](https://compilerbook.com/) in a [bundle](https://gumroad.com/l/waiig_wacig_bundle) and save! Highly recommend.
+
+## Thank you
+
+Special thanks to Thorsten for reviewing this before I put it out! Not only did he catch a decent number of typos, but he gave me feedback of certain pieces of this post. It's not every day an author takes the time to do that so thank you!
