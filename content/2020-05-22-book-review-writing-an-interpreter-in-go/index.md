@@ -396,7 +396,7 @@ I found this super helpful (at least comparing it to say Rust). Interpreter has 
 
 #### tree-walking interpreters
 
-I wrote down this because I wanted to look up a few examples of programming languages that fall into this category. I don't know how trustworthy [these Reddit comments](https://www.reddit.com/r/ProgrammingLanguages/comments/dfi9lk/viability_of_treewalk_interpreters/) are but here are a few notes:
+I wrote this down because I wanted to look up a few examples of programming languages that fall into this category. I don't know how trustworthy [these Reddit comments](https://www.reddit.com/r/ProgrammingLanguages/comments/dfi9lk/viability_of_treewalk_interpreters/) are but here are a few notes:
 
 > Ruby was a tree-walk interpreter before version 1.9 (I think) and was used in production quite a bit, albeit with a reputation for being very slow and consuming a lot of RAM.
 
