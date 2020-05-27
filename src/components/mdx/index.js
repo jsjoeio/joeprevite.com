@@ -4,6 +4,7 @@ import Title from './Title'
 import Subtitle from './Subtitle'
 import Paragraph from './Paragraph'
 import Code from './Code'
+import Note from './Note'
 
 export default {
   h1: props => <Title {...props} />,
@@ -11,4 +12,5 @@ export default {
   p: props => <Paragraph {...props} />,
   code: props => <Code {...props} />,
   pre: preProps => <pre {...preProps} />,
+  Note,
 }

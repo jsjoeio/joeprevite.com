@@ -1,6 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import { useTheme } from './Theming'
+import { useTheme } from '../Theming'
 
 export function Note({ children }) {
   const theme = useTheme()
@@ -25,3 +25,5 @@ export function Note({ children }) {
     </div>
   )
 }
+
+export default Note
