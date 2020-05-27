@@ -83,7 +83,7 @@ In the beginning of the book, Thorsten explains why he wrote this book and who i
 >
 > -Ball 7
 
-The part that resonated with me was the last sentence in hat quote -- "people that love to learn by understanding how something really works." That made me glad I picked this book up.
+The part that resonated with me was the last sentence in that quote -- "people that love to learn by understanding how something really works." That made me glad I picked this book up.
 
 > "Tree-walking interpreter"
 
