@@ -436,7 +436,7 @@ It was interesting that for our evaluator, Thorsten said we only needed two thin
 >
 > -Ball 135
 
-This stuck out to me because I realized Go, the language in which we were writing the language, is this said host language. It made me think of Reason, whose host language is OCaml. But I believe when you look at Rust, it's host language is Rust. And same with TypeScript whose host language is TypeScript. Weird, but cool!
+This stuck out to me because I realized Go, the language in which we were writing the language, is this said host language. It made me think of Reason, whose host language is OCaml. But I believe when you look at Rust, its host language is Rust. And same with TypeScript whose host language is TypeScript. Weird, but cool!
 
 > How you represent a string of your interpreted language depends on how a string can be represented in the language the interpreter is implemented in.
 >
