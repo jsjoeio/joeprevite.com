@@ -168,6 +168,12 @@ const getGlobalStyles = theme => {
         }
       }
     }
+    details {
+      display: block;
+    }
+    summary {
+      display: list-item;
+    }
   `
 }
 
