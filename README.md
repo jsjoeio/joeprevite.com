@@ -1,6 +1,6 @@
 # joeprevite.com
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-19-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-20-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -61,6 +61,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://laurosilva.com"><img src="https://avatars2.githubusercontent.com/u/57044804?v=4" width="100px;" alt=""/><br /><sub><b>Lauro Silva</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/commits?author=laurosilvacom" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/tekjar"><img src="https://avatars0.githubusercontent.com/u/6826529?v=4" width="100px;" alt=""/><br /><sub><b>Ravi Teja</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/issues?q=author%3Atekjar" title="Bug reports">🐛</a> <a href="#blog-tekjar" title="Blogposts">📝</a></td>
     <td align="center"><a href="https://github.com/fhammerschmidt"><img src="https://avatars3.githubusercontent.com/u/18074327?v=4" width="100px;" alt=""/><br /><sub><b>Florian Hammerschmidt</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/pulls?q=is%3Apr+reviewed-by%3Afhammerschmidt" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://thorstenball.com"><img src="https://avatars3.githubusercontent.com/u/1185253?v=4" width="100px;" alt=""/><br /><sub><b>Thorsten Ball</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/pulls?q=is%3Apr+reviewed-by%3Amrnugget" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
