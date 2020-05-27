@@ -55,7 +55,7 @@ const SEO = ({ postData, frontmatter = {}, postImage, isBlogPost }) => (
       })
 
       const image = isBlogPost ? socialImage : seo.image
-      console.log(image, 'hi image')
+
       return (
         <React.Fragment>
           <Helmet>
