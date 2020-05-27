@@ -566,7 +566,7 @@ Some other highlights:
 
 ## Overall Thoughts
 
-I really enjoyed the book! I feel like I unlocked a new understand. Now, I know how interpreters work. And thanks to that, I have a better understanding of what's happening under the hood! Following along with the author felt straightforward.
+I really enjoyed the book! I feel like I unlocked a new understanding. Now, I know how interpreters work. And thanks to that, I have a better understanding of what's happening under the hood! Following along with the author felt straightforward.
 
 I now have a [fully-functioning interpreter](https://github.com/jsjoeio/monkey)! I never thought I would do something like this, and I probably wouldn't have attempted it on my own without this book.
 
