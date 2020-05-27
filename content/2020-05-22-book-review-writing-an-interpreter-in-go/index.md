@@ -15,7 +15,8 @@ I believe it was [@sugarpirate](https://twitter.com/sugarpirate_) who originally
 
 I took their word. And now I can say, they were right.
 
-##### Table of Contents
+<details>
+  <summary>Table of Contents</summary>
 
 - [Notes](#notes)
   - [Introduction](#introduction)
@@ -70,6 +71,8 @@ I took their word. And now I can say, they were right.
 - [Overall Thoughts](#overall-thoughts)
 - [Recommend the Book?](#recommend-the-book)
 - [Purchase the Book](#purchase-the-book)
+
+</details>
 
 ## Notes
 
