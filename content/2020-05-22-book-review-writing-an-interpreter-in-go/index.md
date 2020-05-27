@@ -167,7 +167,7 @@ One of my favorite parts was learning about the limited token types. Thorsten ha
 
 ```go
 const (
-	EOF = "EOF" // end of file
+  EOF = "EOF" // end of file
   // Identifiers + literals
   IDENT = "IDENT" // add, foobar, x, y
   INT = "INT" // 134
