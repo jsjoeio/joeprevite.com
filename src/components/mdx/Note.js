@@ -25,3 +25,5 @@ export function Note({ children }) {
     </div>
   )
 }
+
+export default Note
