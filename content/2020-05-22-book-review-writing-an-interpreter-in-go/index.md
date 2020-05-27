@@ -87,7 +87,7 @@ The part that resonated with me was the last sentence in hat quote -- "people th
 
 > "Tree-walking interpreter"
 
-I highlighted this because I know I'll forgot what it means if I don't write it down. Summarized, it means an interpreter that parses the source code, builds an abstract syntax tree (AST) and then evaluates it. The "tree" comes from AST. The "walking" comes from walking down the tree.
+I highlighted this because I know I'll forget what it means if I don't write it down. Summarized, it means an interpreter that parses the source code, builds an abstract syntax tree (AST) and then evaluates it. The "tree" comes from AST. The "walking" comes from walking down the tree.
 
 Lexer vs. parser?
 
