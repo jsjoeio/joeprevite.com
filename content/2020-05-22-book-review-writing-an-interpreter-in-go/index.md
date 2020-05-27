@@ -189,7 +189,7 @@ One of my favorite parts was learning about the limited token types. Thorsten ha
 
 ```go
 const (
-	EOF = "EOF" // end of file
+  EOF = "EOF" // end of file
   // Identifiers + literals
   IDENT = "IDENT" // add, foobar, x, y
   INT = "INT" // 134
@@ -274,7 +274,7 @@ I bet I could write a blog post on this alone (I don't know all of the differenc
 
 #### binding vs identifier vs expression
 
-I wrote a note to myself "define binding identifier vs. expression." Let's give it a shot. Let statements like `let x = 5;` bind the expression "5" to the identifier "x". And as Thorsten reminds us, "Expressions produce values, statments don't" (Ball 42). To be clear, if we take this `let x = 5;` it is a statement because it does not produce a value. However, this `5` does produce a value. It's like a tupperware container with some food inside. The tupperware doesn't give us food, but if we go inside and look, we get food.
+I wrote a note to myself "define binding identifier vs. expression." Let's give it a shot. Let statements like `let x = 5;` bind the expression "5" to the identifier "x". And as Thorsten reminds us, "Expressions produce values, statements don't" (Ball 42). To be clear, if we take this `let x = 5;` it is a statement because it does not produce a value. However, this `5` does produce a value. It's like a tupperware container with some food inside. The tupperware doesn't give us food, but if we go inside and look, we get food.
 
 #### AST with Nodes
 
@@ -342,7 +342,7 @@ Sidenote: I love that he abbreviates literal to `lit` in our helper functions. I
 
 #### prefixParseFns and infixParseFns
 
-I found this part of the book a bit confusing. I'm struggling to even explain what I don't know...If I have the integer `5`, why do I call `prefixParseFns`? Is it because I need to check if `5` has a prefix such as a minus sign "-"? Ah...now that I'm writing this, I think that's it. Because as a human, I can look at `-5` and say, "Yes, that has a prefix we need to parse." But as a machine, I don' know that from looking at the token alone because these tokens `5` and `-5` are the same token type but have different values.
+I found this part of the book a bit confusing. I'm struggling to even explain what I don't know...If I have the integer `5`, why do I call `prefixParseFns`? Is it because I need to check if `5` has a prefix such as a minus sign "-"? Ah...now that I'm writing this, I think that's it. Because as a human, I can look at `-5` and say, "Yes, that has a prefix we need to parse." But as a machine, I don't know that from looking at the token alone because these tokens `5` and `-5` are the same token type but have different values.
 
 This is also the part of the parser where we look at precedence, which also confused me.
 
