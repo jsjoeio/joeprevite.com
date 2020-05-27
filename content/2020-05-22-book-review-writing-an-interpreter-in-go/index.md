@@ -91,7 +91,7 @@ I highlighted this because I know I'll forget what it means if I don't write it 
 
 Lexer vs. parser?
 
-I felt confused in the beginning what the difference once. In my own words, the lexer takes input like characters "1;" and goes, "Ah! Yes. That input is equal to these tokens {token.INTEGER, '1', token.SEMICOLON, ';'}" The parser says, "Ah! Thank you lexer for the tokens, I will turn those into an AST."
+I felt confused in the beginning as to what the difference was. In my own words, the lexer takes input like characters "1;" and goes, "Ah! Yes. That input is equal to these tokens {token.INTEGER, '1', token.SEMICOLON, ';'}" The parser says, "Ah! Thank you lexer for the tokens, I will turn those into an AST."
 
 > Every interpreter is built to interpret a specific programming language. That's how you "implement" a programming language. Without a compiler or an interpreter, a programming language is nothing more than an idea or a specification.
 >
