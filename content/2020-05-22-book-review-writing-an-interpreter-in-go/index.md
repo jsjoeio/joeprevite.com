@@ -109,6 +109,22 @@ let previte = { name: 'Joe', age: 26 }
 
 In the book (which uses Go), the author refers to it as a hash. In JavaScript, I would call this an object. In Python, one might call it a dictionary. Why can't we all decide on one name and use it across all languages? If someone knows the answer to this, please fill me in!
 
+_Update_: Thorsten left a comment filling me in,
+
+> Imagine me waving my hand here, slightly moving my head and saying "Hmm, well, it's not that easy..."
+>
+> What Python calls dictionaries is what Go calls maps and what's usually referred to as hash table (hash for short, or hash map): https://en.wikipedia.org/wiki/Hash_table
+>
+> JavaScript objects are their own datatype (remember, they also have methods and attributes, which hash tables do not have). Under the hood, a JavaScript object can be implemented with hash tables, though. But that's just an implementation detail when we're talking about whether JavaScript objects are hash tables: they're not.
+>
+> But what gets everyone confused is that their _literal_ syntax looks really similar (map[string]string{"foobar": "barfoo"} in Go and {"foobar": "barfoo"} in JavaScript) and that hash tables in other languages often encode to objects in JSON.
+
+One of the key pieces of my own misunderstanding is this thing he said -> **remember, [JavaScript objects] also have methods and attributes, which hash tables do not have**
+
+I did not realize this. I thought they were objects and hash tables were one-to-one. Thankful to have been taught correctly!
+
+Beyond that, the literal syntax is where the confusion stems: it looks the same so I/we assume it is! Oops.
+
 #### first class functions
 
 I wrote a note to myself, "define this in your own words." It's when a programming language supports functions out of the box? No, it has to be more than that (don't most programming languages support first class functions?).
@@ -154,6 +170,12 @@ https://excalidraw.com/#json=5086916491870208,sLUFfW5oMgrO3ApQwe4YQw
 > -Ball 15
 
 I wrote this down to highlight **lex** and remind myself how to use it in a sentence. An example, "The first thing our interpreter does is lex the source code to generate tokens. The tokens are then parsed into an abstract syntax tree."
+
+<Note>
+
+Note: others use the word "tokenize" or "scan" which may be more correct/accurate.
+
+</Note>
 
 #### identifiers
 
@@ -382,6 +404,14 @@ Thorsten mentions this,
 
 And I thought, "Do I really know what this means?" And the answer is no, no I do not. Wikipedia [explains it](https://en.wikipedia.org/wiki/Serialization) well. I'll summarize it as taking something, translating it into a data structure or object and storing it for later use (possibly restructuring it).
 
+_Updated_: comment from Thorsten,
+
+> The colloquial term would be "dumping" 😉 As in "What we want is an AST that (dumped as a string)..."
+>
+> Or "converting".
+
+That makes more sense now!
+
 ### Chapter 3 - Evaluation
 
 This is the part where the abstract syntax trees are turned into something meaningful.
@@ -411,6 +441,12 @@ A bit later, Thorsten does touch on a few. He mentions the Ruby example.
 I hadn't heard this term before. According to [Wikipedia](https://en.wikipedia.org/wiki/Intermediate_representation),
 
 > intermediate representation is the [data structure](https://en.wikipedia.org/wiki/Data_structure) or code used internally by a [compiler](https://en.wikipedia.org/wiki/Compiler) or [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine) to represent [source code](https://en.wikipedia.org/wiki/Source_code).
+
+_Updated_: comment from Thorsten,
+
+> Intermediate Representation is often shortened to "IR". LLVM IR, for example, is the intermediate representation used by the LLVM compiler toolchain. That often pops up when there's talk around the Rust compiler, for example, which uses LLVM :)
+
+Aha! The LLVM compiler toolchain - something that keeps coming up that I should dig into more!
 
 #### just in time
 

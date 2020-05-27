@@ -7,8 +7,6 @@ tagline: 'MDX for the win'
 published: true
 ---
 
-import { Note } from '../../src/components/Note'
-
 Back when I was looking for inspiration while building my personal website and blog, I stumbled upon [Tania Rascia's site](https://www.taniarascia.com/understanding-generators-in-javascript/).
 
 One of my favorite parts were her "custom blocks" - colorful components used to annoate or add helpful information to her articles. I made a note to create some for mine when I had the time.
