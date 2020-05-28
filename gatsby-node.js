@@ -23,9 +23,9 @@ const VALID_TAGS = new Set([
  */
 function validateTags(tags, onError) {
   tags.forEach(tag => {
-    const invalidTag = !VALID_TAGS.has(tag)
+    const doesNotHaveTag = !VALID_TAGS.has(tag)
 
-    if (invalidTag) {
+    if (doesNotHaveTag) {
       // Call the callback
       onError()
     }
@@ -37,32 +37,20 @@ const createPosts = (createPage, createRedirect, edges, reporter) => {
     const prev = i === 0 ? null : edges[i - 1].node
     const next = i === edges.length - 1 ? null : edges[i + 1].node
     const pagePath = node.fields.slug
+    const tags = node.fields.tags
 
-    /*
-    Okay I figured out what I need to do. Here are the next steps:
+    validateTags(tags, () =>
+      reporter.error(
+        `Invalid tag${
+          tags.length > 1 ? 's' : ''
+        } "${tags}" found in post with slug: "${pagePath}"
 
-    1. [X] Change "categories" to "tags"
-    2. Add function to validateTags(tags, callback)
-    3. Add logic to check and if it fails, callback(`warning`)
-    4. Check to see what happens when no categories
-    5. Check to see what happens if spelled incorrectly.
-    /*
-    // TODO finish adding logic here.
-    // const ALLOWED_CATEGORIES = new Set([`javascript`])
-    // if (i === 0) {
-    //   reporter.error(`Bad category`)
-    // }
-    */
-   console.log('here are the tags', node.fields.tags)
-   // STOPPED here
-   /*
-   next step is to call the validateTags function with node.fields.tags
-   and see if it works
+As a reminder, these are the valid tags: ${[...VALID_TAGS]}
 
-   use the reporter
-
-   also use it for success
-   */
+If this is a valid tag, please add to VALID_TAGS in /gatsby-node.js
+        `,
+      ),
+    )
 
     if (node.fields.redirects) {
       node.fields.redirects.forEach(fromPath => {
@@ -155,9 +143,6 @@ exports.createPages = ({ actions, graphql, reporter }) =>
     const { edges } = data.allMdx
     const { createRedirect, createPage } = actions
     createPosts(createPage, createRedirect, edges, reporter)
-    // createPaginatedPages(actions.createPage, edges, '/blog', {
-    //   categories: [],
-    // })
   })
 
 exports.onCreateWebpackConfig = ({ actions }) => {
