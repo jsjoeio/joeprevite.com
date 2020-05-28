@@ -5,11 +5,52 @@ const paginate = require('gatsby-awesome-pagination')
 const PAGINATION_OFFSET = 7
 const IS_DEV_MODE = process.env.NODE_ENV === 'development'
 
-const createPosts = (createPage, createRedirect, edges) => {
+// keep alphabetical
+const VALID_TAGS = new Set([
+  `Book`,
+  `GitHub`,
+  `JavaScript`,
+  `macOS`,
+  `Reason`,
+  `Rust`,
+  `TypeScript`,
+])
+
+/**
+ * validates the tags used in content frontmatter
+ * @param tags {string[]} the tags you want to validate
+ * @param onError {function} the function to call if it encounters an invalid tags
+ */
+function validateTags(tags, onError) {
+  tags.forEach(tag => {
+    const doesNotHaveTag = !VALID_TAGS.has(tag)
+
+    if (doesNotHaveTag) {
+      // Call the callback
+      onError()
+    }
+  })
+}
+
+const createPosts = (createPage, createRedirect, edges, reporter) => {
   edges.forEach(({ node }, i) => {
     const prev = i === 0 ? null : edges[i - 1].node
     const next = i === edges.length - 1 ? null : edges[i + 1].node
     const pagePath = node.fields.slug
+    const tags = node.fields.tags
+
+    validateTags(tags, () =>
+      reporter.error(
+        `Invalid tag${
+          tags.length > 1 ? 's' : ''
+        } "${tags}" found in post with slug: "${pagePath}"
+
+As a reminder, these are the valid tags: ${[...VALID_TAGS]}
+
+If this is a valid tag, please add to VALID_TAGS in /gatsby-node.js
+        `,
+      ),
+    )
 
     if (node.fields.redirects) {
       node.fields.redirects.forEach(fromPath => {
@@ -54,6 +95,7 @@ query {
           title
           slug
           date
+          tags
         }
       }
     }
@@ -80,6 +122,7 @@ query {
           title
           slug
           date
+          tags
         }
       }
     }
@@ -87,7 +130,7 @@ query {
 }
 `
 
-exports.createPages = ({ actions, graphql }) =>
+exports.createPages = ({ actions, graphql, reporter }) =>
   graphql(POSTS_QUERY_STRING).then(({ data, errors }) => {
     if (errors) {
       return Promise.reject(errors)
@@ -99,10 +142,7 @@ exports.createPages = ({ actions, graphql }) =>
 
     const { edges } = data.allMdx
     const { createRedirect, createPage } = actions
-    createPosts(createPage, createRedirect, edges)
-    // createPaginatedPages(actions.createPage, edges, '/blog', {
-    //   categories: [],
-    // })
+    createPosts(createPage, createRedirect, edges, reporter)
   })
 
 exports.onCreateWebpackConfig = ({ actions }) => {
@@ -215,9 +255,17 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
 
     createNodeField({
-      name: 'categories',
+      name: 'tags',
       node,
-      value: node.frontmatter.categories || [],
+      value: node.frontmatter.tags || [],
+    })
+
+    // TODO - validate types somewhere
+    // should support: post, page, snippet
+    createNodeField({
+      name: 'type',
+      node,
+      value: node.frontmatter.type || '',
     })
 
     createNodeField({
