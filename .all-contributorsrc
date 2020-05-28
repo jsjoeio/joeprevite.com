@@ -211,6 +211,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "gillkyle",
+      "name": "Kyle Gill",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/21114044?v=4",
+      "profile": "https://kylegill.com",
+      "contributions": [
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
