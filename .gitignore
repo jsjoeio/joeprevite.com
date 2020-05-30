@@ -35,3 +35,6 @@ public
 .env
 .env.development
 .env.production
+
+# firebase
+service-account.json
