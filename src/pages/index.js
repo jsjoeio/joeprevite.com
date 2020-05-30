@@ -27,6 +27,10 @@ const Hero = () => {
   const theme = useTheme()
   const date = new Date()
 
+  fetch('/.netlify/functions/hello')
+    .then(response => response.json())
+    .then(console.log)
+
   return (
     <section
       css={css`

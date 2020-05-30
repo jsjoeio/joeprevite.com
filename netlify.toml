@@ -1,4 +1,5 @@
 [build]
+  functions = "functions"
   publish = "public"
 
 [[plugins]]
