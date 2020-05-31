@@ -38,3 +38,7 @@ public
 
 # firebase
 service-account.json
+serviceAccountKey.json
+
+# netlify funcs
+functions-build
