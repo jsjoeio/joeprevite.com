@@ -42,3 +42,5 @@ serviceAccountKey.json
 
 # netlify funcs
 functions-build
+# Local Netlify folder
+.netlify
