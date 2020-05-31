@@ -27,7 +27,7 @@ const Hero = () => {
   const theme = useTheme()
   const date = new Date()
 
-  fetch('/.netlify/functions/hello')
+  fetch('/.netlify/functions/page-views')
     .then(response => response.json())
     .then(console.log)
 
