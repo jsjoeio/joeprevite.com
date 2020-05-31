@@ -59,7 +59,7 @@ export default function Post({
               }
             `}
           >
-            {date && <h3>{date}</h3>}
+            {date && <p>{date}</p>}
             <p>12,000 views</p>
           </div>
           {/* {banner && (
