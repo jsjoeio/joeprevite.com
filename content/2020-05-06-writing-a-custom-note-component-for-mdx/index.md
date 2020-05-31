@@ -22,7 +22,7 @@ Code:
 ```jsx
 <Note>
   <p>hello</p>
-</Note>>
+</Note>
 ```
 
 Rendered:
