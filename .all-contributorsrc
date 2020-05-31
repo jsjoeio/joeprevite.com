@@ -220,6 +220,15 @@
       "contributions": [
         "ideas"
       ]
+    },
+    {
+      "login": "jatin2003",
+      "name": "Jatin Rao",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/56562571?v=4",
+      "profile": "http://jatin2003.github.io",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
