@@ -1,16 +1,4 @@
-const admin = require('firebase-admin')
-const serviceAccountKey = require('../serviceAccountKey.json')
-
-admin.initializeApp({
-  credential: admin.credential.cert({
-    client_email: process.env.FIREBASE_CLIENT_EMAIL,
-    private_key: process.env.FIREBASE_PRIVATE_KEY,
-    project_id: 'website-pageviews-c8d4d',
-  }),
-  databaseURL: 'https://website-pageviews-c8d4d.firebaseio.com/',
-})
-
-const db = admin.database()
+import { db } from '../src/lib/db-admin'
 
 exports.handler = async (event, context) => {
   const { id } = event.queryStringParameters
