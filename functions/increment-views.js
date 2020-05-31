@@ -10,24 +10,21 @@ exports.handler = async (event, context) => {
       }),
     }
   }
-  // working state
 
   const ref = db.ref('joeprevite-dot-com/views').child(id)
+  const { snapshot } = await ref.transaction(currentViews => {
+    if (currentViews === null) {
+      return 1
+    }
 
-  let totalViews
-  await ref.once('value', snapshot => {
-    const value = snapshot.val()
-    console.log('from firebase db:', value)
-    totalViews = value
+    return currentViews + 1
   })
-
-  console.log('here is total views', totalViews)
 
   return {
     statusCode: 200,
     body: JSON.stringify({
       pageId: id,
-      totalViews,
+      totalViews: snapshot.val(),
     }),
   }
 }

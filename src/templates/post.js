@@ -6,6 +6,7 @@ import SEO from 'components/SEO'
 import Container from 'components/Container'
 import Layout from '../components/Layout'
 import Share from '../components/Share'
+import ViewCounter from '../components/ViewCounter'
 import config from '../../config/website'
 
 export default function Post({
@@ -60,7 +61,7 @@ export default function Post({
             `}
           >
             {date && <p>{date}</p>}
-            <p>12,000 views</p>
+            <ViewCounter id="test" />
           </div>
           {/* {banner && (
             <div
