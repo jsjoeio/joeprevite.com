@@ -18,22 +18,24 @@ exports.handler = async (event, context) => {
       }),
     }
   }
+  // working state
 
-  // This database has all my website page views
-  // so we need to look at the specific site
-  // then look at the views table which has {key: value} where key is the id for the page
   const ref = db.ref('joeprevite-dot-com/views').child(id)
 
+  let totalViews
   await ref.once('value', snapshot => {
-    // grab the total views
-    const totalViews = snapshot.val()
-
-    return {
-      statusCode: 200,
-      body: JSON.stringify({
-        pageId: id,
-        totalViews: totalViews !== null ? totalViews : 0,
-      }),
-    }
+    const value = snapshot.val()
+    console.log('what is this ', value)
+    totalViews = value
   })
+
+  console.log('here is totla views', totalViews)
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      pageId: id,
+      totalViews: 100,
+    }),
+  }
 }
