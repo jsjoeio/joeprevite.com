@@ -2,7 +2,11 @@ const admin = require('firebase-admin')
 const serviceAccountKey = require('../serviceAccountKey.json')
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccountKey),
+  credential: admin.credential.cert({
+    client_email: process.env.FIREBASE_CLIENT_EMAIL,
+    private_key: process.env.FIREBASE_PRIVATE_KEY,
+    project_id: 'website-pageviews-c8d4d',
+  }),
   databaseURL: 'https://website-pageviews-c8d4d.firebaseio.com/',
 })
 
@@ -25,11 +29,11 @@ exports.handler = async (event, context) => {
   let totalViews
   await ref.once('value', snapshot => {
     const value = snapshot.val()
-    console.log('what is this ', value)
+    console.log('from firebase db:', value)
     totalViews = value
   })
 
-  console.log('here is totla views', totalViews)
+  console.log('here is total views', totalViews)
 
   return {
     statusCode: 200,
