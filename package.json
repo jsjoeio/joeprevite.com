@@ -80,7 +80,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages && netlify-lambda build functions",
+    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages && yarn build:lambda",
     "build:lambda": "netlify-lambda build functions",
     "build:local": "gatsby build",
     "g:post": "hygen post new",
