@@ -63,6 +63,7 @@
     "serve": "^11.2.0",
     "typescript": "^3.8.3",
     "typography": "^0.16.19",
+    "webpack-node-externals": "^1.7.2",
     "yup": "^0.28.0"
   },
   "devDependencies": {
@@ -82,12 +83,12 @@
   "main": "n/a",
   "scripts": {
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages && yarn build:lambda",
-    "build:lambda": "netlify-lambda build functions",
+    "build:lambda": "netlify-lambda build --config ./config/webpack.functions.js functions",
     "build:local": "gatsby build",
     "g:post": "hygen post new",
     "dev": "gatsby develop",
     "start": "run-p start:**",
     "start:app": "npm run dev",
-    "start:lambda": "netlify-lambda serve functions"
+    "start:lambda": "netlify-lambda serve --config ./config/webpack.functions.js functions"
   }
 }
