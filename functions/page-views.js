@@ -1,8 +1,19 @@
 exports.handler = async (event, context) => {
+  const { id } = event.queryStringParameters
+  if (!id) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({
+        error: 'Missing "id" query parameter',
+      }),
+    }
+  }
+
   return {
     statusCode: 200,
     body: JSON.stringify({
-      data: `Test data added successfully`,
+      pageId: id,
+      totalViews: 100,
     }),
   }
 }
