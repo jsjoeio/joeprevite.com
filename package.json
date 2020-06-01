@@ -13,6 +13,7 @@
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.5",
     "@weknow/gatsby-remark-twitter": "^0.2.3",
+    "comma-number": "^2.0.1",
     "core-js": "^3.3.3",
     "dotenv": "^8.2.0",
     "dotenv-parse-variables": "^0.2.3",
