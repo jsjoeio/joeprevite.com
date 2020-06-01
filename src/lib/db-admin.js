@@ -8,7 +8,7 @@ export function getFirebaseDbAdmin() {
   // We don't want to initializeApp twice
   // so we check the length i.e. the number of apps
   // if it's non-existant, we need to reinitialize
-  if (!admin || !admin.apps.length) {
+  if (admin.apps.length === 0 || !admin.database) {
     try {
       admin.initializeApp({
         credential: admin.credential.cert({
