@@ -3,7 +3,7 @@
  * @see https://github.com/leerob/leerob.io/blob/master/components/ViewCounter.js
  */
 import React, { useState, useEffect } from 'react'
-// import format from 'comma-number';
+import format from 'comma-number'
 
 import { loadDb } from '../lib/db'
 
@@ -11,18 +11,15 @@ const ViewCounter = ({ id }) => {
   const [views, setViews] = useState('')
 
   useEffect(() => {
-    console.log('effect running')
-    const onViews = newViews => {
-      console.log(newViews.val(), 'is this empty')
-      setViews(newViews.val())
-    }
+    const onViews = newViews => setViews(newViews.val())
+
     let db
 
     const fetchData = async () => {
-      console.log('fetching data')
       db = await loadDb()
-      console.log(db, 'hi db')
-      db.child(id).on('value', onViews)
+      db.child(id).on('value', onViews, error => {
+        console.error('Error reading value', error)
+      })
     }
 
     fetchData()
@@ -34,8 +31,6 @@ const ViewCounter = ({ id }) => {
     }
   }, [id])
 
-  console.log('show me the views', views)
-
   useEffect(() => {
     const registerView = () =>
       fetch(`/.netlify/functions/increment-views?id=${id}`)
@@ -43,7 +38,7 @@ const ViewCounter = ({ id }) => {
     registerView()
   }, [id])
 
-  return <p>{`${views ? views : '–––'} views`}</p>
+  return <p>{`${views ? format(views) : '–––'} views`}</p>
 }
 
 export default ViewCounter
