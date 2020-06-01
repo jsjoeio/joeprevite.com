@@ -12,10 +12,9 @@ function Post({ post }) {
     `/.netlify/functions/page-views?id=${post.fields.slug}`,
     fetcher,
   )
+
   const views = data?.totalViews
-  console.log(views)
-  // if (typeof window !== 'undefined') {
-  // }
+
   return (
     <div
       css={css`
