@@ -174,6 +174,9 @@ const getGlobalStyles = theme => {
     summary {
       display: list-item;
     }
+    small {
+      color: ${lighten(0.35, theme.colors.black)};
+    }
   `
 }
 

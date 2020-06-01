@@ -1,3 +1,7 @@
+/**
+ * credit to @leerob who wrote this
+ * @see https://github.com/leerob/leerob.io/blob/master/lib/db-admin.js
+ */
 const admin = require('firebase-admin')
 
 try {

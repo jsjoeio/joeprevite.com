@@ -10,8 +10,6 @@ exports.handler = async (event, context) => {
       }),
     }
   }
-  // working state
-
   const ref = db.ref('joeprevite-dot-com/views').child(id)
 
   let totalViews
@@ -27,7 +25,7 @@ exports.handler = async (event, context) => {
     statusCode: 200,
     body: JSON.stringify({
       pageId: id,
-      totalViews,
+      totalViews: totalViews !== null ? totalViews : 0,
     }),
   }
 }

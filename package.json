@@ -64,6 +64,7 @@
     "react-share": "^4.0.1",
     "react-typography": "^0.16.19",
     "serve": "^11.2.0",
+    "swr": "^0.2.2",
     "typescript": "^3.8.3",
     "typography": "^0.16.19",
     "webpack-node-externals": "^1.7.2",
