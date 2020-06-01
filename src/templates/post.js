@@ -61,7 +61,7 @@ export default function Post({
             `}
           >
             {date && <p>{date}</p>}
-            <ViewCounter id="test" />
+            <ViewCounter id={slug} />
           </div>
           {/* {banner && (
             <div
