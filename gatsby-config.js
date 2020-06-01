@@ -1,11 +1,23 @@
 const config = require('./config/website')
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
+const { createProxyMiddleware } = require('http-proxy-middleware')
 
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {
+  developMiddleware: app => {
+    app.use(
+      '/.netlify/functions/',
+      createProxyMiddleware({
+        target: 'http://localhost:9000',
+        pathRewrite: {
+          '/.netlify/functions/': '',
+        },
+      }),
+    )
+  },
   pathPrefix: config.pathPrefix,
   siteMetadata: {
     siteUrl: config.siteUrl + pathPrefix,

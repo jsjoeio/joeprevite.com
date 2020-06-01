@@ -28,6 +28,7 @@ const typography = new Typography({
   overrideStyles: ({ rhythm }) => ({
     h1: {
       color: 'hsla(0,0%,0%,0.75)',
+      fontSize: '2.75rem',
     },
     h2: {
       color: 'hsla(0,0%,0%,0.775)',

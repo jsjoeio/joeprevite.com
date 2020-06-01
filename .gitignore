@@ -35,3 +35,12 @@ public
 .env
 .env.development
 .env.production
+
+# firebase
+service-account.json
+serviceAccountKey.json
+
+# netlify funcs
+functions-build
+# Local Netlify folder
+.netlify

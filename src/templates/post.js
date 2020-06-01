@@ -6,6 +6,7 @@ import SEO from 'components/SEO'
 import Container from 'components/Container'
 import Layout from '../components/Layout'
 import Share from '../components/Share'
+import ViewCounter from '../components/ViewCounter'
 import config from '../../config/website'
 
 export default function Post({
@@ -40,9 +41,11 @@ export default function Post({
           <div
             css={css`
               display: flex;
-              justify-content: center;
-              margin-bottom: 20px;
+              justify-content: space-between;
+              align-items: center;
+              margin: 0 auto 20px;
               h3,
+              p,
               span {
                 text-align: center;
                 font-size: 15px;
@@ -51,9 +54,14 @@ export default function Post({
                 font-weight: normal;
                 margin: 0 5px;
               }
+              h3,
+              p {
+                margin-bottom: 0;
+              }
             `}
           >
-            {date && <h3>{date}</h3>}
+            {date && <p>{date}</p>}
+            <ViewCounter id={slug} />
           </div>
           {/* {banner && (
             <div
