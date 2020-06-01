@@ -59,7 +59,7 @@ const Articles = ({ data: { site, allMdx } }) => {
           <input
             type="text"
             id="filter"
-            placeholder="Type to filter posts..."
+            placeholder="Type to filter articles..."
             onChange={handleInputChange}
             css={css`
               margin-top: 0;
