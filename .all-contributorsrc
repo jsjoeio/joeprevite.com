@@ -229,6 +229,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "leerob",
+      "name": "Lee Robinson",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/9113740?v=4",
+      "profile": "https://leerob.io",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
