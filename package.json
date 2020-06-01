@@ -26,7 +26,7 @@
     "formik": "^2.0.8",
     "framer-motion": "^1.10.3",
     "gatsby": "^2.21.9",
-    "gatsby-awesome-pagination": "^0.3.4",
+    "gatsby-awesome-pagination": "^0.3.6",
     "gatsby-embedder-excalidraw": "^1.0.2",
     "gatsby-image": "^2.2.37",
     "gatsby-plugin-catch-links": "^2.1.15",
