@@ -45,7 +45,7 @@ const config = {
     private_key:
       process.env.FIREBASE_PRIVATE_KEY[0] === '-'
         ? process.env.FIREBASE_PRIVATE_KEY
-        : JSON.parse(process.env.FIREBASE_PRIVATE_KEY),
+        : process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
     project_id: 'website-pageviews-c8d4d',
   }),
   databaseURL: 'https://website-pageviews-c8d4d.firebaseio.com/',
