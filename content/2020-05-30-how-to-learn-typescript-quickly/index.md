@@ -18,7 +18,7 @@ Imagine you're in Mario Kart and racing on a new map. You will only have achieve
 
 - [ ] TODO Finish the analogy of the mario kart
 - "Make Your Map" - Vision / Timeframe / Timeline / Organization
-- "Stay on Track" - Momentum / Accountability / Sharing /
+- "Stay on Track" -  Accountability / Momentum / Sharing / Focus
 - "Find the Flag" - Practice / Confidence / Vocabulary / Depth
 
 - [ ] TODO add excalidraw photo
@@ -75,10 +75,31 @@ We now have our timeframe and expectation of how much we plan to dedicate each w
 
 ### Build a Timeline
 
-- week by week what we will do
-- keeps us on track
-- think less
-- not perfect, but we strive for it and readjust as needed
+The next thing we need to add to our map is a timeline. Think of this as a week by week calendar. It helps you think less because you have already decided what to do for that week. It won't be perfect. You may need to readjust, but at least you've established the framing. 
+
+An example:
+
+- [ ] Week 1 (June 1)
+  - [ ] Programming TypeScript
+    - [ ] Chapter 1 - Introduction 
+    - [ ] Chapter 2 - TypeScript: a 10_000 foot view
+      - [ ] Book exercises
+    - [ ] Chapter 3 - All About Types
+      - [ ] Book exercises 
+  - [ ] Official TypeScript Handbook (OTH)
+    - [ ] Basic Types
+    - [ ] Variable Declarations 
+
+You know yourself best. Think back to our Timeframe Formula. We estimated 8hrs/week and 12 weeks in total. Knowing the speed that you read it, you would adjust accordingly. A complete timeline would have weeks 1-12 filled out. 
+
+Two important tips:
+
+1. Leave a week or two for buffer towards the end (you may need it)
+2. Give yourself some breathing room
+
+Life comes up and you may fall behind. That's where the buffer comes in! Some weeks, you may find that you complete everything in 6 hours. No need to fill those two other hours if you don't want to. Use it to breath. 
+
+With your timeline, you'll be good to go!
 
 ### Keep it Organized
 
@@ -87,17 +108,60 @@ We now have our timeframe and expectation of how much we plan to dedicate each w
 - Tools
   - Notion, pen and paper, something else
 
+## Stay on Track 
 
+- Something
 
-- Keep it organized
-- Build momentum
-- Have accountability
-- Decide where to share and
-- Practice
+### Keep Yourself Accountable
+
+- Something
+
+### Build Momentum 
+
+- Something
+
+### Share with Others
+
+- Something
+
+### Keep Your Focus
+
+- Somethign 
+
+## Find the Flag
+
+- something
+
+### Practice  
+
+- Something
+
+### Build Confidence
+
 - Tools to stay focused
 - Build TypeScript Confidence
-- Go for Depth
-- Look for Patterns
-- Summary
-- Further Resources
-- Interested in Ultralearning Guide?
+
+### Don't Skip Vocab 
+
+- remember english tests in high school?
+- i would study last minute just enough, then forget them all. don't do that
+- Anki, spaced-repetition system 
+
+### Go for Depth
+
+- something 
+
+### Look for Patterns 
+
+- something 
+- TODO (consider the order, this before Depth?)
+
+## Summary
+
+- what did we learn, it's all about systems
+- systems are x y z 
+
+### Interested in Ultralearning Guide?
+
+- free
+- sign up to get it (gumroad or ConvertKit?)
