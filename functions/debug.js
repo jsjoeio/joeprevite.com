@@ -9,8 +9,7 @@ exports.handler = async (event, context) => {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      pageId: id,
-      totalViews: totalViews !== null ? totalViews : 0,
+      message: 'debugging in prod',
     }),
   }
 }
