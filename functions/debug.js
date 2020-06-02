@@ -1,11 +1,8 @@
-const { MY_SCRET_KEY1, MY_SCRET_KEY2 } = process.env
+import testConfig from '../src/lib/test'
 
 exports.handler = async (event, context) => {
   console.log('DEBUG: function has fired')
-  console.log(JSON.stringify(process.env))
-  Object.entries(process.env).forEach((key, value) => {
-    console.log(`Key: ${key}\nValue: ${value}`)
-  })
+  console.log(`this should show the private key: ${testConfig.privateKey}`)
   return {
     statusCode: 200,
     body: JSON.stringify({
