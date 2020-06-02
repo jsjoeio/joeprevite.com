@@ -35,17 +35,18 @@
 //   return admin.database()
 // }
 
+const { FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY } = process.env
 const admin = require('firebase-admin')
 
 // Due to the way the key is provided by Netlify
 // in production, we need to use the ternary
 const config = {
   credential: admin.credential.cert({
-    client_email: process.env.FIREBASE_CLIENT_EMAIL,
+    client_email: FIREBASE_CLIENT_EMAIL,
     private_key:
-      process.env.FIREBASE_PRIVATE_KEY[0] === '-'
-        ? process.env.FIREBASE_PRIVATE_KEY
-        : process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+      FIREBASE_PRIVATE_KEY[0] === '-'
+        ? FIREBASE_PRIVATE_KEY
+        : JSON.parse(FIREBASE_PRIVATE_KEY),
     project_id: 'website-pageviews-c8d4d',
   }),
   databaseURL: 'https://website-pageviews-c8d4d.firebaseio.com/',
