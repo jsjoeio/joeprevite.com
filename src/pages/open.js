@@ -42,7 +42,11 @@ const Open = ({ data: { site } }) => {
               </tr>
               <tr>
                 <td>Article Views</td>
-                <td>{format(totalPageViews)}</td>
+                <td>{`${
+                  totalPageViews !== null && totalPageViews !== undefined
+                    ? format(totalPageViews)
+                    : '–––'
+                } views`}</td>
               </tr>
             </tbody>
           </table>

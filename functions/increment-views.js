@@ -1,6 +1,7 @@
-import { db } from '../src/lib/db-admin'
+import firebaseDb from '../src/lib/db-admin'
 
 exports.handler = async (event, context) => {
+  const db = firebaseDb.database()
   const { id } = event.queryStringParameters
   if (!id) {
     return {
