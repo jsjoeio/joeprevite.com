@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import useSWR from 'swr'
-import { css } from '@emotion/core'
 import Container from 'components/Container'
 import SEO from '../components/SEO'
 import Layout from '../components/Layout'
