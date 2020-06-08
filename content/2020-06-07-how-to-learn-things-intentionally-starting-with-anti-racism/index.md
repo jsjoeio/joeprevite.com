@@ -9,6 +9,7 @@ tags: ['Anti-Racism', 'Learning']
 ---
 
 > It’d be great if you applied this learning technique to your studying of anti-racist texts and helped fellow dudes to learn. Though perhaps “intentionally” instead of “quickly” for that application.
+>
 > —[Tatiana Mac](https://twitter.com/TatianaTMac/status/1267683637987688449?s=20)
 
 This was a reply I received not too long ago in response to the pinned tweet on my [profile](https://twitter.com/jsjoeio).
