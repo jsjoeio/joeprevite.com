@@ -177,6 +177,10 @@ const getGlobalStyles = theme => {
     small {
       color: ${lighten(0.35, theme.colors.black)};
     }
+    .contains-task-list {
+      /* Don't show bullets for task lists */
+      list-style: none;
+    }
   `
 }
 

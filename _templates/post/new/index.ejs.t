@@ -8,6 +8,7 @@ title: "<%= h.inflection.titleize(title) %>"
 description: "<%= description %>"
 tagline: "<%= h.inflection.capitalize(tagline) %>"
 published: false
+tags:
 ---
 
 
