@@ -7,9 +7,11 @@ const IS_DEV_MODE = process.env.NODE_ENV === 'development'
 
 // keep alphabetical
 const VALID_TAGS = new Set([
+  `Anti-Racism`,
   `Book`,
   `GitHub`,
   `JavaScript`,
+  `Learning`,
   `macOS`,
   `Reason`,
   `Rust`,
