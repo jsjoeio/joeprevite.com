@@ -103,30 +103,58 @@ With your timeline, you'll be good to go!
 
 ### Keep it Organized
 
-- A place to keep track, log notes, check off boxes
-- Check-in every day
-- Tools
-  - Notion, pen and paper, something else
+You want to stay organized on this journey. That means a place to keep track of your timeline, log any notes or things you learn and have visual indicators for the progress you're making.
+
+I use Notion for this becauase it supports this type of project management really well. I make a place for the project. I add the timeline and use checkboxes. Then I check them off as I go and take notes as I learn new things. 
+
+Here are a list of tools you might want to check out:
+
+- Notion
+- Trello
+- Asana
+- GitHub Projects
+
+It goes without saying that you could also use an analog tool like pen and paper.
 
 ## Stay on Track 
 
-- Something
+Now that we have our map, we are ready for the next phase: stay on track. 
+
+In this phase, the goal is develop systems that help us stay accountable, build momentum, share with others and stay focused.
 
 ### Keep Yourself Accountable
 
-- Something
+You always want someway to stay accountable for your project. Think of this like your race crew (if Mario had one). They make sure you're fueled, your tires are rotated and you're ready to finish the race. We want a similar type of support and accountability.
+
+It could be:
+
+- a group of friends 
+- a family member 
+- a friend online
+
+All you need is at least one person with whom you can share updates. They don't have to know TypeScript or even know how to code. But they do need to be someone whom you can check-in with on a regular basis. For TypeScript, I recommend looking for 2-3 people who will join you in your TypeScript journey. I would post:
+
+- on Twitter, using the #100DaysOfCode hashtag or #CodeNewbie
+- on Dev.to, starting a discussion and sharing the project
+- on the TypeScript Discord
+
+Between these three, I am 99.9% sure you'll find success. 2-3 is ideal, but at least 1 other person.
 
 ### Build Momentum 
 
-- Something
+- small wins
+- Momentum
+- success spiral
 
 ### Share with Others
 
-- Something
+- Mediums	
 
 ### Keep Your Focus
 
-- Somethign 
+- Limit your focus 
+- Deep work
+- Tools
 
 ## Find the Flag
 
@@ -134,7 +162,8 @@ With your timeline, you'll be good to go!
 
 ### Practice  
 
-- Something
+- build a project
+- open source
 
 ### Build Confidence
 
@@ -147,14 +176,16 @@ With your timeline, you'll be good to go!
 - i would study last minute just enough, then forget them all. don't do that
 - Anki, spaced-repetition system 
 
+### Look for Patterns
+
+- Learning syntax
+- new languages 
+- TODO (consider the order, this before Depth?)
+
 ### Go for Depth
 
-- something 
-
-### Look for Patterns 
-
-- something 
-- TODO (consider the order, this before Depth?)
+- feynman technique
+- Ultralearning
 
 ## Summary
 
