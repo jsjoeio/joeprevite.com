@@ -20,8 +20,12 @@ Imagine you're in Mario Kart and racing on a new map. You will only have achieve
 - "Make Your Map" - Vision / Timeframe / Timeline / Organization
 - "Stay on Track" -  Accountability / Momentum / Sharing / Focus
 - "Find the Flag" - Practice / Confidence / Vocabulary / Depth
-
 - [ ] TODO add excalidraw photo
+- [ ] TODO fix we/you
+- [ ] add small wins article
+- [ ] check motivation hacker success spiral definition
+- [ ] check star wars quote
+- [ ] replace -- with em dash
 
 ## Make your Map
 
@@ -142,13 +146,40 @@ Between these three, I am 99.9% sure you'll find success. 2-3 is ideal, but at l
 
 ### Build Momentum 
 
-- small wins
-- Momentum
-- success spiral
+You want momentum. Momentum will keep you going on the track and heading towards the finish line.
+
+Think **small wins**, **milestones** and **success spirals**.
+
+Small wins are the little accomplishments that we oftentimes take for granted. Examples are things like learning a new concept or finishing a chapter in book. Celebrate these.
+
+Milestones are the next step up. These can either be date-based or achievment-based. Date-based would be hitting the 1-month mark in your 3-month timeframe for your learning project. Achievement-based would be finishing one of your key results. Either way, these are things to be celerbated and help you sustain the momentum.
+
+Success spiral is a term I first heard in Motivation Hack by Nick Winter. It's the idea that you set yourself up for success for starting small and moving outwards, like a spiral. In this case with TypeScript, maybe you say, "I'm going to write one line of TypeScript a day." Sounds trivial, right? Good, it should. You start there, establish the habit, then build upwards and outwards. Upwards meaning you continue doing it everyday. Outwards meaning you increase the lines of code (without losing the habit). 
 
 ### Share with Others
 
-- Mediums	
+> Pass on what you learn, Luke..
+>
+> --Yoda
+
+One of the most important parts of staying on track is sharing with others and Learning in Public. There are various mediums you can choose from for sharing. 
+
+- Tweets
+- Blog Posts
+- Podcasts
+- Videos
+- Tutorials
+- Courses
+
+Any of these ways work - and there are probably more I didn't list. This will help you for a number of reasons:
+
+- Help you retain what you're learning
+- Build expertise in the area
+- Meet others who are learning
+
+When I was learning TypeScript, I tweeted as I learned. Not only did I meet other TypeScript community members, but people corrected me or taught me new things. Towards the end, people started tweeted me asking for TypeScript help. I didn't always know the answer, but my sharing with others and learning in public helped me build **reputation** and **credibility**. 
+
+I even ended up attracting the attention of an editor for a tech blog who paid me to write a few TypeScript articles for them. As you can see, it pays to share with others.
 
 ### Keep Your Focus
 
