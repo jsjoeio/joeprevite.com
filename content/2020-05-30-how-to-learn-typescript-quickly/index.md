@@ -26,6 +26,9 @@ Imagine you're in Mario Kart and racing on a new map. You will only have achieve
 - [ ] check motivation hacker success spiral definition
 - [ ] check star wars quote
 - [ ] replace -- with em dash
+- [ ] add link to deep work by cal Newport
+- [ ] add stretchly link
+- [ ] add link to tiny compiler
 
 ## Make your Map
 
@@ -183,20 +186,32 @@ I even ended up attracting the attention of an editor for a tech blog who paid m
 
 ### Keep Your Focus
 
-- Limit your focus 
-- Deep work
-- Tools
+The last piece I want to touch on for staying on track is keeping your focus. If you want to make it to finish line, you have to stay focused. The first and foremost is **limit your focus**. Ideally, learning TypeScript is your main focus. I wouldn't suggest doing this and learning Rust or another language or something else. Keeping your attention on one project increases the likelihood you'll stay on track.
+
+The other thing you might want to try is **deep work**. An idea by Cal Newport, it's where you create an environment that lets you focus on that project for a certain amount of time (such as 1 hour or more). Figure out when you're most productive. For me, it's in the morning before work. I wake up early, go through my routine and then spend some time learning.
+
+Lastly, find tools to help you stay focused. I am a big fan of the **pomodoro technique**. I have an app called Stretchly that reminds me to take a 20-second break every 20 minutes and a 5-minute break every 40 minutes. This allow me to focus for that period of time and then rest. It then repeats itself like a cycle. 
 
 ## Find the Flag
 
-- something
+The last and final leg of this learning journey is finding the flag. You want to make it to the finish line and feel accomplished when you get there. 
+
+Here you want to use systems that will help you practice, build confidence, remember vocabulary, identify patterns and go for depth so that you find the checkered flag with flying colors.
 
 ### Practice  
 
-- build a project
-- open source
+Learning means nothing without practice. With your new TypeScript knowledge, you can build projects or contribute to open source. This is where the application phase of the learning cycle appears. It doesn't matter what you build, but that the act of building happens. When I was learning, I followed a tutorial to build a tiny compiler. It was written in JavaScript, which meant writing in TypeScript forced me to figure out things on my own.
+
+Other things I did included contributing to open source. Remember our key results? Here's two of them that apply here:
+
+- Contribute to TypeScript, [the language](https://github.com/microsoft/TypeScript/issues?q=is%3Aopen+is%3Aissue+label%3A"good+first+issue")
+- Contribute to [typescript-cheatsheets/react-typescript-cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
+
+This is where that happens if it hasn't already! The issues that you help with may be minor, but the practice is where you learn the most. 
 
 ### Build Confidence
+
+Stopped here...
 
 - Tools to stay focused
 - Build TypeScript Confidence
