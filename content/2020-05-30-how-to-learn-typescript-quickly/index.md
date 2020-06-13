@@ -29,6 +29,7 @@ Imagine you're in Mario Kart and racing on a new map. You will only have achieve
 - [ ] add link to deep work by cal Newport
 - [ ] add stretchly link
 - [ ] add link to tiny compiler
+- [ ] add link to Anki
 
 ## Make your Map
 
@@ -211,22 +212,24 @@ This is where that happens if it hasn't already! The issues that you help with m
 
 ### Build Confidence
 
-Stopped here...
+You want to build confidence in whatever you learning. This will make you feel comfortable using your new knowledge. 
 
-- Tools to stay focused
-- Build TypeScript Confidence
+In the case of TypeScript, you want to build **TypeScript Confidence**. There are various ways to do this including:
+
+- teaching others
+- sharing (as we said before)
+- reviewing what you've learned
+- helping others
 
 ### Don't Skip Vocab 
 
-- remember english tests in high school?
-- i would study last minute just enough, then forget them all. don't do that
-- Anki, spaced-repetition system 
+Vocabulary is often overlooked. Don't skip out on it! It helps build confidence and it will help solidify what you know. It's also a great tool to fight imposter syndrome. Knowing the vocabulary will allow you to build expertise as well. 
 
-### Look for Patterns
+To learn and remember vocabulary, use a *spaced-repetition system* such as Anki. I used it when I was studying TypeScript. You can use it to remember things such as:
 
-- Learning syntax
-- new languages 
-- TODO (consider the order, this before Depth?)
+- Terminology
+- Concepts
+- Patterns
 
 ### Go for Depth
 
