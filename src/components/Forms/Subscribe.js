@@ -81,8 +81,7 @@ class SignUp extends React.Component {
                 margin-top: 0;
               `}
             >
-              I send an email or two per month to share things I'm excited about.
-              I'd be delighted if you signed up.
+              I send a couple emails per month related to programming and learning. I also share goodies and deals here.
             </p>
           </>
         )}
@@ -102,6 +101,7 @@ class SignUp extends React.Component {
                     align-items: flex-end;
                     button {
                       margin-left: 10px;
+                      white-space: nowrap;
                     }
                     .field-error {
                       display: block;
@@ -163,8 +163,8 @@ class SignUp extends React.Component {
                       padding: 6px 15px;
                     `}
                   >
-                    {!isSubmitting && 'Submit'}
-                    {isSubmitting && 'Submitting...'}
+                    {!isSubmitting && 'Sign me up!'}
+                    {isSubmitting && 'Signing you up...'}
                   </Button>
                 </Form>
               )}
