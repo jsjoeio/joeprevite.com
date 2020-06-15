@@ -30,6 +30,7 @@ Imagine you're in Mario Kart and racing on a new map. You will only have achieve
 - [ ] add stretchly link
 - [ ] add link to tiny compiler
 - [ ] add link to Anki
+- [ ] add definition of ultralearning by scott young
 
 ## Make your Map
 
@@ -230,18 +231,30 @@ To learn and remember vocabulary, use a *spaced-repetition system* such as Anki.
 - Terminology
 - Concepts
 - Patterns
+- Syntax
 
 ### Go for Depth
 
-- feynman technique
-- Ultralearning
+The last thing in the Find the Flag phase is going for depth. Deep learning. Deep understanding. There are two techniques you can use to deepen what you learn. The first is called the Feynman Technique. Take a concept your learning, such as type inference in TypeScript and explain it like you would to a seven-year old. 
+
+The idea is that if you can't do that, you need to learn the concept deeper. 
+
+Note: the age of the person whom you're explaining your learning concept to can vary. Do what you feel more comfortable with. The goal is for you to be able to explain something you understand to someone with little knowledge or context.
+
+The second technique I want to point out is called Ultralearning. In his book, Scott Young explains Ultralearning as, 
+
+> ....
+
+Think of it as taking something, learning quickly and diving deep. You can use this with your own learning projects. While you're learning, take notes of questions you have or concepts you don't quite understand. Then at the end of your project, see if those questions remain. If they do, start a new learning project and focus on answering those questions. As you can imagine, if you do this with a topic, you'll have several learning projects and soon start to develop expertise in this subject. It's very powerful. 
 
 ## Summary
+
+stopped here
 
 - what did we learn, it's all about systems
 - systems are x y z 
 
-### Interested in Ultralearning Guide?
+### Interested in TypeScript Guide?
 
 - free
 - sign up to get it (gumroad or ConvertKit?)
