@@ -18,7 +18,7 @@ The article covers various aspects of the ecosystem including community, compani
 
 ## Overview
 
-One of the hardest parts of understanding a programming language is setting the boundaries for what you encapsulate as part of and not part of the ecosystem. I gathered input from the Facebook OSS Team and my mentors in order to set the criteria for this project. You may agree or disagree with some of the areas (which I welcome whole-heartedly in the comments section). For our purposes,  I choose to limit it to the following areas, which you’ll see below. For each section, you can expect:
+One of the hardest parts of understanding a programming language is setting the boundaries for what you encapsulate as part of and not part of the ecosystem. I gathered input from the Facebook OSS Team and my mentors in order to set the criteria for this project. You may agree or disagree with some of the areas (which I welcome wholeheartedly in the comments section). For our purposes,  I choose to limit it to the following areas, which you’ll see below. For each section, you can expect:
 *   A brief description of how I defined the section
 *   Key highlights from the ecosystem for that area of the ecosystem
 
@@ -42,7 +42,7 @@ When you look at the programming language, how do you know who is using it? What
 
 *   Respondents' top five languages: English, Chinese, German, French and Japanese
 *   Top five industries using Rust: Backend Web Applications, Distributed Systems, Embedded Devices, IT and Network Programming
-*   Top three titles for Rust users: Programer/Software Engineer, Systems Architect, Web Developer/Front End Developer
+*   Top three titles for Rust users: Programmer/Software Engineer, Systems Architect, Web Developer/Front End Developer
 
 It’s unfortunate that we do not have more information related to demographics such as gender, ethnicity, race, etc. There was an attempt to gather some of this information in the [2016 survey](https://blog.rust-lang.org/2016/06/30/State-of-Rust-Survey-2016.html). Know that this section contains a small glimpse into the people of the Rust and is far from complete or representative of the ecosystem.
 
@@ -344,7 +344,7 @@ The objective for this section was to figure out where Rust code can run. What p
 
 ### Selling Points
 
-Everyone will have their favorite reasons for using one language over another. I tried to select articles related to the selling points, but also highlight features of the language brought up by people who advocate for it. 
+Everyone will have their favorite reasons for using one language over another. I tried to select articles related to the selling points, but also highlight features of the language brought up by people who advocate for it.
 
 
 
