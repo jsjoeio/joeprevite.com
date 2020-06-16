@@ -5,6 +5,7 @@ title: 'Book Review: No Excuses by Brian Tracy'
 description: 'My notes and thoughts on no excuses by brian tracy'
 tagline: 'My thoughts and highlights'
 published: true
+tags: ['Book']
 ---
 
 Recently, I finished ["No Excuses" by Brian Tracy](https://amzn.to/2TeaVsM) as part of my [Goodreads](https://www.goodreads.com/user/show/57078398-joe-previte) [reading challenge](https://www.goodreads.com/challenges/11621-2020-reading-challenge). I wanted to use this post to reflect on why I read the book, my overall thoughts and things I highlighted.

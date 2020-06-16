@@ -5,6 +5,7 @@ title: 'Create a GitHub Issue Template'
 description: 'A short tutorial on how to add a GitHub issue template to your project.'
 tagline: 'A handy way to standardize contributions'
 published: true
+tags: ['GitHub']
 ---
 
 Similar to [PR templates](https://joeprevite.com/github-pr-template), issue templates are another favorite of mine when setting up projects on GitHub. You've probably seen them if you've opened an issue on an open source project. It looks like this:

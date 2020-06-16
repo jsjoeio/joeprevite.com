@@ -6,7 +6,7 @@ description: 'My notes and thoughts on &#34;effective typescript&#34; by dan van
 tagline: 'My notes and thoughts'
 published: true
 banner: ''
-tags: ['TypeScript']
+tags: ['TypeScript', 'Book']
 ---
 
 [![cover of effective typescript](https://images-na.ssl-images-amazon.com/images/I/41jnU0V%2BcBL._SX379_BO1,204,203,200_.jpg)](https://amzn.to/2tcTQVJ)

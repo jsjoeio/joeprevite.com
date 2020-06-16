@@ -5,6 +5,7 @@ title: 'Create a Twitter Card for Your Blog'
 description: 'Learn how to quickly create a twitter card for your blog using an npm package and cloudinary.'
 tagline: 'Automate with npm package and cloudinary'
 published: true
+tags: ['Twitter']
 ---
 
 As [@swyx](https://twitter.com/swyx) puts it, the Twitter card or more importantly `og:image` is important because

@@ -5,6 +5,7 @@ title: 'Writing a Custom Note Component for MDX'
 description: 'A short post exploring how I wrote a custom note component for MDX.'
 tagline: 'MDX for the win'
 published: true
+tags: ['JavaScript']
 ---
 
 Back when I was looking for inspiration while building my personal website and blog, I stumbled upon [Tania Rascia's site](https://www.taniarascia.com/understanding-generators-in-javascript/).

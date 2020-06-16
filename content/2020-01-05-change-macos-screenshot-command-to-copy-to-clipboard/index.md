@@ -6,6 +6,7 @@ description: 'Save yourself some time by copying screenshots to your clipboard.'
 tagline: 'Up your productivity'
 published: true
 banner: ''
+tags: ['macOS']
 ---
 
 1. Go to **System Preferences > Keyboard > Shortcuts**

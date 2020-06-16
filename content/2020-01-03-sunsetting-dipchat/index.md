@@ -6,6 +6,7 @@ tagline: 'Goodbye after less than 6 months'
 description: 'Why I decided to sunset dip.chat after less than 6 months'
 published: true
 banner: ''
+tags: ['Miscellaneous']
 ---
 
 ![Screenshot of dip.chat website.](https://i.ibb.co/nP46K6j/image.png)

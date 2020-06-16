@@ -5,6 +5,7 @@ title: 'How to Render Data from a GraphQL API in ReasonReact'
 description: 'A short post explaining how to render data from a GraphQL API in ReasonReact.'
 tagline: 'Fighting nullable types in your data'
 published: true
+tags: ['Reason']
 ---
 
 Recently, I decided to start learning [ReasonReact](https://reasonml.github.io/reason-react/). I chose it because my friend [Sean Grove](https://twitter.com/sgrove) recommended it, but also because I've been looking for an excuse to use Reason on a project.

@@ -5,6 +5,7 @@ title: 'Create a GitHub PR Template'
 description: 'A short tutorial on how to add a GitHub PR template to your project.'
 tagline: 'A handy addition for standardizing contributions'
 published: true
+tags: ['GitHub']
 ---
 
 PR templates are one of my favorite features. I can't remember when I first learned about them but essentially, it's a template which appears when someone opens a pull request on your project. This comes in handy for projects with multiple contributors.
