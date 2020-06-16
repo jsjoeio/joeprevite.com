@@ -5,6 +5,7 @@ title: 'Book Review: Writing an Interpreter in Go'
 description: 'My notes and thoughts on Writing an Interpreter in Go by Thorsten Ball'
 tagline: 'My notes and thoughts'
 published: true
+tags: ['Book', 'Go']
 ---
 
 ![Writing an interpreter in go paperback on wood](./book_cover.jpg)

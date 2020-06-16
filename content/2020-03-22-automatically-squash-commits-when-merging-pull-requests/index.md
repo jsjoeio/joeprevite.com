@@ -5,6 +5,7 @@ title: 'Automatically Squash Commits When Merging PRs'
 description: 'A short tutorial on how to automatically squash commits when merging a pull request on github.'
 tagline: 'Keep those commits squeaky clean'
 published: true
+tags: ['GitHub']
 ---
 
 In the past, I didn't think much about my commit messages or my commit history. Over time, that has changed.

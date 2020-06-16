@@ -5,6 +5,7 @@ title: 'Auto-Assign Pull Requests on GitHub'
 description: 'A short tutorial on how to auto-assign pull requests on GitHub.'
 tagline: 'Skip the hassle of manual assignment'
 published: true
+tags: ['GitHub']
 ---
 
 Back when I was working at [Echobind](https://echobind.com/), we used a Slack + GitHub integration to notify you of PRs you needed to review. I loved it! As soon as a PR was assigned to me, I would get a ding on Slack. It worked really well.

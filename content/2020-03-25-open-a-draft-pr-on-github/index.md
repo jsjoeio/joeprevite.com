@@ -5,6 +5,7 @@ title: 'Open a Draft PR on GitHub'
 description: 'A short tutorial on how to open a draft pull request on GitHub.'
 tagline: 'Better than wip labels'
 published: true
+tags: ['GitHub']
 ---
 
 I don't think this feature been out for too long. It's handy when you want to open a PR to show your teammates you're making progress before you're ready for a formal review.

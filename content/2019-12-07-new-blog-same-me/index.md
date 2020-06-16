@@ -5,6 +5,7 @@ title: "Hello, it's me"
 tagline: 'I am writing again'
 description: 'Welcome to the new revised joeprevite.com!'
 published: true
+tags: ['Miscellaneous']
 ---
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">After making small incremental progress on the nights and weekends, I finally rebuilt my blog 😄 I&#39;m going to be writing more often on there now so be on the lookout for upcoming posts!<a href="https://t.co/XrofSYuOew">https://t.co/XrofSYuOew</a>[thread]</p>&mdash; JavaScript Joe (@jsjoeio) <a href="https://twitter.com/jsjoeio/status/1203404822453661699?ref_src=twsrc%5Etfw">December 7, 2019</a></blockquote>

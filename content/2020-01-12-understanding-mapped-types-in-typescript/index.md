@@ -6,6 +6,7 @@ description: 'In this post, we recreate the readonly and partial utility types t
 tagline: 'Recreating TypeScript utility types'
 published: true
 banner: ''
+tags: ['TypeScript']
 ---
 
 After writing my [review on "Effective TypeScript"](book-review-effective-typescript), I shared it with my friend [@swyx](https://twitter.com/swyx). He read through and shared his thoughts.

@@ -10,11 +10,15 @@ const VALID_TAGS = new Set([
   `Anti-Racism`,
   `Book`,
   `GitHub`,
+  `Go`,
   `JavaScript`,
   `Learning`,
   `macOS`,
+  `Miscellaneous`,
+  `OSS`,
   `Reason`,
   `Rust`,
+  `Twitter`,
   `TypeScript`,
 ])
 

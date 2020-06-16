@@ -5,6 +5,7 @@ title: 'Automatically Delete Branches After Merging Pull Requests'
 description: 'A short tutorial on how to automatically delete branches after merging pull requests on GitHub.'
 tagline: 'Keep your branches in order'
 published: true
+tags: ['GitHub']
 ---
 
 We create branches for new features, bugfixes, doc changes and other things. It's easy to forget to delete them after they get merged. Instead of having to remember to delete them, what if you could do it automatically?

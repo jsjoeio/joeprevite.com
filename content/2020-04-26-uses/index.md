@@ -5,6 +5,7 @@ title: 'Uses'
 description: 'Everything related to my setup'
 tagline: 'Everything related to my setup'
 published: true
+tags: ['macOS', 'Miscellaneous']
 ---
 
 One of my favorite things to share with others is setups! It's fun to see what others use and share my own setup.
