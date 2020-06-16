@@ -125,7 +125,7 @@ I’ve heard the term “binary executable.” I know what “binary” means an
 
 ### Compile before you run, you must
 
-When I learned JavaScrpt, I never fully understood the whole compiled vs interpreted lingo. Well, now I have a basic understanding. In most cases, a JavaScript engine (like V8) [“compiles JavaScript code into machine code at execution by implementing a JIT (Just-In-Time) compiler.”](https://blog.sessionstack.com/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e) Notice though, the JS engine does this, not the developer.
+When I learned JavaScript, I never fully understood the whole compiled vs interpreted lingo. Well, now I have a basic understanding. In most cases, a JavaScript engine (like V8) [“compiles JavaScript code into machine code at execution by implementing a JIT (Just-In-Time) compiler.”](https://blog.sessionstack.com/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e) Notice though, the JS engine does this, not the developer.
 
 In Rust (and many other languages), there is a compile step that you, the developer, must do. So you must compile your code before you can run it.
 

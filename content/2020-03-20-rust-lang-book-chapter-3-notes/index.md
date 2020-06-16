@@ -5,7 +5,7 @@ title: 'Rust Lang Book - Chapter 3 Notes'
 description: 'My notes from Chapter 3 of the Rust Lang Book.'
 tagline: 'Common programming concepts'
 published: true
-tags: ['Rust', 'Book']w
+tags: ['Rust', 'Book']
 ---
 
 This is the third blog post in my Rust Ultralearning series. In my [first post](https://joeprevite.com/rust-learning-plan-chapter-1-notes/), I highlighted my study plan and notes on [Chapter 1](https://doc.rust-lang.org/book/ch01-00-getting-started.html) of the [Rust Lang Book](https://doc.rust-lang.org/book/). The [second post](https://joeprevite.com/rust-lang-book-chapter-2-notes) covered my notes on [Chapter 2](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html). Here, I cover my notes on [Chapter 3](https://doc.rust-lang.org/book/ch03-00-common-programming-concepts.html).
