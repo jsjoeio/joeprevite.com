@@ -20,7 +20,7 @@ I haven't used all of the features and I've only had access for a day or two, bu
 
 ### Fantastic Onboarding
 
-I enjoyed the onboarding process. It was easy and straightforward. You choose your email (probably the hardest part), add your personal email, add a password and you're good to go.
+I enjoyed the onboarding process. It was easy and straightforward. You choose your email (probably the hardest part), add your personal email as backup, add a password and you're good to go.
 
 ### Email Screener
 
