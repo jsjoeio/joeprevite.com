@@ -100,7 +100,7 @@ Topics for email threads included:
 
 I don't have numbers related to how much I spend on my laptop, but it's probably fair to say it's at least the same on my iPhone, if not a lot more. We'll guesstimate and say ~5 minutes a day total (iPhone  + Desktop). And that's being conservative. 
 
-I guess that I spend **at least 7 minutes per day on email** and use it to communicate for my own business and personal needs. If it saves me 2 minutes or more per day ($2), then I would save $14/week or $56/month which is well worth the $8.25/month.
+Say I spend **at least 75 minutes per day on email** and use it to communicate for my own business and personal needs. If it saves me 2 minutes or more per day ($2), then I would save $14/week or $56/month which is well worth the $8.25/month.
 
 And this is only one way of justifying it! We could do it from an enjoyment perspective. If HEY provides me with a happy emailing experience (and email is essential to my business, or at least will be down the road when I'm selling content products), then it is worth it from that side as well.
 
