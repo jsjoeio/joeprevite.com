@@ -114,6 +114,6 @@ Feel free to shoot me an email on HEY with your thoughts. jprevite at hey
 
 <Note>
 
-Note: I used to work in the front-end space. I am a big fan of productivity apps and a sucker for good design and good marketing so take what I share here with a grain of salt.
+Note: I used to work in the world of front-end development. I am a big fan of productivity apps and a sucker for good design and good marketing so take what I share here with a grain of salt.
 
 </Note>
