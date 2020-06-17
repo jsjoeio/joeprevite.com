@@ -34,7 +34,7 @@ They break things into three categories, which can loosely be summed up like so:
 2. newsletters and marketing
 3. papertrail
 
-I don't even think I need to explain any of them except maybe the last one is for transactional emails (notifications, receipts, etc.).
+I don't even think I need to explain any of them except maybe the last one, which is for transactional emails (notifications, receipts, etc.).
 
 ### Keyboard Shortcuts
 
