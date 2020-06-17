@@ -108,7 +108,7 @@ And this is only one way of justifying it! We could do it from an enjoyment pers
 
 Big fan of HEY so far! I'll update this post as I explore more features or have more thoughts. If you get the chance to, I recommend checking it out!
 
-Like I said, I think this is going to **change the way we think about email**.
+I predict this will **radically change the way we think about email**.
 
 Feel free to shoot me an email on HEY with your thoughts. jprevite at hey
 
