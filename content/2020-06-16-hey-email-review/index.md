@@ -46,7 +46,7 @@ I am a sucker for good design and style. This app just _feels better_. It loads 
 
 ### Simple Settings
 
-Gmail's settings need their own wiki. HEY keeps it simple and intuitive.
+Gmail's settings need their own wiki. HEY keeps it simple and intuitive. No wiki needed!
 
 ### Email Feels Enjoyable
 
