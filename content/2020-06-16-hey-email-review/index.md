@@ -50,7 +50,7 @@ Gmail's settings need their own wiki. HEY keeps it simple and intuitive. No wiki
 
 ### Email Feels Enjoyable
 
-I don't know what it is - the UI, the cute-touches, the productivity improvements, or the social media-like feel to the app - but this actually makes me _like_ email, or excited to use email. I don't know if I'll say the same thing in a few months (I hope I do!), but it really feels different.
+I don't know what it is - the UI, the cute-touches, the productivity improvements, or the social media-like feel to the app - but **this makes me like email**, or excited to use email. I don't know if I'll say the same thing in a few months (I hope I do!), but it really feels different.
 
 ### Search That Actually Works™
 
