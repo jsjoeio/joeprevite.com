@@ -42,7 +42,7 @@ More and more apps these days are prioritizing keyboard shortcuts and HEY is one
 
 ### Design and Style
 
-I am a sucker for good design and style. This app just feels better. It loads faster than Gmail. The UI looks clean, but has a touch of goodness thanks to some of the "hand-drawn" icons.
+I am a sucker for good design and style. This app just _feels better_. It loads faster than Gmail. The UI looks clean, but has a touch of goodness thanks to some of the "hand-drawn" icons.
 
 ### Simple Settings
 
