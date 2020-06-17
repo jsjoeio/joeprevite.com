@@ -10,7 +10,7 @@ tags: ['Productivity']
 
 My friend Martin [(@spindriftboi](https://twitter.com/spindriftboi)) shared an invite code with me yesterday for [HEY email](https://hey.com/). I quickly joined (sad I didn't get joe@hey.com) and started testing it out.
 
-Honestly, the scariest part is asking yourself, "Did I choose the right domain? Should I have gone with X or Y instead of Z?"
+Honestly, the scariest part is asking yourself, "Did I choose the right name? Should I have gone with X or Y instead of Z?"
 
 In the end, it probably doesn't matter too much, but that's beside the point. Let's get into it!
 
