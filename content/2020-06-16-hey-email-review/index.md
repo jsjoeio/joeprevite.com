@@ -76,7 +76,7 @@ I know this is the first launch and it's not guaranteed to have all the bells an
 - sending password-encrypted emails (less than 5 times per year)
 - search all links shared (like on Telegram)
 
-That's all that comes to mind. I'll update this if those features or added or if more come to mind.
+I'll update this if those features or added or if more come to mind.
 
 ### Worth it?
 
