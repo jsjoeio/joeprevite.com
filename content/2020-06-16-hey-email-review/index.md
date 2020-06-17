@@ -58,7 +58,7 @@ Gmail search sucks. It never works and we all know it. HEY's search looks promis
 
 ### Search All Files
 
-Similar features like on Telegram, I can search through all my files (which is awesome!). Attachments don't need to be uploaded and categorized elsewhere - I can just search for them when i need them.
+Similar features like on Telegram, I can search through all my files (which is awesome!). Attachments don't need to be uploaded and categorized elsewhere - I can just search for them when I need them.
 
 This feels like it should be a feature in Gmail and other email providers.
 
