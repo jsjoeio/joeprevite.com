@@ -64,7 +64,7 @@ This feels like it should be a feature in Gmail and other email providers.
 
 ### Granular Notification Control
 
-I think back when I was interviewing for jobs (before my current one) and how I constantly checked my email for specific threads. I almost went out of my way to set up special notifications through [IFTTT](https://ifttt.com/) to solve the issue of ONLY getting notifications for particular contacts.
+I think back to when I was interviewing for jobs (before my current one) and how I constantly checked my email for specific threads. I almost went out of my way to set up special notifications through [IFTTT](https://ifttt.com/) to solve the issue of ONLY getting notifications for particular contacts.
 
 HEY has this feature out-of-the-box! Pretty sweet.
 
