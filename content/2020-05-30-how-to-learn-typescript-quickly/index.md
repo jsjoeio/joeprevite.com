@@ -2,15 +2,10 @@
 slug: 'learn-typescript-quickly'
 date: '2020-05-30'
 title: 'How to Learn Typescript Quickly'
-description: 'In the post, I show you everything you need to do and know to learn TypeScript quickly.'
+description: 'In the post, I show you everything you need to do to learn TypeScript quickly.'
 tagline: 'The only guide you need'
 published: false
 ---
-
-- introduction
-  - who am I
-  - credibility (I learned TypeScript quickly)
-  - what's the point of this guide
 
 A few months back, I set out a goal to learn TypeScript deeply in 3 months. And I did it! Since then, others have asked how they can do the same. This guide will provide a framework for you to do the same. It's called the "Fast Framework."
 
@@ -249,12 +244,14 @@ Think of it as taking something, learning quickly and diving deep. You can use t
 
 ## Summary
 
-stopped here
+The most important takeaway is **use systems to help you learn better and faster**. They will serve as your map, keep you on track and help you find the flag to finish the race. Following these steps with TypeScript in mind, you will develop a proficiency, possibly even *expertise* in the language. 
 
-- what did we learn, it's all about systems
-- systems are x y z 
+The next steps are to go out and use your new knowledge in the world! See what you can build. Find ways to help other people. 
 
-### Interested in TypeScript Guide?
+And if you're ambitious, I challenge you to go deeper after you finish this learning project. Use this framework and do another round of TypeScript. See how much you can learn! You'll never know the opportunities that may show up as a result.
 
-- free
-- sign up to get it (gumroad or ConvertKit?)
+Tweak this learning framework to your own liking and try it out on other projects - even non-technical ones. Adjust as needed. See how it works.
+
+### Interested in Fast Learning?
+
+I wrote a cheatsheet and short guide for the **Fast Framework**. Think of it as a quick reference for starting your own learning projects. Sign up below and I'll send you a free PDF copy.
