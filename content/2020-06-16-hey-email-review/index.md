@@ -24,7 +24,7 @@ I enjoyed the onboarding process. It was easy and straightforward. You choose yo
 
 ### Email Screener
 
-This is a neat concept. You screen emails before they are allowed in your inbox. It's almost like everything is marked as spam, unless you give it the 👍🏼. Neat idea. Reminds me of Google screening your calls on the Pixel.
+This is a neat concept. You screen emails before they are allowed in your inbox. It's almost like everything is marked as spam, unless you give it the 👍🏼. Cool concept. Reminds me of Google screening your calls on the Pixel.
 
 ### Smarter Workflows
 
