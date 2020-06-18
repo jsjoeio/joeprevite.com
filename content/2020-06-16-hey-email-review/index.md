@@ -16,15 +16,29 @@ In the end, it probably doesn't matter too much, but that's beside the point. Le
 
 ## First Impressions
 
-I haven't used all of the features and I've only had access for a day or two, but here are my first impressions.
+I haven't used all of the features and I've only had access for a few days, but a few things that stuck out:
 
-### Fantastic Onboarding
+- easy onboarding process
+- simple settings
+- ability to search all files
 
-I enjoyed the onboarding process. It was easy and straightforward. You choose your email (probably the hardest part), add your personal email as backup, add a password and you're good to go.
+Beyond that, here are some other thoughts I've had while using HEY.
 
 ### Email Screener
 
-This is a neat concept. You screen emails before they are allowed in your inbox. It's almost like everything is marked as spam, unless you give it the 👍🏼. Cool concept. Reminds me of Google screening your calls on the Pixel.
+This is a neat concept. You screen emails before they are allowed in your inbox. It's almost like everything is marked as spam, unless you give it the 👍🏼. Cool concept. I feel like this should be the default in other email providers. It means no gets into your inbox by default. Instead, they need to be screened or need permission.
+
+### Wicked Fast
+
+The landing page for hey.com along with the app itself app.hey.com feel wicked fast. You can read about the tech stack used in this [tweet thread](https://twitter.com/sstephenson/status/1272608076433166336?s=20). One thing from the thread that I will point out are [Turbolinks](https://github.com/turbolinks/turbolinks). I am not familiar with them, but here's how they're described,
+
+> Get the performance benefits of a single-page application without the added complexity of a client-side JavaScript framework. Use HTML to render your views on the server side and link to pages as usual. When you follow a link, Turbolinks automatically fetches the page, swaps in its `<body>`, and merges its `<head>`, all without incurring the cost of a full page load.
+
+Basically, a SPA without the JS framework. Interesting idea and something worth learning more about!
+
+### Imbox is not a typo
+
+I thought this was kind of hilarioius. Enough people have thought that they spelled "Inbox" wrong that they bought the domain https://itsnotatypo.com, which redirects to https://hey.com/features/the-imbox/. I don't know if it was a genius marketing plot and intentional, or if it's a flop and something they might later change.
 
 ### Smarter Workflows
 
@@ -38,15 +52,13 @@ I don't even think I need to explain any of them except maybe the last one, whic
 
 ### Keyboard Shortcuts
 
+![Screen recording of HEY keyboard shortcuts in action](./hey-keyboard.gif)
+
 More and more apps these days are prioritizing keyboard shortcuts and HEY is one of them. They teach you them from the start, but they also have a keyboard menu in case you forget them. This alone improves your workflow by at least 10% if not more.
 
 ### Design and Style
 
 I am a sucker for good design and style. This app just _feels better_. It loads faster than Gmail. The UI looks clean, but has a touch of goodness thanks to some of the "hand-drawn" icons.
-
-### Simple Settings
-
-Gmail's settings need their own wiki. HEY keeps it simple and intuitive. No wiki needed!
 
 ### Email Feels Enjoyable
 
@@ -56,17 +68,27 @@ I don't know what it is - the UI, the cute-touches, the productivity improvement
 
 Gmail search sucks. It never works and we all know it. HEY's search looks promising. At the time of writing, I have tested with about 20 emails, but it actually finds what I am looking for!
 
-### Search All Files
-
-Similar features like on Telegram, I can search through all my files (which is awesome!). Attachments don't need to be uploaded and categorized elsewhere - I can just search for them when I need them.
-
-This feels like it should be a feature in Gmail and other email providers.
-
 ### Granular Notification Control
 
 I think back to when I was interviewing for jobs (before my current one) and how I constantly checked my email for specific threads. I almost went out of my way to set up special notifications through [IFTTT](https://ifttt.com/) to solve the issue of ONLY getting notifications for particular contacts.
 
 HEY has this feature out-of-the-box! Pretty sweet.
+
+### Features Not Tested
+
+My friend Martin reviewed this and mentioned two features he suggested I mention:
+
+**Bundle Senders**
+
+> HEY has a feature that allows you to [bundle senders](https://hey.com/features/bundles/). I have already used this a lot - it really helps keep your inbox "clean" since multiple emails from the same sender can quickly clog up a quick view of your email inbox.
+
+This sounds super handy! It's something I plan to try out soon.
+
+**Merge Threads**
+
+> I am in the process of buying a house so, as you can imagine, I communicate with a lot of people; however, they are all regarding buying my house. HEY makes it super easy to select two threads and select the [merge](https://hey.com/features/merge-threads/) option.
+
+This also sounds like it could come in handy, especially if you're communicating on the same project across multiple email threads. Another one I have yet to try out, but hope to soon.
 
 ### Features Missing
 
@@ -77,6 +99,10 @@ I know this is the first launch and it's not guaranteed to have all the bells an
 - search all links shared (like on Telegram)
 
 I'll update this if those features or added or if more come to mind.
+
+### Want more?
+
+The founders recorded a [37-minute video](https://www.youtube.com/watch?v=UCeYTysLyGI) giving you a tour. It covers a lot more than what I did here, and you're hearing it from the team who built it. Check it out if you want to learn more!
 
 ### Worth it?
 
@@ -98,9 +124,9 @@ Topics for email threads included:
 - replies to recruiters
 - replies related to blog posts
 
-I don't have numbers related to how much I spend on my laptop, but it's probably fair to say it's at least the same on my iPhone, if not a lot more. We'll guesstimate and say ~5 minutes a day total (iPhone  + Desktop). And that's being conservative. 
+I don't have numbers related to how much I spend on my laptop, but it's probably fair to say it's at least the same on my iPhone, if not a lot more. We'll guesstimate and say ~5 minutes a day total (iPhone + Desktop). And that's being conservative.
 
-Say I spend **at least 75 minutes per day on email** and use it to communicate for my own business and personal needs. If it saves me 2 minutes or more per day ($2), then I would save $14/week or $56/month which is well worth the $8.25/month.
+Say I spend **at least 5 minutes per day on email** and use it to communicate for my own side-business and personal needs. If it saves me 2 minutes or more per day ($2), then I would save $14/week or $56/month which is well worth the $8.25/month.
 
 And this is only one way of justifying it! We could do it from an enjoyment perspective. If HEY provides me with a happy emailing experience (and email is essential to my business, or at least will be down the road when I'm selling content products), then it is worth it from that side as well.
 
