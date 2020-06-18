@@ -154,6 +154,9 @@ It would be impossible to list all the companies that use Rust. This is a sub-se
     *   [Android uses Rust](https://android-review.googlesource.com/q/rust)
     *   [Chromium is beginning to adopt Rust](https://chromium-review.googlesource.com/q/project:experimental/chromium/src+branch:refs/wip/rust-experimental-branch)
     *   Google released an “unofficial” project called `[tarpc](https://github.com/google/tarpc)` “An RPC framework for Rust”
+*   Linkerd
+    * [Linkerd 2 - Service Mesh Proxy](https://github.com/linkerd/linkerd2-proxy)
+    * [Talk](https://youtu.be/5EzbQHaxnS8)
 *   Microsoft
     *   Microsoft featured on [/sponsors](https://www.rust-lang.org/sponsors) page
     *   [“Microsoft opens up Rust-inspired Project Verona programming language on GitHub”](https://www.zdnet.com/article/microsoft-opens-up-rust-inspired-project-verona-programming-language-on-github/) - (Jan 2020)
@@ -289,7 +292,8 @@ Similar to the Community category, learning can be quite difficult to narrow dow
     *   [University of Virginia](http://www.cs.virginia.edu/~evans/cs4414/) (first class)
 *   Tutorials
     *   [Rustlings](https://github.com/rust-lang/rustlings) -  Small exercises to get you used to reading and writing Rust code
-    *   [rust-learning](https://github.com/ctjhoa/rust-learning) - detailed list of awesome learning materials 
+    *   [rust-learning](https://github.com/ctjhoa/rust-learning) - detailed list of awesome learning materials
+    *   [Tour of Rust](https://tourofrust.com/) -  Step by step guide through the features of the Rust programming language 
     *   Courses
         *   [Intro to Rust](https://www.youtube.com/playlist?list=PLJbE2Yu2zumDF6BX6_RdPisRVHgzV02NW) - YouTube 
         *   [Rust Crash Course](https://www.youtube.com/watch?v=zF34dRivLOw) - YouTube 
@@ -314,6 +318,7 @@ One of the most important aspects of a programming language ecosystem is a way t
 
 *   [Cloudsmith](https://cloudsmith.io/l/cargo-registry/) - create your own private cargo registry 
 *   [crates.io](https://crates.io/) - “The Rust community’s crate registry”
+*   [libs.rs](https://lib.rs/) - Fast, lightweight, opinionated, unofficial alternative to crates.io
 
 
 ### Platforms
