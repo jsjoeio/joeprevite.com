@@ -281,6 +281,7 @@ Similar to the Community category, learning can be quite difficult to narrow dow
 - Tutorials
   - [Rustlings](https://github.com/rust-lang/rustlings) - Small exercises to get you used to reading and writing Rust code
   - [rust-learning](https://github.com/ctjhoa/rust-learning) - detailed list of awesome learning materials
+  - [Tour of Rust](https://tourofrust.com/) - Step by step guide through the features of the Rust programming language
   - Courses
     - [Intro to Rust](https://www.youtube.com/playlist?list=PLJbE2Yu2zumDF6BX6_RdPisRVHgzV02NW) - YouTube
     - [Rust Crash Course](https://www.youtube.com/watch?v=zF34dRivLOw) - YouTube
@@ -302,6 +303,7 @@ One of the most important aspects of a programming language ecosystem is a way t
 
 - [Cloudsmith](https://cloudsmith.io/l/cargo-registry/) - create your own private cargo registry
 - [crates.io](https://crates.io/) - “The Rust community’s crate registry”
+- [libs.rs](https://lib.rs/) - "Fast, lightweight, opinionated, unofficial alternative to crates.io"
 
 ### Platforms
 
