@@ -1,31 +1,33 @@
 ---
-slug: 'learn-typescript-quickly'
-date: '2020-05-30'
+	slug: 'learn-typescript-quickly'
+date: '2020-06-19'
 title: 'How to Learn Typescript Quickly'
 description: 'In the post, I show you everything you need to do to learn TypeScript quickly.'
 tagline: 'The only guide you need'
 published: false
 ---
 
-A few months back, I set out a goal to learn TypeScript deeply in 3 months. And I did it! Since then, others have asked how they can do the same. This guide will provide a framework for you to do the same. It's called the "Fast Framework."
+A few months back, I set out a goal to learn TypeScript deeply in 3 months. And [I did it](https://twitter.com/jsjoeio/status/1250490760362774529)! Since then, others have asked how they can do the same. This guide will provide a framework for you to do the same. It's called the **Fast Framework**.
 
-Imagine you're in Mario Kart and racing on a new map. You will only have achieved your goal if you cross the finishline. We'll break it into three phases:
+Imagine you're in Mario Kart and racing on a new map. You will only have achieved your goal if you cross the finishline. Taking this analogy, we'll break it into three phases:
 
-- [ ] TODO Finish the analogy of the mario kart
 - "Make Your Map" - Vision / Timeframe / Timeline / Organization
 - "Stay on Track" -  Accountability / Momentum / Sharing / Focus
 - "Find the Flag" - Practice / Confidence / Vocabulary / Depth
+
+In each phase, we'll cover different aspects of that will help you learn fast and reach your goal. The first phase will cover the foundation for your learning project. Think of this as vision, timeframe, timeine and organization. In the phase after, we'll focus on staying on track.  Here we will dicuss aspects related to accountability, momentum, sharing and focus. Lastly, we'll find the flag and talk about practice, confidence, vocabulary and depth in the final phase of the journey.
+
 - [ ] TODO add excalidraw photo
 - [ ] TODO fix we/you
-- [ ] add small wins article
-- [ ] check motivation hacker success spiral definition
-- [ ] check star wars quote
-- [ ] replace -- with em dash
-- [ ] add link to deep work by cal Newport
-- [ ] add stretchly link
-- [ ] add link to tiny compiler
-- [ ] add link to Anki
-- [ ] add definition of ultralearning by scott young
+- [x] add small wins article
+- [x] check motivation hacker success spiral definition
+- [x] check star wars quote
+- [x] replace -- with em dash
+- [x] add link to deep work by cal Newport
+- [x] add stretchly link
+- [x] add link to tiny compiler
+- [x] add link to Anki
+- [x] add definition of ultralearning by scott young
 
 ## Make your Map
 
@@ -38,7 +40,7 @@ The first step is to make your map. This will help answer questions like:
 
 ### Write a Clear Vision
 
-For our vision, we will define our project and use the Objective Key Results (OKRs) framewor.  If you aren't familiar, this was popularized by the book "[Measure What Matters](https://www.whatmatters.com/)" and is used at companies like Google.
+For the vision, we will define your project and use the Objective Key Results (OKRs) framework.  If you aren't familiar, this was popularized by the book "[Measure What Matters](https://www.whatmatters.com/)" and is used at companies like Google and Intuit.
 
 First, define what you expect to achieve by learning TypeScript.
 
@@ -46,7 +48,7 @@ In my learning project, I wrote:
 
 > Learn TypeScript deeply and become the [Company] "in-house expert"
 
-That will be your  **Objective**.Next, figure out how you're going to *measure* it. Think of these as the **Key Results**. Continuing with my previous project:
+That will be your  **Objective**. Next, figure out how you're going to *measure* it. We refer to these as the **Key Results**. Continuing with my previous project, mine were:
 
 - Read "Programming TypeScript" by Boris Cherny
 
@@ -57,9 +59,13 @@ That will be your  **Objective**.Next, figure out how you're going to *measure* 
 - Contribute to TypeScript, [the language](https://github.com/microsoft/TypeScript/issues?q=is%3Aopen+is%3Aissue+label%3A"good+first+issue")
 - Contribute to [typescript-cheatsheets/react-typescript-cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
 
-Great. We have clarity on what we mean when we say "learn TypeScript." and we know what outcomes we expect.
+**Don't rush through this part**. Spend some time thinking about your objective and what you need to achieve to get there. Completing your key results should allow you to confidently say you've completed your objective. 
+
+With this vision in mind, we now have clarity on what we mean when we say "learn TypeScript." and we know what outcomes we expect to achieve.
 
 ### Establish a Timeframe
+
+STOPPED HERE
 
 We don't want to be racing on this map forever. We need to be realistic and ask ourselves how much time we have for this.
 
@@ -150,17 +156,17 @@ You want momentum. Momentum will keep you going on the track and heading towards
 
 Think **small wins**, **milestones** and **success spirals**.
 
-Small wins are the little accomplishments that we oftentimes take for granted. Examples are things like learning a new concept or finishing a chapter in book. Celebrate these.
+[Small wins](https://hbr.org/2011/05/the-power-of-small-wins) are the little accomplishments that we oftentimes take for granted. Examples are things like learning a new concept or finishing a chapter in book. Celebrate these.
 
 Milestones are the next step up. These can either be date-based or achievment-based. Date-based would be hitting the 1-month mark in your 3-month timeframe for your learning project. Achievement-based would be finishing one of your key results. Either way, these are things to be celerbated and help you sustain the momentum.
 
-Success spiral is a term I first heard in Motivation Hack by Nick Winter. It's the idea that you set yourself up for success for starting small and moving outwards, like a spiral. In this case with TypeScript, maybe you say, "I'm going to write one line of TypeScript a day." Sounds trivial, right? Good, it should. You start there, establish the habit, then build upwards and outwards. Upwards meaning you continue doing it everyday. Outwards meaning you increase the lines of code (without losing the habit). 
+Success spiral is a term I first heard in [Motivation Hack by Nick Winter](http://www.nickwinter.net/the-motivation-hacker). It's the idea that you set yourself up for success for starting small and moving outwards, like a spiral. In this case with TypeScript, maybe you say, "I'm going to write one line of TypeScript a day." Sounds trivial, right? Good, it should. You start there, establish the habit, then build upwards and outwards. Upwards meaning you continue doing it everyday. Outwards meaning you increase the lines of code (without losing the habit). 
 
 ### Share with Others
 
-> Pass on what you learn, Luke..
+> Pass on what you have learned, Luke..
 >
-> --Yoda
+> —Yoda
 
 One of the most important parts of staying on track is sharing with others and Learning in Public. There are various mediums you can choose from for sharing. 
 
@@ -185,9 +191,9 @@ I even ended up attracting the attention of an editor for a tech blog who paid m
 
 The last piece I want to touch on for staying on track is keeping your focus. If you want to make it to finish line, you have to stay focused. The first and foremost is **limit your focus**. Ideally, learning TypeScript is your main focus. I wouldn't suggest doing this and learning Rust or another language or something else. Keeping your attention on one project increases the likelihood you'll stay on track.
 
-The other thing you might want to try is **deep work**. An idea by Cal Newport, it's where you create an environment that lets you focus on that project for a certain amount of time (such as 1 hour or more). Figure out when you're most productive. For me, it's in the morning before work. I wake up early, go through my routine and then spend some time learning.
+The other thing you might want to try is [**deep work**](https://www.calnewport.com/books/deep-work/). An idea by Cal Newport, it's where you create an environment that lets you focus on that project for a certain amount of time (such as 1 hour or more). Figure out when you're most productive. For me, it's in the morning before work. I wake up early, go through my routine and then spend some time learning.
 
-Lastly, find tools to help you stay focused. I am a big fan of the **pomodoro technique**. I have an app called Stretchly that reminds me to take a 20-second break every 20 minutes and a 5-minute break every 40 minutes. This allow me to focus for that period of time and then rest. It then repeats itself like a cycle. 
+Lastly, find tools to help you stay focused. I am a big fan of the **pomodoro technique**. I have an app called [Stretchly](https://hovancik.net/stretchly/) that reminds me to take a 20-second break every 20 minutes and a 5-minute break every 40 minutes. This allow me to focus for that period of time and then rest. It then repeats itself like a cycle. 
 
 ## Find the Flag
 
@@ -197,7 +203,7 @@ Here you want to use systems that will help you practice, build confidence, reme
 
 ### Practice  
 
-Learning means nothing without practice. With your new TypeScript knowledge, you can build projects or contribute to open source. This is where the application phase of the learning cycle appears. It doesn't matter what you build, but that the act of building happens. When I was learning, I followed a tutorial to build a tiny compiler. It was written in JavaScript, which meant writing in TypeScript forced me to figure out things on my own.
+Learning means nothing without practice. With your new TypeScript knowledge, you can build projects or contribute to open source. This is where the application phase of the learning cycle appears. It doesn't matter what you build, but that the act of building happens. When I was learning, I followed a tutorial to [build a tiny compiler](https://github.com/jamiebuilds/the-super-tiny-compiler). It was written in JavaScript, which meant writing in TypeScript forced me to figure out things on my own.
 
 Other things I did included contributing to open source. Remember our key results? Here's two of them that apply here:
 
@@ -221,7 +227,7 @@ In the case of TypeScript, you want to build **TypeScript Confidence**. There ar
 
 Vocabulary is often overlooked. Don't skip out on it! It helps build confidence and it will help solidify what you know. It's also a great tool to fight imposter syndrome. Knowing the vocabulary will allow you to build expertise as well. 
 
-To learn and remember vocabulary, use a *spaced-repetition system* such as Anki. I used it when I was studying TypeScript. You can use it to remember things such as:
+To learn and remember vocabulary, use a *spaced-repetition system* such as [Anki](https://apps.ankiweb.net/). I used it when I was studying TypeScript. You can use it to remember things such as:
 
 - Terminology
 - Concepts
@@ -236,9 +242,11 @@ The idea is that if you can't do that, you need to learn the concept deeper.
 
 Note: the age of the person whom you're explaining your learning concept to can vary. Do what you feel more comfortable with. The goal is for you to be able to explain something you understand to someone with little knowledge or context.
 
-The second technique I want to point out is called Ultralearning. In his book, Scott Young explains Ultralearning as, 
+The second technique I want to point out is called [Ultralearning](https://www.scotthyoung.com/blog/ultralearning/). In his book, Scott Young explains Ultralearning as, 
 
-> ....
+> a strategy for aggressive, self-directed learning.
+>
+> —Scott Young
 
 Think of it as taking something, learning quickly and diving deep. You can use this with your own learning projects. While you're learning, take notes of questions you have or concepts you don't quite understand. Then at the end of your project, see if those questions remain. If they do, start a new learning project and focus on answering those questions. As you can imagine, if you do this with a topic, you'll have several learning projects and soon start to develop expertise in this subject. It's very powerful. 
 
