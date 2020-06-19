@@ -97,6 +97,7 @@ I know this is the first launch and it's not guaranteed to have all the bells an
 - scheduling emails (I use it maybe twice a month)
 - sending password-encrypted emails (less than 5 times per year)
 - search all links shared (like on Telegram)
+- download an email as a PDF
 
 I'll update this if those features or added or if more come to mind.
 
@@ -130,6 +131,8 @@ Say I spend **at least 5 minutes per day on email** and use it to communicate fo
 
 And this is only one way of justifying it! We could do it from an enjoyment perspective. If HEY provides me with a happy emailing experience (and email is essential to my business, or at least will be down the road when I'm selling content products), then it is worth it from that side as well.
 
+Depending on where you live, you could also write it off as a business expense if you use it for your side-business (\*ask your accountant first).
+
 ## Overall
 
 Big fan of HEY so far! I'll update this post as I explore more features or have more thoughts. If you get the chance to, I recommend checking it out!
@@ -143,3 +146,5 @@ Feel free to shoot me an email on HEY with your thoughts. jprevite at hey
 Note: I used to work in the world of front-end development. I am a big fan of productivity apps and a sucker for good design and good marketing so take what I share here with a grain of salt.
 
 </Note>
+
+_Special thanks to [@swyx](https://twitter.com/swyx), [@spindriftboi](https://twitter.com/spindriftboi), and [@chrisoncode](https://twitter.com/chrisoncode) for the review and feedback._
