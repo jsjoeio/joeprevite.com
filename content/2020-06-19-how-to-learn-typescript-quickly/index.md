@@ -4,31 +4,18 @@ date: '2020-06-19'
 title: 'How to Learn Typescript Quickly'
 description: 'In the post, I show you everything you need to do to learn TypeScript quickly.'
 tagline: 'The only guide you need'
-published: false
+published: true
 ---
 
-A few months back, I set out a goal to learn TypeScript deeply in 3 months. And [I did it](https://twitter.com/jsjoeio/status/1250490760362774529)! Since then, others have asked how they can do the same. This guide will provide a framework for you to do the same. It's called the **Fast Framework**.
+A few months back, I set out a goal to learn TypeScript deeply in 3 months. And [I did it](https://twitter.com/jsjoeio/status/1250490760362774529)! Since then, others have asked how they can do the same. This guide will provide you with a framework. It's called the **Fast Framework**.
 
-Imagine you're in Mario Kart and racing on a new map. You will only have achieved your goal if you cross the finishline. Taking this analogy, we'll break it into three phases:
+Imagine you're in Mario Kart and racing on a new map. You will only have achieved your goal if you cross the finishline. Taking this analogy, the framework can be broken into three phases:
 
 - Make your Map - Vision / Timeframe / Timeline / Organization
 - Stay on Track -  Accountability / Momentum / Sharing / Focus
 - Find the Flag - Practice / Confidence / Vocabulary / Depth
 
-In each phase, we'll cover different aspects of that will help you learn fast and reach your goal. The first phase will cover the foundation for your learning project. Think of this as vision, timeframe, timeine and organization. In the phase after, we'll focus on staying on track.  Here, we will dicuss aspects related to accountability, momentum, sharing and focus. Lastly, we'll find the flag and talk about practice, confidence, vocabulary and depth in the final phase of the journey.
-
-- [x] TODO add excalidraw photo
-- [ ] TODO fix we/you
-- [x] figure out if first word in ul should be capitalized 
-- [x] add small wins article
-- [x] check motivation hacker success spiral definition
-- [x] check star wars quote
-- [x] replace -- with em dash
-- [x] add link to deep work by cal Newport
-- [x] add stretchly link
-- [x] add link to tiny compiler
-- [x] add link to Anki
-- [x] add definition of ultralearning by scott young
+In each phase, I'll cover different aspects of that will help you learn fast and reach your goal. The first phase will cover the foundation for your learning project. Think of this as vision, timeframe, timeine and organization. In the phase after, the focus on staying on track and I'll discuss aspects related to accountability, momentum, sharing and focus. Lastly, I'll help you find the flag and talk about practice, confidence, vocabulary and depth in the final phase of the journey.
 
 ## Make your Map
 
@@ -49,7 +36,7 @@ In my learning project, I wrote:
 
 > Learn TypeScript deeply and become the [Company] "in-house expert"
 
-That will be your  **Objective**. Next, figure out how you're going to *measure* it. We refer to these as the **Key Results**. Continuing with my previous project, mine were:
+That will be your **Objective**. Next, figure out how you're going to *measure* it. We refer to these as the **Key Results**. Continuing with my previous project, mine were:
 
 - Read "Programming TypeScript" by Boris Cherny
 
@@ -66,25 +53,23 @@ With this vision in mind, you now have clarity on it means when you say "learn T
 
 ### Establish a Timeframe
 
-You don't want to be racing on this map forever. You need to be realistic and ask yourself how much time we have for this.
+You don't want to be racing on this map forever. You need to be realistic and ask yourself how much time we have for this. Estimating time to complete tasks in software is hard. We'll try our best by using something I like to call the **Timeframe Formula**:
 
-Estimating time to complete tasks in software is hard. We'll try our best by using something I like to call the **Timeframe Formula**:
-
-Take the length of months you want to work on this, multiple by 4 to give us weeks. Then multiple it by the number of hours per week that you want to dedicate.
+Take the length of months you want to work on this, multiple by 4 to give the amount in weeks. Then multiple it by the number of hours per week that you want to dedicate.
 
 https://excalidraw.com/#json=4877101601652736,SeRw5x2aEzwtztaHHk0xUQ
 
-For example, when I did a similar project, I gave myself 3 months with 8 hours per week. Using the Timeframe Formula, we get:
+For example, when I did a similar project, I gave myself 3 months with 8 hours per week. Using the Timeframe Formula, you get:
 
 (3 month * 4 weeks/month) * 8 hours/week = 96 hours total.
 
 https://excalidraw.com/#json=5134809571524608,ASGbR83wxxoafOuInmZ5Ew
 
-We now have our timeframe and expectation of how much we plan to dedicate each week.
+You now have your timeframe and expectation of how much you plan to dedicate each week.
 
 ### Build a Timeline
 
-The next thing we need to add to our map is a timeline. Think of this as a week by week calendar. It helps you think less because you have already decided what to do for that week. It won't be perfect. You may need to readjust, but at least you've established the framing. 
+The next thing we need to add to our map is a timeline. Think of this as a week by week calendar. It helps you think less because you have already decided what to do for that week. It won't be perfect. You may need to readjust, but at least you will have established the framing. 
 
 An example:
 
@@ -99,7 +84,7 @@ An example:
     - [ ] Basic Types
     - [ ] Variable Declarations 
 
-You know yourself best. Think back to our Timeframe Formula. We estimated 8hrs/week and 12 weeks in total. Knowing the speed that you read it, you would adjust accordingly. A complete timeline would have weeks 1-12 filled out. 
+You know yourself best. Think back to the Timeframe Formula. The example estimated 8hrs/week and 12 weeks in total. Knowing the speed that you read it, you would adjust accordingly. A complete timeline would have all the weeks (i.e. 12 in this case) filled out. 
 
 Two important tips:
 
@@ -202,14 +187,18 @@ The last and final leg of this learning journey is finding the flag. You want to
 
 ### Practice  
 
-Learning means nothing without practice. With your new TypeScript knowledge, you can build projects or contribute to open source. This is where the application phase of the learning cycle appears. It doesn't matter what you build, but that the act of building happens. When I was learning, I followed a tutorial to [build a tiny compiler](https://github.com/jamiebuilds/the-super-tiny-compiler). It was written in JavaScript,  but I did it in TypeScript. This forced me to figure out things on my own.
+Learning means nothing without practice. With your new TypeScript knowledge, you can build projects or contribute to open source. This is where the application phase of the learning cycle appears. It doesn't matter what you build, but that the act of building happens. 
+
+When I was learning, I followed a tutorial to [build a tiny compiler](https://github.com/jamiebuilds/the-super-tiny-compiler). It was written in JavaScript,  but I did it in TypeScript. This forced me to figure out things on my own.
 
 Other things I did included contributing to open source. Remember our key results? Here's two of them that apply here:
 
 - Contribute to TypeScript, [the language](https://github.com/microsoft/TypeScript/issues?q=is%3Aopen+is%3Aissue+label%3A"good+first+issue")
 - Contribute to [typescript-cheatsheets/react-typescript-cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
 
-This is where that happens if it hasn't already! The issues that you help with may be minor, but that's not the point.  The point is to practice because it is where you learn the most. 
+This is where that happens if it hasn't already! The issues that you help with may be minor, but that's not the point. 
+
+**Practice is where you learn the most**. 
 
 ### Build Confidence
 
@@ -267,4 +256,4 @@ Tweak this learning framework to your own liking and try it out on other project
 
 ### Interested in Fast Learning?
 
-I wrote a cheatsheet and short guide for the **Fast Framework**. Think of it as a quick reference for starting your own learning projects. Sign up below and I'll send you a free PDF copy.
+I wrote a quick-starters guide for the **Fast Framework**. Think of it as a cheatsheet for starting your own fast learning projects. Sign up below and I'll send you a free PDF copy.
