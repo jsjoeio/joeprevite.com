@@ -8,7 +8,7 @@ published: true
 tags: ['Productivity']
 ---
 
-My friend Martin [(@spindriftboi](https://twitter.com/spindriftboi)) shared an invite code with me yesterday for [HEY email](https://hey.com/). I quickly joined (sad I didn't get joe@hey.com) and started testing it out.
+My friend Martin [(@spindriftboi](https://twitter.com/spindriftboi)) shared an invite code with me a few days ago for [HEY email](https://hey.com/). I quickly joined (sad I didn't get joe@hey.com) and started testing it out.
 
 Honestly, the scariest part is asking yourself, "Did I choose the right name? Should I have gone with X or Y instead of Z?"
 
@@ -26,7 +26,7 @@ Beyond that, here are some other thoughts I've had while using HEY.
 
 ### Email Screener
 
-This is a neat concept. You screen emails before they are allowed in your inbox. It's almost like everything is marked as spam, unless you give it the 👍🏼. Cool concept. I feel like this should be the default in other email providers. It means no gets into your inbox by default. Instead, they need to be screened or need permission.
+This is a neat concept. You screen emails before they are allowed in your inbox. It's almost like everything is marked as spam, unless you give it the 👍🏼. Cool concept. I feel like this should be the default in other email providers. It means nothing gets into your inbox by default. Instead, they need to be screened or need permission.
 
 ### Wicked Fast
 
@@ -58,7 +58,7 @@ More and more apps these days are prioritizing keyboard shortcuts and HEY is one
 
 ### Design and Style
 
-I am a sucker for good design and style. This app just _feels better_. It loads faster than Gmail. The UI looks clean, but has a touch of goodness thanks to some of the "hand-drawn" icons.
+I am a sucker for good design and style. This app just _feels better_. It loads faster than Gmail. The UI looks clean, but has a touch of goodness thanks to some of the hand-drawn icons.
 
 ### Email Feels Enjoyable
 
