@@ -32,69 +32,45 @@ function getNewTags(currentFilterTags, tag) {
 const Articles = ({ data: { site, allMdx } }) => {
   const allPosts = allMdx.edges
   const [filterTags, setFilterTags] = React.useState([])
-
   const [filteredData, setFilteredData] = React.useState([])
-
-  const emptyQuery = ''
-
-  const [state, setState] = React.useState({
-    query: emptyQuery,
-  })
-
-  const { query } = state
-
-  // Runs when a user toggles a filter tag on the page
-  // React.useEffect(() => {
-  // If there are no filter tags
-  // filter out posts who have the filteredTags
-  // const filteredDataWithTags = filteredData.filter(({ node: post }) => {
-  //   const postTags = post.fields.tags
-  // compare these to the filteredTags
-  // example: ['Book', 'Go']
-  // if the filteredTags are ['Go']
-  // we want to loop through the postTags and make it contains every tag in filteredTags
-  // close but not there
-  //     return filterTags.every(tag => postTags.includes(tag))
-  //   })
-  //   console.log(filteredDataWithTags, 'hello')
-  //   setFilteredData(filteredDataWithTags)
-
-  // }, [filterTags, filteredData])
+  const [query, setQuery] = React.useState('')
 
   // This is called when a user types inside the input field
   const handleInputChange = event => {
-    const query = event.target.value
+    const currentQuery = event.target.value
+    console.log(currentQuery, 'hi query')
 
-    const posts = filteredData.length ? filteredData : allPosts
-
-    const updatedData = posts.filter(({ node: post }) => {
-      const title = post.frontmatter.title || ''
-      const excerpt = post.excerpt || ''
-      return (
-        excerpt.toLowerCase().includes(query.toLowerCase()) ||
-        title.toLowerCase().includes(query.toLowerCase())
-      )
-    })
-
-    setState({
-      query,
-    })
-
-    setFilteredData(updatedData)
+    setQuery(currentQuery)
+    handleFilterData(currentQuery, filterTags, allPosts)
   }
 
   const handleTagChange = newTags => {
-    // if there is a tag change...
-    // then we want to do it on the filteredData (if it's not empty)
-    const posts = filteredData.length ? filteredData : allPosts
+    handleFilterData(query, newTags, allPosts)
+  }
 
-    // this might be it
-    const filteredDataWithTags = posts.filter(({ node: post }) => {
-      const postTags = post.fields.tags
-      return newTags.every(tag => postTags.includes(tag))
-    })
+  const handleFilterData = (_query, tags, posts) => {
+    let updatedData = posts
+    // first filter based on tags
+    if (tags.length !== 0) {
+      updatedData = updatedData.filter(({ node: post }) => {
+        const postTags = post.fields.tags
+        return tags.every(tag => postTags.includes(tag))
+      })
+    }
 
-    setFilteredData(filteredDataWithTags)
+    // then filter based on query
+    if (_query !== '') {
+      updatedData = updatedData.filter(({ node: post }) => {
+        const title = post.frontmatter.title || ''
+        const excerpt = post.excerpt || ''
+        return (
+          excerpt.toLowerCase().includes(query.toLowerCase()) ||
+          title.toLowerCase().includes(query.toLowerCase())
+        )
+      })
+    }
+
+    setFilteredData(updatedData)
   }
 
   /*
@@ -112,10 +88,11 @@ const Articles = ({ data: { site, allMdx } }) => {
   */
 
   // console.log('these are the posts', posts)
-  console.log(`these are the filter tags`, filterTags)
-  const hasSearchResults = filteredData && query !== emptyQuery
-  const hasTags = filteredData && filterTags.length !== 0
-  const posts = hasSearchResults || hasTags ? filteredData : allPosts
+  // console.log(`these are the filter tags`, filterTags)
+  // const hasSearchResults = filteredData && query !== ''
+  // const hasTags = filteredData && filterTags.length !== 0
+  // const posts = hasSearchResults || hasTags ? filteredData : allPosts
+  const posts = filteredData.length !== 0 ? filteredData : allPosts
 
   return (
     <Layout site={site}>
