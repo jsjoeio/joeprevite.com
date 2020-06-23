@@ -5,45 +5,189 @@ import Container from 'components/Container'
 import SEO from '../components/SEO'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
+import { useTheme } from '../components/Theming'
+import { VALID_TAGS } from '../lib/tags'
+import { bpMaxSM } from '../lib/breakpoints'
 
-const Articles = ({ data: { site, allMdx } }) => {
-  const allPosts = allMdx.edges
+/*
 
-  const emptyQuery = ''
+TODOS
+- add correct colors (from gatsby-node)
 
-  const [state, setState] = React.useState({
-    filteredData: [],
-    query: emptyQuery,
-  })
+*/
 
-  const handleInputChange = event => {
-    const query = event.target.value
+// It's a Set, which doesn't have filter, so we transform into an array by spreading
+// Also, I'm doing this so that I can use the valid tags and more or less keep the two
+// in sync (VALID TAGS and the filter tags I show)
+// This means, it's impossible to show a tag that is in one list but not both
+const FILTER_TAGS_TO_SHOW = [...VALID_TAGS].filter(tag =>
+  [
+    `GitHub`,
+    `JavaScript`,
+    `Learning`,
+    `Productivity`,
+    `Rust`,
+    `TypeScript`,
+  ].includes(tag),
+)
 
-    const posts = allPosts || []
+const FilterTag = ({ tag, filterTags, setFilterTags, handleTagChange }) => {
+  const theme = useTheme()
+  return (
+    <button
+      css={css`
+        background-color: ${filterTags.includes(tag)
+          ? theme.colors.filterTagsBgActive
+          : theme.colors.filterTagsBg};
+        border: 2px solid ${theme.colors.filterTagsBorder};
+        color: ${theme.colors.filterTagsText};
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
 
-    const filteredData = posts.filter(({ node: post }) => {
-      const title = post.frontmatter.title || ''
-      const excerpt = post.excerpt || ''
-      return (
-        excerpt.toLowerCase().includes(query.toLowerCase()) ||
-        title.toLowerCase().includes(query.toLowerCase())
-      )
-    })
+        &:hover {
+          border-width: 2px;
+          background-color: ${filterTags.includes(tag)
+            ? theme.colors.filterTagsBgActive
+            : theme.colors.filterTagsBgHover};
+        }
+      `}
+      onClick={() => {
+        const newTags = getNewTags(filterTags, tag)
+        setFilterTags(newTags)
+        handleTagChange(newTags)
+      }}
+    >
+      {tag}
+    </button>
+  )
+}
 
-    setState({
-      query,
-      filteredData,
-    })
+// No reason to move this to another file because this
+// is the only place it's being used :)
+/**
+ * @param currentFilterTags {string[]} the current filter tags in state
+ * @param tag {string} the tag to add or remove
+ */
+function getNewTags(currentFilterTags, tag) {
+  // Check if currentFilter tags has it
+  if (currentFilterTags.includes(tag)) {
+    // If it does, we remove it and return the array without it
+    return currentFilterTags.filter(t => t !== tag)
   }
 
-  const { filteredData, query } = state
-  const hasSearchResults = filteredData && query !== emptyQuery
-  const posts = hasSearchResults ? filteredData : allPosts
+  // If it doesn't, we add it
+  return [...currentFilterTags, tag]
+}
+
+const Articles = ({ data: { site, allMdx } }) => {
+  // These are all the posts
+  // see GraphQL query at bottom of file
+  const allPosts = allMdx.edges
+
+  // These are the tags that you can filter by
+  // i.e. JavaScript, Rust
+  const [filterTags, setFilterTags] = React.useState([])
+
+  // This is where we store the list of posts that have been filtered
+  // i.e filtered by query (text) or tags (filterTags)
+  const [filteredData, setFilteredData] = React.useState(null)
+
+  // query is used to keep track of the text filter
+  const [query, setQuery] = React.useState('')
+
+  // A helper to know if we have a query
+  const hasSearchQuery = query !== ''
+
+  // This is called when a user types inside the input field
+  const handleInputChange = event => {
+    // Grab the value from the input
+    const currentQuery = event.target.value
+
+    setQuery(currentQuery)
+
+    // We use currentQuery instead of query because React state upates are async
+    // we need the latest version so we're not a step behind.
+    // We also only want to use filteredData if it's not null
+    // Otherwise, data has yet to be filtered, so we use allPosts
+    const posts =
+      currentQuery !== '' && filteredData !== null ? filteredData : allPosts
+    handleFilteredData(currentQuery, filterTags, posts)
+  }
+
+  const handleTagChange = newTags => {
+    // Similarly here, we check if we have a search query
+    // and if the newTags (remember we don't want to use the state here because it comes in async)
+    // and if those are true, then we use the filtered data
+    // Otherwise, we use the unfiltered data
+    const posts =
+      hasSearchQuery && newTags.length !== 0 ? filteredData : allPosts
+
+    handleFilteredData(query, newTags, posts)
+  }
+
+  // The main purpose of this function is to handle updates to filteredData
+  // we pass in the query, the filterTags and the posts
+  // We prefix it with '_' so that it doesn't conflict with the equivalent state name
+  const handleFilteredData = (_query, _filterTags, posts) => {
+    // We keep updatedData in the outermost scope of the function so that we can
+    // update it in from within these if blocks
+    let updatedData = posts
+    // first filter based on tags
+    if (updatedData !== null && _filterTags.length !== 0) {
+      updatedData = updatedData.filter(({ node: post }) => {
+        const postTags = post.fields.tags
+
+        // We filter out posts that do not have every filterTags
+        // i.e. if filterTags is ['Rust', 'JavaScript']
+        // we only return posts that have both of those tags
+        return _filterTags.every(tag => postTags.includes(tag))
+      })
+    }
+
+    if (updatedData !== null && _query !== '') {
+      updatedData = updatedData.filter(({ node: post }) => {
+        const title = post.frontmatter.title || ''
+        const excerpt = post.excerpt || ''
+
+        // Here, we check if the query matches any words in the excerpt or title
+        return (
+          excerpt.toLowerCase().includes(query.toLowerCase()) ||
+          title.toLowerCase().includes(query.toLowerCase())
+        )
+      })
+    }
+
+    // We then take this data and save it to state
+    setFilteredData(updatedData)
+  }
+
+  // We start off by showing allPosts if there is no filteredData
+  const posts = filteredData !== null ? filteredData : allPosts
 
   return (
     <Layout site={site}>
       <SEO />
       <Container noVerticalPadding>
+        <div
+          css={css`
+            display: flex;
+            flex-direction: row;
+
+            ${bpMaxSM} {
+              flex-wrap: wrap;
+            }
+          `}
+        >
+          {FILTER_TAGS_TO_SHOW.map(tag => (
+            <FilterTag
+              key={tag}
+              tag={tag}
+              filterTags={filterTags}
+              setFilterTags={setFilterTags}
+              handleTagChange={handleTagChange}
+            />
+          ))}
+        </div>
         <div
           css={css`
             box-sizing: border-box;
@@ -111,6 +255,7 @@ export const pageQuery = graphql`
             title
             slug
             date
+            tags
           }
           frontmatter {
             title

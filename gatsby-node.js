@@ -4,24 +4,7 @@ const _ = require('lodash')
 const paginate = require('gatsby-awesome-pagination')
 const PAGINATION_OFFSET = 7
 const IS_DEV_MODE = process.env.NODE_ENV === 'development'
-
-// keep alphabetical
-const VALID_TAGS = new Set([
-  `Anti-Racism`,
-  `Book`,
-  `GitHub`,
-  `Go`,
-  `JavaScript`,
-  `Learning`,
-  `macOS`,
-  `Miscellaneous`,
-  `OSS`,
-  `Productivity`,
-  `Reason`,
-  `Rust`,
-  `Twitter`,
-  `TypeScript`,
-])
+const { VALID_TAGS } = require('./src/lib/tags')
 
 /**
  * validates the tags used in content frontmatter
