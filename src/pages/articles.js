@@ -9,11 +9,13 @@ import Post from '../components/Post'
 /*
 
 TODOS
-- clean up code
-- clean up state
+- style filters better
+- add correct styles (from gatsby-node)
 
 */
 
+// No reason to move this to another file because this
+// is the only place it's being used :)
 /**
  * @param currentFilterTags {string[]} the current filter tags in state
  * @param tag {string} the tag to add or remove
@@ -30,92 +32,86 @@ function getNewTags(currentFilterTags, tag) {
 }
 
 const Articles = ({ data: { site, allMdx } }) => {
+  // These are all the posts
+  // see GraphQL query at bottom of file
   const allPosts = allMdx.edges
+
+  // These are the tags that you can filter by
+  // i.e. JavaScript, Rust
   const [filterTags, setFilterTags] = React.useState([])
+
+  // This is where we store the list of posts that have been filtered
+  // i.e filtered by query (text) or tags (filterTags)
   const [filteredData, setFilteredData] = React.useState(null)
+
+  // query is used to keep track of the text filter
   const [query, setQuery] = React.useState('')
+
+  // A helper to know if we have a query
   const hasSearchQuery = query !== ''
 
   // This is called when a user types inside the input field
   const handleInputChange = event => {
-    console.log(' input is changing')
+    // Grab the value from the input
     const currentQuery = event.target.value
-    console.log(`current query: ${currentQuery}`)
-    setQuery(currentQuery)
 
+    // We use currentQuery instead of query because React state upates are async
+    // we need the latest version so we're not a step behind.
+    // We also only want to use filteredData if it's not null
+    // Otherwise, data has yet to be filtered, so we use allPosts
     const posts =
       currentQuery !== '' && filteredData !== null ? filteredData : allPosts
-    console.log('these are the posts', posts)
-    handleFilterData(currentQuery, filterTags, posts)
+    handleFilteredData(currentQuery, filterTags, posts)
   }
 
   const handleTagChange = newTags => {
-    // When should we use allPosts vs filteredData
-    // probably when it's not empty
+    // Similarly here, we check if we have a search query
+    // and if the newTags (remember we don't want to use the state here because it comes in async)
+    // and if those are true, then we use the filtered data
+    // Otherwise, we use the unfiltered data
     const posts =
       hasSearchQuery && newTags.length !== 0 ? filteredData : allPosts
 
-    handleFilterData(query, newTags, posts)
-
-    /*
-    Think about it...
-    When there is a search query, we should filter tags based on filteredData
-
-    when there is no search query, we should filter based on all posts
-
-    */
+    handleFilteredData(query, newTags, posts)
   }
 
-  const handleFilterData = (_query, tags, posts) => {
+  // The main purpose of this function is to handle updates to filteredData
+  // we pass in the query, the filterTags and the posts
+  // We prefix it with '_' so that it doesn't conflict with the equivalent state name
+  const handleFilteredData = (_query, _filterTags, posts) => {
+    // We keep updatedData in the outermost scope of the function so that we can
+    // update it in from within these if blocks
     let updatedData = posts
     // first filter based on tags
-    if (updatedData !== null && tags.length !== 0) {
+    if (updatedData !== null && _filterTags.length !== 0) {
       updatedData = updatedData.filter(({ node: post }) => {
         const postTags = post.fields.tags
-        return tags.every(tag => postTags.includes(tag))
-      })
 
-      console.log('these data', updatedData)
+        // We filter out posts that do not have every filterTags
+        // i.e. if filterTags is ['Rust', 'JavaScript']
+        // we only return posts that have both of those tags
+        return _filterTags.every(tag => postTags.includes(tag))
+      })
     }
 
-    // the problem is the logic here
-    // the tags are working correctly but then I get here
-    // then filter based on query
     if (updatedData !== null && _query !== '') {
-      console.log('what is the data at this point', updatedData)
       updatedData = updatedData.filter(({ node: post }) => {
         const title = post.frontmatter.title || ''
         const excerpt = post.excerpt || ''
+
+        // Here, we check if the query matches any words in the excerpt or title
         return (
           excerpt.toLowerCase().includes(query.toLowerCase()) ||
           title.toLowerCase().includes(query.toLowerCase())
         )
       })
-      console.log('and is is the same here', updatedData)
     }
 
+    // We then take this data and save it to state
     setFilteredData(updatedData)
   }
 
-  /*
-  Notes
-  What i want to do is add buttons that let you filter posts by tags
-  1. Make sure tags are available on post data check
-  2. write out logic
-
-  If a user clicks on a fiter button, it should filter the results and only show posts with that tag
-    and it should filter if they search in the input.
-
-  3. add simple buttons and test
-  4. add css to buttons
-
-  */
-
-  // console.log('these are the posts', posts)
-  // console.log(`these are the filter tags`, filterTags)
-  // const hasSearchResults = filteredData && query !== ''
-  // const hasTags = filteredData && filterTags.length !== 0
-  // const posts = hasSearchResults || hasTags ? filteredData : allPosts
+  // We start off by showing allPosts if there is no filteredData
   const posts = filteredData !== null ? filteredData : allPosts
 
   return (
