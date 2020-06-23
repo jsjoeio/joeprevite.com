@@ -32,34 +32,57 @@ function getNewTags(currentFilterTags, tag) {
 const Articles = ({ data: { site, allMdx } }) => {
   const allPosts = allMdx.edges
   const [filterTags, setFilterTags] = React.useState([])
-  const [filteredData, setFilteredData] = React.useState([])
+  const [filteredData, setFilteredData] = React.useState(null)
   const [query, setQuery] = React.useState('')
+  const hasSearchQuery = query !== ''
 
   // This is called when a user types inside the input field
   const handleInputChange = event => {
+    console.log(' input is changing')
     const currentQuery = event.target.value
-    console.log(currentQuery, 'hi query')
-
+    console.log(`current query: ${currentQuery}`)
     setQuery(currentQuery)
-    handleFilterData(currentQuery, filterTags, allPosts)
+
+    const posts =
+      currentQuery !== '' && filteredData !== null ? filteredData : allPosts
+    console.log('these are the posts', posts)
+    handleFilterData(currentQuery, filterTags, posts)
   }
 
   const handleTagChange = newTags => {
-    handleFilterData(query, newTags, allPosts)
+    // When should we use allPosts vs filteredData
+    // probably when it's not empty
+    const posts =
+      hasSearchQuery && newTags.length !== 0 ? filteredData : allPosts
+
+    handleFilterData(query, newTags, posts)
+
+    /*
+    Think about it...
+    When there is a search query, we should filter tags based on filteredData
+
+    when there is no search query, we should filter based on all posts
+
+    */
   }
 
   const handleFilterData = (_query, tags, posts) => {
     let updatedData = posts
     // first filter based on tags
-    if (tags.length !== 0) {
+    if (updatedData !== null && tags.length !== 0) {
       updatedData = updatedData.filter(({ node: post }) => {
         const postTags = post.fields.tags
         return tags.every(tag => postTags.includes(tag))
       })
+
+      console.log('these data', updatedData)
     }
 
+    // the problem is the logic here
+    // the tags are working correctly but then I get here
     // then filter based on query
-    if (_query !== '') {
+    if (updatedData !== null && _query !== '') {
+      console.log('what is the data at this point', updatedData)
       updatedData = updatedData.filter(({ node: post }) => {
         const title = post.frontmatter.title || ''
         const excerpt = post.excerpt || ''
@@ -68,6 +91,7 @@ const Articles = ({ data: { site, allMdx } }) => {
           title.toLowerCase().includes(query.toLowerCase())
         )
       })
+      console.log('and is is the same here', updatedData)
     }
 
     setFilteredData(updatedData)
@@ -92,7 +116,7 @@ const Articles = ({ data: { site, allMdx } }) => {
   // const hasSearchResults = filteredData && query !== ''
   // const hasTags = filteredData && filterTags.length !== 0
   // const posts = hasSearchResults || hasTags ? filteredData : allPosts
-  const posts = filteredData.length !== 0 ? filteredData : allPosts
+  const posts = filteredData !== null ? filteredData : allPosts
 
   return (
     <Layout site={site}>
@@ -111,6 +135,11 @@ const Articles = ({ data: { site, allMdx } }) => {
         >
           <div>
             <button
+              css={css`
+                background-color: ${filterTags.includes('Rust')
+                  ? '#296ECD'
+                  : '#c4ccd7'};
+              `}
               onClick={() => {
                 const newTags = getNewTags(filterTags, 'Rust')
                 setFilterTags(newTags)
@@ -120,6 +149,11 @@ const Articles = ({ data: { site, allMdx } }) => {
               Rust
             </button>
             <button
+              css={css`
+                background-color: ${filterTags.includes('JavaScript')
+                  ? '#296ECD'
+                  : '#c4ccd7'};
+              `}
               onClick={() => {
                 const newTags = getNewTags(filterTags, 'JavaScript')
                 setFilterTags(newTags)
