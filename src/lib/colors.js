@@ -1,5 +1,6 @@
 const colors = {
   black: '#131415',
+  contessa: '#C67171',
   white: '#fff',
   gray: '#fafafa',
   red: '#E74C3C',
@@ -7,6 +8,8 @@ const colors = {
   green: '#29B573',
   heather: '#c5cfdc',
   lightningYellow: '#F9B52A',
+  mediumCarmine: '#B63D3D',
+  mineShaft: '#222222',
   saffron: '#F7CC42',
   transparent: 'transparent',
   oasis: '#fcefcb',

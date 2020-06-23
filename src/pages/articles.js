@@ -5,14 +5,44 @@ import Container from 'components/Container'
 import SEO from '../components/SEO'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
+import { useTheme } from '../components/Theming'
 
 /*
 
 TODOS
-- style filters better
-- add correct styles (from gatsby-node)
+- add correct colors (from gatsby-node)
 
 */
+
+const FilterTag = ({ tag, filterTags, setFilterTags, handleTagChange }) => {
+  const theme = useTheme()
+  return (
+    <button
+      css={css`
+        background-color: ${filterTags.includes(tag)
+          ? theme.colors.filterTagsBgActive
+          : theme.colors.filterTagsBg};
+        border: 2px solid ${theme.colors.filterTagsBorder};
+        color: ${theme.colors.filterTagsText};
+        margin-right: 0.5rem;
+
+        &:hover {
+          border-width: 2px;
+          background-color: ${filterTags.includes(tag)
+            ? theme.colors.filterTagsBgActive
+            : theme.colors.filterTagsBgHover};
+        }
+      `}
+      onClick={() => {
+        const newTags = getNewTags(filterTags, tag)
+        setFilterTags(newTags)
+        handleTagChange(newTags)
+      }}
+    >
+      {tag}
+    </button>
+  )
+}
 
 // No reason to move this to another file because this
 // is the only place it's being used :)
@@ -120,6 +150,22 @@ const Articles = ({ data: { site, allMdx } }) => {
       <Container noVerticalPadding>
         <div
           css={css`
+            display: flex;
+            flex-direction: row;
+          `}
+        >
+          {['Rust', 'JavaScript'].map(tag => (
+            <FilterTag
+              key={tag}
+              tag={tag}
+              filterTags={filterTags}
+              setFilterTags={setFilterTags}
+              handleTagChange={handleTagChange}
+            />
+          ))}
+        </div>
+        <div
+          css={css`
             box-sizing: border-box;
             display: flex;
             flex-direction: row;
@@ -129,36 +175,6 @@ const Articles = ({ data: { site, allMdx } }) => {
             width: 100%;
           `}
         >
-          <div>
-            <button
-              css={css`
-                background-color: ${filterTags.includes('Rust')
-                  ? '#296ECD'
-                  : '#c4ccd7'};
-              `}
-              onClick={() => {
-                const newTags = getNewTags(filterTags, 'Rust')
-                setFilterTags(newTags)
-                handleTagChange(newTags)
-              }}
-            >
-              Rust
-            </button>
-            <button
-              css={css`
-                background-color: ${filterTags.includes('JavaScript')
-                  ? '#296ECD'
-                  : '#c4ccd7'};
-              `}
-              onClick={() => {
-                const newTags = getNewTags(filterTags, 'JavaScript')
-                setFilterTags(newTags)
-                handleTagChange(newTags)
-              }}
-            >
-              JavaScript
-            </button>
-          </div>
           <input
             aria-label="article search"
             type="text"

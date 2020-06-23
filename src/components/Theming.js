@@ -1,5 +1,5 @@
 import { createTheming } from '@callstack/react-theme-provider'
-import { lighten } from 'polished'
+import { lighten, darken } from 'polished'
 import colors from '../lib/colors'
 
 const themes = {
@@ -14,6 +14,11 @@ const themes = {
       noteBg: colors.oasis,
       noteBorder: colors.goldenGlow,
       noteText: colors.black,
+      filterTagsBg: lighten(0.35, colors.contessa),
+      filterTagsBgHover: lighten(0.15, colors.contessa),
+      filterTagsBgActive: lighten(0.05, colors.contessa),
+      filterTagsBorder: colors.transparent,
+      filterTagsText: colors.mineShaft,
       ...colors,
     },
   },
@@ -28,10 +33,21 @@ const themes = {
       noteBg: colors.balticSea,
       noteBorder: colors.raven,
       noteText: colors.lightningYellow,
+      filterTagsBg: darken(0.25, colors.black),
+      filterTagsBgHover: darken(0.15, colors.black),
+      filterTagsBgActive: lighten(0.05, colors.black),
+      filterTagsBorder: colors.transparent,
+      filterTagsText: colors.contessa,
       ...colors,
     },
   },
 }
+
+// filterTagsBg: lighten(0.1, colors.black),
+// filterTagsBgHover: lighten(0.25, colors.black),
+// filterTagsBgActive: lighten(0.25, colors.contessa),
+// filterTagsBorder: colors.transparent,
+// filterTagsText: darken(0.25, colors.contessa),
 
 const { ThemeProvider, withTheme, useTheme } = createTheming(themes.default)
 
