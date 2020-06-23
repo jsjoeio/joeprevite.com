@@ -6,6 +6,8 @@ import SEO from '../components/SEO'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 import { useTheme } from '../components/Theming'
+import { VALID_TAGS } from '../lib/tags'
+import { bpMaxSM } from '../lib/breakpoints'
 
 /*
 
@@ -13,6 +15,21 @@ TODOS
 - add correct colors (from gatsby-node)
 
 */
+
+// It's a Set, which doesn't have filter, so we transform into an array by spreading
+// Also, I'm doing this so that I can use the valid tags and more or less keep the two
+// in sync (VALID TAGS and the filter tags I show)
+// This means, it's impossible to show a tag that is in one list but not both
+const FILTER_TAGS_TO_SHOW = [...VALID_TAGS].filter(tag =>
+  [
+    `GitHub`,
+    `JavaScript`,
+    `Learning`,
+    `Productivity`,
+    `Rust`,
+    `TypeScript`,
+  ].includes(tag),
+)
 
 const FilterTag = ({ tag, filterTags, setFilterTags, handleTagChange }) => {
   const theme = useTheme()
@@ -25,6 +42,7 @@ const FilterTag = ({ tag, filterTags, setFilterTags, handleTagChange }) => {
         border: 2px solid ${theme.colors.filterTagsBorder};
         color: ${theme.colors.filterTagsText};
         margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
 
         &:hover {
           border-width: 2px;
@@ -84,6 +102,8 @@ const Articles = ({ data: { site, allMdx } }) => {
   const handleInputChange = event => {
     // Grab the value from the input
     const currentQuery = event.target.value
+
+    setQuery(currentQuery)
 
     // We use currentQuery instead of query because React state upates are async
     // we need the latest version so we're not a step behind.
@@ -152,9 +172,13 @@ const Articles = ({ data: { site, allMdx } }) => {
           css={css`
             display: flex;
             flex-direction: row;
+
+            ${bpMaxSM} {
+              flex-wrap: wrap;
+            }
           `}
         >
-          {['Rust', 'JavaScript'].map(tag => (
+          {FILTER_TAGS_TO_SHOW.map(tag => (
             <FilterTag
               key={tag}
               tag={tag}
