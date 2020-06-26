@@ -53,7 +53,7 @@ With this vision in mind, you now have clarity on it means when you say "learn T
 
 ### Establish a Timeframe
 
-You don't want to be racing on this map forever. You need to be realistic and ask yourself how much time we have for this. Estimating time to complete tasks in software is hard. We'll try our best by using something I like to call the **Timeframe Formula**:
+You don't want to be racing on this map forever. You need to be realistic and ask yourself how much time you have for this. Estimating time to complete tasks is hard. You can use what I like to call the **Timeframe Formula**:
 
 Take the length of months you want to work on this, multiple by 4 to give the amount in weeks. Then multiple it by the number of hours per week that you want to dedicate.
 
