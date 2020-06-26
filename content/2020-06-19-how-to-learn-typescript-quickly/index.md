@@ -9,7 +9,7 @@ published: true
 
 A few months back, I set out a goal to learn TypeScript deeply in 3 months. And [I did it](https://twitter.com/jsjoeio/status/1250490760362774529)! Since then, others have asked how they can do the same. This guide will provide you with a framework. It's called the **Fast Framework**.
 
-Imagine you're in Mario Kart and racing on a new map. You will only have achieved your goal if you cross the finish line. Taking this analogy, the framework can be broken into three phases:
+Imagine you're in Mario Kart and racing on a new map. Your goal is to cross the finish line. Taking this analogy, we break the framework into three phases:
 
 - Make your Map - Vision / Timeframe / Timeline / Organization
 - Stay on Track -  Accountability / Momentum / Sharing / Focus
