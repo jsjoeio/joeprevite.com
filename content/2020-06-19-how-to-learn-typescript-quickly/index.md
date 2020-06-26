@@ -99,7 +99,7 @@ With a timeline, you are be good to go!
 
 You want to stay organized on this journey. That means a place to keep track of your timeline, log any notes or things you learn, and have visual indicators for the progress you're making.
 
-I use Notion for this because it supports this type of project management well. I make a place for the project. I add the timeline and use checkboxes. Then, I check them off as I go and take notes as I learn new things.
+I use Notion for this because it supports project management well. I make a place for the project. I add the timeline and use checkboxes. Then, I check them off as I go and take notes as I'm learning.
 
 Here is a list of tools you might want to check out:
 
