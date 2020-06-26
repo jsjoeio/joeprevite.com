@@ -246,7 +246,7 @@ As you can imagine, if you do this with a topic, you'll have several learning pr
 
 ## Summary
 
-The most important takeaway is **use systems to help you learn better and faster**. They will serve as your map, keep you on track and help you find the flag to finish the race. Following these steps with TypeScript in mind, you will develop a proficiency, hopefully even **expertise** in the language.
+The most important takeaway is this: **use systems to help you learn better and faster**. They will serve as your map, keep you on track and help you find the flag to finish the race. Following these steps with TypeScript in mind, you will develop a proficiency, hopefully even **expertise** in the language.
 
 The next steps are to go out and use your new knowledge in the world! See what you can build. Find ways to help other people.
 
