@@ -196,7 +196,7 @@ Another idea is contributing to open source. Remember our key results? Here's tw
 - Contribute to TypeScript, [the language](https://github.com/microsoft/TypeScript/issues?q=is%3Aopen+is%3Aissue+label%3A"good+first+issue")
 - Contribute to [typescript-cheatsheets/react-typescript-cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
 
-This is where that happens if it hasn't already! The issues that you help with may be minor, but that's not the point.
+This is where that happens if it hasn't already. The issues that you help with may be minor, but that's not the point.
 
 **Practice is where you learn the most**.
 
