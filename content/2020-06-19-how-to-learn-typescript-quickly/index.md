@@ -191,7 +191,7 @@ Learning means nothing without practice. With your new TypeScript knowledge, you
 
 When I was learning, I followed a tutorial to [build a tiny compiler](https://github.com/jamiebuilds/the-super-tiny-compiler). It was written in JavaScript, but I did it in TypeScript. This forced me to figure out things on my own.
 
-Other things I did include contributing to open source. Remember our key results? Here's two of them that apply here:
+Another idea is contributing to open source. Remember our key results? Here's two of them that apply here:
 
 - Contribute to TypeScript, [the language](https://github.com/microsoft/TypeScript/issues?q=is%3Aopen+is%3Aissue+label%3A"good+first+issue")
 - Contribute to [typescript-cheatsheets/react-typescript-cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
