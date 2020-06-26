@@ -69,7 +69,7 @@ You now have your timeframe. Use this to set expectations on how much time you p
 
 ### Build a Timeline
 
-The next thing we need to add to our map is a timeline. Think of this as a week by week calendar. It helps you think less because you have already decided what to do for that week. It won't be perfect. You may need to readjust, but at least you will have established the framing.
+The next thing you need to add to you map is a timeline. Think of this as a week by week calendar. It helps you think less because you will already know what to do for that week. It won't be perfect. You may need to readjust, but you will have removed friction.
 
 An example:
 
