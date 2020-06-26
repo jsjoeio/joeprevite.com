@@ -93,7 +93,7 @@ Two important tips:
 
 Life comes up and you may fall behind. That's where the buffer comes in! Some weeks, you may find that you complete everything in 6 hours. No need to fill those two other hours if you don't want to. Reward yourself with rest.
 
-With your timeline, you'll be good to go!
+With a timeline, you are be good to go!
 
 ### Keep it Organized
 
