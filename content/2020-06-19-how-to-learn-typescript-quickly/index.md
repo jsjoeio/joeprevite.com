@@ -1,6 +1,6 @@
 ---
 slug: 'learn-typescript-quickly'
-date: '2020-06-19'
+date: '2020-07-03'
 title: 'How to Learn Typescript Quickly'
 description: 'In the post, I show you everything you need to do to learn TypeScript quickly using the Fast Framework.'
 tagline: 'The only guide you need'
