@@ -49,7 +49,7 @@ That will be your **Objective**. Next, figure out how you're going to *measure* 
 
 **Don't rush through this part**. Spend some time thinking about your objective and what you need to achieve to get there. Completing your key results should allow you to confidently say you've completed your objective.
 
-With this vision in mind, you now have clarity on it means when you say "learn TypeScript." and you know what outcomes you expect to achieve.
+With this vision in mind, you now have clarity on it means when you say "learn TypeScript" and you know what you expect to achieve.
 
 ### Establish a Timeframe
 
