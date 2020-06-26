@@ -230,7 +230,7 @@ There are two techniques you can use to deepen what you learn. The first is call
 
 The idea is that if you can't do that, you don't know the concept well enough.
 
-Note: the age of the person towhom you're explaining your learning concept can vary. The goal is for you to be able to explain something you understand to someone with little knowledge or context.
+Note: the age of the person to whom you're explaining your learning concept can vary. Focus on being able to explain something you understand to someone with little knowledge or context.
 
 The second technique I want to point out is called [Ultralearning](https://www.scotthyoung.com/blog/ultralearning/). In his book, Scott Young explains Ultralearning as,
 
