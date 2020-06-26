@@ -189,7 +189,7 @@ The last and final leg of this learning journey is finding the flag. You should 
 
 Learning means nothing without practice. With your new TypeScript knowledge, you can build projects or contribute to open source. This is where the application phase of the learning cycle appears. It doesn't matter what you build, but that the act of building happens.
 
-When I was learning, I followed a tutorial to [build a tiny compiler](https://github.com/jamiebuilds/the-super-tiny-compiler). It was written in JavaScript,  but I did it in TypeScript. This forced me to figure out things on my own.
+When I was learning, I followed a tutorial to [build a tiny compiler](https://github.com/jamiebuilds/the-super-tiny-compiler). It was written in JavaScript, but I did it in TypeScript. This forced me to figure out things on my own.
 
 Other things I did include contributing to open source. Remember our key results? Here's two of them that apply here:
 
