@@ -215,7 +215,7 @@ In the case of TypeScript, you want to build **TypeScript Confidence**. There ar
 
 Vocabulary is often overlooked. Don't skip out on it! It helps build confidence and it will solidify what you know. It's also a great tool to fight imposter syndrome. Knowing the vocabulary will allow you to build **expertise**.
 
-To learn and remember vocabulary, use a *spaced-repetition system* such as [Anki](https://apps.ankiweb.net/). I used it when I was studying TypeScript. You can use it to remember things such as:
+To learn and remember vocabulary, use a *spaced-repetition system* such as [Anki](https://apps.ankiweb.net/). I used it with my TypeScript learning project. You can use it to remember things such as:
 
 - terminology
 - concepts
