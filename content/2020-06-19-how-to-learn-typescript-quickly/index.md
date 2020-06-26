@@ -238,7 +238,7 @@ The second technique I want to point out is called [Ultralearning](https://www.s
 >
 > —Scott Young
 
-Think of it as taking something, learning quickly, and diving deep. You can use this with your learning projects.
+Think of it as taking something, being aggressive with how much or how fast you can learn it, and diving deep. You can use this with your learning projects.
 
 While you're learning, take notes of questions you have or concepts you don't quite understand. Then at the end of your project, see if those questions remain. If they do, start a new learning project and focus on answering those questions.
 
