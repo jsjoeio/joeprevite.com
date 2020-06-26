@@ -118,7 +118,7 @@ In this phase, the goal is to focus on developing the systems that will help you
 
 ### Keep Yourself Accountable
 
-You always want someway to stay accountable for your project. Think of this as your race crew. They make sure you're fueled, your tires are rotated, you're hydrated, and you're ready to finish the race. We want a similar type of support and accountability.
+You always want to stay accountable for your project. Think of this as your race crew. They make sure you're fueled, your tires are rotated, you're hydrated, and you're ready to finish the race. We want a similar type of support and accountability.
 
 It could be:
 
