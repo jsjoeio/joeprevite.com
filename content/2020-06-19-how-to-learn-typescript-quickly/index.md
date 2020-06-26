@@ -183,7 +183,7 @@ Lastly, find tools to help you stay focused. I am a big fan of the **Pomodoro Te
 
 ## Find the Flag
 
-The last and final leg of this learning journey is finding the flag. You want to make it to the finish line and feel accomplished when you get there. Here, you want to use systems that will help you practice, build confidence, remember vocabulary, and go for depth so that you find the checkered flag.
+The last and final leg of this learning journey is finding the flag. You should make it to the finish line and feel accomplished when you get there. Here, you want to use systems that will help you practice, build confidence, remember vocabulary, and go for depth. This will lead to the beloved checkered flag.
 
 ### Practice
 
