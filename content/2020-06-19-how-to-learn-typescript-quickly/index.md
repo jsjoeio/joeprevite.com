@@ -88,7 +88,7 @@ You know yourself best. Think back to the Timeframe Formula. The example estimat
 
 Two important tips:
 
-1. Leave 1-2 weeks buffer towards the end
+1. Leave ~10%(1-2 weeks) buffer towards the end
 2. Give yourself some breathing room
 
 Life comes up and you may fall behind. That's where the buffer comes in! Some weeks, you may find that you complete everything in 6 hours. No need to fill those two other hours if you don't want to. Reward yourself with rest.
