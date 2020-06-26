@@ -202,7 +202,7 @@ This is where that happens if it hasn't already. The issues that you help with m
 
 ### Build Confidence
 
-You want to build confidence in whatever you learning. This will make you feel comfortable using your new knowledge.
+You want to build confidence in whatever you're learning. This will make you feel comfortable using your new knowledge.
 
 In the case of TypeScript, you want to build **TypeScript Confidence**. There are various ways to do this including:
 
