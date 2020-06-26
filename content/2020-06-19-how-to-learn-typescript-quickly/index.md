@@ -224,7 +224,7 @@ To learn and remember vocabulary, use a *spaced-repetition system* such as [Anki
 
 ### Go for Depth
 
-The last thing in this phase is going for depth. Deep learning. Deep understanding.
+The last thing in this phase is going for depth. **Deep learning leads to deep understanding**.
 
 There are two techniques you can use to deepen what you learn. The first is called the [Feynman Technique](https://fs.blog/2012/04/feynman-technique/). Take a concept you are learning, such as [type inference in TypeScript](https://www.typescriptlang.org/docs/handbook/type-inference.html) and explain it as you would to a seven-year-old.
 
