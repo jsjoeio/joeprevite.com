@@ -65,7 +65,7 @@ For example, when I did a similar project, I gave myself 3 months with 8 hours p
 
 https://excalidraw.com/#json=5134809571524608,ASGbR83wxxoafOuInmZ5Ew
 
-You now have your timeframe and expectation of how much you plan to dedicate each week.
+You now have your timeframe. Use this to set expectations on how much time you plan to dedicate each week.
 
 ### Build a Timeline
 
