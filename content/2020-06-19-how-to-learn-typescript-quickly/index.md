@@ -15,7 +15,7 @@ Imagine you're in Mario Kart and racing on a new map. Your goal is to cross the 
 - Stay on Track -  Accountability / Momentum / Sharing / Focus
 - Find the Flag - Practice / Confidence / Vocabulary / Depth
 
-In each phase, I'll cover different aspects that will help you learn fast and reach your goal. The first phase will cover the foundation for your learning project. Think of this as vision, timeframe, timeline, and organization. In the phase after, the focus on staying on track and I'll discuss aspects related to accountability, momentum, sharing, and focus. Lastly, I'll help you find the flag and talk about practice, confidence, vocabulary, and depth in the final phase of the journey.
+In each phase, I'll cover different aspects that will help you learn fast and reach your goal. I'll use learning TypeScript as the example. The first phase will cover the foundation for your learning project. Think of this as vision, timeframe, timeline, and organization. In the phase after, the focus  will be staying on track and I'll discuss aspects related to accountability, momentum, sharing, and focus. In the final phase of the journey, I'll help you find the flag. There, I'll talk about practice, confidence, vocabulary, and depth.
 
 ## Make your Map
 
