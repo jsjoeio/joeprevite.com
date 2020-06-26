@@ -84,7 +84,7 @@ An example:
     - [ ] Basic Types
     - [ ] Variable Declarations
 
-You know yourself best. Think back to the Timeframe Formula. The example estimated 8hrs/week and 12 weeks in total. Knowing the speed that you read it, you would adjust accordingly. A complete timeline would have all the weeks (i.e. 12 in this case) filled out.
+You know yourself best. Think back to the Timeframe Formula. The example estimated 8hrs/week and 12 weeks in total. Knowing how fast you work (i.e. read, code, etc.), you would adjust accordingly. A complete timeline would have all the weeks (i.e. 12 in this case) filled out.
 
 Two important tips:
 
