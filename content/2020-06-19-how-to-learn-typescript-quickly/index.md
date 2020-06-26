@@ -101,7 +101,7 @@ You want to stay organized on this journey. That means a place to keep track of 
 
 I use Notion for this because it supports project management well. I make a place for the project. I add the timeline and use checkboxes. Then, I check them off as I go and take notes as I'm learning.
 
-Here is a list of tools you might want to check out:
+Here is a non-exhaustive list of tools you might want to check out:
 
 - [Notion](https://www.notion.so/)
 - [Trello](https://trello.com/)
