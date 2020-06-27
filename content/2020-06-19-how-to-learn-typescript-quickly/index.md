@@ -1,7 +1,7 @@
 ---
-slug: 'learn-anything-quickly'
+slug: 'learn-quickly'
 date: '2020-07-03'
-title: 'How to Learn Anything Quickly'
+title: 'How to Learn Quickly'
 description: 'In the post, I show you how to learn anything quickly using the Fast Framework.'
 tagline: 'Using the Fast Framework'
 published: true
@@ -11,17 +11,17 @@ A few months back, I set out a goal to learn TypeScript deeply in 3 months and [
 
 Imagine you're in [Mario Kart](https://en.wikipedia.org/wiki/Mario_Kart) and racing on a new map. Your goal is to cross the finish line. Taking this analogy, we break the framework into three phases:
 
-- Make your Map - Vision / Timeframe / Timeline / Organization
-- Stay on Track - Accountability / Momentum / Sharing / Focus
-- Find the Flag - Practice / Confidence / Vocabulary / Depth
+1. Make your Map
+1. Stay on Track
+1. Find the Flag
 
-In each phase, I'll cover different aspects that will help you learn fast and reach your goal. I'll use learning TypeScript as the example. The first phase will cover the foundation for your learning project. Think of this as vision, timeframe, timeline, and organization. In the phase after, the focus will be staying on track and I'll discuss aspects related to accountability, momentum, sharing, and focus. In the final phase of the journey, I'll help you find the flag. There, I'll talk about practice, confidence, vocabulary, and depth.
+In each phase, I'll cover different aspects that will help you learn fast and reach your goal. I'll use learning TypeScript as the example. The first phase will cover the foundation for your learning project. Think of this as vision, timeframe, timeline, and organization. In the phase after, the focus will be staying on track and I'll discuss aspects related to accountability, momentum, sharing, and focus. In the final phase of the journey, the goal is to finish strong and find the flag. There, I'll talk about practice, confidence, vocabulary, and depth.
 
 ## Make your Map
 
 The first step is to make your map. This will help answer questions like:
 
-- What does it mean to "learn TypeScript"?
+- What does it mean to "learn [insert thing]"?
 - How long will the project take?
 - What are the expected outcomes?
 - How am I going to organize my learning project?
@@ -258,7 +258,7 @@ And if you're ambitious, **I challenge you to go deeper** after you finish your 
 
 Tweak this learning framework to your liking and try it out on other projects - even non-technical ones. Adjust as needed. See how it works.
 
-_Special thanks to my friends [Sean](https://twitter.com/seanjun21), [swyx](https://twitter.com/swyx), and [Prince](https://twitter.com/maxcell) for reviewing and giving feedback on the first version of this._
+_Special thanks to my friends [Sean](https://twitter.com/seanjun21), [swyx](https://twitter.com/swyx), and [Prince](https://twitter.com/maxcell) for reviewing and giving feedback._
 
 ### Interested in Fast Learning?
 
