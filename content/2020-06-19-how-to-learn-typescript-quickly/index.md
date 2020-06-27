@@ -1,21 +1,21 @@
 ---
-slug: 'learn-typescript-quickly'
+slug: 'learn-anything-quickly'
 date: '2020-07-03'
-title: 'How to Learn Typescript Quickly'
-description: 'In the post, I show you everything you need to do to learn TypeScript quickly using the Fast Framework.'
+title: 'How to Learn Anything Quickly'
+description: 'In the post, I show you how to learn anything quickly using the Fast Framework.'
 tagline: 'Using the Fast Framework'
 published: true
 ---
 
-A few months back, I set out a goal to learn TypeScript deeply in 3 months. And [I did it](https://twitter.com/jsjoeio/status/1250490760362774529)! Since then, others have asked how they can do the same. This guide will provide you with a framework. It's called the **Fast Framework**.
+A few months back, I set out a goal to learn TypeScript deeply in 3 months and [I did it](https://twitter.com/jsjoeio/status/1250490760362774529). Since then, others have asked how they can do the same. The outcome is a result of using something that I like to call the **Fast Framework**. This guide will teach you how you can use it to learn anything quickly.
 
-Imagine you're in Mario Kart and racing on a new map. Your goal is to cross the finish line. Taking this analogy, we break the framework into three phases:
+Imagine you're in [Mario Kart](https://en.wikipedia.org/wiki/Mario_Kart) and racing on a new map. Your goal is to cross the finish line. Taking this analogy, we break the framework into three phases:
 
 - Make your Map - Vision / Timeframe / Timeline / Organization
-- Stay on Track -  Accountability / Momentum / Sharing / Focus
+- Stay on Track - Accountability / Momentum / Sharing / Focus
 - Find the Flag - Practice / Confidence / Vocabulary / Depth
 
-In each phase, I'll cover different aspects that will help you learn fast and reach your goal. I'll use learning TypeScript as the example. The first phase will cover the foundation for your learning project. Think of this as vision, timeframe, timeline, and organization. In the phase after, the focus  will be staying on track and I'll discuss aspects related to accountability, momentum, sharing, and focus. In the final phase of the journey, I'll help you find the flag. There, I'll talk about practice, confidence, vocabulary, and depth.
+In each phase, I'll cover different aspects that will help you learn fast and reach your goal. I'll use learning TypeScript as the example. The first phase will cover the foundation for your learning project. Think of this as vision, timeframe, timeline, and organization. In the phase after, the focus will be staying on track and I'll discuss aspects related to accountability, momentum, sharing, and focus. In the final phase of the journey, I'll help you find the flag. There, I'll talk about practice, confidence, vocabulary, and depth.
 
 ## Make your Map
 
@@ -28,28 +28,25 @@ The first step is to make your map. This will help answer questions like:
 
 ### Write a Clear Vision
 
-For the vision, define your project and use the Objective Key Results (OKRs) framework.  If you aren't familiar, this was popularized by the book "[Measure What Matters](https://www.whatmatters.com/)" and is used at companies like Google and Intuit.
+For the vision, define your project and use the Objective Key Results (OKRs) framework. If you aren't familiar, this was popularized by the book "[Measure What Matters](https://www.whatmatters.com/)" and is used at companies like Google and Intuit.
 
-First, define what you expect to achieve by learning TypeScript.
+First, define what you expect to achieve.
 
-In my learning project, I wrote:
+In my TypeScript learning project, I wrote:
 
 > Learn TypeScript deeply and become the [Company] "in-house expert"
 
-That will be your **Objective**. Next, figure out how you're going to *measure* it. We refer to these as the **Key Results**. Continuing with my previous project, mine were:
+That will be your **Objective**. Next, figure out how you're going to _measure_ it. We refer to these as the **Key Results**. Continuing with my previous project, I wrote:
 
 - Read "Programming TypeScript" by Boris Cherny
-
 - Read the [Official TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html)
-
 - Produce small code examples for all concepts
-
 - Contribute to TypeScript, [the language](https://github.com/microsoft/TypeScript/issues?q=is%3Aopen+is%3Aissue+label%3A"good+first+issue")
 - Contribute to [typescript-cheatsheets/react-typescript-cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
 
 **Don't rush through this part**. Spend some time thinking about your objective and what you need to achieve to get there. Completing your key results should allow you to confidently say you've completed your objective.
 
-With this vision in mind, you now have clarity on it means when you say "learn TypeScript" and you know what you expect to achieve.
+With this vision in mind, you now have clarity on it means when you say "learn [X]" and you know what you expect to achieve.
 
 ### Establish a Timeframe
 
@@ -57,19 +54,19 @@ You don't want to be racing on this map forever. You need to be realistic and as
 
 Take the length of months you want to work on this, multiple by 4 to give the amount in weeks. Then multiple it by the number of hours per week that you want to dedicate.
 
-https://excalidraw.com/#json=4877101601652736,SeRw5x2aEzwtztaHHk0xUQ
+https://excalidraw.com/#json=5666756571955200,28Q0ic5iC8kAmHCzpKMqbg
 
 For example, when I did a similar project, I gave myself 3 months with 8 hours per week. Using the Timeframe Formula, you get:
 
-(3 months * 4 weeks/month) * 8 hours/week = 96 hours total.
+3 months x 4 weeks/month x 8 hours/week = 96 hours total.
 
-https://excalidraw.com/#json=5134809571524608,ASGbR83wxxoafOuInmZ5Ew
+https://excalidraw.com/#json=5741866960027648,bHKKdQP_I5Nl5Lk7rUf_bA
 
 You now have your timeframe. Use this to set expectations on how much time you plan to dedicate each week.
 
 ### Build a Timeline
 
-The next thing you need to add to you map is a timeline. Think of this as a week by week calendar. It helps you think less because you will already know what to do for that week. It won't be perfect. You may need to readjust, but you will have removed friction.
+The next thing you need to add to you map is a timeline. Think of this as a week by week calendar. The timeframe answers the question of _how long_ and the timeline answers the _what will I do each week_. It helps you think less because you will already know what to do for that week. It won't be perfect. You may need to readjust, but you will have removed friction.
 
 An example:
 
@@ -80,15 +77,15 @@ An example:
       - [ ] Book exercises
     - [ ] Chapter 3 - All About Types
       - [ ] Book exercises
-  - [ ] Official TypeScript Handbook (OTH)
+  - [ ] Official TypeScript Handbook
     - [ ] Basic Types
     - [ ] Variable Declarations
 
-You know yourself best. Think back to the Timeframe Formula. The example estimated 8hrs/week and 12 weeks in total. Knowing how fast you work (i.e. read, code, etc.), you would adjust accordingly. A complete timeline would have all the weeks (i.e. 12 in this case) filled out.
+You know yourself best. Think back to the Timeframe Formula. The example estimated 8hrs/week and 12 weeks in total. Knowing how fast you work (i.e. read, code, etc.), you would adjust accordingly. A complete timeline would have all the weeks filled out.
 
 Two important tips:
 
-1. Leave ~10%(1-2 weeks) buffer towards the end
+1. Leave ~10% buffer towards the end
 2. Give yourself some breathing room
 
 Life comes up and you may fall behind. That's where the buffer comes in! Some weeks, you may find that you complete everything in 6 hours. No need to fill those two other hours if you don't want to. Reward yourself with rest.
@@ -107,6 +104,7 @@ Here is a non-exhaustive list of tools you might want to check out:
 - [Trello](https://trello.com/)
 - [Asana](https://asana.com/)
 - [GitHub Projects](https://github.com/features/project-management/)
+- [Basecamp](https://basecamp.com)
 
 You could also use an analog tool such as a pen and paper.
 
@@ -128,11 +126,11 @@ It could be:
 
 All you need is at least one person with whom you can share updates. They don't have to know TypeScript or even know how to code. But they do need to be someone with whom you can check-in regularly. For TypeScript, I recommend looking for 2-3 people who will join you in your TypeScript journey. I would post:
 
-- on Twitter, using the #100DaysOfCode hashtag or #CodeNewbie
+- on Twitter, using the #100DaysOfCode or #CodeNewbie hashtags
 - on Dev.to, using the #typescript and #discuss tags to start a discussion and share your project
 - on the TypeScript Discord
 
-Between these three, I am 99.9% sure you'll have some level of success. 2-3 is ideal, but at least 1 other person works fine.
+For your own project, come up with a similar list of options. Explore them all. See where you find the most success and stick with it. 2-3 people is ideal, but at least 1 other person works fine.
 
 ### Build Momentum
 
@@ -150,9 +148,7 @@ In this case with TypeScript, maybe you say, "I'm going to write one line of Typ
 
 ### Share with Others
 
-> Pass on what you have learned, Luke.
->
-> —Yoda
+![Yoda quote, "Always pass on what you have learned."](./yoda-always-pass-on-what-you-have-learned.png)
 
 One of the most important parts of staying on track is sharing with others and [Learning in Public](https://www.swyx.io/writing/learn-in-public/). There are various mediums you can choose from for sharing:
 
@@ -187,16 +183,20 @@ The last and final leg of this learning journey is finding the flag. You should 
 
 ### Practice
 
-Learning means nothing without practice. With your new TypeScript knowledge, you can build projects or contribute to open source. This is where the application phase of the learning cycle appears. It doesn't matter what you build, but that the act of building happens.
+Learning means nothing without practice. With your new TypeScript knowledge, you can build projects or contribute to open source. This is where the application phase of the learning cycle appears.
+
+https://excalidraw.com/#json=5649885940416512,4xAi7l3PWb6gyuUHDb492w
+
+It doesn't matter what you build, but that **the act of building happens**.
 
 When I was learning, I followed a tutorial to [build a tiny compiler](https://github.com/jamiebuilds/the-super-tiny-compiler). It was written in JavaScript, but I did it in TypeScript. This forced me to figure out things on my own.
 
-Another idea is contributing to open source. Remember our key results? Here's two of them that apply here:
+If your learning something related to code, another idea is contributing to open source. Remember our key results? Here's two of them that apply here:
 
 - Contribute to TypeScript, [the language](https://github.com/microsoft/TypeScript/issues?q=is%3Aopen+is%3Aissue+label%3A"good+first+issue")
 - Contribute to [typescript-cheatsheets/react-typescript-cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
 
-This is where that happens if it hasn't already. The issues that you help with may be minor, but that's not the point.
+For things not related to code, ask yourself, "How can I practice what I've learned?" If you are having trouble, consult your community. Ask on Twitter (people love to share their advice).
 
 **Practice is where you learn the most**.
 
@@ -211,16 +211,20 @@ In the case of TypeScript, you want to build **TypeScript Confidence**. There ar
 - reviewing what you've learned
 - helping others
 
+Many of these things translate over to other topics as well. The main thing is to feel confident in using your new skills or knowledge.
+
 ### Don't Skip Vocab
 
 Vocabulary is often overlooked. Don't skip out on it! It helps build confidence and it will solidify what you know. It's also a great tool to fight imposter syndrome. Knowing the vocabulary will allow you to build **expertise**.
 
-To learn and remember vocabulary, use a *spaced-repetition system* such as [Anki](https://apps.ankiweb.net/). I used it with my TypeScript learning project. You can use it to remember things such as:
+To learn and remember vocabulary, use a _spaced-repetition system_ such as [Anki](https://apps.ankiweb.net/). I used it with my TypeScript learning project. You can use it to remember things such as:
 
 - terminology
 - concepts
 - patterns
 - syntax
+
+Take the thing you're learning, break it down into pieces and then build a list of vocabulary or concepts around those. Study these. This will benefit you in the long-run.
 
 ### Go for Depth
 
@@ -246,13 +250,15 @@ As you can imagine, if you do this with a topic, you'll have several learning pr
 
 ## Summary
 
-The most important takeaway is this: **use systems to help you learn better and faster**. They will serve as your map, keep you on track and help you find the flag to finish the race. Following these steps with TypeScript in mind, you will develop a proficiency, hopefully even **expertise** in the language.
+The most important takeaway is this: **use systems to help you learn better and faster**. They will serve as your map, keep you on track and help you find the flag to finish the race. If you were to do this with a programming language like TypeScript, you would develop a proficiency, hopefully even **expertise** in the language.
 
 The next steps are to go out and use your new knowledge in the world! See what you can build. Find ways to help other people.
 
-And if you're ambitious, **I challenge you to go deeper** after you finish this learning project. Use this framework and do another round of TypeScript. See how much you can learn! You'll never know the opportunities that may show up as a result.
+And if you're ambitious, **I challenge you to go deeper** after you finish your first learning project. Use this framework and do another round of it. See how much you can learn! You'll never know the opportunities that may show up as a result.
 
 Tweak this learning framework to your liking and try it out on other projects - even non-technical ones. Adjust as needed. See how it works.
+
+_Special thanks to my friends [Sean](https://twitter.com/seanjun21), [swyx](https://twitter.com/swyx), and [Prince](https://twitter.com/maxcell) for reviewing and giving feedback on the first version of this._
 
 ### Interested in Fast Learning?
 
