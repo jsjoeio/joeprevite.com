@@ -8,7 +8,7 @@ import format from 'comma-number'
 import { loadDb } from '../lib/db'
 
 const ViewCounter = ({ id }) => {
-  const [views, setViews] = useState('')
+  const [views, setViews] = useState(null)
 
   useEffect(() => {
     const onViews = newViews => setViews(newViews.val())
