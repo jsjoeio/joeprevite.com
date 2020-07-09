@@ -1,6 +1,6 @@
 ---
 slug: 'learn-quickly'
-date: '2020-07-03'
+date: '2020-07-09'
 title: 'How to Learn Quickly'
 description: 'In the post, I show you how to learn anything quickly using the Fast Framework.'
 tagline: 'Using the Fast Framework'
@@ -9,13 +9,13 @@ published: true
 
 A few months back, I set out a goal to learn TypeScript deeply in 3 months and [I did it](https://twitter.com/jsjoeio/status/1250490760362774529). Since then, others have asked how they can do the same. The outcome is a result of using something that I like to call the **Fast Framework**. This guide will teach you how you can use it to learn anything quickly.
 
-Imagine you're in [Mario Kart](https://en.wikipedia.org/wiki/Mario_Kart) and racing on a new map. Your goal is to cross the finish line. Taking this analogy, we break the framework into three phases:
+Imagine you're in racing a car. Your goal is to cross the finish line. Taking this analogy, we break the framework into three phases:
 
 1. Make your Map
 1. Stay on Track
-1. Find the Flag
+1. Cross the Finishline
 
-In each phase, I'll cover different aspects that will help you learn fast and reach your goal. I'll use learning TypeScript as the example. The first phase will cover the foundation for your learning project. Think of this as vision, timeframe, timeline, and organization. In the phase after, the focus will be staying on track and I'll discuss aspects related to accountability, momentum, sharing, and focus. In the final phase of the journey, the goal is to finish strong and find the flag. There, I'll talk about practice, confidence, vocabulary, and depth.
+In each phase, I'll cover different aspects that will help you learn fast and reach your goal. I'll use learning TypeScript as the example. The first phase will cover the foundation for your learning project. Think of this as vision, timeframe, timeline, and organization. In the phase after, the focus will be staying on track and I'll discuss aspects related to accountability, momentum, sharing, and focus. In the final phase of the journey, the goal is to finish strong and cross the finishline. There, I'll talk about practice, confidence, vocabulary, and depth.
 
 ## Make your Map
 
@@ -177,9 +177,9 @@ The other thing you might want to try is [**deep work**](https://www.calnewport.
 
 Lastly, find tools to help you stay focused. I am a big fan of the **Pomodoro Technique**. I have an app called [Stretchly](https://hovancik.net/stretchly/) that reminds me to take a 20-second break every 20 minutes and a 5-minute break every 40 minutes. This allows me to focus for that period and then rest. It then repeats itself like a cycle.
 
-## Find the Flag
+## Cross the Finishline
 
-The last and final leg of this learning journey is finding the flag. You should make it to the finish line and feel accomplished when you get there. Here, you want to use systems that will help you practice, build confidence, remember vocabulary, and go for depth. This will lead to the beloved checkered flag.
+The last and final leg of this learning journey is cross the finishline. You should make it there and feel accomplished. Here, you want to use systems that will help you practice, build confidence, remember vocabulary, and go for depth.
 
 ### Practice
 
@@ -250,7 +250,7 @@ As you can imagine, if you do this with a topic, you'll have several learning pr
 
 ## Summary
 
-The most important takeaway is this: **use systems to help you learn better and faster**. They will serve as your map, keep you on track and help you find the flag to finish the race. If you were to do this with a programming language like TypeScript, you would develop a proficiency, hopefully even **expertise** in the language.
+The most important takeaway is this: **use systems to help you learn better and faster**. They will serve as your map, keep you on track and help you cross the finishline. If you were to do this with a programming language like TypeScript, you would develop a proficiency, hopefully even **expertise** in the language.
 
 The next steps are to go out and use your new knowledge in the world! See what you can build. Find ways to help other people.
 
@@ -260,6 +260,6 @@ Tweak this learning framework to your liking and try it out on other projects - 
 
 _Special thanks to my friends [Sean](https://twitter.com/seanjun21), [swyx](https://twitter.com/swyx), and [Prince](https://twitter.com/maxcell) for reviewing and giving feedback._
 
-### Interested in Fast Learning?
+<!-- ### Interested in Fast Learning?
 
-I wrote a quick-starters guide for the **Fast Framework**. Think of it as a cheat sheet for starting your fast learning projects. Sign up below and I'll send you a free PDF copy.
+I wrote a quick-starters guide for the **Fast Framework**. Think of it as a cheat sheet for starting your fast learning projects. Sign up below and I'll send you a free PDF copy. -->
