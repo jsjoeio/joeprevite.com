@@ -257,6 +257,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "BillyLevin",
+      "name": "Billy Levin",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4649675?v=4",
+      "profile": "http://weblev.io",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
