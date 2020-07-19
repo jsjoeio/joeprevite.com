@@ -20,19 +20,52 @@ export default function Post({
   const slug = mdx?.frontmatter.slug
   const blogPostUrl = `${config.siteUrl}/${slug}/`
 
-  if (mdx !== null) {
-    return (
-      <Layout site={site} frontmatter={mdx.frontmatter}>
-        <SEO frontmatter={mdx.frontmatter} isBlogPost />
-        <article
-          css={css`
-            width: 100%;
-            display: flex;
-          `}
-        >
-          <Container>
-            <h1
-              css={css`
+  // These are the pages where we want to hide the subscribe form
+  const pagesToHideSubscribeForm = ['learn-quickly']
+
+  // Controls whether or not to show the subscribe form (for the newsletter)
+  // in the Layout > Footer
+  // setting it to true will hide it
+  // Loop through the pages to hide
+  pagesToHideSubscribeForm.forEach(pageSlug => pageSlug === slug)
+
+  // If the slug of the current page matches the pageSlug for the pages to hide,
+  // then this returns true and we hide it
+  const noSubscribeForm = pagesToHideSubscribeForm.some(
+    pageSlug => pageSlug === slug,
+  )
+
+  return (
+    <Layout
+      site={site}
+      frontmatter={mdx.frontmatter}
+      noSubscribeForm={noSubscribeForm}
+    >
+      <SEO frontmatter={mdx.frontmatter} isBlogPost />
+      <article
+        css={css`
+          width: 100%;
+          display: flex;
+        `}
+      >
+        <Container>
+          <h1
+            css={css`
+              text-align: center;
+              margin-bottom: 20px;
+            `}
+          >
+            {title}
+          </h1>
+          <div
+            css={css`
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin: 0 auto 20px;
+              h3,
+              p,
+              span {
                 text-align: center;
                 margin-bottom: 20px;
               `}
