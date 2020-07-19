@@ -10,9 +10,9 @@ import Button from '../Header/Button'
 import { PleaseConfirmIllustration } from '../ConfirmMessage/Illustrations'
 
 // TODOs
-// 1. Update copy
-// 2. Add api key for convert kit
-// 3. change from buttondown to convertkit
+// 1. Update copy :white-check:
+// 2. conertkit signup form
+// 3. Test
 
 const BUTTONDOWN_API_URL = ' https://api.buttondown.email/v1/subscribers'
 const BUTTONDOWN_API_TOKEN = process.env.GATSBY_BUTTONDOWN_API_TOKEN
