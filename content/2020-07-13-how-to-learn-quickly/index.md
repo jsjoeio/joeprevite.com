@@ -258,8 +258,6 @@ And if you're ambitious, **I challenge you to go deeper** after you finish your 
 
 Tweak this learning framework to your liking and try it out on other projects - even non-technical ones. Adjust as needed. See how it works.
 
-_Special thanks to my friends [Sean](https://twitter.com/seanjun21), [swyx](https://twitter.com/swyx), and [Prince](https://twitter.com/maxcell) for reviewing and giving feedback._
+_Thanks to [Sean](https://twitter.com/seanjun21), [swyx](https://twitter.com/swyx), and [Prince](https://twitter.com/maxcell) for giving early feedback._
 
-<!-- ### Interested in Fast Learning?
-
-I wrote a quick-starters guide for the **Fast Framework**. Think of it as a cheat sheet for starting your fast learning projects. Sign up below and I'll send you a free PDF copy. -->
+<DownloadPDF />
