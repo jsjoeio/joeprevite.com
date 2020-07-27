@@ -9,16 +9,8 @@ import Message from '../ConfirmMessage/Message'
 import Button from '../Header/Button'
 import { PleaseConfirmIllustration } from '../ConfirmMessage/Illustrations'
 
-// TODOs
-// 1. Update copy :white-check:
-// 2. conertkit signup form
-// 3. Test
-
-const BUTTONDOWN_API_URL = ' https://api.buttondown.email/v1/subscribers'
-const BUTTONDOWN_API_TOKEN = process.env.GATSBY_BUTTONDOWN_API_TOKEN
-
-const CONVERT_KIT_FORM_ID = process.env.CONVERTKIT_SIGNUP_FORM
-const CONVERT_KIT_URL = `https://app.convertkit.com/forms/${CONVERT_KIT_FORM_ID}/subscriptions`
+const FORM_ID = process.env.GATSBY_CONVERTKIT_SIGNUP_FORM
+const CONVERT_KIT_URL = `https://app.convertkit.com/forms/${FORM_ID}/subscriptions`
 
 const SubscribeSchema = Yup.object().shape({
   email: Yup.string()
@@ -46,7 +38,12 @@ class DownloadPDF extends React.Component {
 
   async handleSubmit(values) {
     // values is an object that has the email field on it
-    const data = { ...values, api_key: '1234', tags: ['learn-quickly-post'] }
+    const data = {
+      email_address: values.email,
+      tags: ['learn-quickly-post'],
+      referrer: 'https://joeprevite.com/learn-quickly',
+    }
+    console.log(data, 'data')
     this.setState({ submitted: true })
     try {
       const response = await fetch(CONVERT_KIT_URL, {
