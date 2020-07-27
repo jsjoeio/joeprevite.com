@@ -45,7 +45,8 @@ class DownloadPDF extends React.Component {
   }
 
   async handleSubmit(values) {
-    const data = { ...values, referrer_url: 'https://joeprevite.com' }
+    // values is an object that has the email field on it
+    const data = { ...values, api_key: '1234', tags: ['learn-quickly-post'] }
     this.setState({ submitted: true })
     try {
       const response = await fetch(CONVERT_KIT_URL, {

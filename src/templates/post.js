@@ -35,13 +35,16 @@ export default function Post({
     pageSlug => pageSlug === slug,
   )
 
+  console.log('what the fuck ', mdx)
+  if (mdx === null) return null
+
   return (
     <Layout
       site={site}
-      frontmatter={mdx.frontmatter}
+      frontmatter={mdx?.frontmatter}
       noSubscribeForm={noSubscribeForm}
     >
-      <SEO frontmatter={mdx.frontmatter} isBlogPost />
+      <SEO frontmatter={mdx?.frontmatter} isBlogPost />
       <article
         css={css`
           width: 100%;
@@ -98,7 +101,7 @@ export default function Post({
             </div>
           )} */}
           <br />
-          <MDXRenderer>{mdx.body}</MDXRenderer>
+          <MDXRenderer>{mdx?.body}</MDXRenderer>
         </Container>
         {/* <SubscribeForm /> */}
       </article>
@@ -127,7 +130,7 @@ export default function Post({
       </Container>
       <Container noVerticalPadding>
         <Share
-          url={`${config.siteUrl}/${mdx.frontmatter.slug}/`}
+          url={`${config.siteUrl}/${mdx?.frontmatter.slug}/`}
           title={title}
           twitterHandle={config.twitterHandle}
         />
