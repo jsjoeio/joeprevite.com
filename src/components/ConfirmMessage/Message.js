@@ -6,7 +6,6 @@ import Link from '../Link'
 import { bpMaxSM } from '../../lib/breakpoints'
 
 export default ({
-  illustration,
   title,
   body,
   note,
@@ -22,7 +21,6 @@ export default ({
       }
     `}
   >
-    <div>{illustration}</div>
     <h2>{title}</h2>
     {body && <Markdown>{body}</Markdown>}
     {note && (
