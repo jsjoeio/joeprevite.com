@@ -35,13 +35,16 @@ export default function Post({
     pageSlug => pageSlug === slug,
   )
 
+  console.log('what the fuck ', mdx)
+  if (mdx === null) return null
+
   return (
     <Layout
       site={site}
-      frontmatter={mdx.frontmatter}
+      frontmatter={mdx?.frontmatter}
       noSubscribeForm={noSubscribeForm}
     >
-      <SEO frontmatter={mdx.frontmatter} isBlogPost />
+      <SEO frontmatter={mdx?.frontmatter} isBlogPost />
       <article
         css={css`
           width: 100%;
@@ -112,47 +115,44 @@ export default function Post({
               />
             </div>
           )} */}
-            <br />
-            <MDXRenderer>{mdx.body}</MDXRenderer>
-          </Container>
-          {/* <SubscribeForm /> */}
-        </article>
-        {/*
+          <br />
+          <MDXRenderer>{mdx?.body}</MDXRenderer>
+        </Container>
+        {/* <SubscribeForm /> */}
+      </article>
+      {/*
         Shamelessly borrowed from @kentcdodds
         Source: https://github.com/kentcdodds/kentcdodds.com/blob/master/src/templates/post.js
       */}
-        <Container noVerticalPadding>
-          <p css={{ textAlign: 'right' }}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              // using mobile.twitter.com because if people haven't upgraded
-              // to the new experience, the regular URL wont work for them
-              href={`https://mobile.twitter.com/search?q=${encodeURIComponent(
-                blogPostUrl,
-              )}`}
-            >
-              Discuss on Twitter
-            </a>
-            <span css={{ marginLeft: 10, marginRight: 10 }}>{` • `}</span>
-            <a target="_blank" rel="noopener noreferrer" href={editLink}>
-              Edit post on GitHub
-            </a>
-          </p>
-        </Container>
-        <Container noVerticalPadding>
-          <Share
-            url={`${config.siteUrl}/${mdx.frontmatter.slug}/`}
-            title={title}
-            twitterHandle={config.twitterHandle}
-          />
-          <br />
-        </Container>
-      </Layout>
-    )
-  }
-
-  return null
+      <Container noVerticalPadding>
+        <p css={{ textAlign: 'right' }}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            // using mobile.twitter.com because if people haven't upgraded
+            // to the new experience, the regular URL wont work for them
+            href={`https://mobile.twitter.com/search?q=${encodeURIComponent(
+              blogPostUrl,
+            )}`}
+          >
+            Discuss on Twitter
+          </a>
+          <span css={{ marginLeft: 10, marginRight: 10 }}>{` • `}</span>
+          <a target="_blank" rel="noopener noreferrer" href={editLink}>
+            Edit post on GitHub
+          </a>
+        </p>
+      </Container>
+      <Container noVerticalPadding>
+        <Share
+          url={`${config.siteUrl}/${mdx?.frontmatter.slug}/`}
+          title={title}
+          twitterHandle={config.twitterHandle}
+        />
+        <br />
+      </Container>
+    </Layout>
+  )
 }
 
 export const pageQuery = graphql`
