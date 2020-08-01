@@ -1,7 +1,7 @@
 ---
 slug: 'book-review-how-to-be-antiracist'
 date: '2020-08-01'
-title: 'Book Review: How to Be Antiracist'
+title: 'Book Review: How to be Antiracist'
 description: 'My notes and thoughts on How to be Antiracist by Ibram X Kendi'
 tagline: 'My notes and thoughts'
 published: true
