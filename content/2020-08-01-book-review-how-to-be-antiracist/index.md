@@ -120,7 +120,7 @@ I had to look up "white ethnostate" because I didn't know what it meant. It mean
 
 We talked about it earlier, but we don't want a "race-neutral" country. Quoting what I wrote earlier,
 
-> Be eraising race, you ignore the problems that exist around it. We don't want that. We want to see race, see the policies and issues around it, and then fix them together.
+> Be erasing race, you ignore the problems that exist around it. We don't want that. We want to see race, see the policies and issues around it, and then fix them together.
 
 > The construct of race neutrality actually feeds White nationalist victimhood by positing the notion that any policy protecting or advancing non-White Americans toward equity is “reverse discrimination.”
 > -Kendi 19
@@ -231,7 +231,7 @@ This is terrible. A white teacher calling on white hands isn't right. Any teache
 
 This makes me upset. Why is this? What are the racist policies in play here and how do we fight against this? Can we fight against this from the outside? This could be researched further.
 
-> Scholars call what I saw a "microagression", a term coined by eminent Harvard psychiatrist Chester Pierce in 1970.
+> Scholars call what I saw a "microaggression", a term coined by eminent Harvard psychiatrist Chester Pierce in 1970.
 > -Kendi 45
 
 I remember hearing this term in college, but never quite understood it. The term is still a bit of a mystery. Kendi uses his explanation a bit further down as we'll see.
@@ -393,7 +393,7 @@ This is beautiful. I remember learning about Ebonics, or African American Englis
 > Why is Ebonics broken English but English is not broken German?
 > —Kendi 83
 
-I think this is a fantastic counterpoint to make if someone debates you and says, "Ebonic is broken English." I don't think I know enough about Ebonics to fully defend it, but I think this is the start of the exploration for me.
+I think this is a fantastic counterpoint to make if someone debates you and says, "Ebonics is broken English." I don't think I know enough about Ebonics to fully defend it, but I think this is the start of the exploration for me.
 
 > The idea that Black languages outside Africa are broken is as culturally racist as the ideas that languages inside Europe are fixed.
 > —Kendi 83
