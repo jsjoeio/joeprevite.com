@@ -3,6 +3,7 @@ const path = require('path')
 const _ = require('lodash')
 const paginate = require('gatsby-awesome-pagination')
 const PAGINATION_OFFSET = 7
+const GIT_DEFAULT_BRANCH = 'main'
 const IS_DEV_MODE = process.env.NODE_ENV === 'development'
 const { VALID_TAGS } = require('./src/lib/tags')
 
@@ -279,7 +280,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       name: 'editLink',
       node,
-      value: `https://github.com/jsjoeio/joeprevite.com/edit/master${node.fileAbsolutePath.replace(
+      value: `https://github.com/jsjoeio/joeprevite.com/edit/${GIT_DEFAULT_BRANCH}${node.fileAbsolutePath.replace(
         __dirname,
         '',
       )}`,
