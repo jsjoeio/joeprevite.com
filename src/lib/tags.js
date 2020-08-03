@@ -2,6 +2,7 @@
 const VALID_TAGS = new Set([
   `Anti-Racism`,
   `Book`,
+  `Clojure`,
   `GitHub`,
   `Go`,
   `JavaScript`,

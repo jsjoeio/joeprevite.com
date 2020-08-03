@@ -12,6 +12,8 @@ import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
 require('prismjs/components/prism-rust')
 // Add syntax highlighting support for Reason
 require('prismjs/components/prism-reason')
+// Add syntax highlighting support for Clojure
+require('prismjs/components/prism-clojure')
 
 // Used to determine if we have to highlight the given index
 // Borrowed from https://prince.dev/blog/highlight-with-react
