@@ -85,7 +85,60 @@ and a sequence as the second argument. It checks "
 
 Clojure is blowing my mind right now with these built-in keywords like `take`, `iterate`, `repeat` and `expand`. I almost wish I had a bunch of exercises to practice these. I know some may come up in 4Clojure though.
 
-<!-- Stopped on page 37 -->
+Between `interleave`, `interpose`, and `reserve`, there are so many handle functions built into the language. I'm impressed.
+
+It's like if lodash were built into JavaScript.
+
+Ah, `take-last` would have been handy.
+
+> `reduce` really is the uberfunction over sequences
+
+It may be time to finally sit down and learn me some `reduce`!
+
+It's curious to hear that "most of Cljoure's sequence functions are lazy." I am not used to working in this type of context. Most of the time, I think functions are executed immediately. With Clojure, it doesn't seem like that's the case.
+
+The author skillfully takes a difficult problem such as "find the sum of the products of consecutive pairs of the first 1000 odd intgers" and breaks it down into smaller chunks that one can follow. I find it refreshing. I wish we encouraged more learning materials to take this approach. Not only does it show their thinking, but it makes it accessible to all levels of students.
+
+#### Problems
+
+At the end of Chapter 4 are 4 problems. Here they are listed with the answers I came up with:
+
+1. "Write a function to find out if a string is a palindrome—that is, if it looks like the same forwards and backwards.
+
+```clojure
+(fn palindrome
+    "returns true if word is a palindrome"
+    [word]
+    (= (seq word) (seq (reverse word))))
+```
+
+2. "Find the number of 'c's in "abracadabra"
+
+This one was tougher than the first. I tried a few things like splitting the string into characters and then counting. No luck there. I also tried spliting and then filtering for a character. That didn't work either.
+
+I cheated and used [this solution](https://stackoverflow.com/a/29040450/3015595) from Stack Overflow.
+
+```clojure
+(count (re-seq #"c" "abracadabra"))
+```
+
+3. "Write your own version of filter"
+
+```clojure
+(fn joe-filter
+    "My own implementation of filter"
+    [pred coll]
+    ; loop over coll with x
+    ; if pred true for x
+    ; add to list
+    ; return list
+    ; todo finish
+    )
+```
+
+4. "Find the first 100 prime numbers: 2, 3, 5, 7, 11, 13, 17"
+
+todo
 
 ## Questions
 
@@ -103,6 +156,8 @@ I wrote down questions that came up while reading. Here they are:
 
 - **base case** - used in recursion to stop the infinite loop
 - **inductive case** - also called the _recurrence relation_, the thing that gets called repeatedly
+- **lazy** - constructed, but not executed
+- **unrealized** - waiting to be executed
 
 ## Cheatsheet
 
@@ -132,4 +187,10 @@ The only negative values are `false` and `nil`.
 (let [x 1]
 ;; this is a comment
     x) ; and another one
+```
+
+### split a string into characters
+
+```clojure
+(seq "joe")
 ```
