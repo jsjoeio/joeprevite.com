@@ -140,6 +140,59 @@ I cheated and used [this solution](https://stackoverflow.com/a/29040450/3015595)
 
 todo
 
+### Chapter 5: Macros
+
+Macros are a programming concept that I'm still wrappig my head around. Here's what I understand:
+
+- you, the programmer, define them
+- they run before the other rules of the program
+
+Borrowing the example from the book, here is a macro called `ignore`:
+
+```clojure
+(defmacro ignore
+    "Cancels the evaluation of an expression, returning nil instead."
+    [expr]
+    nil)
+
+;; Example
+user=> (ignore (+ 1 2))
+nil
+```
+
+My issue with macros is these examples often start like so: preventing evaluation. I can't think of a time where I needed something like this, which makes the concept hard to grasp. Let's hope we have a more practical example ahead of us.
+
+> Where functions rewrite values, macros rewrite code.
+
+Simple. Concicse. Beautiful. We are making progress.
+
+`macroexpand` implements the macro without evaluating the expression. Sounds like a handy tool to test that a macro wrote the code you expected.
+
+When a programming language uses the same language for the macros, we call it a _procedural macro system._ Clojure falls into this category, while C doesn't (C uses the C preprocessor for macros).
+
+This section on _special forms_ feels a bit fuzzy. I'm not groking what the author is saying related to the _syntax-quote_ or the _unquote_ and _unquote-splice_. I'll have to revisit this in the future.
+
+More terms here that sound foreign:
+
+- symbol capture
+- anaphoric
+- unhygenic
+
+#### Control Flow
+
+Covering control flow, it appears there are a lot of options for us including:
+
+- `if` - takes a predicate and two expressions
+- `when` - takes one predicate and any num of expressions
+- `if-not` - inverts `if`
+- `when-not` - inverts `when-not`
+- `while` - evaluates expression as long as predicate is truthy
+- `cond` - multiheaded `if`
+- `condp` - like `cond` but with a predicate
+- `case` - doesn't evaluate in order, much faster than others
+
+<!-- Stopped at recursion page 51-->
+
 ## Questions
 
 I wrote down questions that came up while reading. Here they are:
@@ -151,12 +204,20 @@ I wrote down questions that came up while reading. Here they are:
 - Vectors aren't evaluated like lists so no need to quote them to stop evaluation...but why?
 - What's the difference between Integers vs. Longs vs. Shorts?
 - What's it called where the repl checks for matching parens?
+- How do you use the syntax-quote, unquote and unquote-splice?
 
 ## Glossary
 
+- **anaphoric** - todo
 - **base case** - used in recursion to stop the infinite loop
 - **inductive case** - also called the _recurrence relation_, the thing that gets called repeatedly
 - **lazy** - constructed, but not executed
+- **macro** - meta-code that runs before your program runs
+- **predicate** - used with `if` expressions. it's the condition we use to check if it evaluates to turthy or falsey
+- **procedural macro system** - a macro system implemented in the language in which you use it
+- **special forms** - syntax like `if` which are built into the language
+- **symbol capture** - todo
+- **unhygenic** - todo
 - **unrealized** - waiting to be executed
 
 ## Cheatsheet
@@ -193,4 +254,26 @@ The only negative values are `false` and `nil`.
 
 ```clojure
 (seq "joe")
+```
+
+### how to define a macro
+
+```clojure
+(defmacro ignore
+    "Cancels the evaluation of an expression, returning nil instead."
+    [expr]
+    nil)
+
+;; Example
+user=> (ignore (+ 1 2))
+nil
+```
+
+### generate a new symbol
+
+Useful for when you need a new variable in a macro
+
+```clojure
+user=> (gensym "hi")
+hi326
 ```
