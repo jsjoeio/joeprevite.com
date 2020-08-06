@@ -191,7 +191,37 @@ Covering control flow, it appears there are a lot of options for us including:
 - `condp` - like `cond` but with a predicate
 - `case` - doesn't evaluate in order, much faster than others
 
-<!-- Stopped at recursion page 51-->
+#### Recursion
+
+> Use `recur` wherever possible. It requires much less memory and is much faster than the explicit recusion.
+
+As the author explains, it tells the Clojure compiler that we can re-use a space for other things.
+
+They tell us to think of it like a "recursive `let`."
+
+Note to self: practice `recur`.
+
+_On an unrelated note, the author used smörgåsbord and this is the first time in my life I've seen the word spelled. I am guessing here, but think it's a Sweedish breakfast? Need to double-check, but eye-opening to see how its spelled._
+
+> In essence, ->> flattens and reverses a nested chain of operations
+
+Sounds like witchcraft. Another thing I need to familiarize myself with.
+
+_Side note: I wish I could practice using these different tools in Clojure. Like short, 2-min exercises. Wouldn't that be nice? Think 4Clojure, but 4-5 problems focusing on a specific function/tool/keyword._
+
+#### Problems
+
+Oh boy. These problems sound tougher than the last ones. I'm going to select a few here:
+
+1. "Using the control flow constructs we’ve learned, write a schedule function which, given an hour of the day, returns what you’ll be doing at that time. (schedule 18), for me, returns
+   :dinner ."
+
+2. "Write a macro id which takes a function and a list of args: (id f a b c), and returns an expression which calls that function with the given args: (f a b c)."
+
+3. "Write a macro log which uses a var, logging-enabled, to determine whether or not to print an expression to the console at compile time. If logging-enabled is false,
+   (log :hi) should macroexpand to nil. If logging-enabled is true, (log :hi) should macroexpand to (prn :hi). Why would you want to do this check during compilation, instead of when running the program? What might you lose?"
+
+<!-- Next up, chapter 6 on State -->
 
 ## Questions
 
@@ -217,6 +247,7 @@ I wrote down questions that came up while reading. Here they are:
 - **procedural macro system** - a macro system implemented in the language in which you use it
 - **special forms** - syntax like `if` which are built into the language
 - **symbol capture** - todo
+- **tail-recursive function** - todo
 - **unhygenic** - todo
 - **unrealized** - waiting to be executed
 
