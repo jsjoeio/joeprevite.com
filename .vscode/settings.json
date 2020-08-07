@@ -1,4 +1,5 @@
 {
   "editor.formatOnSave": true,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "editor.minimap.enabled": false
 }

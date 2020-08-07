@@ -221,7 +221,50 @@ Oh boy. These problems sound tougher than the last ones. I'm going to select a f
 3. "Write a macro log which uses a var, logging-enabled, to determine whether or not to print an expression to the console at compile time. If logging-enabled is false,
    (log :hi) should macroexpand to nil. If logging-enabled is true, (log :hi) should macroexpand to (prn :hi). Why would you want to do this check during compilation, instead of when running the program? What might you lose?"
 
-<!-- Next up, chapter 6 on State -->
+### Chapter 6: State
+
+This chapter focuses on changes to your program i.e. mutability.  
+
+The bindings used by default in Clojure are immutable.
+
+We see that Clojure supports closures (that's hard to say) and allows you to carry over values from an outer function.
+
+> This is the basis of concurrency: evaluating expressions outside their normal, sequential order.
+
+Now I feel like I'm making progress with concurrency.
+
+`delay` is in an interesting macro. It sounds like it utilizes memoization, meaning it caches the result of the expression.
+
+#### futures, promises and delays
+
+- delays defer evaluation (I will evaluate this later)
+- futures paralleize it (I'll do this later)
+- promises will come back with a value
+
+Still working through this part.
+
+With promises, the program can guarantee that when you read it, you it will wait until it has a value for you.
+
+#### vars
+
+These are global variables. They are mutable. However, a dynamic var can only be mutated within the scope of a particular function call.
+
+This brings safety to variables which may have the same name, but are used in different threads. The thread with special powers can change the value without changing it for the other threads.
+
+#### atoms
+
+I love the sound of these, probably because it reminds me of the React logo.
+
+I like these because you can create them, and safely mutate them. Their values are protected. You can't look inside and see what they hold unless you `deref` or use `@`.
+
+> Clojure’s reliance on immutable datatypes, immutable variables, and pure functions enables this approach to linearizable mutability
+
+Yay immutability and pureness!
+
+Multi-identity updates—i.e. you want to update two atoms—then reach for a special identity type called *Ref*. These are updated in groups.
+
+You use `dosync` transactions.
+
 
 ## Questions
 
@@ -235,14 +278,18 @@ I wrote down questions that came up while reading. Here they are:
 - What's the difference between Integers vs. Longs vs. Shorts?
 - What's it called where the repl checks for matching parens?
 - How do you use the syntax-quote, unquote and unquote-splice?
+- When to use futures, promises and delays?
+- When do I need to use parens vs. not? (atoms, (deref xs) vs. @xs)
 
 ## Glossary
 
 - **anaphoric** - todo
 - **base case** - used in recursion to stop the infinite loop
+- **concurrency** - todo
 - **inductive case** - also called the _recurrence relation_, the thing that gets called repeatedly
 - **lazy** - constructed, but not executed
 - **macro** - meta-code that runs before your program runs
+- **parallelism** - todo
 - **predicate** - used with `if` expressions. it's the condition we use to check if it evaluates to turthy or falsey
 - **procedural macro system** - a macro system implemented in the language in which you use it
 - **special forms** - syntax like `if` which are built into the language
