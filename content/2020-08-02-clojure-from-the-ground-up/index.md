@@ -223,7 +223,7 @@ Oh boy. These problems sound tougher than the last ones. I'm going to select a f
 
 ### Chapter 6: State
 
-This chapter focuses on changes to your program i.e. mutability.  
+This chapter focuses on changes to your program i.e. mutability.
 
 The bindings used by default in Clojure are immutable.
 
@@ -261,10 +261,21 @@ I like these because you can create them, and safely mutate them. Their values a
 
 Yay immutability and pureness!
 
-Multi-identity updates—i.e. you want to update two atoms—then reach for a special identity type called *Ref*. These are updated in groups.
+Multi-identity updates—i.e. you want to update two atoms—then reach for a special identity type called _Ref_. These are updated in groups.
 
 You use `dosync` transactions.
 
+### Chapter 7: Logistics
+
+`lein` has a useful scaffolding tool built into the CLI. The default boilterplate comes with your traditional nuts and bolts. The exceptions are:
+
+- `resources` which is for additional files, like images
+- `test` for tests
+- `target` for compiled code
+
+I like that they recommend a structure. It's something the JS ecosystem refuses, but I like it.
+
+<!-- stopped at fbi json -->
 
 ## Questions
 
@@ -354,4 +365,11 @@ Useful for when you need a new variable in a macro
 ```clojure
 user=> (gensym "hi")
 hi326
+```
+
+### access code in other namespaces
+
+```clojure
+; If we want to access `scratch.core` from the outside
+(ns user (:require (scratch.core)))
 ```
