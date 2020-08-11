@@ -275,7 +275,30 @@ You use `dosync` transactions.
 
 I like that they recommend a structure. It's something the JS ecosystem refuses, but I like it.
 
-<!-- stopped at fbi json -->
+Clojure libraries are published on place called Clojars - clever name! 
+
+### Chapter 8: Modeling
+
+One observation I notice in this chapter is how the author is using functions with `def` to define things that I might declare with `let` bindings in other languages. Here is an example from the book:
+
+```clojure
+(def earth-equatorial-radius
+ "Radius of the earth, in meters"
+6378137)
+``` 
+
+Now I'm second-guessing myself...I know there are `let bindings`
+
+### Chapter 9: Debugging
+
+The suggested approach for solving a bug:
+
+1. Understand the problem
+2. Devise a plan
+3. Carry out the plan
+4. Look back
+
+Step 4 focuses on reflection. This is a new addition to my own debugging strategy, but I can imagine why one should do it. It's crucial for learning.
 
 ## Questions
 
@@ -297,6 +320,7 @@ I wrote down questions that came up while reading. Here they are:
 - **anaphoric** - todo
 - **base case** - used in recursion to stop the infinite loop
 - **concurrency** - todo
+- **histogram** - todo
 - **inductive case** - also called the _recurrence relation_, the thing that gets called repeatedly
 - **lazy** - constructed, but not executed
 - **macro** - meta-code that runs before your program runs
