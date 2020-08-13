@@ -60,7 +60,61 @@ So far, I know:
 
 That's it...I'll have to explore this area more later.
 
-<!-- Stopped at Sets https://www.braveclojure.com/do-things/ -->
+#### Sets
+
+Hash sets are used more often.
+
+#### Functions
+
+Clojure has first-class support for functions (meaning it supports higher-order functions).
+
+Docstrings provide a way for you to document your functions. They can be viewed by called `doc fn-name`.
+
+Arity is the number of parameters for a function. Clojure functions can take zero or more params.
+
+Clojure functions also support function overloading, aso called arity overloading. This means you can use different function bodys based on the number of arguments called with the function.
+
+Functions support a *rest* parameter meaning "give me the rest", but it must come last in the function signature.
+
+Clojure functions automatically return the last evaluated value.
+
+There is a strange looking syntax for an annonymous function which uses the `#` symbol. This is possible thanks to *reader macros*. More on that later.
+
+```clojure
+;; Function call
+(* 8 3)
+
+;; Anonymous function
+#(* % 3)
+```
+
+You can see that the function takes one parameter and substitutes it in place of the `%`.
+
+Returning functions from other functions create closures, meaning they have access to variables defined within them.
+
+`loop` has better performance than say a normal function which is called recursively.
+
+`re-find` alows you to check whether a string matches a regex pattern.
+
+#### Exercises
+
+Things to practice what I've learned in the chapter so far:
+
+1. Use the `str`, `vector`, `list`, `hash-map`, and `hash-set` functions.
+2. Write a function that takes a number and adds 100 to it.
+3. Write a function `dec-maker` that works exactly like `inc-maker` but with subtraction.
+
+```clojure
+(def dec9 (dec-maker 9))
+(dec9 10)
+; => 1
+```
+4. Write a function `mapset` that works like `map` except the return value is a set.
+
+```clojure
+(mapset inc [1 1 2 2])
+; => #{2 3}
+```
 
 ## Questions
 
@@ -68,11 +122,15 @@ I wrote down questions that came up while reading. Here they are
 
 - Are `def` and words defined with ":" both called "keywords"? The ones with ":" are confusing to me.
 - Maps vs. vectors vs. lists
+- When to use hash sets vs. sorted sets?
 
 ## Glossary
 
+**arity** - the number of parameters of a function
 **coercion** - todo
 **contagion** - todo
+**expander** - todo
+**reader macros** - todo
 **operator** - todo
 **operand** - todo
 
@@ -111,4 +169,10 @@ A few tips and tricks to remember.
 
 ```clojure
 (conj [1 2 3] 4)
+```
+
+### write a hash set
+
+```clojure
+#{"kurt vonnegut" 20 :icicle}
 ```
