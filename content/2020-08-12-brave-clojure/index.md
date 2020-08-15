@@ -116,23 +116,78 @@ Things to practice what I've learned in the chapter so far:
 ; => #{2 3}
 ```
 
+### Chapter 4: Core Functions in Depth
+
+I like the sound of the chapter name! Deep learning. My kind of thing.
+
+One of the central tenants of Clojure's philosophy is "programming to abstractions". What this means is they program to abstractions (i.e. functions) rather than data structures (like lists vs. hashes).
+
+> I think of abstractions as named collections of operations
+
+I love this description. I've never heard of it described this way. And a function is simply an abstraction.
+
+`take-while` can be more efficient than `filter` because it doesn't have to process all of the data.
+
+Lazy seq elements only need to be realized once. Does Clojure cache them?
+
+> `apply` explodes a seqable data structure so it can be passed to a function that expects a rest parameter
+
+Well that's an unusual use of the word "explodes."
+
+An example:
+
+```clojure
+(apply max [0 1 2])
+```
+
+By doing this, we apply all the elements in the vector to `max`.
+
+When to use `partial`? The answer:
+
+> In general, you want to use partials when you find you’re repeating the same combination of function and arguments in many different contexts.
+
+Another example of this using a logger:
+
+```clojure
+(defn lousy-logger
+  [log-level message]
+  (condp = log-level
+    :warn (clojure.string/lower-case message)
+    :emergency (clojure.string/upper-case message)))
+
+(def warn (partial lousy-logger :warn))
+
+(warn "Red light ahead")
+; => "red light ahead"
+```
+
+It saves some time ebcause you don't have to pass two args every time. Instead, only 1.
+
+
+
 ## Questions
 
 I wrote down questions that came up while reading. Here they are
 
 - Are `def` and words defined with ":" both called "keywords"? The ones with ":" are confusing to me.
-- Maps vs. vectors vs. lists
+- Maps vs. vectors vs. lists?
 - When to use hash sets vs. sorted sets?
+- Why do Clojure lazy sequences only need to be realized once? Are they cached?
 
 ## Glossary
 
-**arity** - the number of parameters of a function
-**coercion** - todo
-**contagion** - todo
-**expander** - todo
-**reader macros** - todo
-**operator** - todo
-**operand** - todo
+- **arity** - the number of parameters of a function
+- **coercion** - todo
+- **consing** - when you use `cons` function
+- **contagion** - todo
+- **expander** - todo
+- **indirection** - todo
+- **lazy sequence** - members aren't computed until you access them
+- **reader macros** - todo
+- **realizing** - "computing a (lazy) seq's members"
+- **operator** - todo
+- **operand** - todo
+- **predicate function** - "a function whose return value is evaluated for truth or falsity"
 
 ## Cheatsheet
 
