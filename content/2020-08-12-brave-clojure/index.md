@@ -161,7 +161,7 @@ Another example of this using a logger:
 ; => "red light ahead"
 ```
 
-It saves some time ebcause you don't have to pass two args every time. Instead, only 1.
+It saves some time because you don't have to pass two args every time. Instead, only 1.
 
 ### Chapter 5: Functional Programming
 
@@ -170,7 +170,46 @@ This chapter covers a lot of the foundation of functional programming:
 - immutable data
 - function composition
 
+Going through the game we build - the Peg game - felt a bit confusing.
 
+He starts off by explaining a function used to generate triangular numbers. I am not sure why we need this function though. Okay...I went up back a few pages and realized it's used to create the triangle figure itself. If you start with 1, then move to the next row, 2, 3, then the next, 4, 5, 6, you'll see that the right side of the triangle has triangular numbers - 1, 3, 6.
+
+The first function he shows us called `tri` is used to generate these numbers.
+
+The neat thing the author demos here is the cleanliness of pure functions. For moving pegs, he shows four functions. Each function takes in the `board` as the first argument. By doing this, we're able to keep them pure. It's beautiful!
+
+This code is so elegant too! I am enjoying reading it.
+
+TIL you can define a *predicate function*, meaning it's meant to be used in Boolean expressions. Example of a predicate function definition:
+
+```clojure
+(defn can-move?
+  "Do any of the pegged positions have valid moves?"
+  [board]
+  (some (comp not-empty (partial valid-moves board))
+        (map first (filter #(get (second %) :pegged) board))))
+```
+
+<Note>
+
+The sign we look for to tell if this is a predicate function is the "?" at the end of the function name.
+
+</Note>
+
+### Chapter 6: Organizing Your Project
+
+>  In Clojure programs, you are *always* in a namespace.
+
+Probably something important to remember.
+
+`map` and `inc` are referred to as symbols in Clojure. And symbols are data types in Clojure.
+
+
+You can store your code in namespaces, and also access them from other namespaces using `refer`.
+
+You can define private functions using the `defn-` (note the `-` at the end).
+
+Handy resource: [ns-cheatsheet.clj](https://gist.github.com/ghoseb/287710/)
 
 ## Questions
 
@@ -190,6 +229,7 @@ I wrote down questions that came up while reading. Here they are
 - **expander** - todo
 - **function composition** - todo
 - **indirection** - todo
+- **interning** - in the context of `var`, it's where you internalize it within a namespace
 - **lazy sequence** - members aren't computed until you access them
 - **memoize** - todo
 - **reader macros** - todo
@@ -198,7 +238,9 @@ I wrote down questions that came up while reading. Here they are
 - **operator** - todo
 - **operand** - todo
 - **predicate function** - "a function whose return value is evaluated for truth or falsity"
+- **side effect** - todo 
 - **tail call optimization** - todo
+- **triangular numbers** - todo
 
 ## Cheatsheet
 
@@ -241,4 +283,10 @@ A few tips and tricks to remember.
 
 ```clojure
 #{"kurt vonnegut" 20 :icicle}
+```
+
+### create a new project
+
+```shell
+lein new app <name>
 ```
