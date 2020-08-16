@@ -1,5 +1,5 @@
 {
-  "editor.formatOnSave": true,
   "zenMode.fullScreen": false,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "files.autoSave": "afterDelay"
 }

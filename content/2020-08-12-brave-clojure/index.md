@@ -163,6 +163,13 @@ Another example of this using a logger:
 
 It saves some time ebcause you don't have to pass two args every time. Instead, only 1.
 
+### Chapter 5: Functional Programming
+
+This chapter covers a lot of the foundation of functional programming:
+- pure functions
+- immutable data
+- function composition
+
 
 
 ## Questions
@@ -181,13 +188,17 @@ I wrote down questions that came up while reading. Here they are
 - **consing** - when you use `cons` function
 - **contagion** - todo
 - **expander** - todo
+- **function composition** - todo
 - **indirection** - todo
 - **lazy sequence** - members aren't computed until you access them
+- **memoize** - todo
 - **reader macros** - todo
+- **referential transparency** - todo
 - **realizing** - "computing a (lazy) seq's members"
 - **operator** - todo
 - **operand** - todo
 - **predicate function** - "a function whose return value is evaluated for truth or falsity"
+- **tail call optimization** - todo
 
 ## Cheatsheet
 
