@@ -211,6 +211,44 @@ You can define private functions using the `defn-` (note the `-` at the end).
 
 Handy resource: [ns-cheatsheet.clj](https://gist.github.com/ghoseb/287710/)
 
+### Chapter 7: Reading, Evaluation and Macros
+
+#### Macros
+
+Macros allow you to write your own rules to expand a language to fit your needs. Rust supports them too!
+
+It's like writing your own syntax.
+
+They enable *syntactic expansion* i.e. expanding the syntax to match what you want.
+
+#### Evaluation
+
+Clojure will read your source code into data structures and then evaluate it.
+
+The unique part about Clojure is that it evaluates native data structures. Apparently this is uncommon. So when it reads the source code, it creates native data structures like lists.
+
+Things that aren't a list or symbol evaluate to themselves:
+
+```clojure
+true
+; => true
+
+false
+; => false
+
+{}
+; => {}
+```
+
+#### Reading
+The reader looks at the source code and *reads* it into a data structure. Reading and evaluating are two separate processes. You, the user, can interact with the reader.
+
+#### Special Forms
+
+Concepts or key pieces of functionality within the language that rely on core behavior and can't be implemented with functions.
+
+
+
 ## Questions
 
 I wrote down questions that came up while reading. Here they are
@@ -228,9 +266,11 @@ I wrote down questions that came up while reading. Here they are
 - **contagion** - todo
 - **expander** - todo
 - **function composition** - todo
+- **homoiconic** - todo
 - **indirection** - todo
 - **interning** - in the context of `var`, it's where you internalize it within a namespace
 - **lazy sequence** - members aren't computed until you access them
+- **macro expansion** - "the process of determining the return value of a macro"
 - **memoize** - todo
 - **reader macros** - todo
 - **referential transparency** - todo
