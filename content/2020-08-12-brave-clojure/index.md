@@ -247,7 +247,15 @@ The reader looks at the source code and *reads* it into a data structure. Readin
 
 Concepts or key pieces of functionality within the language that rely on core behavior and can't be implemented with functions.
 
+### Chapter 8: Writing Macros 
 
+Macros are another tool in your tool satchel. 
+
+The key difference between functions and macros is their arguments. Functions receive their arguments after they are evaluated while macros receive them before they are evaluated.
+
+The `~` can be used after a `'` to say evaluate that part of the expression.
+
+`gensym` will generate a unique symbol. This is handy when using `let` bindings in a macro and avoiding variable capture (namespace collision).
 
 ## Questions
 
