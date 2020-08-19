@@ -257,6 +257,53 @@ The `~` can be used after a `'` to say evaluate that part of the expression.
 
 `gensym` will generate a unique symbol. This is handy when using `let` bindings in a macro and avoiding variable capture (namespace collision).
 
+### Chapter 9: Concurrent and Parallel Programming
+
+Paralleism is like texting in one hand and drinking in the other. You're doing multiple tasks at the same time - in parallel.
+
+This may be the best introduction to concurrency I have ever read. Using the analogy with Lady Gaga is so helpful. I'm amazed.
+
+#### Three Concurrency Problems
+
+1. Reference cell problem - two threads can read and write to the same location.
+2. Mutual exclusion - two threads with write access, neither having exclusive write access.
+3. Deadlock - threads waiting for something to become available.
+
+#### Future
+
+Executing a task on a separate thread when you don't need the result immediately. When you do request it, it's called *dereferencing* it.
+
+Another cool thing - the future value is cached! This means the second time you request it, it'll be lightning fast!
+
+You can also say to a future, "Hey are you done yet?" by asking if it's `realized?`.
+
+Futures give you the power to sprinkle concurrency into your program without making a big mess.
+
+#### Delays
+
+Similar to futures in that they are not executing or providing the result right away. They are run once and cached.
+
+You can `force` it to run to get the result.
+
+I'm not sure how they differ from futures though.
+
+#### Promises
+
+Woah...this is kind of meta. They allow you to express that you want a result, but you don't know when you'll want it. You use it as a placeholder for an actual value, and then you "deliver" a result to the promise. When you want it, you dereference it. See example:
+
+```clojure
+(def my-promise (promise))
+(deliver my-promise (+ 1 2))
+@my-promise
+; => 3
+```
+
+It's like giving a box to someone and saying, "I'm going to put something in this box and then I want you to hold on to it."
+
+"Okay, I'm delivering this thing. Put it in the box. I'll let you know when I need it."
+
+"Hey I need that thing."
+
 ## Questions
 
 I wrote down questions that came up while reading. Here they are
@@ -265,18 +312,24 @@ I wrote down questions that came up while reading. Here they are
 - Maps vs. vectors vs. lists?
 - When to use hash sets vs. sorted sets?
 - Why do Clojure lazy sequences only need to be realized once? Are they cached?
+- What is "serial code"?
+- What are some real use cases for concurrency and parallelism?
+- How do futures differ from delays?
 
 ## Glossary
 
 - **arity** - the number of parameters of a function
 - **coercion** - todo
+- **concurrency** - managing more than one task at the same time
 - **consing** - when you use `cons` function
 - **contagion** - todo
 - **expander** - todo
 - **function composition** - todo
+- **future** - a task defined on another thread without requiring the result right away
 - **homoiconic** - todo
 - **indirection** - todo
 - **interning** - in the context of `var`, it's where you internalize it within a namespace
+- **interleaving** - switching between two tasks.
 - **lazy sequence** - members aren't computed until you access them
 - **macro expansion** - "the process of determining the return value of a macro"
 - **memoize** - todo
@@ -285,9 +338,11 @@ I wrote down questions that came up while reading. Here they are
 - **realizing** - "computing a (lazy) seq's members"
 - **operator** - todo
 - **operand** - todo
+- **parallelism** - executing more than one task at the same time
 - **predicate function** - "a function whose return value is evaluated for truth or falsity"
 - **side effect** - todo 
 - **tail call optimization** - todo
+- **thread** - a subprogram
 - **triangular numbers** - todo
 
 ## Cheatsheet
