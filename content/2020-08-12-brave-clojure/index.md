@@ -304,6 +304,44 @@ It's like giving a box to someone and saying, "I'm going to put something in thi
 
 "Hey I need that thing."
 
+### Chapter 10: Atoms, Refs, and Vars
+
+Values don't change (because they're immutable), but you can apply a process to derive a new value.
+
+We assign identities using names.
+
+Think of state as snapshot in time representing the value of an identity.
+
+I like this analogy by Rich Hickey. Think of a phone number. In a 5-year span, Joe's phone number might change because I moved states. Even though the numbers may be different, the identity stays the same - it's still Joe's number.
+
+#### Atoms
+
+Create an atom using the `atom` keyword. It then binds to your value and you can deference it to access its current state.
+
+Atoms can't be altered by another thread. 
+
+To assign a new value to an atom, you use `swap!`.
+
+#### Watches and Validators
+
+> A watch is a function that takes four arguments: a key, the reference being watched, its previous state, and its new state.
+
+> Validators let you specify which states are allowable for a reference.
+
+Does this mean it's similar to a...state machine?
+
+#### Refs
+
+If you need to have an event that updates state for multiple identities, then you use refs!
+
+`commute` lets you update a ref's state within a transaction.
+
+#### Vars
+
+Vars are similar to `def`, but they can work well with concurrency because you can dynamically bind them and make other alterations. 
+
+A dynamic var might be handy when you need to create a global name that refers to different values in different contexts.
+
 ## Questions
 
 I wrote down questions that came up while reading. Here they are
@@ -315,14 +353,17 @@ I wrote down questions that came up while reading. Here they are
 - What is "serial code"?
 - What are some real use cases for concurrency and parallelism?
 - How do futures differ from delays?
+- What is software transactional memory (STM)?
 
 ## Glossary
 
 - **arity** - the number of parameters of a function
 - **coercion** - todo
+- **compare-and-set semantics** - todo
 - **concurrency** - managing more than one task at the same time
 - **consing** - when you use `cons` function
 - **contagion** - todo
+- **dynamicaltude** - todo
 - **expander** - todo
 - **function composition** - todo
 - **future** - a task defined on another thread without requiring the result right away
@@ -333,8 +374,11 @@ I wrote down questions that came up while reading. Here they are
 - **lazy sequence** - members aren't computed until you access them
 - **macro expansion** - "the process of determining the return value of a macro"
 - **memoize** - todo
+- **mutex**
+- **nondeterministic** - todo
 - **reader macros** - todo
 - **referential transparency** - todo
+- **reference types** - let you manage identities in Clojure
 - **realizing** - "computing a (lazy) seq's members"
 - **operator** - todo
 - **operand** - todo
