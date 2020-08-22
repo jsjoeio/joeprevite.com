@@ -342,6 +342,24 @@ Vars are similar to `def`, but they can work well with concurrency because you c
 
 A dynamic var might be handy when you need to create a global name that refers to different values in different contexts.
 
+### Chapter 11: Mastering Concurrent Processes
+
+A *process* is something that piece of logic that runs concurrently and responds to events.
+
+Processes are entities that interact and respond to each other without a central control system. They're independent but work together.
+
+If you're having trouble understanding them, try connecting it to the real-world. Think of objects in life that behave based on the events around them. No examples come to mind right now, but if they do, I'll add them here.
+
+> Channels communicate messages.
+
+You can add message to a channel or remove them. I like to thing of a channel like the gutters in a street when it rains and water is flowing down them like a mini-river. You can add paper boats to them (messages) or remove them.
+
+Maybe not the best analogy but the first one that comes to mind!
+
+> go block--runs concurrently on a separate thread. Go blocks run your processes on a thread pool.
+
+> Buffers are just elaborations of the core model: processes are independent, concurrently executing units of logic that respond to events. You can create processes with go blocks and communicate events over channels.
+
 ## Questions
 
 I wrote down questions that came up while reading. Here they are
