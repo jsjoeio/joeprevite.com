@@ -360,6 +360,19 @@ Maybe not the best analogy but the first one that comes to mind!
 
 > Buffers are just elaborations of the core model: processes are independent, concurrently executing units of logic that respond to events. You can create processes with go blocks and communicate events over channels.
 
+### Chapter 12: Working with the JVM
+
+There are three aspects to know when thinking about Clojure applications and the JVM.
+1. Clojure and Java apps are run the same way
+2. To read files and to work with dates, you need to utilize core Java objects
+3. You need to know a bit of Java to use its libraries in your apps
+
+You can call methods on an object with `(.methodName object)`.
+
+The main takeaways:
+- Clojure apps have access to Java libraries
+- You can interop with Java as well
+
 ## Questions
 
 I wrote down questions that came up while reading. Here they are
@@ -389,6 +402,8 @@ I wrote down questions that came up while reading. Here they are
 - **indirection** - todo
 - **interning** - in the context of `var`, it's where you internalize it within a namespace
 - **interleaving** - switching between two tasks.
+- **Java interop** - the ability to use Java classes, objects and methods
+- **just-in-time-compilation** - todo
 - **lazy sequence** - members aren't computed until you access them
 - **macro expansion** - "the process of determining the return value of a macro"
 - **memoize** - todo
