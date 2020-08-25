@@ -373,6 +373,25 @@ The main takeaways:
 - Clojure apps have access to Java libraries
 - You can interop with Java as well
 
+### Chapter 13: Creating and Extending Abstractions with Multimethods, Protocols, and Records
+
+> The ability to think in terms of abstractions is truly one of the best human features.
+
+I loved this quote. I guess I never thought if animals could think in abstractions. That would a difficult hypothesis to prove.
+
+There are two key concepts to understand in the context of Clojure:
+- abstraction means a collection of operations
+- data types implement these abstractions
+
+The author argues that productivity increases as your ability to write in terms of abstraction increases in a programming language. This is why Clojure is a powerful language.
+
+Records are different from maps in that you can "extend them to implement protocols."
+
+If you want to learn more, the author suggests exploring:
+- `deftype`
+- `reify`
+- `proxy`
+
 ## Questions
 
 I wrote down questions that came up while reading. Here they are
@@ -394,6 +413,7 @@ I wrote down questions that came up while reading. Here they are
 - **concurrency** - managing more than one task at the same time
 - **consing** - when you use `cons` function
 - **contagion** - todo
+- **dispatching function** - todo
 - **dynamicaltude** - todo
 - **expander** - todo
 - **function composition** - todo
@@ -407,16 +427,20 @@ I wrote down questions that came up while reading. Here they are
 - **lazy sequence** - members aren't computed until you access them
 - **macro expansion** - "the process of determining the return value of a macro"
 - **memoize** - todo
+- **multimethods** - todo
 - **mutex**
 - **nondeterministic** - todo
 - **reader macros** - todo
+- **record** - a custom maplike dat type in Clojure
 - **referential transparency** - todo
 - **reference types** - let you manage identities in Clojure
 - **realizing** - "computing a (lazy) seq's members"
 - **operator** - todo
 - **operand** - todo
 - **parallelism** - executing more than one task at the same time
+- **polymorphism** - todo
 - **predicate function** - "a function whose return value is evaluated for truth or falsity"
+- **protocols** - todo
 - **side effect** - todo 
 - **tail call optimization** - todo
 - **thread** - a subprogram
