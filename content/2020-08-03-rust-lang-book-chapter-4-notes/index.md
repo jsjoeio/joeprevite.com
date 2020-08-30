@@ -224,7 +224,7 @@ I hope to continue going through The Rust Language Book and move on to Chapter 5
 
 Following the pattern of the last post, I included a glossary and cheatsheet at the end here. I hope it helps!
 
-**If these notes helped with your own learning of Rust, could you let me know by [sharing on Twitter](https://twitter.com/intent/tweet?url=https%3A%2F%2Fjoeprevite.com%2Frust-lang-ecosystem%2F&via=jsjoeio) or [sending me a DM](https://twitter.com/messages/compose?recipient_id=1567529924&text=Hey%21%20Your%20Rust%20Lang%20Chapter%204%20notes%20helped%20a%20lot.)?**
+**If these notes helped with your own learning of Rust, could you let me know by [sharing on Twitter](https://twitter.com/intent/tweet?url=https%3A%2F%2Fjoeprevite.com%2Frust-lang-book-chapter-4-notes%2F&via=jsjoeio) or [sending me a DM](https://twitter.com/messages/compose?recipient_id=1567529924&text=Hey%21%20Your%20Rust%20Lang%20Chapter%204%20notes%20helped%20a%20lot.)?**
 
 ## Glossary
 
