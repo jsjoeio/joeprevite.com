@@ -15,6 +15,7 @@ const VALID_TAGS = new Set([
   `Rust`,
   `Twitter`,
   `TypeScript`,
+  `Vim`
 ])
 
 module.exports = { VALID_TAGS }
