@@ -34,9 +34,9 @@ That's where **Vim for VSCode** comes in. For only $10, you get:
 - 5 exercises per command
 - Hands-on learning
 
-[ insert product ]
+<VimForVSCode />
 
-Sure, you can learn Vim for free with `vimtutor` and then transfer that knowledge to be used with Vim in VSCode. But here's why that isn't the *best* way to learn:
+Sure, you can learn Vim for free with `vimtutor` and then transfer that knowledge to be used with Vim in VSCode. But here's why that *isn't* the best way to learn:
 - it's a different environment
 - it only has 1 exercise per command
 - it covers the bare minimum
@@ -66,7 +66,7 @@ TODO short introduction
 - short Questions
 - quiz yourself
 
-[ insert product ]
+<VimForVSCode />
 
 ## Spend as Little of Your Time as Possible
 
@@ -76,7 +76,7 @@ exercises are short, but focused.
 
 one week to learn (instead of 2-3)
 
-[ insert product ]
+<VimForVSCode />
 
 ## Best $10 Investment
 
@@ -84,7 +84,7 @@ Convince them that it will be the best $10 they spend this year.
 
 talk about time, money per hour
 
-[ insert product ]
+<VimForVSCode />
 
 ## Frequently Asked Questions
 
@@ -104,4 +104,4 @@ todo
 
 todo
 
-[ insert product ]
+<VimForVSCode />
