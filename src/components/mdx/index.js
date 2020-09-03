@@ -5,6 +5,7 @@ import Subtitle from './Subtitle'
 import Paragraph from './Paragraph'
 import Code from './Code'
 import Note from './Note'
+import VimForVSCode from './VimForVSCode'
 
 export default {
   h1: props => <Title {...props} />,
@@ -13,4 +14,5 @@ export default {
   code: props => <Code {...props} />,
   pre: preProps => <pre {...preProps} />,
   Note,
+  VimForVSCode,
 }
