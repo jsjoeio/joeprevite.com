@@ -10,9 +10,9 @@ tags: ['Rust']
 
 ![Graph representing all the facets made up in a programming language ecosystem.](./prog-lang-ecosystem.png)
 
-Rust, a systems-programming language, which prides itself on being Stack Overflow’s “[most loved language for five years in row](https://insights.stackoverflow.com/survey/2020)” and GitHub’s [second fastest growing](https://octoverse.github.com/) (235% 2018-2019) has gained popularity both [internally here at Facebook](https://www.businessinsider.com/what-is-rust-programming-language-amazon-facebook-discord-love-it-2020-6?r=US&IR=T) and externally within the programming community.
+Rust, a systems-programming language, which prides itself on being Stack Overflow’s “[most loved language for five years in row](https://insights.stackoverflow.com/survey/2020)” and GitHub’s [second fastest growing](https://octoverse.github.com/) (235% 2018-2019) has gained popularity both at companies like [Amazon, FB, Discord](https://www.businessinsider.com/what-is-rust-programming-language-amazon-facebook-discord-love-it-2020-6?r=US&IR=T) and externally within the programming community.
 
-As a [Developer Advocate](https://www.youtube.com/watch?v=XdS5FNoTbgs) on the [Facebook Open Source Team](https://www.internalfb.com/intern/teams/162561937118969/), I have been focused on developing my own understanding of the space. I work within the DevTools pillar and focus primarily on programming languages. My main priority for H1 of 2020 has been Rust. The goal of this article is:
+For part of my job, I have been focused on developing my own understanding of the space. I work within the DevTools pillar and focus primarily on programming languages. My main priority for H1 of 2020 has been Rust. The goal of this article is:
 
 - To paint a high-level overview of the ecosystem
 
@@ -20,7 +20,7 @@ The article covers various aspects of the ecosystem including community, compani
 
 ## Overview
 
-One of the hardest parts of understanding a programming language is setting the boundaries for what you encapsulate as part of and not part of the ecosystem. I gathered input from the Facebook OSS Team and my mentors in order to set the criteria for this project. You may agree or disagree with some of the areas (which I welcome wholeheartedly in the comments section). For our purposes, I choose to limit it to the following areas, which you’ll see below. For each section, you can expect:
+One of the hardest parts of understanding a programming language is setting the boundaries for what you encapsulate as part of and not part of the ecosystem. I gathered input coworkers and mentors in order to set the criteria for this project. For our purposes, I choose to limit it to the following areas, which you’ll see below. For each section, you can expect:
 
 - A brief description of how I defined the section
 - Key highlights from the ecosystem for that area of the ecosystem
@@ -395,7 +395,7 @@ Deriving some of the tops results from the [Rust Survey 2019](https://blog.rust-
 
 ## Summary
 
-Reflecting on what we have covered thus far, we can see that the Rust ecosystem is well-developed and growing. This is not a conclusive/comprehensive list of the ecosystem or the companies using it. From my knowledge, Rust is used at other big companies such as Amazon, Apple, Microsoft and Google. They are all investing in the language and we, Facebook, want to do the same. We’ve covered the ecosystem from a bird’s-eye view as we see it today. Here are the main things to walk away with:
+Reflecting on what we have covered thus far, we can see that the Rust ecosystem is well-developed and growing. This is not a conclusive/comprehensive list of the ecosystem or the companies using it. From my knowledge, Rust is used at big companies such as Amazon, Apple, Microsoft and Google. They are all investing in the language. We’ve covered the ecosystem from a bird’s-eye view as we see it today. Here are the main things to walk away with:
 
 - Overview
   - The community is ubiquitous both online and in-person
