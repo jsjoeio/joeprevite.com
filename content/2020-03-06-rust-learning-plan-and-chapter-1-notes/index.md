@@ -10,7 +10,7 @@ tags: ['Rust', 'Book']
 
 Hello and welcome! This might be the first time we meet so I thought I’d start this post off with a short introduction.
 
-I’m Joe and previously I worked with JavaScript building web apps and mobile apps. Now, I’m learning Rust both for personal reasons and work-related reasons. I work as a Developer Advocate in the DevTools/Languages space for the open source team. One of my primary focuses for this half of the year is Rust!
+I’m Joe and previously I worked with JavaScript building web apps and mobile apps. Now, I’m learning Rust both for personal reasons and work-related reasons. One of my primary focuses for this half of the year is Rust!
 
 Beyond that though, I am personally excited about Rust because:
 
