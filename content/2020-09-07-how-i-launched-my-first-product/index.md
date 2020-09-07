@@ -10,9 +10,8 @@ tags: ['Learning']
 
 <!-- TODOS
 
-- [ ] Add link to post on Indie Hackers
-- [ ] Insert photo of sales for first three days
 - [ ] Add newsletter sign up (ConvertKi)
+- [ ] insert tweets of positive feedback (public ones?)
 
 -->
 
@@ -154,8 +153,9 @@ Anyone can launch a product, but what matters most is, do people buy it? I didn'
 - 100 sales would be awesome
 - 100+ sales would make me go "Okay, this was a success"
 
-The date and time of ConvertKit Commerce's analytics and reports is not lined up with my local time so I can't tell you how many I sold the first day, but I can share stats for the first three days (Friday, Sept. 4 - Sunday, Sept. 6):
-[insert photo]
+The date and time of ConvertKit Commerce's analytics and reports is not lined up with my local time so I can't tell you how many I sold the first day, but I can share the stats between launch at midnight September 3rd and today, 11am PT September 7th.
+
+![Screenshot of sales on ConvertKit Commerce for Vim for VSCode](./vim-vscode-sales.png)
 
 Honestly, this shocked me. I didn't realize that many people would buy it. I received a lot of positive feedback on it as well, which made me happy:
 
