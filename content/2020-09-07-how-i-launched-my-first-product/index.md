@@ -159,8 +159,19 @@ The date and time of ConvertKit Commerce's analytics and reports is not lined up
 
 Honestly, this shocked me. I didn't realize that many people would buy it. I received a lot of positive feedback on it as well, which made me happy:
 
-[insert response][insert response]
-[insert tweet]
+https://twitter.com/j_siebern/status/1302351608391643138?s=20
+
+https://twitter.com/silvenon/status/1302364457071448065?s=20
+
+https://twitter.com/ErselAker/status/1302201925761462273?s=20
+
+https://twitter.com/TreTuna/status/1302090761119232001?s=20
+
+https://twitter.com/swyx/status/1302050517892263936?s=20
+
+
+<!-- [insert response][insert response] -->
+<!-- [insert tweet] -->
 
 And people were even asking about future expansions with more advanced commands! It made me realize - I think I've stumbled upon a good product idea. As I said earlier, I'd like to expand it into something bigger.
 
