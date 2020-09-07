@@ -11,7 +11,6 @@ tags: ['Learning']
 <!-- TODOS
 
 - [ ] Add newsletter sign up (ConvertKi)
-- [ ] insert tweets of positive feedback (public ones?)
 
 -->
 
@@ -55,7 +54,7 @@ If you have an idea, actually building it is the easiest part. At least, that's 
 
 I have a full-time job so planning out my work for this challenge was essential. I came up with [this plan](https://twitter.com/jsjoeio/status/1297191136323227648?s=20):
 
-![The plan for the challenge](2020-09-07-06-32-05.png)
+![The plan for the challenge](./the-challenge-plan.png)
 
 I told myself I would work on it on my own time before work, after work and on the weekend. I think I spent maybe an hour in the morning, and an hour after work. On the weekends, it was a few hours. I didn't stick to the plan exactly, but having the rough outline made me think less and made it easier to get things done.
 
@@ -159,19 +158,13 @@ The date and time of ConvertKit Commerce's analytics and reports is not lined up
 
 Honestly, this shocked me. I didn't realize that many people would buy it. I received a lot of positive feedback on it as well, which made me happy:
 
+https://twitter.com/swyx/status/1302050517892263936?s=20
+
 https://twitter.com/j_siebern/status/1302351608391643138?s=20
-
-https://twitter.com/silvenon/status/1302364457071448065?s=20
-
-https://twitter.com/ErselAker/status/1302201925761462273?s=20
 
 https://twitter.com/TreTuna/status/1302090761119232001?s=20
 
-https://twitter.com/swyx/status/1302050517892263936?s=20
-
-
-<!-- [insert response][insert response] -->
-<!-- [insert tweet] -->
+https://twitter.com/silvenon/status/1302364457071448065?s=20
 
 And people were even asking about future expansions with more advanced commands! It made me realize - I think I've stumbled upon a good product idea. As I said earlier, I'd like to expand it into something bigger.
 
