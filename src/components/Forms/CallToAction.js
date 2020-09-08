@@ -68,6 +68,7 @@ function CallToAction({
   async function handleSubmit(values) {
     const referrerUrl = referrer()
     // values is an object that has the email field on it
+    // TODO fix tags not working
     const data = {
       email_address: values.email,
       tags,
