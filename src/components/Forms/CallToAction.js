@@ -30,14 +30,14 @@ const PostSubmissionMessage = ({ response }) => {
 
 export const CallToActionDescription = ({ children }) => {
   return (
-    <p
+    <div
       css={css`
         margin-bottom: ${rhythm(1)};
         margin-top: 0;
       `}
     >
       {children}
-    </p>
+    </div>
   )
 }
 
