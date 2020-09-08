@@ -5,7 +5,7 @@ import Subtitle from './Subtitle'
 import Paragraph from './Paragraph'
 import Code from './Code'
 import Note from './Note'
-import CallToAction from '../Forms/CallToAction'
+import CallToAction, { CallToActionDescription } from '../Forms/CallToAction'
 
 export default {
   h1: props => <Title {...props} />,
@@ -15,4 +15,5 @@ export default {
   pre: preProps => <pre {...preProps} />,
   Note,
   CallToAction,
+  CallToActionDescription,
 }

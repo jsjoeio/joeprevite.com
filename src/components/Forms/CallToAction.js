@@ -28,11 +28,24 @@ const PostSubmissionMessage = ({ response }) => {
   )
 }
 
+export const CallToActionDescription = ({ children }) => {
+  return (
+    <p
+      css={css`
+        margin-bottom: ${rhythm(1)};
+        margin-top: 0;
+      `}
+    >
+      {children}
+    </p>
+  )
+}
+
 function CallToAction({
   theme,
   formId,
   title,
-  description,
+  children,
   buttonText = 'Sign me up!',
   buttonLoadingText = 'Signing you up...',
   placeholderText = 'awesomeperson@gmail.com',
@@ -92,14 +105,7 @@ function CallToAction({
       {!successful && (
         <>
           <h2>{title}</h2>
-          <p
-            css={css`
-              margin-bottom: ${rhythm(1)};
-              margin-top: 0;
-            `}
-          >
-            {description}
-          </p>
+          {children}
         </>
       )}
       <Formik
