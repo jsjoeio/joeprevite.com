@@ -12,6 +12,7 @@ tags: ['Learning']
 
 - [ ] Fix weird Twitter embed error
 - [ ] Add the other embeds for the positivie feedback tweets
+https://github.com/MichaelDeBoey/gatsby-remark-embedder/issues/41
 
 -->
 
