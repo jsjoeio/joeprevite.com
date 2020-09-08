@@ -39,9 +39,34 @@ function getHelpOthersLearnToCodeLink() {
   return CODE_ORGANIZATIONS[randomNum]
 }
 
+/**
+ * Check whether or not the page has a call-to-action
+ */
+function hasCallToActionOnPage() {
+  // needed because Gatsby is built server-side
+  if (typeof document !== 'undefined') {
+    // Check if there is an element with the "call-to-action" class
+    const hasCallToAction = document.querySelector('.call-to-action') !== null
+    return hasCallToAction
+  }
+  // Otherwise we assume no
+  return false
+}
+
 const Footer = ({ author, noSubscribeForm }) => {
   const theme = useTheme()
+  const [hasCallToAction, setHasCallToAction] = React.useState(false)
   const { link, label } = getHelpOthersLearnToCodeLink()
+
+  React.useEffect(() => {
+    // Note for the SubscribeForm below
+    // We only show it if:
+    // - the `noSubscribeForm` passed in as a prop is not set to true
+    // - the page doesn't have a call-to-action
+    // We do this inside useEffect because on the server render, it doesn't exist
+    // But on the client it does, so we check when the client has loaded
+    setHasCallToAction(hasCallToActionOnPage())
+  }, [])
 
   return (
     <footer>
@@ -53,7 +78,7 @@ const Footer = ({ author, noSubscribeForm }) => {
           }
         `}
       >
-        {!noSubscribeForm && (
+        {!noSubscribeForm && !hasCallToAction && (
           <div>
             <SubscribeForm />
             <br />
