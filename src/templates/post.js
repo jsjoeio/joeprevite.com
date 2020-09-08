@@ -35,16 +35,13 @@ export default function Post({
     pageSlug => pageSlug === slug,
   )
 
-  console.log('what the fuck ', mdx)
-  if (mdx === null) return null
-
   return (
     <Layout
       site={site}
-      frontmatter={mdx?.frontmatter}
+      frontmatter={mdx.frontmatter}
       noSubscribeForm={noSubscribeForm}
     >
-      <SEO frontmatter={mdx?.frontmatter} isBlogPost />
+      <SEO frontmatter={mdx.frontmatter} isBlogPost />
       <article
         css={css`
           width: 100%;
