@@ -92,7 +92,7 @@ export default function Index({
         >
           Featured Articles
         </h2>
-        <p>Things I want people to see right now:</p>
+        <p>Articles you should check out first:</p>
         {featuredArticles.map(post => (
           <div
             key={post.id}
