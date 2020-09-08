@@ -112,6 +112,7 @@ export default function Post({
               />
             </div>
           )} */}
+          </div>
           <br />
           <MDXRenderer>{mdx?.body}</MDXRenderer>
         </Container>
