@@ -3,6 +3,7 @@ import { css } from '@emotion/core'
 import { useTheme } from './Theming'
 import { bpMaxSM } from '../lib/breakpoints'
 import SubscribeForm from './Forms/Subscribe'
+import CallToAction from './Forms/CallToAction'
 import { Twitter, GitHub } from './Social'
 import Link from './Link'
 import Container from './Container'
@@ -80,7 +81,13 @@ const Footer = ({ author, noSubscribeForm }) => {
       >
         {!noSubscribeForm && !hasCallToAction && (
           <div>
-            <SubscribeForm />
+            <CallToAction
+              formId="1652705"
+              title="Join the Newsletter"
+              description="I send a couple emails per month related to programming and learning. I also share goodies and deals here."
+              placeholderText="awesomeperson@gmail.com"
+              tags={['general-newsletter']}
+            />
             <br />
             <br />
           </div>
