@@ -41,11 +41,25 @@ export const CallToActionDescription = ({ children }) => {
   )
 }
 
+const PlainCallToActionDescription = ({ description }) => {
+  return (
+    <p
+      css={css`
+        margin-bottom: ${rhythm(1)};
+        margin-top: 0;
+      `}
+    >
+      {description}
+    </p>
+  )
+}
+
 function CallToAction({
   theme,
   formId,
   title,
-  children,
+  children, // only used if description === ''
+  description,
   buttonText = 'Sign me up!',
   buttonLoadingText = 'Signing you up...',
   placeholderText = 'awesomeperson@gmail.com',
@@ -106,7 +120,11 @@ function CallToAction({
       {!successful && (
         <>
           <h2>{title}</h2>
-          {children}
+          {description ? (
+            <PlainCallToActionDescription description={description} />
+          ) : (
+            { children }
+          )}
         </>
       )}
       <Formik
