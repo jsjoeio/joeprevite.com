@@ -12,7 +12,9 @@ tags: ['Learning']
 
 - [ ] Fix weird Twitter embed error
 - [ ] Add the other embeds for the positivie feedback tweets
+- [ ] Convert newsletter sign up to ConvertKit
 https://github.com/MichaelDeBoey/gatsby-remark-embedder/issues/41
+
 
 -->
 
@@ -34,7 +36,7 @@ My friend [Will](https://twitter.com/willjohnsonio) and I have been chatting abo
 
 ### The tweet that inspired it all
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">My advice to first-time info product creators:<br><br>1. Start with a very small product.<br><br>2. Choose a topic you know well that will almost write itself. Avoid doing research.<br><br>3. Timebox production to 2 weeks.<br><br>4. Charge $10.<br><br>5. Promote it!<br><br>All the lessons are in #5. Best of luck!</p>&mdash; Daniel Vassallo (@dvassallo) <a href="https://twitter.com/dvassallo/status/1287210142459547648?ref_src=twsrc%5Etfw">July 26, 2020</a></blockquote>
+https://twitter.com/dvassallo/status/1287210142459547648
 
 Then, we saw [this tweet](https://twitter.com/dvassallo/status/1287210142459547648?s=20). This was back in July and I immediately bookmarked it. I told myself in August, I would give it a shot. I chatted with Will and he said was onboard to join me as well for the challenge.
 
@@ -160,13 +162,13 @@ The date and time of ConvertKit Commerce's analytics and reports is not lined up
 
 Honestly, this shocked me. I didn't realize that many people would buy it. I received a lot of positive feedback on it as well, which made me happy:
 
-<!-- https://twitter.com/swyx/status/1302050517892263936?s=20
+https://twitter.com/swyx/status/1302050517892263936?s=20
 
 https://twitter.com/j_siebern/status/1302351608391643138?s=20
 
 https://twitter.com/TreTuna/status/1302090761119232001?s=20
 
-https://twitter.com/silvenon/status/1302364457071448065?s=20 -->
+https://twitter.com/silvenon/status/1302364457071448065?s=20
 
 And people were even asking about future expansions with more advanced commands! It made me realize - I think I've stumbled upon a good product idea. As I said earlier, I'd like to expand it into something bigger.
 
