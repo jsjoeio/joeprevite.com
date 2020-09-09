@@ -72,7 +72,10 @@ const Hero = () => {
   )
 }
 
-export default function Index({ data: { site, allMdx } }) {
+export default function Index({
+  data: { site, allMdx, firstArticle, secondArticle, thirdArticle },
+}) {
+  const featuredArticles = [firstArticle, secondArticle, thirdArticle]
   const theme = useTheme()
   return (
     <Layout site={site}>
@@ -87,11 +90,48 @@ export default function Index({ data: { site, allMdx } }) {
             margin-top: 0;
           `}
         >
+          Featured Articles
+        </h2>
+        <p>Articles you should check out first:</p>
+        {featuredArticles.map(post => (
+          <div
+            key={post.id}
+            css={css`
+              margin-bottom: 40px;
+            `}
+          >
+            <h3
+              css={css({
+                marginBottom: rhythm(0.3),
+                transition: 'all 150ms ease',
+                ':hover': {
+                  color: theme.colors.primary,
+                },
+              })}
+            >
+              <Link
+                to={post.frontmatter.slug}
+                aria-label={`View ${post.frontmatter.title}`}
+              >
+                {post.frontmatter.title}
+              </Link>
+            </h3>
+          </div>
+        ))}
+      </Container>
+      <Container
+        css={css`
+          padding-bottom: 0;
+        `}
+      >
+        <h2
+          css={css`
+            margin-top: 0;
+          `}
+        >
           Latest Articles
         </h2>
-        <p>
-          I love sharing what I learn. Here are some things I’ve written lately:
-        </p>
+        <p>Here are some things I’ve written lately:</p>
         {allMdx.edges.map(({ node: post }) => (
           <div
             key={post.id}
@@ -127,6 +167,15 @@ export default function Index({ data: { site, allMdx } }) {
 }
 
 export const pageQuery = graphql`
+  fragment BlogPostInfo on Mdx {
+    id
+    frontmatter {
+      title
+      date(formatString: "MMMM DD, YYYY")
+      description
+      slug
+    }
+  }
   query {
     site {
       ...site
@@ -157,10 +206,18 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             description
             slug
-            keywords
           }
         }
       }
+    }
+    firstArticle: mdx(fields: { slug: { eq: "launching-first-product" } }) {
+      ...BlogPostInfo
+    }
+    secondArticle: mdx(fields: { slug: { eq: "learn-quickly" } }) {
+      ...BlogPostInfo
+    }
+    thirdArticle: mdx(fields: { slug: { eq: "rust-lang-ecosystem" } }) {
+      ...BlogPostInfo
     }
   }
 `

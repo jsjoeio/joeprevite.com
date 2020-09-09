@@ -263,3 +263,13 @@ _Special thanks to my friends [Sean](https://twitter.com/seanjun21), [swyx](http
 <!-- ### Interested in Fast Learning?
 
 I wrote a quick-starters guide for the **Fast Framework**. Think of it as a cheat sheet for starting your fast learning projects. Sign up below and I'll send you a free PDF copy. -->
+
+<!-- <CallToAction
+formId="1545253"
+title="Interested in Fast Learning?"
+description="I wrote a cheatsheet for the Fast Framework. Think of it as a handy guide for starting your fast learning projects. Sign up below and I'll send you a free PDF copy."
+buttonText="Send me the PDF!"
+buttonLoadingText="Prepping PDF..."
+placeholderText="futurefastlearner@gmail.com"
+tags={["learn-quickly"]}
+/> -->
