@@ -54,7 +54,7 @@ You don't want to be racing on this map forever. You need to be realistic and as
 
 Take the length of months you want to work on this, multiple by 4 to give the amount in weeks. Then multiple it by the number of hours per week that you want to dedicate.
 
-https://excalidraw.com/#json=5666756571955200,28Q0ic5iC8kAmHCzpKMqbg
+https://excalidraw.com/#json=5423850418339840,cEzvJSM9NQXg9HoCRb38rQ
 
 For example, when I did a similar project, I gave myself 3 months with 8 hours per week. Using the Timeframe Formula, you get:
 
