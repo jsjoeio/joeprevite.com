@@ -76,7 +76,7 @@ Originally written in JavaScript, I migrated this project - a Chrome extension w
 
 🔗 [Link to source code](https://github.com/jsjoeio/timezoner-extension)
 
-### The Super Tiny Compiler
+### [The Super Tiny TS Compiler](https://github.com/jsjoeio/the-super-tiny-ts-compiler/)
 
 While committing to [#100DaysOfTypeScript](https://twitter.com/jsjoeio/status/1179887451667496960?s=20), I decided to follow a JavaScript tutorial about building a compiler in TypeScript.
 
