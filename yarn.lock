@@ -9011,10 +9011,10 @@ gatsby-design-tokens@^2.0.2:
   dependencies:
     hex2rgba "^0.0.1"
 
-gatsby-embedder-excalidraw@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-embedder-excalidraw/-/gatsby-embedder-excalidraw-1.0.2.tgz#c2439219df3f14160b8feb41b529c7d2182228a3"
-  integrity sha512-Adch8IugbfT+dxWwio/2e9AGh8XelfZnpINF42YwD2OpKirrymVJXRhZ2Uol4jrBmEYRfuhLM4Nrl5BaSWitrQ==
+gatsby-embedder-excalidraw@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/gatsby-embedder-excalidraw/-/gatsby-embedder-excalidraw-1.0.5.tgz#35b740fe0fb6082b0a78f48636d15abdabc4b908"
+  integrity sha512-bdCwY7TKuwSUk1cSyNKULXoxA2+rShEm6+pG35za03RdB6HZhASd3/CTPOF4Q36RV+WlRuZKOikYiPtwC05vrg==
   dependencies:
     puppeteer "^2.1.1"
 
