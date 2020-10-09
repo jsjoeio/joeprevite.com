@@ -168,7 +168,7 @@ The first part of the interpreter: lexical analysis.
 
 Lots of words that sound and look similar, but what do they all mean? "Lexical analysis" is taking the source code and transforming it into tokens. This process is also called "lexing." The "lexer" is the thing that does this. Thorsten mentions that it's also sometimes called tokenizer or scanner.
 
-<!-- https://excalidraw.com/#json=5086916491870208,sLUFfW5oMgrO3ApQwe4YQw -->
+https://excalidraw.com/#json=5086916491870208,sLUFfW5oMgrO3ApQwe4YQw
 
 > ...we're going to lex in our first step
 >
@@ -186,7 +186,7 @@ Note: others use the word "tokenize" or "scan" which may be more correct/accurat
 
 These are the variable names. It makes sense too. They are identified by these variable names. They should also be identified by our interpreter and our program.
 
-<!-- https://excalidraw.com/#json=5643057177296896,5i_HmKWn3lDRcBRDh9UMdw -->
+https://excalidraw.com/#json=5643057177296896,5i_HmKWn3lDRcBRDh9UMdw
 
 #### token types
 

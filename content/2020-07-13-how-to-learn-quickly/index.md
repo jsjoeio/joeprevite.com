@@ -54,13 +54,13 @@ You don't want to be racing on this map forever. You need to be realistic and as
 
 Take the length of months you want to work on this, multiple by 4 to give the amount in weeks. Then multiple it by the number of hours per week that you want to dedicate.
 
-<!-- https://excalidraw.com/#json=5423850418339840,cEzvJSM9NQXg9HoCRb38rQ -->
+https://excalidraw.com/#json=5423850418339840,cEzvJSM9NQXg9HoCRb38rQ
 
 For example, when I did a similar project, I gave myself 3 months with 8 hours per week. Using the Timeframe Formula, you get:
 
 3 months x 4 weeks/month x 8 hours/week = 96 hours total.
 
-<!-- https://excalidraw.com/#json=5741866960027648,bHKKdQP_I5Nl5Lk7rUf_bA -->
+https://excalidraw.com/#json=5741866960027648,bHKKdQP_I5Nl5Lk7rUf_bA
 
 You now have your timeframe. Use this to set expectations on how much time you plan to dedicate each week.
 
@@ -185,7 +185,7 @@ The last and final leg of this learning journey is cross the finishline. You sho
 
 Learning means nothing without practice. With your new TypeScript knowledge, you can build projects or contribute to open source. This is where the application phase of the learning cycle appears.
 
-<!-- https://excalidraw.com/#json=5649885940416512,4xAi7l3PWb6gyuUHDb492w -->
+https://excalidraw.com/#json=5649885940416512,4xAi7l3PWb6gyuUHDb492w
 
 It doesn't matter what you build, but that **the act of building happens**.
 
