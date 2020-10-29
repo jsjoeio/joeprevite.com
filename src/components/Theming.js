@@ -35,7 +35,7 @@ const themes = {
       noteText: colors.lightningYellow,
       filterTagsBg: darken(0.25, colors.black),
       filterTagsBgHover: darken(0.15, colors.black),
-      filterTagsBgActive: lighten(0.05, colors.black),
+      filterTagsBgActive: lighten(0.25, colors.contessa),
       filterTagsBorder: colors.transparent,
       filterTagsText: colors.contessa,
       ...colors,
