@@ -1,7 +1,7 @@
 # joeprevite.com
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-31-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-32-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -78,6 +78,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/therajat08"><img src="https://avatars0.githubusercontent.com/u/22724490?v=4" width="100px;" alt=""/><br /><sub><b>Rajat Negi</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/issues?q=author%3Atherajat08" title="Bug reports">🐛</a></td>
     <td align="center"><a href="http://lautarolobo.xyz"><img src="https://avatars1.githubusercontent.com/u/43019989?v=4" width="100px;" alt=""/><br /><sub><b>Lautaro Lobo</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/commits?author=LautaroLobo12" title="Documentation">📖</a></td>
     <td align="center"><a href="https://dev.to/javila35"><img src="https://avatars0.githubusercontent.com/u/58503695?v=4" width="100px;" alt=""/><br /><sub><b>Joe Avila</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/issues?q=author%3Ajavila35" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="http://www.abelmbula.com"><img src="https://avatars3.githubusercontent.com/u/14941675?v=4" width="100px;" alt=""/><br /><sub><b>Abel Lifaefi Mbula</b></sub></a><br /><a href="https://github.com/jsjoeio/joeprevite.com/commits?author=Bam92" title="Documentation">📖</a></td>
   </tr>
 </table>
 
