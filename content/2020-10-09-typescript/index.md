@@ -46,7 +46,7 @@ Leaning heavily on what I've learned from the [react-typescript-cheatsheet](http
 
 ### [Using ESLint and Prettier in a TypeScript Project](https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project)
 
-Whenever I need to set up ESLint, Prettier and TypeScript in a project, this is my go to re
+Whenever I need to set up ESLint, Prettier and TypeScript in a project, this is my go to resource.
 
 🔗 [Link to article](https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project)
 
