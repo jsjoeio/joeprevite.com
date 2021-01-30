@@ -46,14 +46,16 @@ function hasCallToActionOnPage() {
   // needed because Gatsby is built server-side
   if (typeof document !== 'undefined') {
     // Check if there is an element with the "call-to-action" class
-    const hasCallToAction = document.querySelector('.call-to-action') !== null
+    const hasCallToAction =
+      document.querySelector('.call-to-action')?.offsetParent !== null
+    console.log('this should be false', hasCallToAction)
     return hasCallToAction
   }
   // Otherwise we assume no
   return false
 }
 
-const Footer = ({ author, noSubscribeForm }) => {
+const Footer = ({ author, noSubscribeForm = false }) => {
   const theme = useTheme()
   const [hasCallToAction, setHasCallToAction] = React.useState(false)
   const { link, label } = getHelpOthersLearnToCodeLink()
@@ -78,19 +80,17 @@ const Footer = ({ author, noSubscribeForm }) => {
           }
         `}
       >
-        {!noSubscribeForm && !hasCallToAction && (
-          <div>
-            <CallToAction
-              formId="1652705"
-              title="Join the Newsletter"
-              description="I send a couple emails per month related to programming and learning. I also share goodies and deals here."
-              placeholderText="awesomeperson@gmail.com"
-              tags={['general-newsletter']}
-            />
-            <br />
-            <br />
-          </div>
-        )}
+        <div>
+          <CallToAction
+            formId="1652705"
+            title="Join the Newsletter"
+            description="I send a couple emails per month related to programming and learning. I also share goodies and deals here."
+            placeholderText="awesomeperson@gmail.com"
+            tags={['general-newsletter']}
+          />
+          <br />
+          <br />
+        </div>
         <div
           css={css`
             display: flex;

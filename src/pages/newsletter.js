@@ -3,9 +3,11 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Container from '../components/Container'
 import CallToAction from '../components/Forms/CallToAction'
+import SEO from '../components/SEO'
 
 export default ({ data: { site } }) => (
   <Layout site={site} noFooter>
+    <SEO />
     <Container>
       <CallToAction
         formId="1652705"
