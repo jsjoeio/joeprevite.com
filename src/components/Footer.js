@@ -48,7 +48,6 @@ function hasCallToActionOnPage() {
     // Check if there is an element with the "call-to-action" class
     const hasCallToAction =
       document.querySelector('.call-to-action')?.offsetParent !== null
-    console.log('this should be false', hasCallToAction)
     return hasCallToAction
   }
   // Otherwise we assume no

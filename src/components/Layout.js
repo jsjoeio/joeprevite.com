@@ -191,7 +191,6 @@ export default ({
   noFooter = false,
   noSubscribeForm,
 }) => {
-  console.log('what is noFooter', noFooter)
   const initializeTheme = () => {
     if (typeof window !== 'undefined') {
       return localStorage.getItem('theme') || 'default'
@@ -223,11 +222,6 @@ export default ({
 
   const keywords = (frontmatterKeywords || siteKeywords).join(', ')
   const description = frontmatterDescription || siteDescription
-
-  console.log(
-    'i am inside the layout. this should be false which means show footer',
-    noFooter,
-  )
 
   return (
     <ThemeProvider theme={theme}>
