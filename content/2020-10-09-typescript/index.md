@@ -1,11 +1,11 @@
 ---
-slug: "typescript"
-date: "2020-10-09"
-title: "TypeScript"
-description: "All the best articles, tips, and resources for learning TypeScript."
-tagline: "The best learning tips and resources"
+slug: 'typescript'
+date: '2020-10-09'
+title: 'TypeScript'
+description: 'All the best articles, tips, and resources for learning TypeScript.'
+tagline: 'The best learning tips and resources'
 published: true
-tags: ["TypeScript"]
+tags: ['TypeScript']
 ---
 
 This is ever-growing guide with my best articles, tips and resources for learning TypeScript. Find what you need by the format of what you use to learn best!
@@ -72,7 +72,7 @@ Sometimes people learn best by reading source code. Here are some recommendation
 
 ### [Timezoner Extension](https://github.com/jsjoeio/timezoner-extension)
 
-Originally written in JavaScript, I migrated this project - a Chrome extension written in React - to TypeScript. It's a small project so it may be a good place to see the basics of TS in a production scenario.  
+Originally written in JavaScript, I migrated this project - a Chrome extension written in React - to TypeScript. It's a small project so it may be a good place to see the basics of TS in a production scenario.
 
 🔗 [Link to source code](https://github.com/jsjoeio/timezoner-extension)
 
@@ -103,6 +103,8 @@ These are shorter bits. It might be a short video or a short article that explai
 To learn TypeScript deeply, I did an ultralearning project. This is a link to some of the lessons I learned after reflecting on the journey.
 
 🔗 [Link to tweet thread](https://twitter.com/jsjoeio/status/1211844439263600640?s=20)
+
+🔗 [Link to project in Notion](https://www.notion.so/jsjoeio/Ultralearning-Project-TypeScript-c3a3cb4547b3492a88b165d9b7f8fa49)
 
 ### [Understanding Mapped Types in TypeScript](https://joeprevite.com/understanding-mapped-types-in-typescript)
 
