@@ -56,7 +56,6 @@ function hasCallToActionOnPage() {
 
 const Footer = ({ author, noSubscribeForm = false }) => {
   const theme = useTheme()
-  const [hasCallToAction, setHasCallToAction] = React.useState(false)
   const { link, label } = getHelpOthersLearnToCodeLink()
 
   React.useEffect(() => {
@@ -66,7 +65,7 @@ const Footer = ({ author, noSubscribeForm = false }) => {
     // - the page doesn't have a call-to-action
     // We do this inside useEffect because on the server render, it doesn't exist
     // But on the client it does, so we check when the client has loaded
-    setHasCallToAction(hasCallToActionOnPage())
+    hasCallToActionOnPage()
   }, [])
 
   return (
