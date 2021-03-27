@@ -112,7 +112,7 @@ export default ({ data: { site } }) => {
   }, [paymentId])
 
   const DOWNLOAD_COURSE_CODE_DRY_RUN = `curl -fsSL ${SCRIPT_LOCATION} | sh -s -- --dry-run`
-  const DOWNLOAD_COURSE_CODE = `curl -fsSL ${SCRIPT_LOCATION} | sh -s -- --payment-id ${paymentId}`
+  const DOWNLOAD_COURSE_CODE = `curl -fsSL ${SCRIPT_LOCATION} | sh -s -- --paymentId ${paymentId}`
 
   return (
     <Layout site={site} noFooter>
