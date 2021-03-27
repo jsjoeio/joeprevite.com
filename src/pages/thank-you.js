@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Container from '../components/Container'
-import CallToAction from '../components/Forms/CallToAction'
 import SEO from '../components/SEO'
 
 // Thank you to these folks
@@ -122,7 +121,10 @@ export default ({ data: { site } }) => {
         <h1>Thank you!</h1>
         <p>
           Thanks for buying my course! I am so excited to help you learn through
-          hands-on activities. It's going to be a lot of fun 😄
+          hands-on activities. It's going to be a lot of fun{' '}
+          <span role="img" aria-labelledby="Smiling face, eyes closed emoji">
+            😄
+          </span>
         </p>
         <h2>Downloading course</h2>
         <p>
@@ -138,7 +140,7 @@ export default ({ data: { site } }) => {
         <h3>Can I see the raw code of the script?</h3>
         <p>
           Yup! Click{' '}
-          <a href={SCRIPT_RAW_LOCATION} target="_blank">
+          <a href={SCRIPT_RAW_LOCATION} target="_blank" rel="noreferrer">
             this link
           </a>
           (opens in a new tab) and it will show you the script code.
