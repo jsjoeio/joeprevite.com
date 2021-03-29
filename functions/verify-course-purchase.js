@@ -1,6 +1,7 @@
 const fetch = require('node-fetch')
 const ZIP_NAME = 'fake-course.zip'
 const DOWNLOAD_LINK = `https://raw.githubusercontent.com/jsjoeio/install-scripts/main/${ZIP_NAME}`
+const PRODUCT_URL_SLUG = `vim-for-vscode-beginner-exercise-pack`
 
 async function verifyFlurlyPayment(paymentId) {
   const FLURLY_API_ENDPOINT = `https://flurly.com/api/verify_redirect/${paymentId}`
@@ -11,10 +12,23 @@ async function verifyFlurlyPayment(paymentId) {
   console.log(`LOG: used paymentId: ${paymentId}`)
   console.log(`LOG: Response from Flurly API: ${JSON.stringify(json)}`)
 
-  const isValidPayment = json.payment_status && json.payment_status === 'paid'
-  console.log(`LOG: Response from Flurly API: ${json}`)
-  // If we don't do this, it can come back undefined
-  return isValidPayment ? true : false
+  if (json.payment_status && json.payment_status === 'paid') {
+    // Check that the product_url is our product
+    // Otherwise, they could use any Flurly product to download the course
+    const isValidPayment = json.product_url === PRODUCT_URL_SLUG
+
+    if (!isValidPayment) {
+      console.error(
+        `ERROR: Mismatched product urls. '${json.product_url}' does not match '${PRODUCT_URL_SLUG}'`,
+      )
+      return false
+    }
+
+    console.log(`LOG: paymentId is valid and product_url matches ours.`)
+    return isValidPayment
+  }
+
+  return false
 }
 
 exports.handler = async (event, context) => {
