@@ -11,6 +11,7 @@ const VALID_TAGS = new Set([
   `Miscellaneous`,
   `OSS`,
   `Productivity`,
+  `Python`,
   `Reason`,
   `Rust`,
   `Twitter`,
