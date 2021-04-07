@@ -15,14 +15,16 @@ async function verifyFlurlyPayment(paymentId) {
   if (json.payment_status && json.payment_status === 'paid') {
     // Check that the product_url is our product
     // Otherwise, they could use any Flurly product to download the course
-    const isValidPayment = json.product_url === PRODUCT_URL_SLUG
+    // const isValidPayment = json.product_url === PRODUCT_URL_SLUG
 
-    if (!isValidPayment) {
-      console.error(
-        `ERROR: Mismatched product urls. '${json.product_url}' does not match '${PRODUCT_URL_SLUG}'`,
-      )
-      return false
-    }
+    // if (!isValidPayment) {
+    //   console.error(
+    //     `ERROR: Mismatched product urls. '${json.product_url}' does not match '${PRODUCT_URL_SLUG}'`,
+    //   )
+    //   return false
+    // }
+
+    // TODO add back in valid URL check when course is ready
 
     console.log(`LOG: paymentId is valid and product_url matches ours.`)
     return isValidPayment
