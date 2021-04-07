@@ -24,6 +24,7 @@ async function verifyFlurlyPayment(paymentId) {
     //   return false
     // }
 
+    const isValidPayment = true
     // TODO add back in valid URL check when course is ready
 
     console.log(`LOG: paymentId is valid and product_url matches ours.`)
