@@ -28,44 +28,30 @@ Follow these steps:
    ```sh
    whoami
    ```
-   Save this value for later. Might look liek `u0_a254`
+   Save this value for later. Might look like `u0_a254`
 5. Find the host by running this in Termux:
    ```sh
    ipconfig
    ```
    Look for something like `inet addr:192.168.0.100` Save this value for later.
 6. Start the ssh server on Termux:
-
    ```sh
    sshd
    ```
-
    Verify that it's running with:
-
    ```sh
    logcat -s 'ssh:*'
    ```
-
    You should see something like "Server listening on port 8022"
-
 7. On your computer, SSH into your machine on port 8022 (default port):
-
    ```sh
    ssh <username>@<host> -p8022
    ```
-
-8. On your computer, SSH into your machine on port 8022 (default port):
-   ```sh
-   ssh <username>@<host> -p8022
-   ```
-9. Type in your password and viola! You're accessing Termux from your computer
+8. Type in your password and viola! You're accessing Termux from your computer
 
 ## Additional Resources
 
-These are the resources that helped me figure this out and might provide more context if you need it.
+These are the resources that helped me figure this out and might provide more context.
 
 - [How do I find the user name and host name of my local machine?](https://superuser.com/questions/667171/ssh-usernamehost-how-do-i-find-the-user-name-and-host-name-of-my-local-mach/667173#667173)
 - [Remote Access - Termux Wiki](https://wiki.termux.com/wiki/Remote_Access)
-
-
-# TODO figure out why the numbering is messed up
