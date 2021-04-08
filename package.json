@@ -91,6 +91,7 @@
     "build:local": "gatsby build",
     "g:post": "hygen post new",
     "dev": "gatsby develop",
+    "develop": "gatsby develop",
     "start": "run-p start:**",
     "start:app": "npm run dev",
     "start:lambda": "netlify-lambda serve --config ./config/webpack.functions.js functions"
