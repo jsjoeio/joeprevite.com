@@ -47,7 +47,7 @@ Follow these steps:
    ```sh
    ssh <username>@<host> -p8022
    ```
-8. Type in your password and viola! You're accessing Termux from your computer
+8. Type in your password and viola! You're accessing Termux from your computer.
 
 ## Additional Resources
 
