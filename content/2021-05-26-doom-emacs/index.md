@@ -63,4 +63,27 @@ brew install fontconfig
 
 ## Hello, Doom Emacs
 
-Coming soon!
+The first thing I do in any new technology or program is the famous, "Hello world!".
+
+To do that in Doom, do the following:
+
+1. Open Emacs
+2. Hit `SPC b N` — create new empty buffer
+3. Type "Hello, Doom Emacs!"
+4. Hit `SPC b s` - save buffer (use default location or pick)
+5. Type in name of file — hello.txt
+6. Hit enter
+
+Boom! You've created your first file with Doom Emacs.
+
+<Note>
+
+Note: I like to think of a _buffer_ as a scratchpad. It exists in memory but has not yet been written to disk as a file.
+
+</Note>
+
+## Resources
+
+Here are a list of handy resources:
+
+- [Doom Emacs Cheatsheet](https://gist.github.com/hjertnes/9e14416e8962ff5f03c6b9871945b165)
