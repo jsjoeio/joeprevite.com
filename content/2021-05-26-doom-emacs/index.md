@@ -82,6 +82,14 @@ Note: I like to think of a _buffer_ as a scratchpad. It exists in memory but has
 
 </Note>
 
+### Return to Start
+
+After you've created this file, you probably want to close it.
+
+To do so, we have to clear the frame. Hit `SPC q F`.
+
+This will bring you back to the start with the Doom logo.
+
 ## Resources
 
 Here are a list of handy resources:
