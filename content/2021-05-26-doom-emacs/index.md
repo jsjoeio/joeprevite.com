@@ -90,6 +90,26 @@ To do so, we have to clear the frame. Hit `SPC q F`.
 
 This will bring you back to the start with the Doom logo.
 
+## How to
+
+A list of things you might be wondering how you can do.
+
+### Auto-save Buffers
+
+I felt annoyed that I had to save my buffer every so often. Well turns out you can turn on auto-save.
+
+Using this below, it auto-saves every 15 seconds.
+
+1. Open your config: `.doom.d/config.el`
+2. Add this block:
+   ```clojure
+   ;; This is so buffers auto-save
+   ;; auto save
+   (setq auto-save-visited-interval 15)
+   (auto-save-visited-mode +1)
+   ```
+3. Restart Doom
+
 ## Resources
 
 Here are a list of handy resources:
