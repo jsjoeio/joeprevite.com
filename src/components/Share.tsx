@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { css } from '@emotion/core'
 import { useTheme } from './Theming'
 
 import { TwitterShareButton } from 'react-share'
 
-const Share = ({ url, title, twitterHandle }) => {
+interface SharePropsType {
+  url: string;
+  title: string;
+  twitterHandle: string;
+}
+
+const Share: FC<SharePropsType> = ({ url, title, twitterHandle }) => {
   const theme = useTheme()
   return (
     <div
@@ -37,6 +43,7 @@ const Share = ({ url, title, twitterHandle }) => {
       <span>Share article</span>
       <TwitterShareButton
         url={url}
+        // @ts-expect-error quote doesn't exist in TwitterShareButton
         quote={title}
         via={twitterHandle.split('@').join('')}
       >
