@@ -1,7 +1,9 @@
-import React from 'react'
-import { Link as GatsbyLink } from 'gatsby'
+import React, { FC } from 'react'
+import { GatsbyLinkProps, Link as GatsbyLink } from 'gatsby'
 
-const Link = ({ children, to, ...other }) => {
+type LinkPropsType = Omit<GatsbyLinkProps<unknown>, 'ref'>;
+
+const Link: FC<LinkPropsType> = ({ children, to, ...other }) => {
   const internal = /^\/(?!\/)/.test(to)
 
   if (internal) {
