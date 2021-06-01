@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Link from './Link'
 import { useTheme } from './Theming'
 import { css } from '@emotion/core'
 import config from '../../config/website'
 
-export const Twitter = ({ url = `${config.twitter}` }) => {
+interface SocialPropsType {
+  url?: string;
+}
+
+export const Twitter: FC<SocialPropsType> = ({ url = `${config.twitter}` }) => {
   const theme = useTheme()
   return (
     <Link
@@ -34,7 +38,7 @@ export const Twitter = ({ url = `${config.twitter}` }) => {
   )
 }
 
-export const LinkedIn = ({ url = `${config.linkedin}` }) => {
+export const LinkedIn: FC<SocialPropsType> = ({ url = `${config.linkedin}` }) => {
   const theme = useTheme()
   return (
     <Link
@@ -63,7 +67,7 @@ export const LinkedIn = ({ url = `${config.linkedin}` }) => {
   )
 }
 
-export const GitHub = ({ url = `${config.github}` }) => {
+export const GitHub: FC<SocialPropsType> = ({ url = `${config.github}` }) => {
   const theme = useTheme()
   return (
     <Link
