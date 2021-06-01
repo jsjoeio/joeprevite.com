@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "jsx": "react",
+      "allowJs": true,
+      "moduleResolution": "node",
+      "noImplicitReturns": true,
+      "noUnusedParameters": true,
+      "pretty": true,
+      "strict": true,
+      "target": "ES2015"
+    },
+    "include": ["src/**/*"]
+}
+  
