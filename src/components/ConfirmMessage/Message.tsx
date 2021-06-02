@@ -6,7 +6,7 @@ import Link from '../Link'
 import { bpMaxSM } from '../../lib/breakpoints'
 
 type MessagePropsType = {
-  illustration?: string | FC;
+  illustration?: string | FC | JSX.Element;
   title?: string;
   body?: string;
   note?: string;

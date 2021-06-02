@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Message from '../components/ConfirmMessage/Message'
@@ -7,8 +7,32 @@ import {
   ThankYouIllustration,
   UnsubscribeIllustration,
 } from '../components/ConfirmMessage/Illustrations'
+import { PageType } from '../types/PageType'
 
-export default ({ data: { site, allMdx, latestArticle } }) => {
+interface MessagesPagePropsType {
+  data: {
+    site: PageType['data']['site'];
+    latestArticle: {
+      edges: {
+        node: {
+          id: string;
+          frontmatter: {
+            title: string;
+            slug: string;
+          };
+        }
+      }[]
+    }
+  }
+}
+
+const MessagesPage: FC<MessagesPagePropsType> = ({
+  data: {
+    site,
+    // allMdx,
+    latestArticle
+  }
+}) => {
   return (
     <Layout site={site} noSubscribeForm>
       <div>
@@ -45,6 +69,8 @@ export default ({ data: { site, allMdx, latestArticle } }) => {
     </Layout>
   )
 }
+
+export default MessagesPage;
 
 export const latestArticle = graphql`
   query {
