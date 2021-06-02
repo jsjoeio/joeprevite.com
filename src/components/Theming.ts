@@ -2,7 +2,27 @@ import { createTheming } from '@callstack/react-theme-provider'
 import { lighten, darken } from 'polished'
 import colors from '../lib/colors'
 
-const themes = {
+type ThemeType = {
+  themeName: 'default' | 'dark';
+  colors: typeof colors & {
+    primary: string;
+    text: string;
+    bodyBg: string;
+    headerBg: string;
+    link: string;
+    noteBg: string;
+    noteBorder: string;
+    noteText: string;
+    filterTagsBg: string;
+    filterTagsBgHover: string;
+    filterTagsBgActive: string;
+    filterTagsBorder: string;
+    filterTagsText: string;
+  };
+  toggleTheme: (name: ThemeType['themeName']) => void;
+}
+
+const themes: Record<ThemeType['themeName'], ThemeType> = {
   default: {
     themeName: 'default',
     colors: {
@@ -20,6 +40,9 @@ const themes = {
       filterTagsBorder: colors.transparent,
       filterTagsText: colors.mineShaft,
       ...colors,
+    },
+    toggleTheme: () => {
+      // noop
     },
   },
   dark: {
@@ -40,14 +63,15 @@ const themes = {
       filterTagsText: colors.contessa,
       ...colors,
     },
+    toggleTheme: () => {
+      // noop
+    },
   },
 }
 
 const currentTheme = themes.default;
 
 export type ThemeName = keyof typeof themes;
-
-export type ThemeType = typeof currentTheme;
 
 // filterTagsBg: lighten(0.1, colors.black),
 // filterTagsBgHover: lighten(0.25, colors.black),

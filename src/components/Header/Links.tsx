@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { Link } from 'gatsby'
 import { useTheme } from '../Theming'
 import ThemeToggler from './ThemeToggler'
 
-export default () => {
+const Links: FC = () => {
   const theme = useTheme()
   return (
     <React.Fragment>
@@ -25,3 +25,5 @@ export default () => {
     </React.Fragment>
   )
 }
+
+export default Links;
