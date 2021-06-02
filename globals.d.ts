@@ -28,9 +28,3 @@ declare module 'prism-react-renderer/prism' {
     
     export = Prism;
 }
-
-declare module 'lib/breakpoints' {
-    const bpMaxSM: string;
-
-    export { bpMaxSM }
-}
