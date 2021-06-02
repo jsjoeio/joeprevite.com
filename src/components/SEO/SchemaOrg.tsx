@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Helmet from 'react-helmet'
 
-export default React.memo(
+interface SchemaOrgPropsType {
+  author: {
+    name: string;
+  }
+  canonicalUrl: string;
+  datePublished: string;
+  defaultTitle: string;
+  description: string;
+  image: string;
+  isBlogPost: boolean;
+  organization: {
+    url: string;
+    logo: string;
+    name: string;
+  }
+  title: string;
+  url: string;
+}
+
+const SchemaOrg: FC<SchemaOrgPropsType> = React.memo(
   ({
     author,
     canonicalUrl,
@@ -80,4 +99,6 @@ export default React.memo(
       </Helmet>
     )
   },
-)
+);
+
+export default SchemaOrg;
