@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { FC, useState } from 'react'
 import { css } from '@emotion/core'
 import Container from '../Container'
 
@@ -6,7 +6,7 @@ import { bpMaxSM } from '../../lib/breakpoints'
 
 import { useTheme } from '../Theming'
 
-const Toggle = ({ children }) => {
+const Toggle: FC = ({ children }) => {
   const [isToggledOn, setToggle] = useState(false)
   const toggle = () => setToggle(!isToggledOn)
   const theme = useTheme()
