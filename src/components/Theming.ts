@@ -2,7 +2,7 @@ import { createTheming } from '@callstack/react-theme-provider'
 import { lighten, darken } from 'polished'
 import colors from '../lib/colors'
 
-type ThemeType = {
+export type ThemeType = {
   themeName: 'default' | 'dark';
   colors: typeof colors & {
     primary: string;
