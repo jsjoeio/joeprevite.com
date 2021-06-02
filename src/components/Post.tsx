@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import useSWR from 'swr'
 import format from 'comma-number'
 
@@ -7,7 +7,19 @@ import { bpMaxSM } from '../lib/breakpoints'
 import Link from './Link'
 import fetcher from '../lib/fetcher'
 
-function Post({ post }) {
+interface PostPropsType {
+  post: {
+    fields: {
+      slug: string;
+    }
+    frontmatter: {
+      title: string;
+    }
+    excerpt: string;
+  }
+}
+
+const Post: FC<PostPropsType> = ({ post }) => {
   const { data } = useSWR(
     `/.netlify/functions/page-views?id=${post.fields.slug}`,
     fetcher,
