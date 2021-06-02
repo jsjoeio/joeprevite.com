@@ -43,12 +43,16 @@ const themes = {
   },
 }
 
+const currentTheme = themes.default;
+
+export type ThemeType = typeof currentTheme;
+
 // filterTagsBg: lighten(0.1, colors.black),
 // filterTagsBgHover: lighten(0.25, colors.black),
 // filterTagsBgActive: lighten(0.25, colors.contessa),
 // filterTagsBorder: colors.transparent,
 // filterTagsText: darken(0.25, colors.contessa),
 
-const { ThemeProvider, withTheme, useTheme } = createTheming(themes.default)
+const { ThemeProvider, withTheme, useTheme } = createTheming(currentTheme)
 
 export { ThemeProvider, withTheme, useTheme, themes, colors }
