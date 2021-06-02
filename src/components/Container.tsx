@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { css } from '@emotion/core'
 import { bpMaxSM } from 'lib/breakpoints'
 
-const Container = props => {
-  const {
-    maxWidth = 700,
-    noHorizontalPadding = false,
-    noVerticalPadding = false,
-    ...restProps
-  } = props
+interface ContainerPropsType {
+  maxWidth?: number;
+  noHorizontalPadding?: boolean;
+  noVerticalPadding?: boolean;
+}
+
+const Container: FC<ContainerPropsType> = ({
+  children,
+  maxWidth = 700,
+  noHorizontalPadding = false,
+  noVerticalPadding = false,
+  ...restProps
+}) => {
   return (
     <div
       css={css`
@@ -24,7 +30,7 @@ const Container = props => {
       `}
       {...restProps}
     >
-      {props.children}
+      {children}
     </div>
   )
 }
