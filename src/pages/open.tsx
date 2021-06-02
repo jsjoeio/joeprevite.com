@@ -1,22 +1,28 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { graphql } from 'gatsby'
 import useSWR from 'swr'
-import Container from 'components/Container'
+import Container from '../components/Container'
 import SEO from '../components/SEO'
-import Layout from '../components/Layout'
+import Layout, { LayoutPropsType } from '../components/Layout'
 import Link from '../components/Link'
 import format from 'comma-number'
 
 import fetcher from '../lib/fetcher'
 
-const Open = ({ data: { site } }) => {
+interface OpenPagePropsType {
+  data: {
+    site: LayoutPropsType['site'];
+  }
+}
+
+const OpenPage: FC<OpenPagePropsType> = ({ data: { site } }) => {
   const { data } = useSWR(`/.netlify/functions/page-views`, fetcher)
 
   const totalPageViews = data?.totalViews
 
   return (
     <Layout site={site}>
-      <SEO title="Open | Joe Previte" />
+      <SEO />
       <Container>
         <h1>Open</h1>
         <p>
@@ -55,7 +61,7 @@ const Open = ({ data: { site } }) => {
   )
 }
 
-export default Open
+export default OpenPage
 
 export const pageQuery = graphql`
   query {
