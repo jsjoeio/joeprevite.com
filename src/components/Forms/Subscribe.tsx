@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 import { css } from '@emotion/core'
-import { withTheme } from '../Theming'
+import { ThemeType, withTheme } from '../Theming'
 import { rhythm } from '../../lib/typography'
 import { bpMaxSM } from '../../lib/breakpoints'
 import Message from '../ConfirmMessage/Message'
@@ -18,7 +18,13 @@ const SubscribeSchema = Yup.object().shape({
     .required('Required'),
 })
 
-const PostSubmissionMessage = ({ response }) => {
+interface PostSubmissionMessagePropsType {
+  response: SignUpStateType['response'];
+}
+
+const PostSubmissionMessage: FC<PostSubmissionMessagePropsType> = (
+  // { response }
+) => {
   return (
     <div>
       <Message
@@ -31,12 +37,23 @@ const PostSubmissionMessage = ({ response }) => {
   )
 }
 
-class SignUp extends React.Component {
-  state = {
+interface SignUpStateType {
+  submitted: boolean;
+  response?: { creation_date: string; };
+  errorMessage?: string | null;
+}
+
+interface SignUpPropsType {
+  theme: ThemeType;
+}
+
+class SignUp extends React.Component<SignUpPropsType, SignUpStateType> {
+  state: SignUpStateType = {
     submitted: false,
   }
 
-  async handleSubmit(values) {
+  // TODO: `values: InferType<typeof SubscribeSchema>` is not working
+  async handleSubmit(values: { email: string; }) {
     const data = { ...values, referrer_url: 'https://joeprevite.com' }
     this.setState({ submitted: true })
     try {
@@ -92,7 +109,11 @@ class SignUp extends React.Component {
           validationSchema={SubscribeSchema}
           onSubmit={values => this.handleSubmit(values)}
         >
-          {({ errors, touched, isSubmitting }) => (
+          {({
+            // errors,
+            // touched,
+            isSubmitting,
+          }) => (
             <>
               {!successful && (
                 <Form
