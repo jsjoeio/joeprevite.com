@@ -6,6 +6,7 @@
       "moduleResolution": "node",
       "noImplicitReturns": true,
       "noUnusedParameters": true,
+      "resolveJsonModule": true,
       "pretty": true,
       "strict": true,
       "target": "ES2015"

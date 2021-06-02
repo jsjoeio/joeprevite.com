@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 export default class HTML extends React.Component {
   render() {
@@ -29,11 +29,11 @@ export default class HTML extends React.Component {
   }
 }
 
-HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
-  headComponents: PropTypes.array,
-  bodyAttributes: PropTypes.object,
-  preBodyComponents: PropTypes.array,
-  body: PropTypes.string,
-  postBodyComponents: PropTypes.array,
-}
+// HTML.propTypes = {
+//   htmlAttributes: PropTypes.object,
+//   headComponents: PropTypes.array,
+//   bodyAttributes: PropTypes.object,
+//   preBodyComponents: PropTypes.array,
+//   body: PropTypes.string,
+//   postBodyComponents: PropTypes.array,
+// }

@@ -6,7 +6,7 @@ interface SchemaOrgPropsType {
     name: string;
   }
   canonicalUrl: string;
-  datePublished: string;
+  datePublished: boolean;
   defaultTitle: string;
   description: string;
   image: string;
