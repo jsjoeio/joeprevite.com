@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
+import type { InferType } from 'yup';
 import { css } from '@emotion/core'
-import { withTheme } from '../Theming'
+import { useTheme } from '../Theming'
 import { rhythm } from '../../lib/typography'
 import { bpMaxSM } from '../../lib/breakpoints'
 import Message from '../ConfirmMessage/Message'
@@ -15,7 +16,13 @@ const SubscribeSchema = Yup.object().shape({
     .required('Required'),
 })
 
-const PostSubmissionMessage = ({ response }) => {
+interface PostSubmissionMessagePropsType {
+  response: CallToActionStateType['response'];
+}
+
+const PostSubmissionMessage: FC<PostSubmissionMessagePropsType> = (
+  // { response }
+) => {
   return (
     <div>
       <Message
@@ -28,7 +35,7 @@ const PostSubmissionMessage = ({ response }) => {
   )
 }
 
-export const CallToActionDescription = ({ children }) => {
+export const CallToActionDescription: FC = ({ children }) => {
   return (
     <div
       css={css`
@@ -41,7 +48,11 @@ export const CallToActionDescription = ({ children }) => {
   )
 }
 
-const PlainCallToActionDescription = ({ description }) => {
+interface PlainCallToActionDescriptionPropsType {
+  description: string;
+}
+
+const PlainCallToActionDescription: FC<PlainCallToActionDescriptionPropsType> = ({ description }) => {
   return (
     <p
       css={css`
@@ -54,8 +65,23 @@ const PlainCallToActionDescription = ({ description }) => {
   )
 }
 
-function CallToAction({
-  theme,
+interface CallToActionStateType {
+  submitted: boolean;
+  response: { creation_date?: string } | null;
+  errorMessage: string | null;
+}
+
+interface CallToActionPropsType {
+  formId: string;
+  title: string;
+  description?: string;
+  buttonText?: string;
+  buttonLoadingText?: string;
+  placeholderText?: string;
+  tags: string[];
+}
+
+const CallToAction: FC<CallToActionPropsType> = ({
   formId,
   title,
   children, // only used if description === ''
@@ -64,8 +90,9 @@ function CallToAction({
   buttonLoadingText = 'Signing you up...',
   placeholderText = 'awesomeperson@gmail.com',
   tags, // the tags to add to the subscriber
-}) {
-  const [state, setState] = React.useState({
+}) => {
+  const theme = useTheme();
+  const [state, setState] = React.useState<CallToActionStateType>({
     submitted: false,
     response: null,
     errorMessage: '',
@@ -79,7 +106,8 @@ function CallToAction({
   const referrer = () =>
     typeof window !== 'undefined' ? window.location.href : ''
 
-  async function handleSubmit(values) {
+  // TODO: `values: InferType<typeof SubscribeSchema>` is not working
+  async function handleSubmit(values: { email: string; }) {
     const referrerUrl = referrer()
     // values is an object that has the email field on it
     // TODO fix tags not working
@@ -134,7 +162,11 @@ function CallToAction({
         validationSchema={SubscribeSchema}
         onSubmit={values => handleSubmit(values)}
       >
-        {({ errors, touched, isSubmitting }) => (
+        {({
+          // errors,
+          // touched,
+          isSubmitting,
+        }) => (
           <>
             {!successful && (
               <Form
@@ -229,6 +261,6 @@ function CallToAction({
       </Formik>
     </div>
   )
-}
+};
 
-export default withTheme(CallToAction)
+export default CallToAction

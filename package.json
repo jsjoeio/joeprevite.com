@@ -71,6 +71,7 @@
     "yup": "^0.28.0"
   },
   "devDependencies": {
+    "@types/yup": "^0.29.11",
     "babel-preset-gatsby": "^0.2.20",
     "dayjs": "^1.8.18",
     "http-proxy-middleware": "^1.0.4",
