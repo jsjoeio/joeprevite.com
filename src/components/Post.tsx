@@ -6,17 +6,10 @@ import { css } from '@emotion/core'
 import { bpMaxSM } from '../lib/breakpoints'
 import Link from './Link'
 import fetcher from '../lib/fetcher'
+import { EdgeType } from '../pages/articles'
 
 interface PostPropsType {
-  post: {
-    fields: {
-      slug: string;
-    }
-    frontmatter: {
-      title: string;
-    }
-    excerpt: string;
-  }
+  post: EdgeType['node'];
 }
 
 const Post: FC<PostPropsType> = ({ post }) => {

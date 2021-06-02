@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
-import Container from 'components/Container'
+import Container from '../components/Container'
 import SEO from '../components/SEO'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 import { useTheme } from '../components/Theming'
 import { VALID_TAGS } from '../lib/tags'
 import { bpMaxSM } from '../lib/breakpoints'
+import { PageType } from '../types/PageType'
 
 /*
 
@@ -31,7 +32,14 @@ const FILTER_TAGS_TO_SHOW = [...VALID_TAGS].filter(tag =>
   ].includes(tag),
 )
 
-const FilterTag = ({ tag, filterTags, setFilterTags, handleTagChange }) => {
+interface FilterTagPropsType {
+  tag: string;
+  filterTags: string[];
+  setFilterTags: (tags: string[]) => void;
+  handleTagChange: (tags: string[]) => void;
+}
+
+const FilterTag: FC<FilterTagPropsType> = ({ tag, filterTags, setFilterTags, handleTagChange }) => {
   const theme = useTheme()
   return (
     <button
@@ -68,7 +76,7 @@ const FilterTag = ({ tag, filterTags, setFilterTags, handleTagChange }) => {
  * @param currentFilterTags {string[]} the current filter tags in state
  * @param tag {string} the tag to add or remove
  */
-function getNewTags(currentFilterTags, tag) {
+function getNewTags(currentFilterTags: string[], tag: string) {
   // Check if currentFilter tags has it
   if (currentFilterTags.includes(tag)) {
     // If it does, we remove it and return the array without it
@@ -79,18 +87,42 @@ function getNewTags(currentFilterTags, tag) {
   return [...currentFilterTags, tag]
 }
 
-const Articles = ({ data: { site, allMdx } }) => {
+export interface EdgeType {
+  node: {
+    id: string;
+    fields: {
+      slug: string;
+      tags: string[];
+    }
+    frontmatter: {
+        title: string;
+        slug: string;
+    };
+    excerpt: string;
+  };
+}
+
+interface ArticlesPropsType {
+  data: {
+    site: PageType['data']['site'];
+    allMdx: {
+      edges: EdgeType[]
+    }
+  }
+}
+
+const ArticlesPage: FC<ArticlesPropsType> = ({ data: { site, allMdx } }) => {
   // These are all the posts
   // see GraphQL query at bottom of file
   const allPosts = allMdx.edges
 
   // These are the tags that you can filter by
   // i.e. JavaScript, Rust
-  const [filterTags, setFilterTags] = React.useState([])
+  const [filterTags, setFilterTags] = React.useState<string[]>([])
 
   // This is where we store the list of posts that have been filtered
   // i.e filtered by query (text) or tags (filterTags)
-  const [filteredData, setFilteredData] = React.useState(null)
+  const [filteredData, setFilteredData] = React.useState<EdgeType[] | null>(null)
 
   // query is used to keep track of the text filter
   const [query, setQuery] = React.useState('')
@@ -99,7 +131,7 @@ const Articles = ({ data: { site, allMdx } }) => {
   const hasSearchQuery = query !== ''
 
   // This is called when a user types inside the input field
-  const handleInputChange = event => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     // Grab the value from the input
     const currentQuery = event.target.value
 
@@ -114,7 +146,7 @@ const Articles = ({ data: { site, allMdx } }) => {
     handleFilteredData(currentQuery, filterTags, posts)
   }
 
-  const handleTagChange = newTags => {
+  const handleTagChange = (newTags: string[]) => {
     // Similarly here, we check if we have a search query
     // and if the newTags (remember we don't want to use the state here because it comes in async)
     // and if those are true, then we use the filtered data
@@ -128,10 +160,10 @@ const Articles = ({ data: { site, allMdx } }) => {
   // The main purpose of this function is to handle updates to filteredData
   // we pass in the query, the filterTags and the posts
   // We prefix it with '_' so that it doesn't conflict with the equivalent state name
-  const handleFilteredData = (_query, _filterTags, posts) => {
+  const handleFilteredData = (_query: string, _filterTags: string[], posts: EdgeType[] | null) => {
     // We keep updatedData in the outermost scope of the function so that we can
     // update it in from within these if blocks
-    let updatedData = posts
+    let updatedData: EdgeType[] | null = posts
     // first filter based on tags
     if (updatedData !== null && _filterTags.length !== 0) {
       updatedData = updatedData.filter(({ node: post }) => {
@@ -233,7 +265,7 @@ const Articles = ({ data: { site, allMdx } }) => {
   )
 }
 
-export default Articles
+export default ArticlesPage
 
 export const pageQuery = graphql`
   query {
