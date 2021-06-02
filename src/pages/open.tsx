@@ -8,14 +8,9 @@ import Link from '../components/Link'
 import format from 'comma-number'
 
 import fetcher from '../lib/fetcher'
+import { PageType } from '../types/PageType'
 
-interface OpenPagePropsType {
-  data: {
-    site: LayoutPropsType['site'];
-  }
-}
-
-const OpenPage: FC<OpenPagePropsType> = ({ data: { site } }) => {
+const OpenPage: FC<PageType> = ({ data: { site } }) => {
   const { data } = useSWR(`/.netlify/functions/page-views`, fetcher)
 
   const totalPageViews = data?.totalViews

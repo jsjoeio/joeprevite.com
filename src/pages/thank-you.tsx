@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout, { LayoutPropsType } from '../components/Layout'
 import Container from '../components/Container'
 import SEO from '../components/SEO'
+import { PageType } from '../types/PageType'
 
 // Thank you to these folks
 // https://staxmanade.com/CssToReact/
@@ -103,13 +104,7 @@ function getQueryParams(queryString: string) {
   return paymentId
 }
 
-interface ThankYouPropsType {
-  data: {
-    site: LayoutPropsType['site'];
-  }
-}
-
-const ThankYou: FC<ThankYouPropsType> = ({ data: { site } }) => {
+const ThankYou: FC<PageType> = ({ data: { site } }) => {
   const [paymentId, setPaymentId] = React.useState<string | null>('')
   const [error, setError] = React.useState<string | null>(null)
 
