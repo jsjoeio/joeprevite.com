@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const HandWave = () => (
+const HandWave: FC = () => (
   <svg
     aria-labelledby="hand-wave"
     role="img"
