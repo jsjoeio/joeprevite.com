@@ -290,7 +290,6 @@ export const pageQuery = graphql`
       author {
         name
       }
-      keywords
     }
   }
 `
