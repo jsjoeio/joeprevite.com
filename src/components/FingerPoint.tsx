@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const FingerPoint = () => (
+const FingerPoint: FC = () => (
   <svg
     aria-labelledby="finger-point"
     role="img"
