@@ -1,18 +1,40 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { css } from '@emotion/core'
-import SEO from 'components/SEO'
-import Container from 'components/Container'
+import SEO from '../components/SEO'
+import Container from '../components/Container'
 import Layout from '../components/Layout'
 import Share from '../components/Share'
 import ViewCounter from '../components/ViewCounter'
 import config from '../../config/website'
+import { PageType } from '../types/PageType'
 
-export default function Post({
+interface PostPropsType {
+  data: {
+    site: PageType['data']['site'];
+    mdx: {
+      frontmatter: {
+        title: string;
+        description: string;
+        tagline: string;
+        date: string;
+        author: string;
+        slug: string;
+        keywords: string[];
+      };
+      fields: {
+        editLink: string;
+      }
+      body: string;
+    }
+  }
+}
+
+const Post: FC<PostPropsType> = ({
   data: { site, mdx },
-  pageContext: { next, prev },
-}) {
+  // pageContext: { next, prev },
+}) => {
   const date = mdx?.frontmatter.date
   const title = mdx?.frontmatter.title
   // const banner = mdx.frontmatter.banner
@@ -121,6 +143,8 @@ export default function Post({
 
   return null
 }
+
+export default Post;
 
 export const pageQuery = graphql`
   query($id: String!) {
