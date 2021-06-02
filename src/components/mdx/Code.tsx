@@ -28,7 +28,7 @@ const calculateLinesToHighlight = (meta: string) => {
   }
 }
 
-interface CodePropsType {
+export interface CodePropsType {
   className?: string;
   metastring: string;
   ['react-live']?: boolean;
