@@ -11,7 +11,7 @@ import Header from './Header'
 import reset from '../lib/reset'
 import config from '../../config/website'
 import Footer from './Footer'
-import { NewsletterPageQuery } from '../types/generated'
+import { NewsletterPageQuery, OpenPageQuery } from '../types/generated'
 
 const getGlobalStyles = (theme: ThemeType) => {
   return css`
@@ -204,7 +204,9 @@ export interface LayoutPropsType {
 }
 
 export type LayoutPropsType2 = {
-  site:  PageProps<NewsletterPageQuery>['data']['site'];
+  site:
+    | PageProps<NewsletterPageQuery>['data']['site']
+    | PageProps<OpenPageQuery>['data']['site'];
   frontmatter?: {
     description?: string;
     keywords?: string[];

@@ -4232,3 +4232,9 @@ export type NewsletterPageQueryVariables = Exact<{ [key: string]: never }>
 export type NewsletterPageQuery = { __typename?: 'Query' } & {
   site?: Maybe<{ __typename?: 'Site' } & SiteFragment>
 }
+
+export type OpenPageQueryVariables = Exact<{ [key: string]: never }>
+
+export type OpenPageQuery = { __typename?: 'Query' } & {
+  site?: Maybe<{ __typename?: 'Site' } & SiteFragment>
+}
