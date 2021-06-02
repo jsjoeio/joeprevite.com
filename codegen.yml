@@ -1,0 +1,20 @@
+overwrite: true
+schema: 'http://localhost:8000/___graphql'
+documents:
+  [
+    './src/**/*.tsx',
+    './src/**/*.ts',
+    '../../node_modules/gatsby-transformer-sharp/src/*.js',
+    '../../node_modules/gatsby-image/src/*.js',
+  ]
+generates:
+  src/types/generated.tsx:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+  ./schema.json:
+    plugins:
+      - 'introspection'
+hooks:
+  afterOneFileWrite:
+    - prettier --write
