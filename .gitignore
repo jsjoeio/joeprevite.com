@@ -46,3 +46,6 @@ functions-build
 .netlify
 
 serviceAccountKey.json
+
+# graphql
+schema.json

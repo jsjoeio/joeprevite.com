@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect, FC } from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { graphql, PageProps } from 'gatsby'
 import { MDXProvider } from '@mdx-js/react'
 import { lighten } from 'polished'
 import { Global, css } from '@emotion/core'
@@ -11,6 +11,7 @@ import Header from './Header'
 import reset from '../lib/reset'
 import config from '../../config/website'
 import Footer from './Footer'
+import { NewsletterPageQuery } from '../types/generated'
 
 const getGlobalStyles = (theme: ThemeType) => {
   return css`
@@ -202,7 +203,17 @@ export interface LayoutPropsType {
   noSubscribeForm?: boolean;
 }
 
-const Layout: FC<LayoutPropsType> = ({
+export type LayoutPropsType2 = {
+  site:  PageProps<NewsletterPageQuery>['data']['site'];
+  frontmatter?: {
+    description?: string;
+    keywords?: string[];
+  }
+  noFooter?: boolean;
+  noSubscribeForm?: boolean;
+}
+
+const Layout: FC<LayoutPropsType2> = ({
   site,
   frontmatter = {},
   children,
@@ -228,10 +239,9 @@ const Layout: FC<LayoutPropsType> = ({
     ...themes[themeName],
     toggleTheme: toggleTheme,
   }
-  const {
-    description: siteDescription,
-    keywords: siteKeywords,
-  } = site.siteMetadata
+  const siteDescription = site?.siteMetadata?.description;
+  // @ts-expect-error
+  const siteKeywords = site?.siteMetadata?.keywords;
 
   const {
     keywords: frontmatterKeywords,
@@ -240,6 +250,7 @@ const Layout: FC<LayoutPropsType> = ({
 
   const keywords = (frontmatterKeywords || siteKeywords).join(', ')
   const description = frontmatterDescription || siteDescription
+  const authorName = site?.siteMetadata?.author?.name;
 
   return (
     <ThemeProvider theme={theme}>
@@ -268,9 +279,9 @@ const Layout: FC<LayoutPropsType> = ({
           <MDXProvider components={mdxComponents}>
             <Fragment>{children}</Fragment>
           </MDXProvider>
-          {!noFooter && (
+          {!noFooter && authorName && (
             <Footer
-              author={site.siteMetadata.author.name}
+              author={authorName}
               noSubscribeForm={noSubscribeForm}
             />
           )}
@@ -281,15 +292,3 @@ const Layout: FC<LayoutPropsType> = ({
 }
 
 export default Layout;
-
-export const pageQuery = graphql`
-  fragment site on Site {
-    siteMetadata {
-      title
-      description
-      author {
-        name
-      }
-    }
-  }
-`
