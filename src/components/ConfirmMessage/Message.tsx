@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { css, keyframes } from '@emotion/core'
 import styled from '@emotion/styled'
 import Markdown from 'react-markdown'
 import Link from '../Link'
 import { bpMaxSM } from '../../lib/breakpoints'
 
-export default ({
+interface MessagePropsType {
+  illustration?: string;
+  title?: string;
+  body?: string;
+  note?: string;
+  fullscreen?: boolean;
+  articleTitle?: string;
+  articleSlug: string;
+}
+
+const Message: FC<MessagePropsType> = ({
   illustration,
   title,
   body,
@@ -27,6 +37,7 @@ export default ({
     {body && <Markdown>{body}</Markdown>}
     {note && (
       <div
+        // @ts-expect-error replace with @emotion/css
         className={css`
           color: rgba(0, 0, 0, 0.7);
           transform: scale(0.85);
@@ -84,3 +95,5 @@ const Center = styled.div`
     animation: ${FadeIn} 400ms ease-in-out 1;
   }
 `
+
+export default Message;
