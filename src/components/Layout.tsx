@@ -1,18 +1,18 @@
-import React, { Fragment, useState, useEffect } from 'react'
+import React, { Fragment, useState, useEffect, FC } from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import { MDXProvider } from '@mdx-js/react'
 import { lighten } from 'polished'
 import { Global, css } from '@emotion/core'
-import { ThemeProvider, themes } from './Theming'
+import { ThemeName, ThemeProvider, themes, ThemeType } from './Theming'
 import { bpMaxSM } from '../lib/breakpoints'
 import mdxComponents from './mdx'
 import Header from './Header'
 import reset from '../lib/reset'
 import config from '../../config/website'
-import Footer from '../components/Footer'
+import Footer from './Footer'
 
-const getGlobalStyles = theme => {
+const getGlobalStyles = (theme: ThemeType) => {
   return css`
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -184,16 +184,34 @@ const getGlobalStyles = theme => {
   `
 }
 
-export default ({
+interface LayoutPropsType {
+  site: {
+    siteMetadata: {
+      description: string;
+      keywords: string[];
+      author: {
+        name: string;
+      }
+    }
+  }
+  frontmatter?: {
+    description?: string;
+    keywords?: string[];
+  }
+  noFooter?: boolean;
+  noSubscribeForm?: boolean;
+}
+
+const Layout: FC<LayoutPropsType> = ({
   site,
   frontmatter = {},
   children,
   noFooter = false,
   noSubscribeForm,
 }) => {
-  const initializeTheme = () => {
+  const initializeTheme = (): ThemeName => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') || 'default'
+      return localStorage.getItem('theme') as ThemeName || 'default'
     } else {
       return 'default'
     }
@@ -205,7 +223,7 @@ export default ({
     localStorage.setItem('theme', themeName)
   }, [themeName])
 
-  const toggleTheme = name => setTheme(name)
+  const toggleTheme = (name: ThemeName) => setTheme(name)
   const theme = {
     ...themes[themeName],
     toggleTheme: toggleTheme,
@@ -261,6 +279,8 @@ export default ({
     </ThemeProvider>
   )
 }
+
+export default Layout;
 
 export const pageQuery = graphql`
   fragment site on Site {

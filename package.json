@@ -71,6 +71,8 @@
     "yup": "^0.28.0"
   },
   "devDependencies": {
+    "@types/mdx-js__react": "^1.5.3",
+    "@types/react-helmet": "^6.1.1",
     "@types/yup": "^0.29.11",
     "babel-preset-gatsby": "^0.2.20",
     "dayjs": "^1.8.18",

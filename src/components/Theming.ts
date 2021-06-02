@@ -45,6 +45,8 @@ const themes = {
 
 const currentTheme = themes.default;
 
+export type ThemeName = keyof typeof themes;
+
 export type ThemeType = typeof currentTheme;
 
 // filterTagsBg: lighten(0.1, colors.black),
