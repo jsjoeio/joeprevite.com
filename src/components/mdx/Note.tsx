@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { css } from '@emotion/core'
 import { useTheme } from '../Theming'
 
-export function Note({ children }) {
+export const Note: FC = ({ children }) => {
   const theme = useTheme()
 
   return (
