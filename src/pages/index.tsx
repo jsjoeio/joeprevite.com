@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
-import Layout from 'components/Layout'
-import Link from 'components/Link'
-import { useTheme } from 'components/Theming'
-import Container from 'components/Container'
+import Layout from '../components/Layout'
+import Link from '../components/Link'
+import { useTheme } from '../components/Theming'
+import Container from '../components/Container'
 import { rhythm, scale } from '../lib/typography'
-import HandWave from 'components/HandWave'
-import FingerPoint from 'components/FingerPoint'
+import HandWave from '../components/HandWave'
+import FingerPoint from '../components/FingerPoint'
+import { PageType } from '../types/PageType'
+import { EdgeType } from './articles'
 
 /**
  * @param date {Date}
  * @description returns "Happy {weekday}!"
  */
-function getDayGreeting(date) {
+function getDayGreeting(date: Date) {
   // Get date
   const currentDate = new Date(date)
   // Returns day such as "Monday"
@@ -23,7 +25,7 @@ function getDayGreeting(date) {
   return `Happy ${day}!`
 }
 
-const Hero = () => {
+const Hero: FC = () => {
   const theme = useTheme()
   const date = new Date()
 
@@ -72,9 +74,21 @@ const Hero = () => {
   )
 }
 
-export default function Index({
+interface IndexPropsType {
+  data: {
+    site: PageType['data']['site'];
+    allMdx: {
+      edges: EdgeType[]
+    };
+    firstArticle: EdgeType['node'];
+    secondArticle: EdgeType['node'];
+    thirdArticle: EdgeType['node'];
+  }
+}
+
+const Index: FC<IndexPropsType> = ({
   data: { site, allMdx, firstArticle, secondArticle, thirdArticle },
-}) {
+}) =>  {
   const featuredArticles = [firstArticle, secondArticle, thirdArticle]
   const theme = useTheme()
   return (
@@ -165,6 +179,8 @@ export default function Index({
     </Layout>
   )
 }
+
+export default Index;
 
 export const pageQuery = graphql`
   fragment BlogPostInfo on Mdx {
