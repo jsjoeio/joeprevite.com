@@ -5,15 +5,15 @@ import Markdown from 'react-markdown'
 import Link from '../Link'
 import { bpMaxSM } from '../../lib/breakpoints'
 
-interface MessagePropsType {
-  illustration?: string;
+type MessagePropsType = {
+  illustration?: string | FC;
   title?: string;
   body?: string;
   note?: string;
   fullscreen?: boolean;
   articleTitle?: string;
-  articleSlug: string;
-}
+  articleSlug?: string;
+};
 
 const Message: FC<MessagePropsType> = ({
   illustration,
