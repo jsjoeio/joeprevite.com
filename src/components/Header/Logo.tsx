@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { motion } from 'framer-motion'
 
-export const Logo = ({ title, siteTitleShort }) => (
+interface LogoPropsType {
+  title: string;
+  siteTitleShort: string;
+}
+
+export const Logo: FC<LogoPropsType> = ({ title, siteTitleShort }) => (
   <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
     <svg
       style={{ marginRight: '0.5rem' }}
