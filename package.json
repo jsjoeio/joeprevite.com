@@ -72,6 +72,7 @@
   },
   "devDependencies": {
     "@types/mdx-js__react": "^1.5.3",
+    "@types/parse-numeric-range": "^0.0.1",
     "@types/react-helmet": "^6.1.1",
     "@types/yup": "^0.29.11",
     "babel-preset-gatsby": "^0.2.20",

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { FC } from 'react'
 import theme from '../../lib/theme'
 import rangeParser from 'parse-numeric-range'
-import Highlight, { defaultProps } from 'prism-react-renderer'
+import Highlight, { defaultProps, Language } from 'prism-react-renderer'
 import Prism from 'prism-react-renderer/prism'
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
 
@@ -17,25 +17,32 @@ require('prismjs/components/prism-clojure')
 
 // Used to determine if we have to highlight the given index
 // Borrowed from https://prince.dev/blog/highlight-with-react
-const calculateLinesToHighlight = meta => {
+const calculateLinesToHighlight = (meta: string) => {
   const RE = /{([\d,-]+)}/
   if (RE.test(meta)) {
-    const strlineNumbers = RE.exec(meta)[1]
+    const strlineNumbers = RE.exec(meta)?.[1] ?? ''
     const lineNumbers = rangeParser(strlineNumbers)
-    return index => lineNumbers.includes(index + 1)
+    return (index: number) => lineNumbers.includes(index + 1)
   } else {
     return () => false
   }
 }
 
+interface CodePropsType {
+  className?: string;
+  metastring: string;
+  ['react-live']?: boolean;
+  children: string;
+}
+
 // todo test metastring
-const Code = ({
+const Code: FC<CodePropsType> = ({
   children,
   metastring,
   className = 'language-js',
   ...props
 }) => {
-  const language = className.replace(/language-/, '')
+  const language = className.replace(/language-/, '') as Language;
   const shouldHighlightLine = calculateLinesToHighlight(metastring)
   if (props['react-live']) {
     return (

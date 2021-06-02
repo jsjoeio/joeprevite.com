@@ -9,3 +9,22 @@ declare module 'comma-number' {
 
     export = commaNumber;
 }
+
+interface PrismType {}
+
+interface Window {
+    Prism: PrismType;
+}
+
+declare namespace NodeJS {
+    interface Global {
+        Prism: PrismType;
+    }
+}
+
+
+declare module 'prism-react-renderer/prism' {
+    const Prism: PrismType;
+    
+    export = Prism;
+}
