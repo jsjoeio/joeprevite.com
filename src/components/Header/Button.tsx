@@ -1,10 +1,20 @@
-import { React } from 'react'
+import React, { FC } from 'react'
 import { css } from '@emotion/core'
-import { Link } from 'gatsby'
+import { GatsbyLinkProps, Link } from 'gatsby'
 import { useTheme } from '../Theming'
 import { rgba, darken } from 'polished'
 
-const Button = ({ to, children, secondary, ...restProps }) => {
+type LinkPropsType = Omit<GatsbyLinkProps<unknown>, 'ref'> & {
+  secondary?: boolean;
+};
+
+type HTMLButtonElementPropsType = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+  secondary?: boolean;
+};
+
+type ButtonPropsType = LinkPropsType | HTMLButtonElementPropsType;
+
+const Button: FC<ButtonPropsType> = ({ children, secondary, ...restProps }) => {
   const theme = useTheme()
   const textColor = secondary ? theme.colors.primary : theme.colors.bodyBg
   const styles = css({
@@ -24,12 +34,13 @@ const Button = ({ to, children, secondary, ...restProps }) => {
       },
     },
   })
-  return to ? (
-    <Link to={to} css={styles} {...restProps}>
+
+  return (restProps as LinkPropsType).to ? (
+    <Link css={styles} {...(restProps as LinkPropsType)}>
       {children}
     </Link>
   ) : (
-    <button css={styles} {...restProps}>
+    <button css={styles} {...(restProps as HTMLButtonElementPropsType)}>
       {children}
     </button>
   )
