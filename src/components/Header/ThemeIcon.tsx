@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { FC } from 'react'
 import colors from '../../lib/colors'
 
+interface ThemeIconPropsType {
+  title: string;
+  isDarkTheme: boolean;
+}
+
 // If isDarkTheme is true, then show the sun icon
-export const ThemeIcon = ({ title, isDarkTheme }) => (
+export const ThemeIcon: FC<ThemeIconPropsType> = ({ title, isDarkTheme }) => (
   <div
     css={{
       display: 'flex',
