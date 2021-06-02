@@ -59,7 +59,7 @@ const OpenPage: FC<PageType> = ({ data: { site } }) => {
 export default OpenPage
 
 export const pageQuery = graphql`
-  query {
+  query OpenPage {
     site {
       ...site
     }

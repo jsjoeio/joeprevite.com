@@ -73,7 +73,7 @@ const MessagesPage: FC<MessagesPagePropsType> = ({
 export default MessagesPage;
 
 export const latestArticle = graphql`
-  query {
+  query MessagesPage {
     site {
       ...site
       siteMetadata {

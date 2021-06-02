@@ -104,7 +104,7 @@ function getQueryParams(queryString: string) {
   return paymentId
 }
 
-const ThankYou: FC<PageType> = ({ data: { site } }) => {
+const ThankYouPage: FC<PageType> = ({ data: { site } }) => {
   const [paymentId, setPaymentId] = React.useState<string | null>('')
   const [error, setError] = React.useState<string | null>(null)
 
@@ -175,10 +175,10 @@ const ThankYou: FC<PageType> = ({ data: { site } }) => {
   )
 }
 
-export default ThankYou;
+export default ThankYouPage;
 
 export const pageQuery = graphql`
-  query {
+  query ThankYouPage {
     site {
       ...site
     }

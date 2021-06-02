@@ -28,7 +28,7 @@ interface SeoPropsType {
 const SEO: FC<SeoPropsType> = ({ postData, frontmatter = {}, isBlogPost }) => (
   <StaticQuery
     query={graphql`
-      {
+      query SEO {
         site {
           siteMetadata {
             title
@@ -98,7 +98,7 @@ const SEO: FC<SeoPropsType> = ({ postData, frontmatter = {}, isBlogPost }) => (
             <meta name="twitter:image" content={image} />
           </Helmet>
           <SchemaOrg
-            isBlogPost={isBlogPost}
+            isBlogPost={isBlogPost ?? false}
             url={url}
             title={title}
             image={image}

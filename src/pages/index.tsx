@@ -192,7 +192,8 @@ export const pageQuery = graphql`
       slug
     }
   }
-  query {
+
+  query IndexPage {
     site {
       ...site
       siteMetadata {

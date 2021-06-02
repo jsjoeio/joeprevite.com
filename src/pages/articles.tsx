@@ -268,7 +268,7 @@ const ArticlesPage: FC<ArticlesPropsType> = ({ data: { site, allMdx } }) => {
 export default ArticlesPage
 
 export const pageQuery = graphql`
-  query {
+  query ArticlesPage {
     site {
       ...site
     }

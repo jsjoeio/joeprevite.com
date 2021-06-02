@@ -147,7 +147,7 @@ const Post: FC<PostPropsType> = ({
 export default Post;
 
 export const pageQuery = graphql`
-  query($id: String!) {
+  query Post($id: String!) {
     site {
       ...site
     }

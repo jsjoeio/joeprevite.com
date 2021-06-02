@@ -18,7 +18,7 @@ const SubscribePage: FC<PageType> = ({ data: { site } }) => (
 export default SubscribePage;
 
 export const pageQuery = graphql`
-  query {
+  query SubscribePage {
     site {
       ...site
     }

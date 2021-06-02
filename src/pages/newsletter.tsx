@@ -24,7 +24,7 @@ const NewsletterPage: FC<PageType> = ({ data: { site } }) => (
 export default NewsletterPage;
 
 export const pageQuery = graphql`
-  query {
+  query NewsletterPage {
     site {
       ...site
     }

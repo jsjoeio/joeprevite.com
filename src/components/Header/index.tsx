@@ -108,7 +108,7 @@ interface DataType {
 const ConnectedHeader = (props: Partial<HeaderPropsType>) => (
   <StaticQuery
     query={graphql`
-      query {
+      query Header {
         site {
           siteMetadata {
             title
