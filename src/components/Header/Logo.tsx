@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { motion } from 'framer-motion'
 
-interface LogoPropsType {
+export interface LogoPropsType {
   title: string;
   siteTitleShort: string;
 }

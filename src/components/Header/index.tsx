@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import { lighten } from 'polished'
 import { css } from '@emotion/core'
@@ -7,11 +7,15 @@ import { bpMaxSM } from '../../lib/breakpoints'
 // import MobileMenu from './MobileMenu'
 import ThemeToggler from './ThemeToggler'
 // import Links from './Links'
-import { Logo } from './Logo'
+import { Logo, LogoPropsType } from './Logo'
 
 import Container from '../Container'
 
-const Header = ({ siteTitle, siteTitleShort }) => {
+interface HeaderPropsType extends Omit<LogoPropsType, 'title'> {
+  siteTitle: LogoPropsType['title'];
+}
+
+const Header: FC<HeaderPropsType> = ({ siteTitle, siteTitleShort }) => {
   const theme = useTheme()
   return (
     <header
@@ -92,7 +96,16 @@ const Header = ({ siteTitle, siteTitleShort }) => {
   )
 }
 
-const ConnectedHeader = props => (
+interface DataType {
+  site: {
+    siteMetadata: {
+      title: string;
+      titleShort: string;
+    }
+  }
+}
+
+const ConnectedHeader = (props: Partial<HeaderPropsType>) => (
   <StaticQuery
     query={graphql`
       query {
@@ -104,7 +117,7 @@ const ConnectedHeader = props => (
         }
       }
     `}
-    render={data => (
+    render={(data: DataType) => (
       <Header
         siteTitle={data.site.siteMetadata.title}
         siteTitleShort={data.site.siteMetadata.titleShort}
