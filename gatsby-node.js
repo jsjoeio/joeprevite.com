@@ -56,7 +56,7 @@ If this is a valid tag, please add to VALID_TAGS in /gatsby-node.js
 
     createPage({
       path: pagePath,
-      component: path.resolve(`./src/templates/post.js`),
+      component: path.resolve(`./src/templates/post.tsx`),
       context: {
         id: node.id,
         prev,
