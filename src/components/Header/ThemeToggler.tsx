@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { keyframes } from '@emotion/core'
 import Button from './Button'
-import { useTheme } from '../Theming'
+import { ThemeType, useTheme } from '../Theming'
 import { ThemeIcon } from './ThemeIcon'
 import colors from '../../lib/colors'
 
@@ -27,8 +27,15 @@ const spin = keyframes`
   }
 `
 
-const ThemeToggler = ({ toggleTheme, themeName }) => {
-  const [animationPlayState, setAnimationPlayState] = React.useState('paused')
+interface ThemeTogglerPropsType {
+  themeName: ThemeType['themeName'];
+  toggleTheme: ThemeType['toggleTheme'];
+}
+
+type AnimationPlayState = 'paused' | 'running';
+
+const ThemeToggler: FC<ThemeTogglerPropsType> = ({ toggleTheme, themeName }) => {
+  const [animationPlayState, setAnimationPlayState] = React.useState<AnimationPlayState>('paused')
   const theme = useTheme()
 
   const isDarkTheme = themeName === 'dark'
