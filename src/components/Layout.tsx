@@ -184,7 +184,7 @@ const getGlobalStyles = (theme: ThemeType) => {
   `
 }
 
-interface LayoutPropsType {
+export interface LayoutPropsType {
   site: {
     siteMetadata: {
       description: string;

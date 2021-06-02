@@ -15,14 +15,14 @@ interface FrontmatterType {
 }
 
 interface SeoPropsType {
-  isBlogPost: boolean;
-  postData: {
-    childMarkdownRemark: {
+  isBlogPost?: boolean;
+  postData?: {
+    childMarkdownRemark?: {
       frontmatter?: FrontmatterType;
     }
   }
   frontmatter?: FrontmatterType;
-  postImage: string | null;
+  postImage?: string | null;
 }
 
 const SEO: FC<SeoPropsType> = ({ postData, frontmatter = {}, isBlogPost }) => (

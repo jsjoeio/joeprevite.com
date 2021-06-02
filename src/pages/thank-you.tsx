@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import Layout, { LayoutPropsType } from '../components/Layout'
 import Container from '../components/Container'
 import SEO from '../components/SEO'
 
@@ -12,10 +12,14 @@ const SCRIPT_LOCATION = 'https://joeprevite.com/download-course.sh'
 const SCRIPT_RAW_LOCATION =
   'https://raw.githubusercontent.com/jsjoeio/install-scripts/main/install.sh'
 
-const CopyCodeButton = ({ code }) => {
+interface CopyCodeButtonPropsType {
+  code: string;
+}
+
+const CopyCodeButton: FC<CopyCodeButtonPropsType> = ({ code }) => {
   const [isCopied, setIsCopied] = React.useState(false)
 
-  function handleOnClick(e) {
+  function handleOnClick(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     // Prevents React from resetting its properties:
     // https://reactjs.org/docs/legacy-event-pooling.html
     e.persist()
@@ -51,6 +55,7 @@ const CopyCodeButton = ({ code }) => {
         marginBottom: '-2px',
         padding: '3px 8px',
         fontSize: '0.8em',
+        // @ts-expect-error
         '&:hover': {
           cursor: 'pointer',
           backgroundColor: '#F2F2F2',
@@ -67,7 +72,11 @@ const CopyCodeButton = ({ code }) => {
   )
 }
 
-const CodeBlock = ({ code }) => (
+interface CodeBlockPropsType {
+  code: string;
+}
+
+const CodeBlock: FC<CodeBlockPropsType> = ({ code }) => (
   <div>
     <CopyCodeButton code={code} />
     <pre>
@@ -88,15 +97,21 @@ const CodeBlock = ({ code }) => (
   </div>
 )
 
-function getQueryParams(queryString) {
+function getQueryParams(queryString: string) {
   const urlParams = new URLSearchParams(queryString)
   const paymentId = urlParams.get('paymentId')
   return paymentId
 }
 
-export default ({ data: { site } }) => {
-  const [paymentId, setPaymentId] = React.useState('')
-  const [error, setError] = React.useState(null)
+interface ThankYouPropsType {
+  data: {
+    site: LayoutPropsType['site'];
+  }
+}
+
+const ThankYou: FC<ThankYouPropsType> = ({ data: { site } }) => {
+  const [paymentId, setPaymentId] = React.useState<string | null>('')
+  const [error, setError] = React.useState<string | null>(null)
 
   React.useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -116,7 +131,7 @@ export default ({ data: { site } }) => {
 
   return (
     <Layout site={site} noFooter>
-      <SEO title="Thank You | Joe Previte" />
+      <SEO />
       <Container>
         <h1>Thank you!</h1>
         <p>
@@ -164,6 +179,8 @@ export default ({ data: { site } }) => {
     </Layout>
   )
 }
+
+export default ThankYou;
 
 export const pageQuery = graphql`
   query {
