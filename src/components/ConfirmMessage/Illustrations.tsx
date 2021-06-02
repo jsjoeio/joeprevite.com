@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { css, keyframes } from '@emotion/core'
 import { useTheme } from '../Theming'
 import { FONT_FACE} from '../../lib/typography'
@@ -74,7 +74,7 @@ const NotificationFadeIn = keyframes`
 }
 `
 // SVG
-export const PleaseConfirmIllustration = () => {
+export const PleaseConfirmIllustration: FC = () => {
   const theme = useTheme()
   return (
     <div
@@ -282,7 +282,7 @@ to, 100% {
 }
 `
 // SVG
-export const ThankYouIllustration = () => {
+export const ThankYouIllustration: FC = () => {
   const theme = useTheme()
   return (
     <div
