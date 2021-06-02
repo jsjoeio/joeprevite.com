@@ -4,7 +4,8 @@ documents:
   [
     './src/functions/siteFragment.ts',
     './src/pages/newsletter.tsx',
-    './src/pages/open.tsx'
+    './src/pages/open.tsx',
+    './src/pages/subscribe.tsx'
     # './src/**/*.tsx',
     # './src/**/*.ts',
     # '../../node_modules/gatsby-transformer-sharp/src/*.js',

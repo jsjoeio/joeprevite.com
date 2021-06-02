@@ -1,12 +1,12 @@
-import React, { FC } from 'react'
-import { graphql } from 'gatsby'
-import Layout, { LayoutPropsType } from '../components/Layout'
+import React from 'react'
+import { graphql, PageProps } from 'gatsby'
+import Layout from '../components/Layout'
 import Container from '../components/Container'
 import Subscribe from '../components/Forms/Subscribe'
 import SEO from '../components/SEO'
-import { PageType } from '../types/PageType'
+import { SubscribePageQuery } from '../types/generated'
 
-const SubscribePage: FC<PageType> = ({ data: { site } }) => (
+const SubscribePage = ({ data: { site } }: PageProps<SubscribePageQuery>) => (
   <Layout site={site} noFooter>
     <SEO />
     <Container>
