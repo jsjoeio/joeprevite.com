@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-export default styled.h1`
+const Title = styled.h1`
   font-size: 24px;
   font-weight: 400;
   line-height: 1.1;
@@ -9,3 +9,5 @@ export default styled.h1`
   padding-top: 30px;
   padding-bottom: 10px;
 `
+
+export default Title;
