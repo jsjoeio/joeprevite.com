@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { css } from '@emotion/core'
 import { useTheme } from './Theming'
 import { bpMaxSM } from '../lib/breakpoints'
@@ -25,7 +25,7 @@ const CODE_ORGANIZATIONS = [
 ]
 
 // Source: MDN - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-function getRandomIntExclusive(min, max) {
+function getRandomIntExclusive(min: number, max: number) {
   min = Math.ceil(min)
   max = Math.floor(max)
   return Math.floor(Math.random() * (max - min)) + min //The maximum is exclusive and the minimum is inclusive
@@ -47,14 +47,21 @@ function hasCallToActionOnPage() {
   if (typeof document !== 'undefined') {
     // Check if there is an element with the "call-to-action" class
     const hasCallToAction =
-      document.querySelector('.call-to-action')?.offsetParent !== null
+      document.querySelector<HTMLElement>('.call-to-action')?.offsetParent !== null
     return hasCallToAction
   }
   // Otherwise we assume no
   return false
 }
 
-const Footer = ({ author, noSubscribeForm = false }) => {
+interface FooterPropsType {
+  author: string;
+  noSubscribeForm?: boolean;
+}
+
+const Footer: FC<FooterPropsType> = (
+// { author, noSubscribeForm = false }
+) => {
   const theme = useTheme()
   const { link, label } = getHelpOthersLearnToCodeLink()
 
