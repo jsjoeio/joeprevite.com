@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { graphql, PageProps } from 'gatsby'
 import useSWR from 'swr'
 import Container from '../components/Container'

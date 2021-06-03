@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { graphql, PageProps } from 'gatsby'
 import Layout from '../components/Layout'
 import Message from '../components/ConfirmMessage/Message'
