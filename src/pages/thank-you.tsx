@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
-import { graphql } from 'gatsby'
-import Layout, { LayoutPropsType } from '../components/Layout'
+import { graphql, PageProps } from 'gatsby'
+import Layout from '../components/Layout'
 import Container from '../components/Container'
 import SEO from '../components/SEO'
-import { PageType } from '../types/PageType'
+import { ThankYouPageQuery } from '../types/generated'
 
 // Thank you to these folks
 // https://staxmanade.com/CssToReact/
@@ -104,7 +104,7 @@ function getQueryParams(queryString: string) {
   return paymentId
 }
 
-const ThankYou: FC<PageType> = ({ data: { site } }) => {
+const ThankYouPage = ({ data: { site } }: PageProps<ThankYouPageQuery>) => {
   const [paymentId, setPaymentId] = React.useState<string | null>('')
   const [error, setError] = React.useState<string | null>(null)
 
@@ -175,10 +175,10 @@ const ThankYou: FC<PageType> = ({ data: { site } }) => {
   )
 }
 
-export default ThankYou;
+export default ThankYouPage;
 
 export const pageQuery = graphql`
-  query {
+  query ThankYouPage {
     site {
       ...site
     }

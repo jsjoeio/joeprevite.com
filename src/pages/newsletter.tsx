@@ -1,12 +1,12 @@
-import React, { FC } from 'react'
-import { graphql } from 'gatsby'
+import React from 'react'
+import { graphql, PageProps } from 'gatsby'
 import Layout from '../components/Layout'
 import Container from '../components/Container'
 import CallToAction from '../components/Forms/CallToAction'
 import SEO from '../components/SEO'
-import { PageType } from '../types/PageType'
+import { NewsletterPageQuery } from '../types/generated'
 
-const NewsletterPage: FC<PageType> = ({ data: { site } }) => (
+const NewsletterPage = ({ data: { site } }: PageProps<NewsletterPageQuery>) => (
   <Layout site={site} noFooter>
     <SEO />
     <Container>
@@ -24,7 +24,7 @@ const NewsletterPage: FC<PageType> = ({ data: { site } }) => (
 export default NewsletterPage;
 
 export const pageQuery = graphql`
-  query {
+  query NewsletterPage {
     site {
       ...site
     }

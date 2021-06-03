@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect, FC } from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { PageProps } from 'gatsby'
 import { MDXProvider } from '@mdx-js/react'
 import { lighten } from 'polished'
 import { Global, css } from '@emotion/core'
@@ -11,6 +11,9 @@ import Header from './Header'
 import reset from '../lib/reset'
 import config from '../../config/website'
 import Footer from './Footer'
+import { Maybe, NewsletterPageQuery, OpenPageQuery, PostQuery, SubscribePageQuery, ThankYouPageQuery } from '../types/generated'
+import { siteFragment } from '../functions/siteFragment'
+import { Defined } from '../types/Defined'
 
 const getGlobalStyles = (theme: ThemeType) => {
   return css`
@@ -202,9 +205,20 @@ export interface LayoutPropsType {
   noSubscribeForm?: boolean;
 }
 
-const Layout: FC<LayoutPropsType> = ({
+export type LayoutPropsType2 = {
+  site:
+    | PageProps<NewsletterPageQuery>['data']['site']
+    | PageProps<OpenPageQuery>['data']['site']
+    | PageProps<SubscribePageQuery>['data']['site']
+    | PageProps<ThankYouPageQuery>['data']['site'];
+  frontmatter?: Maybe<Defined<PageProps<PostQuery>['data']['mdx']>['frontmatter']>
+  noFooter?: boolean;
+  noSubscribeForm?: boolean;
+}
+
+const Layout: FC<LayoutPropsType2> = ({
   site,
-  frontmatter = {},
+  frontmatter,
   children,
   noFooter = false,
   noSubscribeForm,
@@ -217,7 +231,7 @@ const Layout: FC<LayoutPropsType> = ({
     }
   }
 
-  const [themeName, setTheme] = useState(initializeTheme)
+  const [themeName, setTheme] = useState<ThemeName>(initializeTheme)
 
   useEffect(() => {
     localStorage.setItem('theme', themeName)
@@ -228,18 +242,15 @@ const Layout: FC<LayoutPropsType> = ({
     ...themes[themeName],
     toggleTheme: toggleTheme,
   }
-  const {
-    description: siteDescription,
-    keywords: siteKeywords,
-  } = site.siteMetadata
+  const siteDescription = site?.siteMetadata?.description;
+  const siteKeywords = site?.siteMetadata?.keywords;
 
-  const {
-    keywords: frontmatterKeywords,
-    description: frontmatterDescription,
-  } = frontmatter
+  const frontmatterKeywords = frontmatter?.keywords;
+  const frontmatterDescription = frontmatter?.description;
 
-  const keywords = (frontmatterKeywords || siteKeywords).join(', ')
+  const keywords = (frontmatterKeywords ?? siteKeywords ?? []).join(', ')
   const description = frontmatterDescription || siteDescription
+  const authorName = site?.siteMetadata?.author?.name;
 
   return (
     <ThemeProvider theme={theme}>
@@ -257,7 +268,7 @@ const Layout: FC<LayoutPropsType> = ({
           <Helmet
             title={config.siteTitle}
             meta={[
-              { name: 'description', content: description },
+              { name: 'description', content: description ?? '' },
               { name: 'keywords', content: keywords },
             ]}
           >
@@ -268,9 +279,9 @@ const Layout: FC<LayoutPropsType> = ({
           <MDXProvider components={mdxComponents}>
             <Fragment>{children}</Fragment>
           </MDXProvider>
-          {!noFooter && (
+          {!noFooter && authorName && (
             <Footer
-              author={site.siteMetadata.author.name}
+              author={authorName}
               noSubscribeForm={noSubscribeForm}
             />
           )}
@@ -282,15 +293,4 @@ const Layout: FC<LayoutPropsType> = ({
 
 export default Layout;
 
-export const pageQuery = graphql`
-  fragment site on Site {
-    siteMetadata {
-      title
-      description
-      author {
-        name
-      }
-      keywords
-    }
-  }
-`
+export const pageQuery = siteFragment;

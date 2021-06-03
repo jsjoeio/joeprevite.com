@@ -69,8 +69,6 @@ const themes: Record<ThemeType['themeName'], ThemeType> = {
   },
 }
 
-const currentTheme = themes.default;
-
 export type ThemeName = keyof typeof themes;
 
 // filterTagsBg: lighten(0.1, colors.black),
@@ -79,6 +77,6 @@ export type ThemeName = keyof typeof themes;
 // filterTagsBorder: colors.transparent,
 // filterTagsText: darken(0.25, colors.contessa),
 
-const { ThemeProvider, withTheme, useTheme } = createTheming(currentTheme)
+const { ThemeProvider, withTheme, useTheme } = createTheming(themes.default)
 
 export { ThemeProvider, withTheme, useTheme, themes, colors }

@@ -6,15 +6,15 @@ import { css } from '@emotion/core'
 import { bpMaxSM } from '../lib/breakpoints'
 import Link from './Link'
 import fetcher from '../lib/fetcher'
-import { EdgeType } from '../pages/articles'
+import { MdxEdgeNodeType } from '../types/MdxEdgeNodeType'
 
 interface PostPropsType {
-  post: EdgeType['node'];
+  post: MdxEdgeNodeType;
 }
 
 const Post: FC<PostPropsType> = ({ post }) => {
   const { data } = useSWR(
-    `/.netlify/functions/page-views?id=${post.fields.slug}`,
+    `/.netlify/functions/page-views?id=${post?.fields?.slug ?? ''}`,
     fetcher,
   )
 
@@ -83,12 +83,14 @@ const Post: FC<PostPropsType> = ({ post }) => {
         `}
       >
         <h2>
-          <Link
-            aria-label={`View ${post.frontmatter.title} article`}
-            to={`/${post.fields.slug}`}
-          >
-            {post.frontmatter.title}
-          </Link>
+          {post.frontmatter?.title && post.fields?.slug && (
+            <Link
+              aria-label={`View ${post.frontmatter.title} article`}
+              to={`/${post.fields.slug}`}
+            >
+              {post.frontmatter.title}
+            </Link>
+          )}
         </h2>
         <small>{`${
           views !== null && views !== undefined ? format(views) : '–––'
@@ -101,12 +103,14 @@ const Post: FC<PostPropsType> = ({ post }) => {
       >
         {post.excerpt}
       </p>{' '}
-      <Link
-        to={`/${post.fields.slug}`}
-        aria-label={`view "${post.frontmatter.title}" article`}
-      >
-        Read Article →
-      </Link>
+      {post.frontmatter?.title && post.fields?.slug && (
+        <Link
+          to={`/${post.fields.slug}`}
+          aria-label={`view "${post.frontmatter.title}" article`}
+        >
+          Read Article →
+        </Link>
+      )}
     </div>
   )
 }

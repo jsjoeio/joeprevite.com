@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 import Markdown from 'react-markdown'
 import Link from '../Link'
 import { bpMaxSM } from '../../lib/breakpoints'
+import { Maybe } from '../../types/generated'
 
 type MessagePropsType = {
   illustration?: string | FC | JSX.Element;
@@ -12,7 +13,7 @@ type MessagePropsType = {
   note?: string;
   fullscreen?: boolean;
   articleTitle?: string;
-  articleSlug?: string;
+  articleSlug?: Maybe<string>;
 };
 
 const Message: FC<MessagePropsType> = ({

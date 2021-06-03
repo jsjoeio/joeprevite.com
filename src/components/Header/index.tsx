@@ -1,5 +1,5 @@
-import React, { FC } from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import React from 'react'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import { lighten } from 'polished'
 import { css } from '@emotion/core'
 import { useTheme } from '../Theming'
@@ -7,15 +7,25 @@ import { bpMaxSM } from '../../lib/breakpoints'
 // import MobileMenu from './MobileMenu'
 import ThemeToggler from './ThemeToggler'
 // import Links from './Links'
-import { Logo, LogoPropsType } from './Logo'
+import { Logo } from './Logo'
 
 import Container from '../Container'
+import { HeaderQuery } from '../../types/generated'
 
-interface HeaderPropsType extends Omit<LogoPropsType, 'title'> {
-  siteTitle: LogoPropsType['title'];
-}
+const Header = () => {
+  const { site } = useStaticQuery<HeaderQuery>(graphql`
+    query Header {
+      site {
+        siteMetadata {
+          title
+          titleShort
+        }
+      }
+    }
+  `)
+  const siteTitle = site?.siteMetadata?.title ?? ''
+  const siteTitleShort = site?.siteMetadata?.titleShort ?? ''
 
-const Header: FC<HeaderPropsType> = ({ siteTitle, siteTitleShort }) => {
   const theme = useTheme()
   return (
     <header
@@ -96,35 +106,4 @@ const Header: FC<HeaderPropsType> = ({ siteTitle, siteTitleShort }) => {
   )
 }
 
-interface DataType {
-  site: {
-    siteMetadata: {
-      title: string;
-      titleShort: string;
-    }
-  }
-}
-
-const ConnectedHeader = (props: Partial<HeaderPropsType>) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            titleShort
-          }
-        }
-      }
-    `}
-    render={(data: DataType) => (
-      <Header
-        siteTitle={data.site.siteMetadata.title}
-        siteTitleShort={data.site.siteMetadata.titleShort}
-        {...props}
-      />
-    )}
-  />
-)
-
-export default ConnectedHeader
+export default Header
