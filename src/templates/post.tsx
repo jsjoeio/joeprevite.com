@@ -1,5 +1,5 @@
-import React, { FC } from 'react'
-import { graphql } from 'gatsby'
+import React from 'react'
+import { graphql, PageProps } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { css } from '@emotion/core'
 import SEO from '../components/SEO'
@@ -8,44 +8,23 @@ import Layout from '../components/Layout'
 import Share from '../components/Share'
 import ViewCounter from '../components/ViewCounter'
 import config from '../../config/website'
-import { PageType } from '../types/PageType'
+import { PostQuery } from '../types/generated'
 
-interface PostPropsType {
-  data: {
-    site: PageType['data']['site'];
-    mdx: {
-      frontmatter: {
-        title: string;
-        description: string;
-        tagline: string;
-        date: string;
-        author: string;
-        slug: string;
-        keywords: string[];
-      };
-      fields: {
-        editLink: string;
-      }
-      body: string;
-    }
-  }
-}
-
-const Post: FC<PostPropsType> = ({
+const Post = ({
   data: { site, mdx },
   // pageContext: { next, prev },
-}) => {
-  const date = mdx?.frontmatter.date
-  const title = mdx?.frontmatter.title
+}: PageProps<PostQuery>) => {
+  const date = mdx?.frontmatter?.date
+  const title = mdx?.frontmatter?.title
   // const banner = mdx.frontmatter.banner
-  const editLink = mdx?.fields.editLink
-  const slug = mdx?.frontmatter.slug
+  const editLink = mdx?.fields?.editLink
+  const slug = mdx?.frontmatter?.slug
   const blogPostUrl = `${config.siteUrl}/${slug}/`
 
   if (mdx !== null) {
     return (
-      <Layout site={site} frontmatter={mdx.frontmatter}>
-        <SEO frontmatter={mdx.frontmatter} isBlogPost />
+      <Layout site={site} frontmatter={mdx?.frontmatter}>
+        <SEO frontmatter={mdx?.frontmatter} isBlogPost />
         <article
           css={css`
             width: 100%;
@@ -84,7 +63,7 @@ const Post: FC<PostPropsType> = ({
               `}
             >
               {date && <p>{date}</p>}
-              <ViewCounter id={slug} />
+              {slug && <ViewCounter id={slug} />}
             </div>
             {/* {banner && (
             <div
@@ -102,7 +81,7 @@ const Post: FC<PostPropsType> = ({
             </div>
           )} */}
             <br />
-            <MDXRenderer>{mdx.body}</MDXRenderer>
+            {mdx?.body && <MDXRenderer>{mdx.body}</MDXRenderer>}
           </Container>
           {/* <SubscribeForm /> */}
         </article>
@@ -124,17 +103,19 @@ const Post: FC<PostPropsType> = ({
               Discuss on Twitter
             </a>
             <span css={{ marginLeft: 10, marginRight: 10 }}>{` • `}</span>
-            <a target="_blank" rel="noopener noreferrer" href={editLink}>
+            {editLink && <a target="_blank" rel="noopener noreferrer" href={editLink}>
               Edit post on GitHub
-            </a>
+            </a>}
           </p>
         </Container>
         <Container noVerticalPadding>
-          <Share
-            url={`${config.siteUrl}/${mdx.frontmatter.slug}/`}
-            title={title}
-            twitterHandle={config.twitterHandle}
-          />
+          {mdx?.frontmatter?.slug && title && (
+            <Share
+              url={`${config.siteUrl}/${mdx.frontmatter.slug}/`}
+              title={title}
+              twitterHandle={config.twitterHandle}
+            />
+          )}
           <br />
         </Container>
       </Layout>
