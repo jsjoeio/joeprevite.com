@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect, FC } from 'react'
 import Helmet from 'react-helmet'
-import { graphql, PageProps } from 'gatsby'
+import { PageProps } from 'gatsby'
 import { MDXProvider } from '@mdx-js/react'
 import { lighten } from 'polished'
 import { Global, css } from '@emotion/core'
@@ -233,7 +233,7 @@ const Layout: FC<LayoutPropsType2> = ({
     }
   }
 
-  const [themeName, setTheme] = useState(initializeTheme)
+  const [themeName, setTheme] = useState<ThemeName>(initializeTheme)
 
   useEffect(() => {
     localStorage.setItem('theme', themeName)
@@ -245,7 +245,6 @@ const Layout: FC<LayoutPropsType2> = ({
     toggleTheme: toggleTheme,
   }
   const siteDescription = site?.siteMetadata?.description;
-  // @ts-expect-error
   const siteKeywords = site?.siteMetadata?.keywords;
 
   const {
@@ -253,7 +252,7 @@ const Layout: FC<LayoutPropsType2> = ({
     description: frontmatterDescription,
   } = frontmatter
 
-  const keywords = (frontmatterKeywords || siteKeywords).join(', ')
+  const keywords = (frontmatterKeywords ?? siteKeywords ?? []).join(', ')
   const description = frontmatterDescription || siteDescription
   const authorName = site?.siteMetadata?.author?.name;
 
@@ -273,7 +272,7 @@ const Layout: FC<LayoutPropsType2> = ({
           <Helmet
             title={config.siteTitle}
             meta={[
-              { name: 'description', content: description },
+              { name: 'description', content: description ?? '' },
               { name: 'keywords', content: keywords },
             ]}
           >
