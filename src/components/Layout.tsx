@@ -11,7 +11,7 @@ import Header from './Header'
 import reset from '../lib/reset'
 import config from '../../config/website'
 import Footer from './Footer'
-import { NewsletterPageQuery, OpenPageQuery, SubscribePageQuery } from '../types/generated'
+import { NewsletterPageQuery, OpenPageQuery, SubscribePageQuery, ThankYouPageQuery } from '../types/generated'
 import { siteFragment } from '../functions/siteFragment'
 
 const getGlobalStyles = (theme: ThemeType) => {
@@ -208,7 +208,8 @@ export type LayoutPropsType2 = {
   site:
     | PageProps<NewsletterPageQuery>['data']['site']
     | PageProps<OpenPageQuery>['data']['site']
-    | PageProps<SubscribePageQuery>['data']['site'];
+    | PageProps<SubscribePageQuery>['data']['site']
+    | PageProps<ThankYouPageQuery>['data']['site'];
   frontmatter?: {
     description?: string;
     keywords?: string[];

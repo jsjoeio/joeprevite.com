@@ -4244,3 +4244,9 @@ export type SubscribePageQueryVariables = Exact<{ [key: string]: never }>
 export type SubscribePageQuery = { __typename?: 'Query' } & {
   site?: Maybe<{ __typename?: 'Site' } & SiteFragment>
 }
+
+export type ThankYouPageQueryVariables = Exact<{ [key: string]: never }>
+
+export type ThankYouPageQuery = { __typename?: 'Query' } & {
+  site?: Maybe<{ __typename?: 'Site' } & SiteFragment>
+}
