@@ -1,23 +1,24 @@
 import React, { FC } from 'react'
 import Helmet from 'react-helmet'
+import { Maybe } from '../../types/generated';
 
 interface SchemaOrgPropsType {
-  author: {
-    name: string;
-  }
-  canonicalUrl: string;
+  author?: Maybe<{
+    name?: Maybe<string>;
+  }>;
+  canonicalUrl?: Maybe<string>;
   datePublished: boolean;
-  defaultTitle: string;
-  description: string;
-  image: string;
-  isBlogPost: boolean;
-  organization: {
-    url: string;
-    logo: string;
-    name: string;
-  }
+  defaultTitle?: Maybe<string>;
+  description?: Maybe<string>;
+  image?: Maybe<string>;
+  isBlogPost?: boolean;
+  organization?: Maybe<{
+    url?: Maybe<string>;
+    logo?: Maybe<string>;
+    name?: Maybe<string>;
+  }>;
   title: string;
-  url: string;
+  url?: Maybe<string>;
 }
 
 const SchemaOrg: FC<SchemaOrgPropsType> = React.memo(
@@ -75,13 +76,13 @@ const SchemaOrg: FC<SchemaOrgPropsType> = React.memo(
             description,
             author: {
               '@type': 'Person',
-              name: author.name,
+              name: author?.name,
             },
             publisher: {
               '@type': 'Organization',
-              url: organization.url,
-              logo: organization.logo,
-              name: organization.name,
+              url: organization?.url,
+              logo: organization?.logo,
+              name: organization?.name,
             },
             mainEntityOfPage: {
               '@type': 'WebSite',
