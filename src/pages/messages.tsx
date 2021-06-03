@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { graphql } from 'gatsby'
+import { graphql, PageProps } from 'gatsby'
 import Layout from '../components/Layout'
 import Message from '../components/ConfirmMessage/Message'
 import {
@@ -7,32 +7,15 @@ import {
   ThankYouIllustration,
   UnsubscribeIllustration,
 } from '../components/ConfirmMessage/Illustrations'
-import { PageType } from '../types/PageType'
+import { MessagesPageQuery } from '../types/generated'
 
-interface MessagesPagePropsType {
-  data: {
-    site: PageType['data']['site'];
-    latestArticle: {
-      edges: {
-        node: {
-          id: string;
-          frontmatter: {
-            title: string;
-            slug: string;
-          };
-        }
-      }[]
-    }
-  }
-}
-
-const MessagesPage: FC<MessagesPagePropsType> = ({
+const MessagesPage = ({
   data: {
     site,
     // allMdx,
     latestArticle
   }
-}) => {
+}: PageProps<MessagesPageQuery>) => {
   return (
     <Layout site={site} noSubscribeForm>
       <div>
@@ -52,8 +35,8 @@ const MessagesPage: FC<MessagesPagePropsType> = ({
             illustration={ThankYouIllustration}
             title={`Success! Thank you!`}
             body={`In case you haven’t seen already, here’s my latest article:`}
-            articleTitle={post.frontmatter.title}
-            articleSlug={post.frontmatter.slug}
+            articleTitle={post?.frontmatter?.title}
+            articleSlug={post?.frontmatter?.slug}
           />
         ))}
       </div>
