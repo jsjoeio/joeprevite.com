@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { graphql } from 'gatsby'
+import { graphql, PageProps } from 'gatsby'
 import { css } from '@emotion/core'
 import Layout from '../components/Layout'
 import Link from '../components/Link'
@@ -8,8 +8,7 @@ import Container from '../components/Container'
 import { rhythm, scale } from '../lib/typography'
 import HandWave from '../components/HandWave'
 import FingerPoint from '../components/FingerPoint'
-import { PageType } from '../types/PageType'
-import { EdgeType } from './articles'
+import { IndexPageQuery } from '../types/generated'
 
 /**
  * @param date {Date}
@@ -74,21 +73,9 @@ const Hero: FC = () => {
   )
 }
 
-interface IndexPropsType {
-  data: {
-    site: PageType['data']['site'];
-    allMdx: {
-      edges: EdgeType[]
-    };
-    firstArticle: EdgeType['node'];
-    secondArticle: EdgeType['node'];
-    thirdArticle: EdgeType['node'];
-  }
-}
-
-const Index: FC<IndexPropsType> = ({
+const Index = ({
   data: { site, allMdx, firstArticle, secondArticle, thirdArticle },
-}) =>  {
+}: PageProps<IndexPageQuery>) =>  {
   const featuredArticles = [firstArticle, secondArticle, thirdArticle]
   const theme = useTheme()
   return (
@@ -108,29 +95,33 @@ const Index: FC<IndexPropsType> = ({
         </h2>
         <p>Articles you should check out first:</p>
         {featuredArticles.map(post => (
-          <div
-            key={post.id}
-            css={css`
-              margin-bottom: 40px;
-            `}
-          >
-            <h3
-              css={css({
-                marginBottom: rhythm(0.3),
-                transition: 'all 150ms ease',
-                ':hover': {
-                  color: theme.colors.primary,
-                },
-              })}
+          post?.id && (
+            <div
+              key={post.id}
+              css={css`
+                margin-bottom: 40px;
+              `}
             >
-              <Link
-                to={post.frontmatter.slug}
-                aria-label={`View ${post.frontmatter.title}`}
+              <h3
+                css={css({
+                  marginBottom: rhythm(0.3),
+                  transition: 'all 150ms ease',
+                  ':hover': {
+                    color: theme.colors.primary,
+                  },
+                })}
               >
-                {post.frontmatter.title}
-              </Link>
-            </h3>
-          </div>
+                {post.frontmatter?.title && post.frontmatter?.slug && (
+                  <Link
+                    to={post.frontmatter.slug}
+                    aria-label={`View ${post.frontmatter.title}`}
+                  >
+                    {post.frontmatter.title}
+                  </Link>
+                )}
+              </h3>
+            </div>
+          )
         ))}
       </Container>
       <Container
@@ -162,12 +153,14 @@ const Index: FC<IndexPropsType> = ({
                 },
               })}
             >
-              <Link
-                to={post.frontmatter.slug}
-                aria-label={`View ${post.frontmatter.title}`}
-              >
-                {post.frontmatter.title}
-              </Link>
+              {post?.frontmatter?.slug && post?.frontmatter?.title && (
+                <Link
+                  to={post.frontmatter.slug}
+                  aria-label={`View ${post.frontmatter.title}`}
+                >
+                  {post.frontmatter.title}
+                </Link>
+              )}
             </h3>
           </div>
         ))}
