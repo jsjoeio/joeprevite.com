@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { graphql } from 'gatsby'
+import { graphql, PageProps } from 'gatsby'
 import { css } from '@emotion/core'
 import Container from '../components/Container'
 import SEO from '../components/SEO'
@@ -8,7 +8,8 @@ import Post from '../components/Post'
 import { useTheme } from '../components/Theming'
 import { VALID_TAGS } from '../lib/tags'
 import { bpMaxSM } from '../lib/breakpoints'
-import { PageType } from '../types/PageType'
+import { ArticlesPageQuery } from '../types/generated'
+import { MdxEdgeType } from '../types/MdxEdgeType'
 
 /*
 
@@ -102,16 +103,7 @@ export interface EdgeType {
   };
 }
 
-interface ArticlesPropsType {
-  data: {
-    site: PageType['data']['site'];
-    allMdx: {
-      edges: EdgeType[]
-    }
-  }
-}
-
-const ArticlesPage: FC<ArticlesPropsType> = ({ data: { site, allMdx } }) => {
+const ArticlesPage = ({ data: { site, allMdx } }: PageProps<ArticlesPageQuery>) => {
   // These are all the posts
   // see GraphQL query at bottom of file
   const allPosts = allMdx.edges
@@ -122,7 +114,7 @@ const ArticlesPage: FC<ArticlesPropsType> = ({ data: { site, allMdx } }) => {
 
   // This is where we store the list of posts that have been filtered
   // i.e filtered by query (text) or tags (filterTags)
-  const [filteredData, setFilteredData] = React.useState<EdgeType[] | null>(null)
+  const [filteredData, setFilteredData] = React.useState<MdxEdgeType[] | null>(null)
 
   // query is used to keep track of the text filter
   const [query, setQuery] = React.useState('')
@@ -160,14 +152,14 @@ const ArticlesPage: FC<ArticlesPropsType> = ({ data: { site, allMdx } }) => {
   // The main purpose of this function is to handle updates to filteredData
   // we pass in the query, the filterTags and the posts
   // We prefix it with '_' so that it doesn't conflict with the equivalent state name
-  const handleFilteredData = (_query: string, _filterTags: string[], posts: EdgeType[] | null) => {
+  const handleFilteredData = (_query: string, _filterTags: string[], posts: MdxEdgeType[] | null) => {
     // We keep updatedData in the outermost scope of the function so that we can
     // update it in from within these if blocks
-    let updatedData: EdgeType[] | null = posts
+    let updatedData: MdxEdgeType[] | null = posts
     // first filter based on tags
     if (updatedData !== null && _filterTags.length !== 0) {
       updatedData = updatedData.filter(({ node: post }) => {
-        const postTags = post.fields.tags
+        const postTags = post?.fields?.tags ?? [];
 
         // We filter out posts that do not have every filterTags
         // i.e. if filterTags is ['Rust', 'JavaScript']
@@ -178,7 +170,7 @@ const ArticlesPage: FC<ArticlesPropsType> = ({ data: { site, allMdx } }) => {
 
     if (updatedData !== null && _query !== '') {
       updatedData = updatedData.filter(({ node: post }) => {
-        const title = post.frontmatter.title || ''
+        const title = post?.frontmatter?.title || ''
         const excerpt = post.excerpt || ''
 
         // Here, we check if the query matches any words in the excerpt or title
