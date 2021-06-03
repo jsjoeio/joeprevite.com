@@ -11,8 +11,9 @@ import Header from './Header'
 import reset from '../lib/reset'
 import config from '../../config/website'
 import Footer from './Footer'
-import { NewsletterPageQuery, OpenPageQuery, SubscribePageQuery, ThankYouPageQuery } from '../types/generated'
+import { Maybe, NewsletterPageQuery, OpenPageQuery, PostQuery, SubscribePageQuery, ThankYouPageQuery } from '../types/generated'
 import { siteFragment } from '../functions/siteFragment'
+import { Defined } from '../types/Defined'
 
 const getGlobalStyles = (theme: ThemeType) => {
   return css`
@@ -210,17 +211,14 @@ export type LayoutPropsType2 = {
     | PageProps<OpenPageQuery>['data']['site']
     | PageProps<SubscribePageQuery>['data']['site']
     | PageProps<ThankYouPageQuery>['data']['site'];
-  frontmatter?: {
-    description?: string;
-    keywords?: string[];
-  }
+  frontmatter?: Maybe<Defined<PageProps<PostQuery>['data']['mdx']>['frontmatter']>
   noFooter?: boolean;
   noSubscribeForm?: boolean;
 }
 
 const Layout: FC<LayoutPropsType2> = ({
   site,
-  frontmatter = {},
+  frontmatter,
   children,
   noFooter = false,
   noSubscribeForm,
@@ -247,10 +245,8 @@ const Layout: FC<LayoutPropsType2> = ({
   const siteDescription = site?.siteMetadata?.description;
   const siteKeywords = site?.siteMetadata?.keywords;
 
-  const {
-    keywords: frontmatterKeywords,
-    description: frontmatterDescription,
-  } = frontmatter
+  const frontmatterKeywords = frontmatter?.keywords;
+  const frontmatterDescription = frontmatter?.description;
 
   const keywords = (frontmatterKeywords ?? siteKeywords ?? []).join(', ')
   const description = frontmatterDescription || siteDescription
