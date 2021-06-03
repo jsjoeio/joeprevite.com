@@ -8,6 +8,7 @@ export const siteFragment = graphql`
       author {
         name
       }
+      keywords
     }
   }
 `
