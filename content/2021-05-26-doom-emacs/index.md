@@ -110,6 +110,26 @@ Using this below, it auto-saves every 15 seconds.
    ```
 3. Restart Doom
 
+### Fix M-RET in org-mode
+
+If you're like me and you want it to add a new item when hitting `return` in a bulleted list, you can use a package called [`org-autolist`](https://github.com/calvinwyoung/org-autolist).
+
+1. Add the package inside `.doom.d/packages.el`
+
+```clojure
+(package! org-autolist)
+```
+
+2. Add this to your `config.el`
+
+```clojure
+(add-hook 'org-mode-hook
+          (lambda () (org-autolist-mode)))
+```
+
+3. Close Doom and run `doom build`
+4. Open Doom and voilà, it works!
+
 ## Resources
 
 Here are a list of handy resources:
