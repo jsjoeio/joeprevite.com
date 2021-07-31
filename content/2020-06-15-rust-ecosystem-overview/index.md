@@ -400,7 +400,7 @@ Reflecting on what we have covered thus far, we can see that the Rust ecosystem 
 - Overview
   - The community is ubiquitous both online and in-person
   - There is no shortage of books or references to read from the official Rust groups
-  - Rust can be used for write web, mobile, and CLI apps, servers embedded devices, and OS’s
+  - Rust can be used for writing web, mobile, and CLI apps, servers embedded devices, and OS’s
   - Rust is fast, well-documented, type-safe, manages memory efficiently, but has a steep learning curve
 
 ### What’s next?
