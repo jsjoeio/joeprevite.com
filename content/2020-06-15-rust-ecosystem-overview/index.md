@@ -389,7 +389,7 @@ Deriving some of the tops results from the [Rust Survey 2019](https://blog.rust-
   - Security
   - Technology
 - Other
-  - Blockchain ([Libra](https://github.com/libra/libra) [Move](https://developers.libra.org/docs/move-overview))
+  - Blockchain ([Libra](https://github.com/libra/libra) [Move](https://developers.libra.org/docs/move-overview)) [Solana](https://github.com/solana-labs/solana)
   - [Deno](https://github.com/denoland/deno) - [uses JavaScript engine written in Rust](https://www.zdnet.com/article/deno-1-0-node-js-makers-have-new-javascript-runtime-for-typescript-programming-language/)
     - [1.0 Announcement](https://deno.land/v1)
 
