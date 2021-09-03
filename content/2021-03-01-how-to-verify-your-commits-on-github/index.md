@@ -99,3 +99,7 @@ If you try committing, you'll notice that GPG asks for your passphrase. But we d
 And that's it! You can verify that it's working by pushing any commit to any repo.
 
 Kudos to [@Beneboe](https://github.com/Beneboe) for writing these instructions in a [gist](https://gist.github.com/Beneboe/3183a8a9eb53439dbee07c90b344c77e) and [this Stack Overflow question](https://unix.stackexchange.com/questions/395875/gpg-does-not-ask-for-password).
+
+## Troubleshooting
+
+If you're having issues, I suggest taking a look at [Troubleshooting GPG git commit signing](https://juliansimioni.com/blog/troubleshooting-gpg-git-commit-signing/).
