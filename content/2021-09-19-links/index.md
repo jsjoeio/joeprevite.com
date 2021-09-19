@@ -8,7 +8,7 @@ published: true
 tags: ['Miscellaneous']
 ---
 
-This are all the important links you should know about.
+These are all the important links you should know about.
 
 ## Featured
 
