@@ -45,7 +45,7 @@ Follow these steps:
    You should see something like "Server listening on port 8022"
 7. On your computer, SSH into your machine on port 8022 (default port):
    ```sh
-   ssh <username>@<host> -p8022
+   ssh <username>@<jjhost> -p8022
    ```
 8. Type in your password and viola! You're accessing Termux from your computer.
 
@@ -55,3 +55,9 @@ These are the resources that helped me figure this out and might provide more co
 
 - [How do I find the user name and host name of my local machine?](https://superuser.com/questions/667171/ssh-usernamehost-how-do-i-find-the-user-name-and-host-name-of-my-local-mach/667173#667173)
 - [Remote Access - Termux Wiki](https://wiki.termux.com/wiki/Remote_Access)
+
+Remember, ssh depends on your network settings. If you're having issues with the ssh part (possibly if your phone is connected to a celluar network instead of WiFi), you can try this:
+
+```shell
+sshd -e -d -d -d
+```
