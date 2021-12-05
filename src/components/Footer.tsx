@@ -2,10 +2,10 @@ import React, { FC } from 'react'
 import { css } from '@emotion/core'
 import { useTheme } from './Theming'
 import { bpMaxSM } from '../lib/breakpoints'
-import CallToAction from './Forms/CallToAction'
 import { Twitter, GitHub } from './Social'
 import Link from './Link'
 import Container from './Container'
+import RevueNewsletter from './Forms/RevueNewsletter'
 
 const CODE_ORGANIZATIONS = [
   {
@@ -47,7 +47,8 @@ function hasCallToActionOnPage() {
   if (typeof document !== 'undefined') {
     // Check if there is an element with the "call-to-action" class
     const hasCallToAction =
-      document.querySelector<HTMLElement>('.call-to-action')?.offsetParent !== null
+      document.querySelector<HTMLElement>('.call-to-action')?.offsetParent !==
+      null
     return hasCallToAction
   }
   // Otherwise we assume no
@@ -55,81 +56,76 @@ function hasCallToActionOnPage() {
 }
 
 interface FooterPropsType {
-  author: string;
-  noSubscribeForm?: boolean;
+  author: string
+  noSubscribeForm?: boolean
 }
 
-const Footer: FC<FooterPropsType> = (
-// { author, noSubscribeForm = false }
-) => {
-  const theme = useTheme()
-  const { link, label } = getHelpOthersLearnToCodeLink()
+const Footer: FC<FooterPropsType> = () =>
+  // { author, noSubscribeForm = false }
+  {
+    const theme = useTheme()
+    const { link, label } = getHelpOthersLearnToCodeLink()
 
-  React.useEffect(() => {
-    // Note for the SubscribeForm below
-    // We only show it if:
-    // - the `noSubscribeForm` passed in as a prop is not set to true
-    // - the page doesn't have a call-to-action
-    // We do this inside useEffect because on the server render, it doesn't exist
-    // But on the client it does, so we check when the client has loaded
-    hasCallToActionOnPage()
-  }, [])
+    React.useEffect(() => {
+      // Note for the SubscribeForm below
+      // We only show it if:
+      // - the `noSubscribeForm` passed in as a prop is not set to true
+      // - the page doesn't have a call-to-action
+      // We do this inside useEffect because on the server render, it doesn't exist
+      // But on the client it does, so we check when the client has loaded
+      hasCallToActionOnPage()
+    }, [])
 
-  return (
-    <footer>
-      <Container
-        css={css`
-          padding-top: 0;
-          ${bpMaxSM} {
-            padding-top: 0;
-          }
-        `}
-      >
-        <div>
-          <CallToAction
-            formId="1652705"
-            title="Join the Newsletter"
-            description="I send a couple emails per month related to programming and learning. I also share goodies and deals here."
-            placeholderText="awesomeperson@gmail.com"
-            tags={['general-newsletter']}
-          />
-          <br />
-          <br />
-        </div>
-        <div
+    return (
+      <footer>
+        <Container
           css={css`
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            padding-top: 0;
+            ${bpMaxSM} {
+              padding-top: 0;
+            }
           `}
         >
+          <div>
+            <h2>Join the Newsletter</h2>
+            <RevueNewsletter />
+            <br />
+            <br />
+          </div>
           <div
             css={css`
-              font-size: 90%;
-              opacity: 0.7;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
             `}
           >
-            <Link
-              to={link}
+            <div
               css={css`
-                color: ${theme.colors.text};
-                :hover {
-                  color: ${theme.colors.primary};
-                }
+                font-size: 90%;
+                opacity: 0.7;
               `}
-              aria-label={label}
             >
-              Help others learn to code
-            </Link>
+              <Link
+                to={link}
+                css={css`
+                  color: ${theme.colors.text};
+                  :hover {
+                    color: ${theme.colors.primary};
+                  }
+                `}
+                aria-label={label}
+              >
+                Help others learn to code
+              </Link>
+            </div>
+            <div>
+              <Twitter />
+              <GitHub />
+            </div>
           </div>
-          <div>
-            <Twitter />
-            <GitHub />
-          </div>
-        </div>
-      </Container>
-    </footer>
-  )
-}
+        </Container>
+      </footer>
+    )
+  }
 
 export default Footer
