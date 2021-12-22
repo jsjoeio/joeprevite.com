@@ -18,7 +18,20 @@ function BaseHead(props: BaseHeadProps) {
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-            <link rel="icon" href="/favicon.svg" />
+            {/* Favicon for all browsers */}
+            <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+            <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+            
+            {/* For Google and Android */}
+            <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png" />
+            <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png" />
+
+            {/* For iPad */}
+            <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="favicon-167x167.png" />
+            {/* For iPhone */}
+            <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicon-180x180.png" />
+
+            {/* Global CSS */}
             <link rel="stylesheet" href="/style/global.css" />
             {/* Primary Meta Tags */}
             <title>{title || site.title}</title>
