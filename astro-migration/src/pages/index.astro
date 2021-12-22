@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../data/site';
+
+let title = 'Astro Starter';
+let description = 'This is a starter repo for an blog built with Astro including open graph tags, canonical urls, RSS, sitemap support.';
+let permalink = site.url;
+// How to use the Netlify Functions
+// Here's an example which calls our helloWorld function
+// const localURL = "https://netlify--jsjoeio.jsjoeio.coder.app"
+// const prodURL = `${site.url}`
+// const url = import.meta.env.NETLIFY ? prodURL : localURL
+// const response = await fetch(`${url}/.netlify/functions/helloWorld`)
+// console.log(await response.json())
+// Gives you { message: 'Goodbye World' }
+---
+<BaseLayout title={title} description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href}>
+  <h1 class="text-center">{title}</h1>
+  <p>hi</p>
+</BaseLayout>

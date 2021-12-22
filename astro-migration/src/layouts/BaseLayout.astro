@@ -1,0 +1,17 @@
+---
+import BaseHead from '../components/BaseHead.tsx';
+
+const {title, description, permalink, canonicalURL } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} permalink={permalink} canonicalURL={canonicalURL} />
+    <link rel="stylesheet" href={Astro.resolve('../styles/global.css')}>
+  </head>
+  <body>
+      <main>
+          <slot/>
+      </main>
+  </body>
+</html>
+

@@ -1,0 +1,18 @@
+{
+  "name": "astro-starter",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "start": "netlify dev",
+    "dev": "astro dev",
+    "build": "astro build"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^0.10.0",
+    "astro": "^0.21.0",
+    "netlify-cli": "^8.2.4",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7"
+  },
+  "license": "MIT"
+}
