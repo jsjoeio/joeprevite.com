@@ -13,7 +13,7 @@ function ArticleSchema({title, permalink, date, ogImageUrl, description}: Articl
         "@type": "Article",
         "publisher": {
             "@type": "Organization",
-            "name": `${site.name} Blog`,
+            "name": `${site.name}`,
             "url": `${site.blogPath}`,
         },
         "author": {
