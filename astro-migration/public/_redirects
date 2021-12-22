@@ -1,0 +1,4 @@
+# Netlify Redirects
+# /path-on-site     <url to redirect to>
+# Example:
+# /twitter     https://twitter.com/jsjoeio

@@ -1,0 +1,24 @@
+# public/admin/config.yml
+backend:
+  name: git-gateway
+  branch: main # NOTE this relates to your GitHub branch
+publish_mode: editorial_workflow
+local_backend: true # allows for you to locally mess with your CMS
+media_folder: "public/assets/images" # Media files will be stored in the repo under public/images/uploads
+public_folder: "/assets/images" # The src attribute for uploaded media will begin with /images/uploads
+editor:
+  preview: false # we're going to hide the preview editor
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog Post" # Used in the UI
+    folder: "src/data/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Tagline", name: "tagline", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", time_format: false }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true, }
+      - { label: "Body", name: "body", widget: "markdown" }

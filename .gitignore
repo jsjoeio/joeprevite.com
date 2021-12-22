@@ -29,7 +29,7 @@ node_modules
 .sass-cache/
 .cache/
 .DS_Store
-public
+/public
 
 # env files
 .env
