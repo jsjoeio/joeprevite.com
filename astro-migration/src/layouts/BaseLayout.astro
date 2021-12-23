@@ -1,6 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.tsx';
 import Footer from '../components/Footer.tsx';
+import Newsletter from '../components/Newsletter.tsx';
 
 const {title, description, permalink, canonicalURL } = Astro.props;
 ---
@@ -14,6 +15,7 @@ const {title, description, permalink, canonicalURL } = Astro.props;
           <slot/>
       </main>
 
+      <Newsletter />
       <Footer />
   </body>
 </html>
