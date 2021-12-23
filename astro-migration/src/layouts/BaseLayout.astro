@@ -4,7 +4,7 @@ import Footer from '../components/Footer.tsx';
 import Newsletter from '../components/Newsletter.tsx';
 import Header from '../components/Header.tsx';
 
-const {title, description, permalink, canonicalURL } = Astro.props;
+const {title, description, permalink, canonicalURL, excludeNewsletter } = Astro.props;
 ---
 <html lang="en">
   <head>
@@ -17,7 +17,7 @@ const {title, description, permalink, canonicalURL } = Astro.props;
           <slot/>
       </main>
 
-      <Newsletter />
+      {!excludeNewsletter && <Newsletter />}
       <Footer />
   </body>
 </html>

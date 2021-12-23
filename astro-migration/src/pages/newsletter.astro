@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../data/site';
+import Newsletter from "../components/Newsletter.tsx"
+
+const title = `${site.name}'s Monthly Newsletter`
+const description = `${site.name}'s monthly newsletter which 1 exciting thing, 1 helpful thing, fun internet findings and new jobs.`
+const permalink = site.url;
+---
+<BaseLayout description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href} excludeNewsletter>
+    <h1>{title}</h1>
+    <Newsletter />
+</BaseLayout>
