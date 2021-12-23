@@ -3,6 +3,7 @@ const description =
 function Newsletter() {
   return (
     <div>
+      <h2>Join the Newsletter</h2>
       <p className="mt-0 mb-2">{description}</p>
       <div id="revue-embed">
         <form

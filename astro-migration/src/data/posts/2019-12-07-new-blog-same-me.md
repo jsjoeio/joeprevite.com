@@ -4,7 +4,6 @@ date: '2019-12-07'
 title: "Hello, it's me"
 tagline: 'I am writing again'
 description: 'Welcome to the new revised joeprevite.com!'
-published: true
 tags: ['Miscellaneous']
 ---
 

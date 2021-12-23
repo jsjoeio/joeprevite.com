@@ -3,6 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import site from '../data/site';
 import {getDayGreeting} from '../utils/getDayGreeting'
 
+const allPosts = Astro.fetchContent('../data/posts/*.md')
+const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+const lastFivePosts = sortedPosts.slice(0,5)
+
 const description = 'This is a starter repo for an blog built with Astro including open graph tags, canonical urls, RSS, sitemap support.';
 const permalink = site.url;
 const greeting = getDayGreeting(new Date());
@@ -40,11 +44,23 @@ const featuredArticles = [
   </section>
   
   <section>
+    <h2>Featured Articles</h2>
+    <p>Articles you should check out first:</p>
     {featuredArticles.map(article => (
-
       <a href={article.url}>
         <h3>{article.title}</h3>
       </a>
     ))}
+  </section>
+  
+  <section>
+    <h2>Latest Articles</h2>
+    <p>Here are some things I’ve written lately:</p>
+    {lastFivePosts.map(article => (
+      <a href={`${article.slug}`}>
+        <h3>{article.title}</h3>
+      </a>
+    ))}
+    <a href="/articles">See all articles</a>
   </section>
 </BaseLayout>
