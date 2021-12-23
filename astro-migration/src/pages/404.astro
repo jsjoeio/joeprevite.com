@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../data/site';
+
+const title = `404 - Oh no!`
+const description = `Joe Previte's 404 page. Used when a page isn't found.`
+const permalink = site.url;
+---
+<BaseLayout description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href} excludeNewsletter>
+    <h1>{title}</h1>
+</BaseLayout>
