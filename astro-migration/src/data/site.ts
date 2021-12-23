@@ -14,4 +14,6 @@ export default {
   linkedinURL: `https://linkedin.com/in/jsjoeio`,
   // YouTube URL
   youtubeURL: `https://youtube.com/c/jsjoeio`,
+  // Twitch URL
+  twitchURL: `https://twitch.tv/jsjoeio`,
 }
