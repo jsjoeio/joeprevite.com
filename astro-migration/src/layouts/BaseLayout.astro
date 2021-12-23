@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.tsx';
 import Footer from '../components/Footer.tsx';
 import Newsletter from '../components/Newsletter.tsx';
+import Header from '../components/Header.tsx';
 
 const {title, description, permalink, canonicalURL } = Astro.props;
 ---
@@ -11,6 +12,7 @@ const {title, description, permalink, canonicalURL } = Astro.props;
     <link rel="stylesheet" href={Astro.resolve('../styles/global.css')}>
   </head>
   <body>
+      <Header />
       <main>
           <slot/>
       </main>
