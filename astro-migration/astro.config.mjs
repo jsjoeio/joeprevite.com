@@ -5,5 +5,5 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
     sitemap: true,      // Generate sitemap (set to "false" to disable)
   },
   // Comment out "renderers: []" to enable Astro's default component support.
-  renderers: ['@astrojs/renderer-preact'],
+  renderers: ['@astrojs/renderer-react'],
 });
