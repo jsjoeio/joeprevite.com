@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import site from '../data/site';
-import Counter from '../components/Counter.tsx'
+import BlogSearchAndList from '../components/BlogSearchAndList.tsx'
 
 const title = `${site.name}'s Blog`
 const description = `${site.name}'s blog with articles on webdev, indiehacking and web3.`
@@ -17,6 +17,5 @@ const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date))
     
     <section>list of articles</section>
     
-    <!-- <BlogSearchAndList allPosts={sortedPosts} /> -->
-    <Counter count={1} client:visible>Hello</Counter>
+    <BlogSearchAndList allPosts={sortedPosts} />
 </BaseLayout>

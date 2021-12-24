@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks'
+import { useState } from 'react'
 
 const BlogSearchAndList = ({ allPosts }) => {
   // This is where we store the list of posts that have been filtered
