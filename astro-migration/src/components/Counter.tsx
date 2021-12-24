@@ -1,26 +1,18 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 
-function Counter() {
-  const [count, setCount] = useState(0)
-  console.log('loaded counter')
-  const increment = () => {
-    console.log('increment')
+export default function Counter({ children, count: initialCount }) {
+  const [count, setCount] = useState(initialCount)
+  const add = () => setCount(i => i + 1)
+  const subtract = () => setCount(i => i - 1)
 
-    setCount(prevCount => prevCount + 1)
-  }
-
-  const decrepement = () => {
-    setCount(prevCount => prevCount - 1)
-  }
   return (
     <>
-      <div>
-        <button onClick={decrepement}> - </button>
-        <button onClick={increment}> + </button>
+      <div className="counter">
+        <button onClick={subtract}>-</button>
+        <pre>{count}</pre>
+        <button onClick={add}>+</button>
       </div>
-      <p>Count is {count}.</p>
+      <div className="counter-message">{children}</div>
     </>
   )
 }
-
-export default Counter
