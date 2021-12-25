@@ -1,5 +1,5 @@
 ;(async function main() {
-  console.log('running migration script')
+  console.log('🔨 running migration script')
   const pathToContent = `${Deno.cwd()}/content`
 
   for await (const dirEntry of Deno.readDir(pathToContent)) {
