@@ -8,7 +8,8 @@
   for await (const dirEntry of Deno.readDir(pathToContent)) {
     const currentDir = dirEntry.name
     const pathToDir = `${pathToContent}/${currentDir}`
-    await processDir(pathToDir)
+
+    await processDir(currentDir, pathToDir)
     // 2. Rename index.md to <folder-name>.md
     // const { path, name } = await renameIndexFile(dirName)
 
@@ -24,34 +25,34 @@
  *
  * Expected to have an index.md and maybe .png files
  */
-async function processDir(fullPathToDir: string) {
+async function processDir(dirName: string, fullPathToDir: string) {
   // Loop through files
   for await (const dirEntry of Deno.readDir(fullPathToDir)) {
-    const name = dirEntry.name
+    const fileName = dirEntry.name
     // If index, rename, and move. process
-    if (name === 'index.md') {
-      console.log('processing .md file')
-      // TODO process .md file
+    if (fileName === 'index.md') {
+      await moveIndexFile(dirName, fullPathToDir)
     }
-    if (/\.(gif|jpe?g|tiff?|png|webp|bmp)$/i.test(name)) {
-      console.log('processing photo file')
-      // TODO process photo file
+    if (/\.(gif|jpe?g|tiff?|png|webp|bmp)$/i.test(fileName)) {
+      await moveImageFile(fileName, fullPathToDir)
+      // TODO update file in markdown
+      // Referenced in markdown like (assets/img/astronaut.png)
     }
   }
   // Clean up - remove dir
   //   await Deno.remove(fullPathToDir, { recursive: true })
 }
 
-async function renameIndexFile(dirName: string) {
-  const parentPath = `${Deno.cwd()}/content/${dirName}`
-  const oldFilePath = `${parentPath}/index.md`
-  const newFilePath = `${parentPath}/${dirName}.md`
+async function moveIndexFile(dirName: string, fullPathToDir: string) {
+  const oldFilePath = `${fullPathToDir}/index.md`
+  const newFilePath = `${Deno.cwd()}/astro-migration/src/data/posts/${dirName}.md`
   await Deno.rename(oldFilePath, newFilePath)
+}
 
-  return {
-    path: newFilePath,
-    name: `${dirName}.md`,
-  }
+async function moveImageFile(fileName: string, fullPathToDir: string) {
+  const oldFilePath = `${fullPathToDir}/${fileName}`
+  const newFilePath = `${Deno.cwd()}/astro-migration/public/assets/images/${fileName}`
+  await Deno.rename(oldFilePath, newFilePath)
 }
 
 async function copyMarkdownFileToAstroDir(
