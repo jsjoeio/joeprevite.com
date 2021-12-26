@@ -6,9 +6,8 @@
     const currentDir = dirEntry.name
     const pathToDir = `${pathToContent}/${currentDir}`
 
+    console.log(`🚧 processing directory: ${currentDir}`)
     await processDir(currentDir, pathToDir)
-
-    break
   }
   console.log(`✅ Done processing /content directory.`)
 })()
