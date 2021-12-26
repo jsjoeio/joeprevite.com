@@ -12,7 +12,7 @@ tags: ['TypeScript']
 After writing my [review on "Effective TypeScript"](book-review-effective-typescript), I shared it with my friend [@swyx](https://twitter.com/swyx). He read through and shared his thoughts.
 
 One area he talked about was mapped types. Here's what he said:
-![Screenshot of Twitter DM between me and swyx.](./swyx-message.png)
+![Screenshot of Twitter DM between me and swyx.](assets/images/swyx-message.png)
 
 I decided to give it a go and try to create the utility type from scratch.
 

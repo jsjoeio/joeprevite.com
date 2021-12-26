@@ -88,7 +88,7 @@ I may come back and update this after further investigation.
 
 In the “[Integer Types](https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-types)” section, they show a table of the different integer types in Rust.
 
-![Table of integers in Rust with their bit length.](./bit-table.png)
+![Table of integers in Rust with their bit length.](assets/images/bit-table.png)
 
 I am not used to worrying about the bit length. Do I need to worry about it?
 

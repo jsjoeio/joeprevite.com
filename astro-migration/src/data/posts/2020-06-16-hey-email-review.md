@@ -52,7 +52,7 @@ I don't even think I need to explain any of them except maybe the last one, whic
 
 ### Keyboard Shortcuts
 
-![Screen recording of HEY keyboard shortcuts in action](./hey-keyboard.gif)
+![Screen recording of HEY keyboard shortcuts in action](assets/images/hey-keyboard.gif)
 
 More and more apps these days are prioritizing keyboard shortcuts and HEY is one of them. They teach you them from the start, but they also have a keyboard menu in case you forget them. This alone improves your workflow by at least 10% if not more.
 

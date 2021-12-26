@@ -8,7 +8,7 @@ published: true
 tags: ['GitHub']
 ---
 
-![verified commit badge on GitHub](./verified.png)
+![verified commit badge on GitHub](assets/images/verified.png)
 
 If you've ever needed to verify your commits, either for an open source project, or your employer, but not sure how then this is the guide for you!
 

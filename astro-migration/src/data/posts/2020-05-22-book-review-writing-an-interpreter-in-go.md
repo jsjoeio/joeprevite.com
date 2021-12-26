@@ -8,7 +8,7 @@ published: true
 tags: ['Book', 'Go']
 ---
 
-![Writing an interpreter in go paperback on wood](./book_cover.jpg)
+![Writing an interpreter in go paperback on wood](assets/images/book_cover.jpg)
 
 When I started my new job, I was told that I would be the "Programming Languages" person. I knew I wanted to learn more not only about specific programming languages like Rust and Reason, but understand them on a higher level.
 
@@ -122,7 +122,7 @@ _Update_: Thorsten left a comment filling me in,
 >
 > JavaScript objects are their own datatype (remember, they also have methods and attributes, which hash tables do not have). Under the hood, a JavaScript object can be implemented with hash tables, though. But that's just an implementation detail when we're talking about whether JavaScript objects are hash tables: they're not.
 >
-> But what gets everyone confused is that their _literal_ syntax looks really similar (map[string]string{"foobar": "barfoo"} in Go and {"foobar": "barfoo"} in JavaScript) and that hash tables in other languages often encode to objects in JSON.
+> But what gets everyone confused is that their _literal_ syntax looks really similar `(map[string]string{"foobar": "barfoo"}` in Go and `{"foobar": "barfoo"}` in JavaScript) and that hash tables in other languages often encode to objects in JSON.
 
 One of the key pieces of my own misunderstanding is this thing he said -> **remember, [JavaScript objects] also have methods and attributes, which hash tables do not have**
 

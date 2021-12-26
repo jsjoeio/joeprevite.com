@@ -148,7 +148,7 @@ In this case with TypeScript, maybe you say, "I'm going to write one line of Typ
 
 ### Share with Others
 
-![Yoda quote, "Always pass on what you have learned."](./yoda-always-pass-on-what-you-have-learned.png)
+![Yoda quote, "Always pass on what you have learned."](assets/images/yoda-always-pass-on-what-you-have-learned.png)
 
 One of the most important parts of staying on track is sharing with others and [Learning in Public](https://www.swyx.io/writing/learn-in-public/). There are various mediums you can choose from for sharing:
 

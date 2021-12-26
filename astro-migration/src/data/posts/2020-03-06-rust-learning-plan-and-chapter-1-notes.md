@@ -57,7 +57,7 @@ Coming from the JavaScript world, I’m used to scouring the internet for a dece
 Free, offline docs - out-of-the-box
 I noted this after rereading some of Chapter 1. `rustup` comes with a version of the docs that you can launch and read offline 😱 How genius is that?!
 
-```sh
+```shell
 rustup doc
 ```
 
@@ -155,7 +155,7 @@ Coming from the JS world, you can put your files in any directory you want (most
 
 This one is more of a reminder for me. When you’re ready to ship your code to production, add the release flag to your build step:
 
-```sh
+```shell
 cargo build --release
 ```
 
@@ -192,43 +192,43 @@ Most of the commands that were covered in Chapter 1:
 
 ### Install Rust with `rustup`
 
-```sh
+```shell
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 ### Update to the latest version of Rust
 
-```sh
+```shell
 rustup update
 ```
 
 ### Check your version of Rust
 
-```sh
+```shell
 rustc --version
 ```
 
 ### Open the docs for Rust locally (available offline too)
 
-```sh
+```shell
 rustup doc
 ```
 
 ### Manually compile a file
 
-```sh
+```shell
 rustc main.rs
 ```
 
 ### Check your version of `cargo`
 
-```sh
+```shell
 cargo --version
 ```
 
 ### Create a new Rust program
 
-```sh
+```shell
 cargo new <project_name>
 
 # Example for a project named hello_world
@@ -237,25 +237,25 @@ cargo new hello_world
 
 ### Check that Rust program compiles
 
-```sh
+```shell
 cargo check
 ```
 
 ### Build a Rust program
 
-```sh
+```shell
 cargo build
 ```
 
 ### Run a Rust program
 
-```sh
+```shell
 cargo run
 ```
 
 ### Build a Rust program for production
 
-```sh
+```shell
 cargo build --release
 ```
 

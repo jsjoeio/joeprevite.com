@@ -20,7 +20,7 @@ The whole idea for this started back when I heard about "info-products". I think
 
 I can't recall where ideas started, but after I saw multiple friends launching ebooks this summer, I told myself, "I want to do that."
 
-![Twtitter DM conversation with Will Johnson](./conversation-with-will.png)
+![Twtitter DM conversation with Will Johnson](assets/images/conversation-with-will.png)
 
 My friend [Will](https://twitter.com/willjohnsonio) and I have been chatting about making info products since April 2020. He had his own book idea in mind. We both said we would push each other in that direction.
 
@@ -50,7 +50,7 @@ If you have an idea, actually building it is the easiest part. At least, that's 
 
 I have a full-time job so planning out my work for this challenge was essential. I came up with [this plan](https://twitter.com/jsjoeio/status/1297191136323227648?s=20):
 
-![The plan for the challenge](./the-challenge-plan.png)
+![The plan for the challenge](assets/images/the-challenge-plan.png)
 
 I told myself I would work on it on my own time before work, after work and on the weekend. I think I spent maybe an hour in the morning, and an hour after work. On the weekends, it was a few hours. I didn't stick to the plan exactly, but having the rough outline made me think less and made it easier to get things done.
 

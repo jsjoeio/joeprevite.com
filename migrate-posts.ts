@@ -18,20 +18,25 @@
  * Expected to have an index.md and maybe .png files
  */
 async function processDir(dirName: string, fullPathToDir: string) {
+  // We need to move the index file first
+  // otherwise, we'll call updateImageReferenceInMarkdownFile
+  // on a markdown file that doesn't yet exist.
+  // This assumes we always have one, but if we didn't that'd be weird
+  console.log(`...moving index.md`)
+  await moveIndexFile(dirName, fullPathToDir)
   // Loop through files
   for await (const dirEntry of Deno.readDir(fullPathToDir)) {
     const fileName = dirEntry.name
-    // If index, rename, and move. process
-    if (fileName === 'index.md') {
-      await moveIndexFile(dirName, fullPathToDir)
-    }
     if (/\.(gif|jpe?g|tiff?|png|webp|bmp)$/i.test(fileName)) {
+      console.log(`...moving image file: ${fileName}`)
       await moveImageFile(fileName, fullPathToDir)
+      console.log(`...updating image reference`)
       await updateImageReferenceInMarkdownFile(fileName, dirName)
     }
   }
   // Clean up - remove dir
   await Deno.remove(fullPathToDir, { recursive: true })
+  console.log(`✔ Success: processed ${dirName}`)
 }
 
 async function moveIndexFile(dirName: string, fullPathToDir: string) {

@@ -19,7 +19,7 @@ Turns out you can! Here's how:
 1. Create a file called CODEOWNERS (no extension)
 2. Place it at the root or in the `.github` directory
 3. Add the following code to your file:
-   ```sh
+   ```shell
    # Make @lukeskywalker @yoda reviewers for every file
    *       @lukeskywalker @yoda
    ```

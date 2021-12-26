@@ -16,35 +16,35 @@ Follow these steps:
 
 1. Open Termux on your Android phone
 2. Install OpenSSH:
-   ```sh
+   ```shell
    pkg upgrade
    pkg install openssh
    ```
 3. Set up a password:
-   ```sh
+   ```shell
    passwd
    ```
 4. Find your username by running this in Termux:
-   ```sh
+   ```shell
    whoami
    ```
    Save this value for later. Might look like `u0_a254`
 5. Find the host by running this in Termux:
-   ```sh
+   ```shell
    ipconfig
    ```
    Look for something like `inet addr:192.168.0.100` Save this value for later.
 6. Start the ssh server on Termux:
-   ```sh
+   ```shell
    sshd
    ```
    Verify that it's running with:
-   ```sh
+   ```shell
    logcat -s 'ssh:*'
    ```
    You should see something like "Server listening on port 8022"
 7. On your computer, SSH into your machine on port 8022 (default port):
-   ```sh
+   ```shell
    ssh <username>@<jjhost> -p8022
    ```
 8. Type in your password and viola! You're accessing Termux from your computer.
