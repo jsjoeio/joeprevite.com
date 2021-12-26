@@ -10,8 +10,7 @@ html {
 }
 
 body {
-  @apply text-default;
-  background: #000b3b;
+  @apply text-default bg-defaultBg;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 }

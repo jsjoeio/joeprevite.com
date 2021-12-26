@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.tsx';
 import Footer from '../components/Footer.tsx';
 import Newsletter from '../components/Newsletter.tsx';
 import Header from '../components/Header.tsx';
+import Spacer from '../components/Spacer.tsx';
 
 const {title, description, permalink, canonicalURL, excludeNewsletter } = Astro.props;
 ---
@@ -19,7 +20,11 @@ const {title, description, permalink, canonicalURL, excludeNewsletter } = Astro.
         </main>
 
         {!excludeNewsletter && <Newsletter />}
+        <Spacer />
+        
         <Footer />
+        
+        <Spacer />
       </div>
   </body>
 </html>

@@ -5,13 +5,12 @@ const LinkedIn = () => {
     <a
       href={site.linkedinURL}
       target="_blank"
-      className="ml-2 text-black"
+      className="ml-2 text-default hover:text-link transition-all"
       aria-label="Visit my LinkedIn"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="23"
-        height="23"
+        className="w-3 h-3"
         viewBox="0 0 23 23"
       >
         <path
@@ -28,13 +27,12 @@ const Twitter = () => {
     <a
       href={site.twitterURL}
       target="_blank"
-      className="ml-2 text-black"
+      className="ml-2 text-default hover:text-link transition-all"
       aria-label="Visit my Twitter"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="20"
+        className="w-3 h-3"
         viewBox="0 0 24 20"
       >
         <path
@@ -52,18 +50,17 @@ const YouTube = () => {
     <a
       href={site.youtubeURL}
       target="_blank"
-      className="ml-2 text-black"
+      className="ml-2 text-default hover:text-link transition-all"
       aria-label="Visit my YouTube"
     >
       <svg
-        width="23"
-        height="21"
-        fill="none"
+        className="w-3 h-3"
+        viewBox="0 0 23 21"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
+          fill="currentColor"
           d="M21.948 4.955a2.74 2.74 0 0 0-1.928-1.94c-1.7-.46-8.52-.46-8.52-.46s-6.82 0-8.52.46a2.74 2.74 0 0 0-1.928 1.94C.596 6.666.596 10.238.596 10.238s0 3.571.456 5.283a2.7 2.7 0 0 0 1.928 1.91c1.7.458 8.52.458 8.52.458s6.82 0 8.52-.459a2.7 2.7 0 0 0 1.928-1.91c.456-1.711.456-5.282.456-5.282s0-3.572-.456-5.283ZM9.27 13.48V6.995l5.7 3.243-5.7 3.242Z"
-          fill="#000"
         />
       </svg>
     </a>
@@ -75,12 +72,17 @@ const Twitch = () => {
     <a
       href={site.twitchURL}
       target="_blank"
-      className="ml-2 text-black"
+      className="ml-2 text-default hover:text-link transition-all"
       aria-label="Visit my Twitch"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        className="w-3 h-3"
+      >
         <path
           d="M2.149 0 .537 4.119v16.836h5.731V24h3.224l3.045-3.045h4.657l6.269-6.269V0H2.149zm19.164 13.612-3.582 3.582H12l-3.045 3.045v-3.045H4.119V2.149h17.194v11.463zm-3.582-7.343v6.262h-2.149V6.269h2.149zm-5.731 0v6.262H9.851V6.269H12z"
+          fill="currentColor"
           fillRule="evenodd"
           clipRule="evenodd"
         />
@@ -94,13 +96,12 @@ const GitHub = () => {
     <a
       href={site.githubURL}
       target="_blank"
-      className="ml-2 text-black"
+      className="ml-2 text-default hover:text-link transition-all"
       aria-label="Visit my GitHub"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        height="23"
-        width="23"
+        className="w-3 h-3"
         viewBox="0 0 23 23"
       >
         <path
@@ -117,11 +118,13 @@ function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="flex flex-col">
-      <p className="flex flex-row items-center justify-center">
+    <footer className="flex flex-row items-end justify-end">
+      <p className="flex flex-row items-center justify-center text-xs">
         <span>&#169;</span>
-        <span className="ml-1 mr-2">{year}</span>
-        <a href={site.url}>{site.name}</a>
+        <span className="mx-1">{year}</span>
+        <a href={site.url} className="text-default">
+          {site.name}
+        </a>
       </p>
       <div className="flex flex-row items-center justify-center mt-2">
         <Twitter />

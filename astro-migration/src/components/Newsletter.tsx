@@ -12,32 +12,16 @@ function Newsletter() {
           method="post"
           id="revue-form"
           name="revue-form"
-          className="revue-form-group"
+          className="revue-form-group flex items-end"
           target="_blank"
         >
-          <label htmlFor="member_email">
+          <label htmlFor="member_email" className="block w-6/12">
             <div className="flex justify-between items-end text-xs mb-1">
               Email*
             </div>
-            {/* border-radius: 4
-px
-;
-    border: 1
-px
- solid rgb(250, 250, 250);
-    padding: 5
-px
- 10
-px
-;
-    box-shadow: rgb(0 0 0 / 10%) 0px 0px 3px;
-    font-weight: 400;
-    margin-top: 5
-px
-; */}
             <input
               required
-              className="revue-form-field rounded border-2 focus:ring-link focus:ring-8 px-4 py-2 font-semibold mt-2 shadow text-black w-100"
+              className="revue-form-field rounded border-2 focus:ring-white focus:ring-8 px-4 py-2 font-semibold mt-2 shadow text-black w-full bg-linkLight"
               placeholder="awesomeperson@gmail.com"
               type="email"
               name="member[email]"
@@ -46,14 +30,14 @@ px
           </label>
 
           <input
-            className="revue-form-actions w-auto"
+            className="revue-form-actions w-auto border-2 border-transparent rounded px-4 py-2 cursor-pointer transition-all ml-4 whitespace-nowrap bg-link text-defaultBg w-auto focus:ring-white focus:ring-8 font-bold"
             type="submit"
-            value="Sign me up!"
+            value="Let's go!"
             name="member[subscribe]"
             id="member_submit"
           />
         </form>
-        <small className="revue-form-footer block mt-2">
+        <small className="revue-form-footer block mt-2 text-xs">
           By subscribing, you agree with Revue’s{' '}
           <a
             className="hover:text-blue-800 underline"

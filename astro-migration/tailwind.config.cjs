@@ -7,7 +7,9 @@ module.exports = {
     extend: {
       colors: {
         default: '#f0c090',
-        link: '#A1F090'
+        defaultBg: '#000b3b',
+        link: '#A1F090',
+        linkLight: '#c8f7bd',
       }
     }
   }
