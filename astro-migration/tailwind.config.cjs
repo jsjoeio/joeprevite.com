@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        default: '#f0c090',
         link: '#A1F090'
       }
     }

@@ -3,7 +3,7 @@ import site from '../data/site'
 function Header() {
   return (
     <header>
-      <a href="/" className="flex items-center py-6">
+      <a href="/" className="flex items-center py-6 hover:no-underline">
         <svg
           className="mr-3"
           width="50"
@@ -47,7 +47,7 @@ function Header() {
             stroke="black"
           />
         </svg>
-        <span className="text-white hover:text-lg transition-all hover:text-link">
+        <span className="text-default hover:text-lg transition-all hover:text-link">
           {site.name}
         </span>
       </a>

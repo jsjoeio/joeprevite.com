@@ -36,30 +36,35 @@ const featuredArticles = [
 <BaseLayout description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href}>
 
   <section class="w-100">
-    <p class="text-lg font-bold block">Why hello there</p>
-    <p>My name's Joe and I like getting people excited about webdev, indie hacking and web3.</p>
+    <p class="text-lg font-bold">Why hello there</p>
+    <p class="mb-0">My name's Joe and I like getting people excited about webdev, indie hacking and web3.</p>
   </section>
   
   <Spacer />
   
   <section>
-    <h2>Featured Articles</h2>
-    <p>Articles you should check out first:</p>
+    <h2 class="text-lg font-bold">Featured Articles</h2>
+    <p class="mb-2">Articles you should check out first:</p>
     {featuredArticles.map(article => (
       <a href={article.url}>
         <h3>{article.title}</h3>
       </a>
     ))}
   </section>
-  
+
+  <Spacer/>
+
   <section>
-    <h2>Latest Articles</h2>
-    <p>Here are some things I’ve written lately:</p>
+    <h2 class="text-lg font-bold">Latest Articles</h2>
+    <p class="mb-2">Here are some things I’ve written lately:</p>
     {lastFivePosts.map(article => (
       <a href={`${article.slug}`}>
         <h3>{article.title}</h3>
       </a>
     ))}
-    <a href="/articles">See all articles</a>
+    <a class="block mt-2" href="/articles">See all articles</a>
+    
   </section>
+
+  <Spacer />
 </BaseLayout>

@@ -10,12 +10,18 @@ html {
 }
 
 body {
+  @apply text-default;
   background: #000b3b;
-  color: #f0c090;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 }
 
 a {
-  color: #a1f090;
+  @apply text-link;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
 }

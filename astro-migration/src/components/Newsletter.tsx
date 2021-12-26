@@ -1,10 +1,11 @@
-const description =
-  'I send a monthly newsletter with 1 exciting thing, 1 helpful thing, fun internet findings and new jobs. Subscribe for exclusive goodies!'
 function Newsletter() {
   return (
     <div>
-      <h2>Join the Newsletter</h2>
-      <p className="mt-0 mb-2">{description}</p>
+      <h2 className="text-lg font-bold">Join the Newsletter</h2>
+      <p className="mt-0 mb-2">
+        I send a monthly newsletter with 1 exciting thing, 1 helpful thing, and
+        new jobs.
+      </p>
       <div id="revue-embed">
         <form
           action="https://www.getrevue.co/profile/jsjoeio/add_subscriber"
@@ -15,10 +16,28 @@ function Newsletter() {
           target="_blank"
         >
           <label htmlFor="member_email">
-            <div className="flex justify-between items-end">Email*</div>
+            <div className="flex justify-between items-end text-xs mb-1">
+              Email*
+            </div>
+            {/* border-radius: 4
+px
+;
+    border: 1
+px
+ solid rgb(250, 250, 250);
+    padding: 5
+px
+ 10
+px
+;
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 3px;
+    font-weight: 400;
+    margin-top: 5
+px
+; */}
             <input
               required
-              className="revue-form-field"
+              className="revue-form-field rounded border-2 focus:ring-link focus:ring-8 px-4 py-2 font-semibold mt-2 shadow text-black w-100"
               placeholder="awesomeperson@gmail.com"
               type="email"
               name="member[email]"
