@@ -122,7 +122,10 @@ function Footer() {
       <p className="flex flex-row items-center justify-center text-xs">
         <span>&#169;</span>
         <span className="mx-1">{year}</span>
-        <a href={site.url} className="text-default">
+        <a
+          href={site.url}
+          className="text-default transition-all hover:text-link hover:no-underline"
+        >
           {site.name}
         </a>
       </p>
