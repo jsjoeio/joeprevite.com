@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  /* I like having a bigger base font size. */
+  /* https://github.com/tailwindlabs/tailwindcss/discussions/1611#discussioncomment-6562 */
+  font-size: 20px;
+}
+
 body {
   background: #000b3b;
   color: #f0c090;
@@ -11,5 +17,5 @@ body {
 }
 
 a {
-    color: #A1F090;
+  color: #a1f090;
 }

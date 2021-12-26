@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import site from '../data/site';
-import {getDayGreeting} from '../utils/getDayGreeting'
+import Spacer from '../components/Spacer.tsx'
 
 const allPosts = Astro.fetchContent('../data/posts/*.md')
 const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -9,7 +9,6 @@ const lastFivePosts = sortedPosts.slice(0,5)
 
 const description = 'This is a starter repo for an blog built with Astro including open graph tags, canonical urls, RSS, sitemap support.';
 const permalink = site.url;
-const greeting = getDayGreeting(new Date());
 
 const featuredArticles = [
   {
@@ -36,12 +35,12 @@ const featuredArticles = [
 ---
 <BaseLayout description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href}>
 
-  <section class="w-100 p-0 flex">
-    <p>
-      {greeting} My name's Joe and I like getting people excited to learn, particularly
-      about software development.
-    </p>
+  <section class="w-100">
+    <p class="text-lg font-bold block">Why hello there</p>
+    <p>My name's Joe and I like getting people excited about webdev, indie hacking and web3.</p>
   </section>
+  
+  <Spacer />
   
   <section>
     <h2>Featured Articles</h2>
