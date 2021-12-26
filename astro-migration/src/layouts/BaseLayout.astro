@@ -12,13 +12,15 @@ const {title, description, permalink, canonicalURL, excludeNewsletter } = Astro.
     <link rel="stylesheet" href={Astro.resolve('../styles/global.css')}>
   </head>
   <body>
-      <Header />
-      <main>
-          <slot/>
-      </main>
+      <div class="max-w-2xl mx-auto">
+        <Header />
+        <main>
+            <slot/>
+        </main>
 
-      {!excludeNewsletter && <Newsletter />}
-      <Footer />
+        {!excludeNewsletter && <Newsletter />}
+        <Footer />
+      </div>
   </body>
 </html>
 

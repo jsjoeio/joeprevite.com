@@ -3,5 +3,11 @@ module.exports = {
       './public/**/*.html',
       './src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}',
     ],
-    // more options here
+  theme: {
+    extend: {
+      colors: {
+        link: '#A1F090'
+      }
+    }
+  }
 };
