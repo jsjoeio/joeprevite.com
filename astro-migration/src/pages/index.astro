@@ -55,14 +55,14 @@ const featuredArticles = [
   <Spacer/>
 
   <section>
-    <h2 class="text-lg font-bold">Latest Articles</h2>
+    <h2 class="text-lg font-bold">Latest Posts</h2>
     <p class="mb-2">Here are some things I’ve written lately:</p>
     {lastFivePosts.map(article => (
       <a href={`${article.slug}`}>
         <h3>{article.title}</h3>
       </a>
     ))}
-    <a class="block mt-2" href="/articles">See all articles</a>
+    <a class="block mt-2" href="/blog">See all posts</a>
     
   </section>
 
