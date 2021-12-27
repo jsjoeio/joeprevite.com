@@ -226,26 +226,3 @@ Here are the key takeways I would give to past Joe or friends who want to launch
 - Celebrate the wins and learn from your mistakes
 
 I hope you enjoyed reading this as much as I enjoyed writing it! If you ever want to chat about anything here, my inbox is open! You can DM me on [Twitter](https://twitter.com/jsjoeio) or email me at jprevite at hey dot com. I love talking about this stuff!
-
-<CallToAction
-formId="1652705"
-title="Interested in the #2WeekProduct challenge?"
-description="I wrote a cheatsheet for the Fast Framework. Think of it as a handy guide for starting your fast learning projects. Sign up below and I'll send you a free PDF copy."
-placeholderText="futureindiehacker@gmail.com"
-tags={["launching-first-product"]}>
-<CallToActionDescription>
-
-The #2WeekProduct Challenge is this:
-
-- asynchronous
-- group of up to 10 people
-- 14-day commitment
-- build your own product
-- sell for \$10 or more
-
-It's a fun way to make friends, help each other and learn about launching a real product.
-
-If that sounds of interest to you, sign up for my newsletter below to get updates on when the next one runs!
-
-  </CallToActionDescription>
-</CallToAction>

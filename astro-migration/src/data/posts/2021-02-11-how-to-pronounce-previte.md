@@ -16,7 +16,7 @@ It is pronounced like "PRE-vit."
     <figcaption>Listen to the pronounciation:</figcaption>
     <audio
         controls
-        src="/media/previte-pronounciation.mp3">
+        src="/assets/previte-pronounciation.mp3">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
