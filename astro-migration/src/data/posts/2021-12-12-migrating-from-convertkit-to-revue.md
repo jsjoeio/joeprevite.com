@@ -5,14 +5,14 @@ title: 'Migrating from Convertkit to Revue'
 description: 'This is a post where I share my thoughts about migrating my email newsletter from ConvertKit to Revue.'
 tagline: 'How i did it'
 published: true
-tags: ['Miscellaenous']
+tags: ['Miscellaneous']
 ---
 
 I've been seen a lot of folks on Twitter with the "Subscribe to my newsletter" button below their profile bio. I knew Twitter acquired Revue not too long ago but wasn't sure about the service.
 
-Fast-forward to December 2021, I get a bill for $500 year from ConvertKit. Yikes!
+Fast-forward to December 2021, I get a bill for \$500 year from ConvertKit. Yikes!
 
-I'm all in favor of paying for software but for someone like me with around 1300 subscribers sending 1 email per month, $500 is hard to swallow. I decided it was time to switch.
+I'm all in favor of paying for software but for someone like me with around 1300 subscribers sending 1 email per month, \$500 is hard to swallow. I decided it was time to switch.
 
 Here's how I migrated to Revue from ConvertKit.
 
