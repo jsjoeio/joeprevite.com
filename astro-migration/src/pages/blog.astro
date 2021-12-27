@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import site from '../data/site';
-import BlogSearchAndList from '../components/BlogSearchAndList.tsx'
+import formattedDate from '../utils/formattedDate'
+import Spacer from '../components/Spacer'
 
 const title = `${site.name}'s Blog`
 const description = `${site.name}'s blog with articles on webdev, indiehacking and web3.`
@@ -10,12 +11,23 @@ const permalink = site.url;
 const allPosts = Astro.fetchContent('../data/posts/*.md')
 const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
 ---
-<BaseLayout description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href} excludeNewsletter>
-    <h1>{title}</h1>
+<BaseLayout title={title} description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href} excludeNewsletter>
+    <h1 class="text-lg">Blog</h1>
+    <p class="mb-6">All the blog posts and articles I've written.</p>
     
-    <section>search</section>
+    <section>
     
-    <section>list of articles</section>
-    
-    <BlogSearchAndList allPosts={sortedPosts} />
+    {sortedPosts.map(post => (
+      <div class="flex flex-row items-center justify-between mb-4">
+        <a href={`/${post.slug}`}>
+          <h3 class="font-bold text-lg">{post.title}</h3>
+        </a>
+      
+        <div class="flex flex-col items-end justify-center">
+          <p class="text-xs mb-2">{formattedDate(new Date(post.date))}</p>
+        </div>
+
+      </div>
+    ))}
+    </section>
 </BaseLayout>
