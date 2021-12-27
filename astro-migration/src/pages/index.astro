@@ -47,7 +47,7 @@ const featuredArticles = [
     <p class="mb-2">Articles you should check out first:</p>
     {featuredArticles.map(article => (
       <a href={article.url}>
-        <h3>{article.title}</h3>
+        <h3 class="font-semibold mb-1">{article.title}</h3>
       </a>
     ))}
   </section>
@@ -59,7 +59,7 @@ const featuredArticles = [
     <p class="mb-2">Here are some things I’ve written lately:</p>
     {lastFivePosts.map(article => (
       <a href={`${article.slug}`}>
-        <h3>{article.title}</h3>
+        <h3 class="font-semibold mb-1">{article.title}</h3>
       </a>
     ))}
     <a class="block mt-2" href="/blog">See all posts</a>
