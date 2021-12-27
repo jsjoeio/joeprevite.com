@@ -1,29 +1,29 @@
+import Spacer from './Spacer'
+import publishDateToMachineFriendlyDate from '../utils/publishDateToMachineFriendlyDate'
 
 export interface BlogPostProps {
-  title: string;
-  date: string;
+  title: string
+  date: string
   html: string
 }
 
-function publishDateToMachineFriendlyDate(date: string) {
-  return new Date(date).toISOString()
-}
-
 function BlogPost(props: BlogPostProps) {
-    const { title, html, date } = props;
-    const machineFriendlyDate = publishDateToMachineFriendlyDate(date)
+  const { title, html, date } = props
+  const machineFriendlyDate = publishDateToMachineFriendlyDate(date)
 
-    return (
-        <article style={{
-            margin: "0 auto",
-            padding: "1rem",
-            maxWidth: "960px"
-        }}>
-            <h1>{title}</h1>
-            <p>Last updated: <time dateTime={machineFriendlyDate}>{date}</time></p>
-            <div dangerouslySetInnerHTML={{__html: html}} />
-        </article>
-    )
+  return (
+    <article className="mx-auto my-8">
+      <h1 className="text-4xl font-bold text-center mb-4">{title}</h1>
+      <p className="font-xs">
+        Last updated:{' '}
+        <time className="font-light" dateTime={machineFriendlyDate}>
+          {date}
+        </time>
+      </p>
+      <Spacer />
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+    </article>
+  )
 }
 
 export default BlogPost
