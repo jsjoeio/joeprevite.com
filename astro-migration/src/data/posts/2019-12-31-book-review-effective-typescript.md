@@ -234,7 +234,7 @@ I didn't highlight anything in this chapter.
 
 I may have had too high of expectations for the book In the Preface, the author says,
 
-> My goal with this book is not to teach you TypeScript or JavaScript but to hel pyou advance from a beginning or intermediate user to an expert.
+> My goal with this book is not to teach you TypeScript or JavaScript but to help you advance from a beginning or intermediate user to an expert.
 
 When I started reading this book, I had already been studying TypeScript heavily for the last 3 months. If I had read this book at the beginning of those 3 months, my opinion would probably be different. I do consider myself an intermediate user of TypeScript, but I don't think this book has helped me reach a level of "expert." Although the author and I may have differing opinions on levels of expertise.
 

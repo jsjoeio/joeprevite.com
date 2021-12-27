@@ -114,16 +114,6 @@ Stats can be fun sometimes. Here are the ones I have related to dip:
 
 749 internet users (Fri Aug 30)
 
-### Fun Slack data
-
-![Screenshot of all-time usage and active members for slack dip-chat.](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5caf1f39-be74-497b-8435-79564a436565/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAT73L2G45EDZVG5VK%2F20200104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200104T194840Z&X-Amz-Expires=86400&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDdOycxPfqGK8TbfNsCRyk1J0IVzXUEzxU4XpiAZ8J1BgIhAOKlrbvl3N0VfgRIZURwpSwba4OkzLKcZGZXi9EN40hgKrQDCGQQABoMMjc0NTY3MTQ5MzcwIgyhvohdeQFFXytngN0qkQOVGZa%2BZeGkW3AQBad6MOHxrthqgJmhwIRlBr%2BomSz3AeHUdd5SkrrIu5Lx9SHeuBDb2yfJOvbP%2F4YNO7yRt09sF7bQD0EX2pKXDC7k%2BmbSnfGkec4CsSMkxBhhGgenpMgdLiW48gyY8M8jABjy23IHOuuW8LmyOJZOWbYKcxaA0T%2F9I8jrz0q5P9fFsKXeG7P52sjgzuuh6x35Rn1LsYw5wYooLcBgMjCOaIDWvsZIaK1GzOQq7a3ldyytr2V0llUT%2BzUfd%2BisWiAPaiaj0xGvK0mU9A3JD2j%2Bz%2FuCBjh9g8aQygwNnu3FLucO5lNcDTw5HAnhtiM3Yi7fQr4ty2n8yjR3DP9W4svIwMcrd5AXCW1QT6tNl8S%2Ba%2BDVQ2Rm4FjBDlxgfZ8FgDG0cLLz4F9KEUJzgPtYLPlSb5qhHdn7GgyBg%2BrepSxSfC3FTxc3dOunD7UVTuwG9ymzMYv5J4pJgs3ru3fGfETelb42dLbawP9MQye2J%2BSivbF5CySbi2Fgq6xNIFLJmwfypIwsir2SMTCgv8PwBTrqAU7WX3IYn1KaIfwkv6sTR4wll1pkIUFc9Kcbi74sIC6F7YiEZcMP%2FHvsV1irSFZkdzMuov0b%2BPgkITD3dETYMTtuX21YdHAiygQ2tMX77u7P9OODEuSkViWUwU1cdWsF3PG6xHs53ewOf8xPdXYyMyqTi9629JUPvMX4wcMwM57piUCjKP9BDZlcx5UodJghwQ1zKD5pbCjmiqlH1j4iXHI4jMBlwBI29pwG6x7DYnuXSVjtexMed5KFN05opkK8f1J%2F88aYFRlb4vbIZ1EvkN7s844IYFPOqBlDt7R9uWB3Nbq0RQAiEmeceA%3D%3D&X-Amz-Signature=a3f27b4c93e11ddae6e1f90d8fd88d9578cca7613ad03c503a8ff6fc5c2cdc59&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
-
-All-Time Usage and Active Members.
-
-![Screenshot of where messages were sent for slack dip-chat.](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0b345b29-9b06-4cff-9237-fe6154fa3af2/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAT73L2G45D4IOXNGH%2F20200104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200104T194927Z&X-Amz-Expires=86400&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCXqsxFJTUky6ho%2F1iGXf1MgFHZCLKK1RxCNgyEk97yrQIgO8LTJvWpR%2BPl%2BvlTZmS8Q%2FMnhexmAPwm3yGONGfAGtYqtAMIZBAAGgwyNzQ1NjcxNDkzNzAiDOcrYYkf6TeVlXCUvyqRA0NkQZatW8FRL9ErrVrgKtj9Lp5KwGcIEZNSLzlnP3LX0OXgn0OLrd0ckqRWlrP279D50cKLRpxubDcCls8RoIzUmBd38WH2slCQrmofPn6oxUDX6A9pdwIo8EXs8I%2FNmsis3vMLhhqq%2Budtz8TkDnpj9Bo1Jly1LpcQLLcNXOYdjSv6xhvClD4TJcTLzJbTReRv4XqeZvBILwIQcBtAjLcfxEFKgkcLoWFd%2FhxEJGdtlKKuy8LLFO6Ub8bKx4Q3FsXHFaKr5XXde8RYHpi%2FSHJSuODImGDt7EdyDS6zmyqJHmv%2BmYvTxw%2BO2vcbghB9Ah3djCT7aDv5I479GLQTyP1dTY2RNfJOdXKEAoRAiW%2F%2BcRxfq7QkOEXAX3Ib4sPu%2FoDqSq86e%2BqlXjYV6gdKcZt59ufpnwvipnYuDlUjKW5FLU%2BhbWFJnVhGIqiPLU4RWpaqokZp1YAD7PczoTmOQIgaUW%2Frrrz4vyQp6ZH%2FlUKfZJKuGyYVyqppPT2x%2FhzM%2BRbMo3S6h%2B%2BdoAki1Y0Lu7wKMNfCw%2FAFOusBbwCDEZLBvtQGFPjR7yv%2Bu9Oo8pisEqzIUadkouh61hE%2Be4kkT33DlbrszUpC5HcYmBZ15DQXxVp%2F0Ffvo9CwrRYfsVRD%2BF%2BcxViOtM1%2F0h1ksN9yWlxE4Zgizqe94hmyUqxslN86uLkxuNJIpprWiHQHebedp77mGP3G5XPUjcIY44dm4n2SiNnihmxnGTc1AvdUk2lx2d%2B3TYBrVCDr%2BlIEVWj%2FoxpYh3EhQnsnp0MQWvrXaGNT5oXv1YwXMMh2Acw7dR1iGsnERyVxaTk9RjfIAINJUlZ9Tw%2B8D7VQLOPtT2qx7NtFqL63bA%3D%3D&X-Amz-Signature=2b545627b876052918021de593406dd52640f5ed41968d0c335118b10dd8ab55&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
-
-Where messages were sent.
-
 ## Similar groups
 
 If you still want something that is similar in concept to dip, here are similar communities and groups you might want to check out:
@@ -141,7 +131,7 @@ _Disclaimer_: _please read the code of conduct and see if these groups align wit
 
 ## Stay in touch
 
-If you'd like to stay in touch with me personally, you can [sign up for my newsletter](https://buttondown.email/jsjoeio) or [stay connected with me on Twitter](https://twitter.com/jsjoeio).
+If you'd like to stay in touch with me personally, you can [sign up for my newsletter](https://joeprevite.com/newsletter) or [stay connected with me on Twitter](https://twitter.com/jsjoeio).
 
 ## Special thanks
 
