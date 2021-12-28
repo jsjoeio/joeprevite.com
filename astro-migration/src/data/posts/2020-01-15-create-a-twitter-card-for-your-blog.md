@@ -1,11 +1,11 @@
 ---
-slug: 'create-a-twitter-card-for-your-blog'
-date: '2020-01-15'
-title: 'Create a Twitter Card for Your Blog'
-description: 'Learn how to quickly create a twitter card for your blog using an npm package and cloudinary.'
-tagline: 'Automate with npm package and cloudinary'
+slug: "create-a-twitter-card-for-your-blog"
+date: "2020-01-15"
+title: "Create a Twitter Card for Your Blog"
+description: "Learn how to quickly create a twitter card for your blog using an npm package and cloudinary."
+tagline: "Automate with npm package and cloudinary"
 published: true
-tags: ['Twitter']
+tags: ["Twitter"]
 ---
 
 As [@swyx](https://twitter.com/swyx) puts it, the Twitter card or more importantly `og:image` is important because
@@ -47,19 +47,19 @@ yarn add @jlengstorf/get-share-image
 I have an `<SEO />` on my site, which you can see [here](https://github.com/jsjoeio/joeprevite.com/blob/master/src/components/SEO/index.js) as an example of where to put this code.
 
 ```javascript
-import getSharingImage from '@jlengstorf/get-share-image'
+import getSharingImage from "@jlengstorf/get-share-image";
 
 const socialImage = getSharingImage({
-  title: 'How to be a x developer',
-  tagline: 'Learn all the tips from this one post',
+  title: "How to be a x developer",
+  tagline: "Learn all the tips from this one post",
   // This is the name you see in your url
   // https://res.cloudinary.com/<Your cloud name will be here>/image/upload/v1579118925/jp-blog-post-card.png
-  cloudName: 'jsjoeio',
-  imagePublicID: 'jp-blog-post-card',
-  titleFont: 'Roboto',
-  titleExtraConfig: '_bold',
-  taglineFont: 'Roboto',
-})
+  cloudName: "jsjoeio",
+  imagePublicID: "jp-blog-post-card",
+  titleFont: "Roboto",
+  titleExtraConfig: "_bold",
+  taglineFont: "Roboto",
+});
 ```
 
 6. **Use it in your meta tag**
@@ -73,8 +73,6 @@ Use your new image in your `meta` tag:
 7. **Push to production and test**
 
 Once your code is ready, push it to production then check to see if it's working using something like [Twitter's Card validator](https://cards-dev.twitter.com/validator). If it works, you should see your template in action like this:
-
-![Screenshot of seo card for blog post](10x-developer.png)
 
 8. **Celebrate!**
 
