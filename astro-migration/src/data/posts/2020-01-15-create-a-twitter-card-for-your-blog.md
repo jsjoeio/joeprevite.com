@@ -1,6 +1,6 @@
 ---
 slug: "create-a-twitter-card-for-your-blog"
-date: "2020-01-15"
+date: "2021-12-27"
 title: "Create a Twitter Card for Your Blog"
 description: "Learn how to quickly create a twitter card for your blog using an npm package and cloudinary."
 tagline: "Automate with npm package and cloudinary"
