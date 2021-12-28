@@ -1,9 +1,0 @@
-[build]
-  command = "yarn build"
-  functions = "functions-build"
-  publish = "public"
-  # To ignore dependabot branches
-  ignore = "git log -1 --pretty=%B | grep dependabot"
-
-[[plugins]]
-package = "netlify-plugin-gatsby-cache"
