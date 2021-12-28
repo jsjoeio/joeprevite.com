@@ -8,7 +8,6 @@ const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date))
 const lastFivePosts = sortedPosts.slice(0,5)
 
 const description = site.description;
-const permalink = site.url;
 const tagline = site.tagline;
 
 const featuredArticles = [
@@ -34,7 +33,7 @@ const featuredArticles = [
 // console.log(await response.json())
 // Gives you { message: 'Goodbye World' }
 ---
-<BaseLayout description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href} tagline={tagline}>
+<BaseLayout description={description} canonicalURL={Astro.request.canonicalURL.href} tagline={tagline}>
 
   <section class="w-100">
     <p class="text-lg font-bold">Why hello there</p>

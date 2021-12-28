@@ -2,14 +2,14 @@ import site from "../data/site";
 
 type ArticleSchemaConfig = {
   title: string;
-  permalink: string;
+  canonicalURL: string;
   date: string;
   ogImageUrl: string;
   description: string;
 };
 function ArticleSchema({
   title,
-  permalink,
+  canonicalURL,
   date,
   ogImageUrl,
   description,
@@ -35,7 +35,7 @@ function ArticleSchema({
       sameAs: [`${site.url}`, `${site.twitterURL}`],
     },
     headline: `${title}`,
-    url: `${permalink}`,
+    url: `${canonicalURL}`,
     datePublished: `${date}`,
     image: {
       "@type": "ImageObject",

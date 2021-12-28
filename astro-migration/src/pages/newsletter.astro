@@ -5,10 +5,9 @@ import Newsletter from "../components/Newsletter.tsx"
 
 const title = `${site.name}'s Monthly Newsletter`
 const description = `${site.name}'s monthly newsletter which 1 exciting thing, 1 helpful thing, fun internet findings and new jobs.`
-const permalink = site.url;
 const tagline = `The newsletter you need in your inbox`
 ---
-<BaseLayout description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href} excludeNewsletter tagline={tagline}>
+<BaseLayout description={description} canonicalURL={Astro.request.canonicalURL.href} excludeNewsletter tagline={tagline}>
     <h1>{title}</h1>
     <Newsletter />
 </BaseLayout>

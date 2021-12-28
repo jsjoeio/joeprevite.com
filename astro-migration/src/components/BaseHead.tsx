@@ -6,7 +6,6 @@ export interface BaseHeadProps {
   title: string;
   tagline?: string;
   description: string;
-  permalink: string;
   date: string;
   canonicalURL?: string;
   articleSchema?: boolean;
@@ -17,7 +16,6 @@ function BaseHead(props: BaseHeadProps) {
     title,
     tagline = "Read more",
     description,
-    permalink,
     date,
     canonicalURL,
     articleSchema,
@@ -107,7 +105,7 @@ function BaseHead(props: BaseHeadProps) {
       <link rel="canonical" href={canonicalURL} />
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={canonicalURL || permalink || site.url} />
+      <meta property="og:url" content={canonicalURL || site.url} />
       <meta property="og:title" content={title || site.title} />
       <meta
         property="og:description"
@@ -117,7 +115,7 @@ function BaseHead(props: BaseHeadProps) {
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={permalink || site.url} />
+      <meta property="twitter:url" content={canonicalURL || site.url} />
       <meta property="twitter:title" content={title || site.title} />
       <meta
         property="twitter:description"
@@ -148,7 +146,7 @@ function BaseHead(props: BaseHeadProps) {
         <ArticleSchema
           title={title}
           description={description}
-          permalink={permalink}
+          canonicalURL={canonicalURL}
           date={date}
           ogImageUrl={openGraphImageURL}
         />

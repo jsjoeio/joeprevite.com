@@ -5,11 +5,11 @@ import Newsletter from '../components/Newsletter.tsx';
 import Header from '../components/Header.tsx';
 import Spacer from '../components/Spacer.tsx';
 
-const {title, description, permalink, canonicalURL, excludeNewsletter, tagline } = Astro.props;
+const {title, description, canonicalURL, excludeNewsletter, tagline } = Astro.props;
 ---
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} permalink={permalink} canonicalURL={canonicalURL} tagline={tagline} />
+    <BaseHead title={title} description={description} canonicalURL={canonicalURL} tagline={tagline} />
   </head>
   <body>
       <div class="max-w-2xl mx-auto">
