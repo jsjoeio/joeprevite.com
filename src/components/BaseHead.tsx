@@ -1,4 +1,4 @@
-import getSharingImage from "@jlengstorf/get-share-image";
+// import getSharingImage from "@jlengstorf/get-share-image";
 import ArticleSchema from "./ArticleSchema";
 import site from "../data/site";
 
@@ -21,17 +21,21 @@ function BaseHead(props: BaseHeadProps) {
     articleSchema,
   } = props;
 
-  const openGraphImageURL = getSharingImage({
-    title,
-    tagline,
-    taglineColor: "#000",
-    titleColor: "#000",
-    titleExtraConfig: "_bold",
-    titleFont: "Roboto",
-    taglineFont: "Roboto",
-    cloudName: site.cloudinaryCloudName,
-    imagePublicID: site.cloudinaryImagePublicID,
-  });
+  // const openGraphImageURL = getSharingImage({
+  //   title,
+  //   tagline,
+  //   taglineColor: "#000",
+  //   titleColor: "#000",
+  //   titleExtraConfig: "_bold",
+  //   titleFont: "Roboto",
+  //   taglineFont: "Roboto",
+  //   cloudName: site.cloudinaryCloudName,
+  //   imagePublicID: site.cloudinaryImagePublicID,
+  // });
+  //
+
+  // TODO@jsjoeio fix this
+  const openGraphImageURL = "";
 
   return (
     <>
@@ -146,7 +150,7 @@ function BaseHead(props: BaseHeadProps) {
         <ArticleSchema
           title={title}
           description={description}
-          canonicalURL={canonicalURL}
+          canonicalURL={canonicalURL || site.url}
           date={date}
           ogImageUrl={openGraphImageURL}
         />

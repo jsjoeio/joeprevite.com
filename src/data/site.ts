@@ -2,7 +2,7 @@ export default {
   title: `Joe Previte`,
   description: `Joe Previte is a developer who writes about webdev, indiehacking and web3.`,
   tagline: `The best notes on webdev, indiehacking and web3`,
-  url: `https://jsjoeio-astro-starter.netlify.app`, // No trailing slash!
+  url: `https://joeprevite.com`, // No trailing slash!
   blogPath: `/`, // Some people might use /blog/, include trailing slash!
   aboutPath: `/`,
   // JSON LD
