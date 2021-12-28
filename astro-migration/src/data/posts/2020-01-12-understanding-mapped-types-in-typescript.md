@@ -1,12 +1,12 @@
 ---
-slug: 'understanding-mapped-types-in-typescript'
-date: '2020-01-12'
-title: 'Understanding Mapped Types in TypeScript'
-description: 'In this post, we recreate the readonly and partial utility types to understand mapped types.'
-tagline: 'Recreating TypeScript utility types'
+slug: "understanding-mapped-types-in-typescript"
+date: "2020-01-12"
+title: "Understanding Mapped Types in TypeScript"
+description: "In this post, we recreate the readonly and partial utility types to understand mapped types."
+tagline: "Recreating TypeScript utility types"
 published: true
-banner: ''
-tags: ['TypeScript']
+banner: ""
+tags: ["TypeScript"]
 ---
 
 After writing my [review on "Effective TypeScript"](book-review-effective-typescript), I shared it with my friend [@swyx](https://twitter.com/swyx). He read through and shared his thoughts.
@@ -42,23 +42,23 @@ Now let's use the actual utility type and see what it yields:
 
 ```typescript
 // yields type TSNames = readonly string[]
-type Names = Readonly<string[]>
+type Names = Readonly<string[]>;
 ```
 
 Great! Now, let's take a look at the implementation:
 
 ```typescript
 type Readonly<T> = {
-  readonly [P in keyof T]: T[P]
-}
+  readonly [P in keyof T]: T[P];
+};
 ```
 
 Okay. I see this but it feels difficult to read. Let's rename the generics:
 
 ```typescript
 type Readonly<YourType> = {
-  readonly [Key in keyof YourType]: YourType[Key]
-}
+  readonly [Key in keyof YourType]: YourType[Key];
+};
 ```
 
 We're taking `YourType`, mapping the left side of the ":" to the right side. We mark each `Key` as `readonly` and then give you back your same type, with the new updates.
@@ -75,12 +75,12 @@ This is used for when you want to make everything optional. An example might loo
 
 ```typescript
 type User = {
-  name: string
-  email: string
-  password: string
-}
+  name: string;
+  email: string;
+  password: string;
+};
 
-type PartialUser = Partial<User>
+type PartialUser = Partial<User>;
 // yields
 // type PartialUser = {
 //     name?: string | undefined;
@@ -93,17 +93,17 @@ Instead of looking at the answer, let's learn by refactoring our `Readonly` type
 
 ```typescript
 type Partial<YourType> = {
-  [Key in keyof YourType]?: YourType[Key]
-}
+  [Key in keyof YourType]?: YourType[Key];
+};
 ```
 
 How did we know to put the question mark (the optional modifier) right there? Well, think about how you use it normally. You add it after the key in the type, like this:
 
 ```typescript
 type User = {
-  name?: string
+  name?: string;
   //...
-}
+};
 ```
 
 The same thing happens: we map the left to the right and boom, we have our utility type.

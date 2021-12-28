@@ -1,14 +1,14 @@
-import ArticleSchema from './ArticleSchema'
-import site from '../data/site'
+import ArticleSchema from "./ArticleSchema";
+import site from "../data/site";
 
 export interface BaseHeadProps {
-  title: string
-  description: string
-  permalink: string
-  date: string
-  ogImageUrl: string
-  canonicalURL?: string
-  articleSchema?: boolean
+  title: string;
+  description: string;
+  permalink: string;
+  date: string;
+  ogImageUrl: string;
+  canonicalURL?: string;
+  articleSchema?: boolean;
 }
 
 function BaseHead(props: BaseHeadProps) {
@@ -20,7 +20,7 @@ function BaseHead(props: BaseHeadProps) {
     ogImageUrl,
     canonicalURL,
     articleSchema,
-  } = props
+  } = props;
   return (
     <>
       <meta charSet="utf-8" />
@@ -73,7 +73,9 @@ function BaseHead(props: BaseHeadProps) {
       />
 
       {/* Global CSS */}
-      <link rel="stylesheet" href="/style/global.css" />
+      <link rel="stylesheet" href={`/src/styles/global.css`} />
+      {/* Syntax highlighting */}
+      <link rel="stylesheet" href={`/src/styles/prism-dracula.css`} />
       {/* Primary Meta Tags */}
       <title>{title || site.title}</title>
       <meta name="title" content={title || site.title} />
@@ -131,8 +133,8 @@ function BaseHead(props: BaseHeadProps) {
         href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
         as="style"
         onLoad={() => {
-          this.onload = null
-          this.rel = 'stylesheet'
+          this.onload = null;
+          this.rel = "stylesheet";
         }}
       />
       <noscript>
@@ -152,7 +154,7 @@ function BaseHead(props: BaseHeadProps) {
         />
       )}
     </>
-  )
+  );
 }
 
-export default BaseHead
+export default BaseHead;
