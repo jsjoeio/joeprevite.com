@@ -1,6 +1,7 @@
 export default {
   title: `Joe Previte`,
-  description: `This is an example blog made with Astro.`,
+  description: `Joe Previte is a developer who writes about webdev, indiehacking and web3.`,
+  tagline: `The best notes on webdev, indiehacking and web3`,
   url: `https://jsjoeio-astro-starter.netlify.app`, // No trailing slash!
   blogPath: `/`, // Some people might use /blog/, include trailing slash!
   aboutPath: `/`,
@@ -16,4 +17,9 @@ export default {
   youtubeURL: `https://youtube.com/c/jsjoeio`,
   // Twitch URL
   twitchURL: `https://twitch.tv/jsjoeio`,
-}
+  // Cloudinary
+  // Used for getSharingImage
+  // Open Graph images
+  cloudinaryCloudName: `jsjoeio`,
+  cloudinaryImagePublicID: `jp-blog-post-card`,
+};

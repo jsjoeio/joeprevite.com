@@ -1,12 +1,13 @@
+import getSharingImage from "@jlengstorf/get-share-image";
 import ArticleSchema from "./ArticleSchema";
 import site from "../data/site";
 
 export interface BaseHeadProps {
   title: string;
+  tagline?: string;
   description: string;
   permalink: string;
   date: string;
-  ogImageUrl: string;
   canonicalURL?: string;
   articleSchema?: boolean;
 }
@@ -14,13 +15,26 @@ export interface BaseHeadProps {
 function BaseHead(props: BaseHeadProps) {
   const {
     title,
+    tagline = "Read more",
     description,
     permalink,
     date,
-    ogImageUrl,
     canonicalURL,
     articleSchema,
   } = props;
+
+  const openGraphImageURL = getSharingImage({
+    title,
+    tagline,
+    taglineColor: "#000",
+    titleColor: "#000",
+    titleExtraConfig: "_bold",
+    titleFont: "Roboto",
+    taglineFont: "Roboto",
+    cloudName: site.cloudinaryCloudName,
+    imagePublicID: site.cloudinaryImagePublicID,
+  });
+
   return (
     <>
       <meta charSet="utf-8" />
@@ -99,14 +113,7 @@ function BaseHead(props: BaseHeadProps) {
         property="og:description"
         content={description || site.description}
       />
-      <meta
-        property="og:image"
-        content={
-          ogImageUrl
-            ? `${site.url}${ogImageUrl}`
-            : `${site.url}/assets/img/social.jpg`
-        }
-      />
+      <meta property="og:image" content={openGraphImageURL} />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
@@ -116,14 +123,7 @@ function BaseHead(props: BaseHeadProps) {
         property="twitter:description"
         content={description || site.description}
       />
-      <meta
-        property="twitter:image"
-        content={
-          ogImageUrl
-            ? `${site.url}${ogImageUrl}`
-            : `${site.url}/assets/img/social.jpg`
-        }
-      />
+      <meta property="twitter:image" content={openGraphImageURL} />
 
       {/* Google Fonts */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -150,7 +150,7 @@ function BaseHead(props: BaseHeadProps) {
           description={description}
           permalink={permalink}
           date={date}
-          ogImageUrl={ogImageUrl}
+          ogImageUrl={openGraphImageURL}
         />
       )}
     </>

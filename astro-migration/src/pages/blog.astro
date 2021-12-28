@@ -8,11 +8,12 @@ import Spacer from '../components/Spacer'
 const title = `${site.name}'s Blog`
 const description = `${site.name}'s blog with articles on webdev, indiehacking and web3.`
 const permalink = site.url;
+const tagline = "Posts on webdev, indiehacking and web3"
 
 const allPosts = Astro.fetchContent('../data/posts/*.md')
 const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
 ---
-<BaseLayout title={title} description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href} excludeNewsletter>
+<BaseLayout title={title} description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href} excludeNewsletter tagline={tagline}>
     <h1 class="text-3xl">Blog</h1>
     <p class="mb-6">All the blog posts and articles I've written.</p>
     

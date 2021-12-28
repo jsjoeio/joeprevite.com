@@ -8,13 +8,11 @@ import Newsletter from '../components/Newsletter.tsx';
 
 const {content} = Astro.props;
 const {title, description, date, tags, tagline, slug, content: { html }, excludeNewsletter = false} = content;
-// TODO@jsjoeio replace with package that generates it
-const ogImageUrl = ""
 ---
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} permalink={Astro.request.canonicalURL} ogImageUrl={ogImageUrl} date={date} canonicalURL={Astro.request.canonicalURL} articleSchema />
+    <BaseHead title={title} description={description} permalink={Astro.request.canonicalURL} date={date} canonicalURL={Astro.request.canonicalURL} articleSchema />
     <link rel="stylesheet" href={Astro.resolve('../styles/prism-dracula.css')}>
   </head>
 

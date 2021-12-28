@@ -4,8 +4,9 @@ import site from '../data/site';
 
 const title = `404 - Oh no!`
 const description = `Joe Previte's 404 page. Used when a page isn't found.`
+const tagline = "Couldn't find this page"
 const permalink = site.url;
 ---
-<BaseLayout description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href} excludeNewsletter>
+<BaseLayout title={title} description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href} excludeNewsletter tagline={tagline}>
     <h1>{title}</h1>
 </BaseLayout>
