@@ -1,8 +1,12 @@
-import site from '../data/site'
+import site from "../data/site";
 
-function Header() {
+type Props = {
+  isBlog?: boolean;
+};
+
+function Header({ isBlog }: Props) {
   return (
-    <header>
+    <header className="flex flex-row justify-between items-center">
       <a href="/" className="flex items-center py-6 hover:no-underline">
         <svg
           className="mr-3"
@@ -51,8 +55,9 @@ function Header() {
           {site.name}
         </span>
       </a>
+      {isBlog && <a href="/blog">See all posts</a>}
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
