@@ -136,7 +136,7 @@ small {
 }
 
 #post ol {
-  @apply list-decimal mb-5 ml-0 list-inside;
+  @apply list-decimal ml-0 list-inside;
 }
 
 #post li {
@@ -144,9 +144,34 @@ small {
 }
 
 #post ul {
-  @apply list-disc mb-5 ml-0 list-inside;
+  @apply list-disc ml-0 pl-0 list-inside;
 }
 
 #post p {
   @apply mb-6 leading-7;
+}
+
+#post blockquote {
+  @apply pl-4 ml-0 mr-0 italic border-link border-solid border-l-4;
+}
+
+#post blockquote p {
+  @apply leading-5;
+}
+
+#post pre {
+  @apply mt-0 mb-4 overflow-auto;
+}
+
+#post figure {
+  @apply mx-0 mt-0 mb-4;
+}
+
+#post img {
+  vertical-align: middle;
+}
+
+#post caption {
+  @apply py-6 bg-defaultBg text-center;
+  caption-side: bottom;
 }

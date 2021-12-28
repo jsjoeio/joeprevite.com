@@ -1,11 +1,11 @@
 ---
-slug: 'windows-like-macos'
-date: '2021-10-10'
-title: 'Make Windows Like macOS'
-description: 'A guide to walk you through setting up keyboard shortcuts and applications to feel similar on Windows as they do on macOS.'
-tagline: 'Switching between operating systems with ease'
+slug: "windows-like-macos"
+date: "2021-10-10"
+title: "Make Windows Like macOS"
+description: "A guide to walk you through setting up keyboard shortcuts and applications to feel similar on Windows as they do on macOS."
+tagline: "Switching between operating systems with ease"
 published: true
-tags: ['Miscellaneous']
+tags: ["Miscellaneous"]
 ---
 
 I've been using macOS as my main driver for the past 10 years or so. Last month, I bought a PC.
@@ -67,52 +67,40 @@ This is the main component to syncing your workflows. I found that after remappi
 
 <ul>
   <li> 
-    <kbd>Ctrl</kbd><kbd>Tab</kbd> to <kbd>Alt</kbd><kbd>Tab</kbd>
-    <p>This will let you switch Application Windows similar to how you do on macOS.</p>
+    <kbd>Ctrl</kbd><kbd>Tab</kbd> to <kbd>Alt</kbd><kbd>Tab</kbd> - Switch Application Windows similar to macOS
   </li>
   <li> 
-    <kbd>Ctrl</kbd><kbd>Space</kbd> to <kbd>Alt</kbd><kbd>Space</kbd>
-    <p>Launches the shortcut menu (like Spotlight) to quickly open apps, take action, etc.</p>
+    <kbd>Ctrl</kbd><kbd>Space</kbd> to <kbd>Alt</kbd><kbd>Space</kbd> - Launches the shortcut menu (like Spotlight)
   </li>
   <li> 
-    <kbd>Ctrl</kbd><kbd>Left</kbd> to <kbd>Home</kbd>
-    <p>Moves cursor to start of line.</p>
+    <kbd>Ctrl</kbd><kbd>Left</kbd> to <kbd>Home</kbd> - Moves cursor to start of line
   </li>
   <li> 
-    <kbd>Ctrl</kbd><kbd>Right</kbd> to <kbd>End</kbd>
-    <p>Moves cursor to end of line.</p>
+    <kbd>Ctrl</kbd><kbd>Right</kbd> to <kbd>End</kbd> - Moves cursor to end of line
   </li>
   <li> 
-    <kbd>Ctrl</kbd><kbd>Q</kbd> to <kbd>Alt</kbd><kbd>F4</kbd>
-    <p>Quit applications like on macOS.</p>
+    <kbd>Ctrl</kbd><kbd>Q</kbd> to <kbd>Alt</kbd><kbd>F4</kbd> - Quit applications like on macOS
   </li>
   <li> 
-    <kbd>Ctrl</kbd><kbd>`</kbd> to <kbd>Alt</kbd><kbd>`</kbd>
-    <p>Toggle between windows of same application.</p>
+    <kbd>Ctrl</kbd><kbd>`</kbd> to <kbd>Alt</kbd><kbd>`</kbd> - Toggle between windows of same application
   </li>
   <li> 
-    <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>4</kbd> to <kbd>Win</kbd><kbd>Shift</kbd><kbd>S</kbd>
-    <p>Take screenshots like on macOS.</p>
+    <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>4</kbd> to <kbd>Win</kbd><kbd>Shift</kbd><kbd>S</kbd> - Take screenshots like on macOS
   </li>
   <li> 
-    <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>V</kbd> to <kbd>Win</kbd><kbd>V</kbd>
-    <p>Launch Clipboard history like with Clippy on macOS.</p>
+    <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>V</kbd> to <kbd>Win</kbd><kbd>V</kbd> - Launch Clipboard history like with Clippy on macOS
   </li>
   <li> 
-    <kbd>Win</kbd><kbd>Shift</kbd><kbd>Left</kbd> to <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>Left</kbd>
-    <p>Select word by word moving left.</p>
+    <kbd>Win</kbd><kbd>Shift</kbd><kbd>Left</kbd> to <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>Left</kbd> - Select word by word moving left
   </li>
   <li> 
-    <kbd>Win</kbd><kbd>Shift</kbd><kbd>Right</kbd> to <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>Right</kbd>
-    <p>Select word by word moving right.</p>
+    <kbd>Win</kbd><kbd>Shift</kbd><kbd>Right</kbd> to <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>Right</kbd> - Select word by word moving right.
   </li>
   <li> 
-    <kbd>Win</kbd><kbd>Ctrl</kbd><kbd>Left</kbd> to <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>Tab</kbd>
-    <p>Move to the previous tab (like in the browser).</p>
+    <kbd>Win</kbd><kbd>Ctrl</kbd><kbd>Left</kbd> to <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>Tab</kbd> - Move to the previous tab
   </li>
   <li> 
-    <kbd>Win</kbd><kbd>Ctrl</kbd><kbd>Right</kbd> to <kbd>Ctrl</kbd><kbd>Tab</kbd>
-    <p>Move to the next tab (like in the browser).</p>
+    <kbd>Win</kbd><kbd>Ctrl</kbd><kbd>Right</kbd> to <kbd>Ctrl</kbd><kbd>Tab</kbd> - Move to the next tab
   </li>
 </ul>
 
