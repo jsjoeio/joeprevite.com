@@ -8,9 +8,7 @@ published: true
 tags: ["Twitter"]
 ---
 
-As [@swyx](https://twitter.com/swyx) puts it, the Twitter card or more importantly `og:image` is important because
-
-> this is THE FIRST THING newcomers to your blog see, not your actual blog
+As [@swyx](https://twitter.com/swyx) puts it, the Twitter card or more importantly `og:image` is important because "this is THE FIRST THING newcomers to your blog see, not your actual blog."
 
 You can set yours up fairly quickly thanks to a package called [`@jlengstorf/get-share-image`](https://www.npmjs.com/package/@jlengstorf/get-share-image) by [Jason Lengstorf](https://twitter.com/jlengstorf).
 
@@ -24,9 +22,7 @@ We'll store our card template here, and be utilizing Cloudinary's free services 
 
 2. **Upload your card template**
 
-After you've signed up, upload your card template to Cloudinary.
-
-_Note: if you're having trouble designing one, Jason wrote a blog post on [how to design your own](https://www.learnwithjason.dev/blog/design-social-sharing-card/)._
+After you've signed up, upload your card template to Cloudinary. _Note: if you're having trouble designing one, Jason wrote a blog post on [how to design your own](https://www.learnwithjason.dev/blog/design-social-sharing-card/)._
 
 3. **Change the name to something meaningful like "website-card-template"**
 
@@ -44,7 +40,7 @@ yarn add @jlengstorf/get-share-image
 
 5. **Add the code to generate the URL**
 
-I have an `<SEO />` on my site, which you can see [here](https://github.com/jsjoeio/joeprevite.com/blob/master/src/components/SEO/index.js) as an example of where to put this code.
+I have an `<SEO />` component on my site, which you can see [here](https://github.com/jsjoeio/joeprevite.com/blob/master/src/components/SEO/index.js) as an example of where to put this code.
 
 ```javascript
 import getSharingImage from "@jlengstorf/get-share-image";
