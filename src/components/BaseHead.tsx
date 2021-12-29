@@ -9,6 +9,7 @@ export interface BaseHeadProps {
   date: string;
   canonicalURL?: string;
   articleSchema?: boolean;
+  astroResolve: any;
 }
 
 function BaseHead(props: BaseHeadProps) {
@@ -19,6 +20,7 @@ function BaseHead(props: BaseHeadProps) {
     date,
     canonicalURL,
     articleSchema,
+    astroResolve,
   } = props;
 
   // @ts-ignore This is a workaround
@@ -49,13 +51,13 @@ function BaseHead(props: BaseHeadProps) {
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="favicon-32x32.png"
+        href={astroResolve(`../assets/favicon-32x32.png`)}
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="favicon-16x16.png"
+        href={astroResolve(`../assets/favicon-16x16.png`)}
       />
 
       {/* For Google and Android */}
@@ -63,13 +65,13 @@ function BaseHead(props: BaseHeadProps) {
         rel="icon"
         type="image/png"
         sizes="48x48"
-        href="favicon-48x48.png"
+        href={astroResolve(`../assets/favicon-48x48.png`)}
       />
       <link
         rel="icon"
         type="image/png"
         sizes="192x192"
-        href="favicon-192x192.png"
+        href={astroResolve(`../assets/favicon-192x192.png`)}
       />
 
       {/* For iPad */}
@@ -77,18 +79,18 @@ function BaseHead(props: BaseHeadProps) {
         rel="apple-touch-icon"
         type="image/png"
         sizes="167x167"
-        href="favicon-167x167.png"
+        href={astroResolve(`../assets/favicon-167x167.png`)}
       />
       {/* For iPhone */}
       <link
         rel="apple-touch-icon"
         type="image/png"
         sizes="180x180"
-        href="favicon-180x180.png"
+        href={astroResolve(`../assets/favicon-180x180.png`)}
       />
 
       {/* Global CSS */}
-      <link rel="stylesheet" href={`/src/styles/global.css`} />
+      <link rel="stylesheet" href={astroResolve(`../styles/global.css`)} />
       {/* Syntax highlighting */}
       {/* <link rel="stylesheet" href={`/src/styles/prism-dracula.css`} /> */}
       {/* Primary Meta Tags */}

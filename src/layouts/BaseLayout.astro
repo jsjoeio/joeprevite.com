@@ -9,7 +9,7 @@ const {title, description, canonicalURL, excludeNewsletter, tagline } = Astro.pr
 ---
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} canonicalURL={canonicalURL} tagline={tagline} />
+    <BaseHead title={title} description={description} canonicalURL={canonicalURL} tagline={tagline} astroResolve={Astro.resolve}/>
   </head>
   <body>
       <div class="max-w-xs md:max-w-2xl mx-4 md:mx-auto">
