@@ -21,7 +21,7 @@ function Newsletter() {
             </div>
             <input
               required
-              className="revue-form-field rounded border-2 focus:ring-white focus:ring-8 px-4 py-2 font-semibold mt-2 shadow text-black w-full bg-linkLight"
+              className="revue-form-field rounded border-2 focus:ring-default focus:ring-8 px-4 py-2 font-semibold mt-2 shadow text-default w-full bg-defaultBg"
               placeholder="awesomeperson@gmail.com"
               type="email"
               name="member[email]"
@@ -30,7 +30,7 @@ function Newsletter() {
           </label>
 
           <input
-            className="revue-form-actions w-auto border-2 border-transparent rounded px-4 py-2 cursor-pointer transition-all ml-4 whitespace-nowrap bg-link text-defaultBg w-auto focus:ring-white focus:ring-8 font-bold"
+            className="revue-form-actions w-auto border-2 border-transparent rounded px-4 py-2 cursor-pointer transition-all ml-4 whitespace-nowrap bg-link text-defaultBg w-auto focus:ring-default focus:ring-8 font-bold"
             type="submit"
             value="Let's go!"
             name="member[subscribe]"
@@ -38,15 +38,15 @@ function Newsletter() {
           />
         </form>
         <small className="revue-form-footer block mt-2 text-xs">
-          By subscribing, you agree with Revue’s{' '}
+          By subscribing, you agree with Revue’s{" "}
           <a
             className="hover:text-blue-800 underline"
             target="_blank"
             href="https://www.getrevue.co/terms"
           >
             Terms of Service
-          </a>{' '}
-          and{' '}
+          </a>{" "}
+          and{" "}
           <a
             className="hover:text-blue-800 underline"
             target="_blank"
@@ -58,7 +58,7 @@ function Newsletter() {
         </small>
       </div>
     </div>
-  )
+  );
 }
 
-export default Newsletter
+export default Newsletter;

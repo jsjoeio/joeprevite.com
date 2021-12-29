@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        default: '#f0c090',
-        defaultBg: '#000b3b',
-        link: '#A1F090',
-        linkLight: '#c8f7bd',
+        default: '#ebcdcd',
+        defaultBg: '#141010',
+        link: '#c67171',
+        linkLight: '#cf8888',
       }
     }
   }
