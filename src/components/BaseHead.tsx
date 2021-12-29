@@ -51,13 +51,13 @@ function BaseHead(props: BaseHeadProps) {
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href={astroResolve(`../assets/favicon-32x32.png`)}
+        href={astroResolve(`../../assets/favicon-32x32.png`)}
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href={astroResolve(`../assets/favicon-16x16.png`)}
+        href={astroResolve(`../../assets/favicon-16x16.png`)}
       />
 
       {/* For Google and Android */}
@@ -65,13 +65,13 @@ function BaseHead(props: BaseHeadProps) {
         rel="icon"
         type="image/png"
         sizes="48x48"
-        href={astroResolve(`../assets/favicon-48x48.png`)}
+        href={astroResolve(`../../assets/favicon-48x48.png`)}
       />
       <link
         rel="icon"
         type="image/png"
         sizes="192x192"
-        href={astroResolve(`../assets/favicon-192x192.png`)}
+        href={astroResolve(`../../assets/favicon-192x192.png`)}
       />
 
       {/* For iPad */}
@@ -79,14 +79,14 @@ function BaseHead(props: BaseHeadProps) {
         rel="apple-touch-icon"
         type="image/png"
         sizes="167x167"
-        href={astroResolve(`../assets/favicon-167x167.png`)}
+        href={astroResolve(`../../assets/favicon-167x167.png`)}
       />
       {/* For iPhone */}
       <link
         rel="apple-touch-icon"
         type="image/png"
         sizes="180x180"
-        href={astroResolve(`../assets/favicon-180x180.png`)}
+        href={astroResolve(`../../assets/favicon-180x180.png`)}
       />
 
       {/* Global CSS */}

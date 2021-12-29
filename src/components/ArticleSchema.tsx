@@ -27,7 +27,7 @@ function ArticleSchema({
       name: `${site.name}`,
       image: {
         "@type": "ImageObject",
-        url: `${site.url}/assets/img/favicon.png`,
+        url: `${site.url}/assets/headshot.png`,
         width: 512,
         height: 512,
       },
