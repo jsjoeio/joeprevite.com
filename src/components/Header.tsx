@@ -6,7 +6,7 @@ type Props = {
 
 function Header({ isBlog }: Props) {
   return (
-    <header className="flex flex-row justify-between items-center">
+    <header className="flex flex-row justify-between items-center pt-4 pb-2">
       <a href="/" className="flex items-center py-6 hover:no-underline">
         <svg
           className="mr-3"

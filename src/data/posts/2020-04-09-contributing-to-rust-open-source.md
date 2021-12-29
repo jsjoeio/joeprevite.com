@@ -1,11 +1,11 @@
 ---
-slug: 'contributing-to-rust-open-source'
-date: '2020-04-09'
-title: 'Contributing to Rust Open Source'
-description: 'A short story about my first experience contributing to the Rust open source ecosystem.'
-tagline: 'My first experience '
+slug: "contributing-to-rust-open-source"
+date: "2020-04-09"
+title: "Contributing to Rust Open Source"
+description: "A short story about my first experience contributing to the Rust open source ecosystem."
+tagline: "My first experience "
 published: true
-tags: ['Rust', 'OSS']
+tags: ["Rust", "OSS"]
 ---
 
 In my [Ultralerning Plan](https://joeprevite.com/rust-learning-plan-chapter-1-notes), I wrote down the following as one of my progress goals:
@@ -66,7 +66,7 @@ Well, I figured the fewer the number of comments, the greater the likelihood tha
 
 After looking at three to five issues, I finally decided on [this one](https://github.com/rust-lang/rust-by-example/issues/108).
 
-![Screenshot of GitHub issue in Rust by Example repo](./issue.png)
+![Screenshot of GitHub issue in Rust by Example repo](assets/images/issue.png)
 .
 
 (Note: yes, it says closed in the image because I’m writing this blog post after having finished the issue 😄)
@@ -130,7 +130,7 @@ Even though all my suggestions could be achieved in one pull request (PR), I int
 
 I started with the easiest tasks to get the ball rolling. I ended up opening three PRs in one sitting.
 
-![screenshot of three prs merged](./merged-prs.png)
+![screenshot of three prs merged](assets/images/merged-prs.png)
 
 The last fix took more work because it was adding a completely new page to Rust by Example. I felt less-confident about this one. Instead of making small changes where I was 100% confident, I was adding new content around something I was still learning.
 

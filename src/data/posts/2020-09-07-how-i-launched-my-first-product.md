@@ -1,11 +1,11 @@
 ---
-slug: 'launching-first-product'
-date: '2020-09-07'
-title: 'How I Launched my First Product'
-description: 'The story behind launching my first product, how I did it, what I learned and tips for launching your own product.'
-tagline: 'Lessons learned and how you can launch your own'
+slug: "launching-first-product"
+date: "2020-09-07"
+title: "How I Launched my First Product"
+description: "The story behind launching my first product, how I did it, what I learned and tips for launching your own product."
+tagline: "Lessons learned and how you can launch your own"
 published: true
-tags: ['Learning']
+tags: ["Learning"]
 ---
 
 On September 4th, 2020, I launched my first product [Vim for VSCode](https://vimforvscode.com).
@@ -153,7 +153,7 @@ Anyone can launch a product, but what matters most is, do people buy it? I didn'
 
 The date and time of ConvertKit Commerce's analytics and reports is not lined up with my local time so I can't tell you how many I sold the first day, but I can share the stats between launch at midnight September 3rd and today, 11am PT September 7th.
 
-![Screenshot of sales on ConvertKit Commerce for Vim for VSCode](./vim-vscode-sales.png)
+![Screenshot of sales on ConvertKit Commerce for Vim for VSCode](assets/images/vim-vscode-sales.png)
 
 Honestly, this shocked me. I didn't realize that many people would buy it. I received a lot of positive feedback on it as well, which filled me with joy:
 

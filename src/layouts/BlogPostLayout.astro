@@ -17,7 +17,7 @@ const {title, description, date, tags, tagline, slug, content: { html }, exclude
   </head>
 
   <body>
-    <div class="max-w-2xl mx-auto">
+    <div class="max-w-xs md:max-w-2xl mx-4 md:mx-auto">
       <Header isBlog />
       <main>
         <BlogPost title={title} date={date} html={html} />

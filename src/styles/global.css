@@ -140,15 +140,16 @@ small {
 }
 
 #post li {
-  @apply mb-2.5;
+  @apply mb-2.5 ml-0 pl-0;
 }
 
 #post ul {
-  @apply list-disc ml-0 pl-0 list-inside;
+  @apply list-disc ml-4 pl-0 list-outside marker:mr-0;
 }
 
 #post p {
   @apply mb-6 leading-7;
+  overflow-wrap: break-word;
 }
 
 #post blockquote {
