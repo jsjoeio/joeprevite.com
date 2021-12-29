@@ -1,4 +1,4 @@
-// import getSharingImage from "@jlengstorf/get-share-image";
+import getShareImageModule from "@jlengstorf/get-share-image";
 import ArticleSchema from "./ArticleSchema";
 import site from "../data/site";
 
@@ -21,21 +21,20 @@ function BaseHead(props: BaseHeadProps) {
     articleSchema,
   } = props;
 
-  // const openGraphImageURL = getSharingImage({
-  //   title,
-  //   tagline,
-  //   taglineColor: "#000",
-  //   titleColor: "#000",
-  //   titleExtraConfig: "_bold",
-  //   titleFont: "Roboto",
-  //   taglineFont: "Roboto",
-  //   cloudName: site.cloudinaryCloudName,
-  //   imagePublicID: site.cloudinaryImagePublicID,
-  // });
-  //
-
-  // TODO@jsjoeio fix this
-  const openGraphImageURL = "";
+  // @ts-ignore This is a workaround
+  // See: https://github.com/jlengstorf/get-share-image/issues/17#issue-736531977
+  const getShareImage = getShareImageModule.default;
+  const openGraphImageURL = getShareImage({
+    title,
+    tagline,
+    taglineColor: "#000",
+    titleColor: "#000",
+    titleExtraConfig: "_bold",
+    titleFont: "Roboto",
+    taglineFont: "Roboto",
+    cloudName: site.cloudinaryCloudName,
+    imagePublicID: site.cloudinaryImagePublicID,
+  });
 
   return (
     <>
