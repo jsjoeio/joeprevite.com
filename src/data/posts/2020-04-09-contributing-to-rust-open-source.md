@@ -14,7 +14,7 @@ In my [Ultralerning Plan](https://joeprevite.com/rust-learning-plan-chapter-1-no
 
 As a new [Rustacean](https://en.wiktionary.org/wiki/Rustacean), I knew it would be best to look for something beginner-friendly such as finding a small bug to fix or contributing to documentation. I am happy to say I found something within my abilities and achieved my goal!
 
-![Borat: "Great success!"](assets/images/great-success.png)
+![Borat: "Great success!"](../assets/images/great-success.png)
 
 In this article, I share:
 
@@ -39,7 +39,7 @@ This added a fence around the number of possibilities. It made it easier to get 
 
 I headed over to [GitHub’s issue search](https://github.com/issues) and said, “Show me open issues that are within the `rust-lang` org that have the label ‘E-easy’.” [Here](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3Arust-lang+archived%3Afalse+label%3AE-easy+) is what it gave me:
 
-![Screenshot of GitHub Rust issues labeled E-easy](assets/images/search-results.png)
+![Screenshot of GitHub Rust issues labeled E-easy](../assets/images/search-results.png)
 
 Beautiful! Less than 100 issues is something I could actually sit down and sift through.
 
@@ -66,7 +66,7 @@ Well, I figured the fewer the number of comments, the greater the likelihood tha
 
 After looking at three to five issues, I finally decided on [this one](https://github.com/rust-lang/rust-by-example/issues/108).
 
-![Screenshot of GitHub issue in Rust by Example repo](assets/images/issue.png)
+![Screenshot of GitHub issue in Rust by Example repo](../assets/images/issue.png)
 .
 
 (Note: yes, it says closed in the image because I’m writing this blog post after having finished the issue 😄)
@@ -109,7 +109,7 @@ I knew then my next task was to audit the current situation and see if everythin
 
 I posted a summary as a comment on the issue:
 
-![Screenrecording of audit summary on GitHub issue](assets/images/audit.gif)
+![Screenrecording of audit summary on GitHub issue](../assets/images/audit.gif)
 
 My goal with the audit was to make it:
 
@@ -130,7 +130,7 @@ Even though all my suggestions could be achieved in one pull request (PR), I int
 
 I started with the easiest tasks to get the ball rolling. I ended up opening three PRs in one sitting.
 
-![screenshot of three prs merged](assets/images/merged-prs.png)
+![screenshot of three prs merged](../assets/images/merged-prs.png)
 
 The last fix took more work because it was adding a completely new page to Rust by Example. I felt less-confident about this one. Instead of making small changes where I was 100% confident, I was adding new content around something I was still learning.
 

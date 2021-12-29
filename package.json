@@ -5,7 +5,8 @@
   "scripts": {
     "start": "netlify dev",
     "dev": "astro dev",
-    "build": "astro build"
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "devDependencies": {
     "@netlify/functions": "^0.10.0",

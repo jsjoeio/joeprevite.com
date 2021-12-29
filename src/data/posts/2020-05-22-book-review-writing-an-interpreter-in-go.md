@@ -1,14 +1,14 @@
 ---
-slug: 'book-review-writing-an-interpreter-in-go'
-date: '2020-05-22'
-title: 'Book Review: Writing an Interpreter in Go'
-description: 'My notes and thoughts on Writing an Interpreter in Go by Thorsten Ball'
-tagline: 'My notes and thoughts'
+slug: "book-review-writing-an-interpreter-in-go"
+date: "2020-05-22"
+title: "Book Review: Writing an Interpreter in Go"
+description: "My notes and thoughts on Writing an Interpreter in Go by Thorsten Ball"
+tagline: "My notes and thoughts"
 published: true
-tags: ['Book', 'Go']
+tags: ["Book", "Go"]
 ---
 
-![Writing an interpreter in go paperback on wood](assets/images/book_cover.jpg)
+![Writing an interpreter in go paperback on wood](../assets/images/book_cover.jpg)
 
 When I started my new job, I was told that I would be the "Programming Languages" person. I knew I wanted to learn more not only about specific programming languages like Rust and Reason, but understand them on a higher level.
 
@@ -109,7 +109,7 @@ This was an aha moment for me. The compiler and the interpreter are key. I had n
 There is probably more to it than I know, but I find that this data structure has a different name depending on which language in which you're writing it:
 
 ```javascript
-let previte = { name: 'Joe', age: 26 }
+let previte = { name: "Joe", age: 26 };
 ```
 
 In the book (which uses Go), the author refers to it as a hash. In JavaScript, I would call this an object. In Python, one might call it a dictionary. Why can't we all decide on one name and use it across all languages? If someone knows the answer to this, please fill me in!
@@ -573,8 +573,8 @@ These are part of the language and have access to the inner workings. For exampl
 Thorsten explains that we can't do this because it would prevent this:
 
 ```javascript
-let key = 'name'
-let hash = { key: 'Monkey' }
+let key = "name";
+let hash = { key: "Monkey" };
 ```
 
 > In order to allow this, we need to allow any expression as a key and any expression as a value in a hash literal.

@@ -1,14 +1,14 @@
 ---
-slug: 'verify-commits-on-github'
-date: '2021-03-01'
-title: 'How to Verify Your Commits on GitHub'
-description: 'This articles walks you through step-by-step verifying your commits for GitHub.'
-tagline: 'A step-by-step walkthrough'
+slug: "verify-commits-on-github"
+date: "2021-03-01"
+title: "How to Verify Your Commits on GitHub"
+description: "This articles walks you through step-by-step verifying your commits for GitHub."
+tagline: "A step-by-step walkthrough"
 published: true
-tags: ['GitHub']
+tags: ["GitHub"]
 ---
 
-![verified commit badge on GitHub](assets/images/verified.png)
+![verified commit badge on GitHub](../assets/images/verified.png)
 
 If you've ever needed to verify your commits, either for an open source project, or your employer, but not sure how then this is the guide for you!
 

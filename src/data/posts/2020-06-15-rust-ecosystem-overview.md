@@ -1,14 +1,14 @@
 ---
-slug: 'rust-lang-ecosystem'
-date: '2020-06-15'
-title: 'Understanding the Rust Ecosystem'
-description: 'An overview of the Rust language ecosystem along with resources and articles to help you better understand it.'
-tagline: 'A overview of the programming language'
+slug: "rust-lang-ecosystem"
+date: "2020-06-15"
+title: "Understanding the Rust Ecosystem"
+description: "An overview of the Rust language ecosystem along with resources and articles to help you better understand it."
+tagline: "A overview of the programming language"
 published: true
-tags: ['Rust']
+tags: ["Rust"]
 ---
 
-![Graph representing all the facets made up in a programming language ecosystem.](assets/images/prog-lang-ecosystem.png)
+![Graph representing all the facets made up in a programming language ecosystem.](../assets/images/prog-lang-ecosystem.png)
 
 Rust, a systems-programming language, which prides itself on being Stack Overflow’s “[most loved language for five years in row](https://insights.stackoverflow.com/survey/2020)” and GitHub’s [second fastest growing](https://octoverse.github.com/) (235% 2018-2019) has gained popularity both at companies like [Amazon, FB, Discord](https://www.businessinsider.com/what-is-rust-programming-language-amazon-facebook-discord-love-it-2020-6?r=US&IR=T) and externally within the programming community.
 

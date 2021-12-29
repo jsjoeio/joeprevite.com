@@ -1,11 +1,11 @@
 ---
-slug: 'learn-quickly'
-date: '2020-07-09'
-title: 'How to Learn Quickly'
-description: 'In the post, I show you how to learn anything quickly using the Fast Framework.'
-tagline: 'Using the Fast Framework'
+slug: "learn-quickly"
+date: "2020-07-09"
+title: "How to Learn Quickly"
+description: "In the post, I show you how to learn anything quickly using the Fast Framework."
+tagline: "Using the Fast Framework"
 published: true
-tags: ['Miscellaneous']
+tags: ["Miscellaneous"]
 ---
 
 A few months back, I set out a goal to learn TypeScript deeply in 3 months and [I did it](https://twitter.com/jsjoeio/status/1250490760362774529). Since then, others have asked how they can do the same. The outcome is a result of using something that I like to call the **Fast Framework**. This guide will teach you how you can use it to learn anything quickly.
@@ -149,7 +149,7 @@ In this case with TypeScript, maybe you say, "I'm going to write one line of Typ
 
 ### Share with Others
 
-![Yoda quote, "Always pass on what you have learned."](assets/images/yoda-always-pass-on-what-you-have-learned.png)
+![Yoda quote, "Always pass on what you have learned."](../assets/images/yoda-always-pass-on-what-you-have-learned.png)
 
 One of the most important parts of staying on track is sharing with others and [Learning in Public](https://www.swyx.io/writing/learn-in-public/). There are various mediums you can choose from for sharing:
 

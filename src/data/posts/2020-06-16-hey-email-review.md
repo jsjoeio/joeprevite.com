@@ -1,11 +1,11 @@
 ---
-slug: 'hey-email-review'
-date: '2020-06-16'
-title: 'HEY Email Review'
-description: 'My first impressions and review of the HEY email platform by the folks at Basecamp.'
-tagline: 'First impressions and thoughts'
+slug: "hey-email-review"
+date: "2020-06-16"
+title: "HEY Email Review"
+description: "My first impressions and review of the HEY email platform by the folks at Basecamp."
+tagline: "First impressions and thoughts"
 published: true
-tags: ['Productivity']
+tags: ["Productivity"]
 ---
 
 My friend Martin [(@spindriftboi](https://twitter.com/spindriftboi)) shared an invite code with me a few days ago for [HEY email](https://hey.com/). I quickly joined (sad I didn't get joe@hey.com) and started testing it out.
@@ -52,7 +52,7 @@ I don't even think I need to explain any of them except maybe the last one, whic
 
 ### Keyboard Shortcuts
 
-![Screen recording of HEY keyboard shortcuts in action](assets/images/hey-keyboard.gif)
+![Screen recording of HEY keyboard shortcuts in action](../assets/images/hey-keyboard.gif)
 
 More and more apps these days are prioritizing keyboard shortcuts and HEY is one of them. They teach you them from the start, but they also have a keyboard menu in case you forget them. This alone improves your workflow by at least 10% if not more.
 
