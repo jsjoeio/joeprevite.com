@@ -29,14 +29,14 @@ function BaseHead(props: BaseHeadProps) {
   const openGraphImageURL = getShareImage({
     title,
     tagline,
-    taglineColor: "#000",
-    titleColor: "#000",
     titleExtraConfig: "_bold",
     titleFont: "Roboto",
     taglineFont: "Roboto",
     cloudName: site.cloudinaryCloudName,
     imagePublicID: site.cloudinaryImagePublicID,
   });
+
+  console.log(openGraphImageURL);
 
   return (
     <>
