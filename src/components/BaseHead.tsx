@@ -32,11 +32,10 @@ function BaseHead(props: BaseHeadProps) {
     titleExtraConfig: "_bold",
     titleFont: "Roboto",
     taglineFont: "Roboto",
+    textColor: 'ebcdcd',
     cloudName: site.cloudinaryCloudName,
     imagePublicID: site.cloudinaryImagePublicID,
   });
-
-  console.log(openGraphImageURL);
 
   return (
     <>

@@ -21,5 +21,5 @@ export default {
   // Used for getSharingImage
   // Open Graph images
   cloudinaryCloudName: `jsjoeio`,
-  cloudinaryImagePublicID: `jp-blog-post-card`,
+  cloudinaryImagePublicID: `joeprevite-og-image`,
 };
