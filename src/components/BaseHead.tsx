@@ -102,8 +102,8 @@ function BaseHead(props: BaseHeadProps) {
       <link
         rel="alternate"
         type="application/rss+xml"
-        title={`${site.name} Blog`}
-        href={`${site.url}/feed/blog.xml`}
+        title={`${site.name}'s Blog`}
+        href={`${site.url}/rss.xml`}
       />
       {/* Canonical */}
       <link rel="canonical" href={canonicalURL} />

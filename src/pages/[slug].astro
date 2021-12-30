@@ -1,12 +1,13 @@
 ---
 import BlogPostLayout from '../layouts/BlogPostLayout.astro';
+import site from '../data/site.ts'
 // collection
 // import au/thorData from '../data/authors.json';
 // Got this from here: https://github.com/Navillus-BV/sarahsu-co/blob/main/src/pages/%5Bslug%5D.astro
-export async function getStaticPaths() {
-  const allPages = Astro.fetchContent('../data/posts/*.md')
+export async function getStaticPaths({rss}) {
+  const allPosts = Astro.fetchContent('../data/posts/*.md')
 
-  const paths = allPages.map(( { title, slug, content, date, description, tagline, tags }) => {
+  const paths = allPosts.map(( { title, slug, content, date, description, tagline, tags }) => {
     return {
       params: {
         slug,
@@ -24,6 +25,21 @@ export async function getStaticPaths() {
       }
     }
   })
+  
+  // Generate an RSS feed from this collection
+  rss({
+    // The RSS Feed title, description, and custom metadata.
+    title: `${site.name}'s Blog'`,
+    description: site.description,
+    customData: `<language>en-us</language>`,
+    // The list of items for your RSS feed, sorted.
+    items: allPosts.map(post => ({
+      title: post.title,
+      description: post.description,
+      link: `${site.url}/${post.url}`,
+      pubDate: post.date,
+    })),
+  }); 
 
   return paths.filter(({ params }) => !!params.slug)
 }
