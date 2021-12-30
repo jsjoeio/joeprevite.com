@@ -1,34 +1,63 @@
 # joeprevite.com
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-32-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2d214a83-1fea-4154-bb6a-af97854ecc1a/deploy-status)](https://app.netlify.com/sites/keen-roentgen-cafcb7/deploys)
 
-Joe's personal website running on Gatsby, React, and Node.js.
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-## Features
+[![All Contributors](https://img.shields.io/badge/all_contributors-32-orange.svg?style=flat-square)](#contributors-)
 
-- Posts in Markdown
-- Dark mode
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-## Contributing
+If you couldn't tell from the GitHub repo page, this starter is built off another starter called [`astro-minimal-starter`](https://github.com/jaydanurwin/astro-minimal-starter).
 
-If you see any typos or formatting errors in a post, or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!
+I decided to make my own starter because I wanted to make a couple changes to the base template. These are the changes I've made:
 
-## Acknowledgements
+- minor SEO adjustments
+- store post/page data in `src/data/posts`
+- add Netlify CMS
+- add Netlify Redirects
+- add Netlify Redirects
+- add Tailwind
+- write components in React & TypeScript
 
-- egghead - [Gatsby Starter Egghead Blog](https://github.com/eggheadio/gatsby-starter-egghead-blog)
+### Structure
 
-## Author
+One thing to note about Pages vs Posts. All posts (i.e. blog posts) live in `/src/data/posts` and are Markdown files. Pages live under `/src/pages` and can be Markdown or Astro components.
 
-- [Joe Previte](https://joeprevite.com)
+In the past, I've had some pages live next to blog posts, but I find that more confusing from a maintainence perspective.
 
-## License
+## Get Started
 
-This project is open source and available under the [MIT License](LICENSE).
+# Install Dependencies
+
+```shell
+yarn
+```
+
+# Run Site locally
+
+```shell
+yarn start
+```
+
+To access Netlify CMS, you need to run the proxy server in a separate terminal:
+
+```shell
+npx netlify-cms-proxy-server
+```
+
+See [here](https://prince.dev/astro-netlify-cms) for more information.
+
+# Build Site
+
+```shell
+yarn build
+```
+
+Navigate to `src/data/site.ts` and edit to match your site's information.
+
+Start writing new blog posts in Markdown at `src/data/posts/`.
 
 ## Contributors ✨
 
@@ -84,6 +113,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

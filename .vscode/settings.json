@@ -1,7 +1,0 @@
-{
-  "zenMode.fullScreen": false,
-  "editor.minimap.enabled": false,
-  "files.autoSave": "afterDelay",
-  "prettier.singleQuote": true,
-  "editor.formatOnSave": true
-}

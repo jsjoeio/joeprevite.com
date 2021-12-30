@@ -1,0 +1,40 @@
+---
+import BlogPostLayout from '../layouts/BlogPostLayout.astro';
+// collection
+// import au/thorData from '../data/authors.json';
+// Got this from here: https://github.com/Navillus-BV/sarahsu-co/blob/main/src/pages/%5Bslug%5D.astro
+export async function getStaticPaths() {
+  const allPages = Astro.fetchContent('../data/posts/*.md')
+
+  const paths = allPages.map(( { title, slug, content, date, description, tagline, tags }) => {
+    return {
+      params: {
+        slug,
+      },
+      props: {
+        content: {
+          title,
+          slug,
+          content,
+          description,
+          date,
+          tagline,
+          tags
+        }
+      }
+    }
+  })
+
+  return paths.filter(({ params }) => !!params.slug)
+}
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+
+const { content } = Astro.props;
+---
+<BlogPostLayout content={content} />
+
+<!-- I need to have the Blog PostLayout here instead of in the markdown files -->

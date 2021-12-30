@@ -1,0 +1,30 @@
+---
+import BaseHead from '../components/BaseHead.tsx';
+import Footer from '../components/Footer.tsx';
+import Newsletter from '../components/Newsletter.tsx';
+import Header from '../components/Header.tsx';
+import Spacer from '../components/Spacer.tsx';
+
+const {title, description, canonicalURL, excludeNewsletter, tagline } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} canonicalURL={canonicalURL} tagline={tagline} astroResolve={Astro.resolve}/>
+  </head>
+  <body>
+      <div class="max-w-xs md:max-w-2xl mx-4 md:mx-auto">
+        <Header />
+        <main>
+            <slot/>
+        </main>
+
+        {!excludeNewsletter && <Newsletter />}
+        <Spacer />
+        
+        <Footer />
+        
+        <Spacer />
+      </div>
+  </body>
+</html>
+

@@ -1,9 +1,21 @@
 [build]
   command = "yarn build"
-  functions = "functions-build"
-  publish = "public"
-  # To ignore dependabot branches
-  ignore = "git log -1 --pretty=%B | grep dependabot"
+  publish = "dist"
+  
+[dev]
+  command = "yarn dev"
+  framework = "#custom"
+  port = 8888
+  targetPort = 3000
+  autoLaunch = false
+
+[functions]
+  directory = "functions/"
 
 [[plugins]]
-package = "netlify-plugin-gatsby-cache"
+  package = "netlify-plugin-no-more-404"
+
+  [plugins.inputs]
+  
+  # change this key to a new one any time you need to restart from scratch
+  cacheKey = "12_22_2021-cacheKey"

@@ -1,0 +1,38 @@
+---
+import Header from '../components/Header.tsx';
+import Spacer from '../components/Spacer.tsx';
+import Footer from '../components/Footer.tsx';
+import BaseHead from '../components/BaseHead.tsx';
+import BlogPost from '../components/BlogPost.tsx';
+import Newsletter from '../components/Newsletter.tsx';
+
+const {content} = Astro.props;
+const {title, description, date, tags, tagline, slug, content: { html }, excludeNewsletter = false} = content;
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} date={date} canonicalURL={Astro.request.canonicalURL} articleSchema astroResolve={Astro.resolve} />
+    <link rel="stylesheet" href={Astro.resolve('../styles/prism-dracula.css')}>
+  </head>
+
+  <body>
+    <div class="max-w-xs md:max-w-2xl mx-4 md:mx-auto">
+      <Header isBlog />
+      <main>
+        <BlogPost title={title} date={date} html={html} />
+      </main>
+
+      <Spacer />
+      <Spacer />
+      {!excludeNewsletter && <Newsletter />}
+      <Spacer />
+          
+      <Footer />
+      
+      <Spacer />
+          
+    </div>
+  </body>
+</html>
+

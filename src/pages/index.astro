@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import site from '../data/site';
+import Spacer from '../components/Spacer.tsx'
+
+const allPosts = Astro.fetchContent('../data/posts/*.md')
+const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+const lastFivePosts = sortedPosts.slice(0,5)
+
+const description = site.description;
+const tagline = site.tagline;
+
+const featuredArticles = [
+  {
+    title: "How I Launched my First Product",
+    url: `/launching-first-product`,
+  },
+  {
+    title: "How to Learn Quickly",
+    url: `/learn-quickly`,
+  },
+  {
+    title: "Understanding the Rust Ecosystem",
+    url: `/rust-lang-ecosystem`,
+  }
+];
+// How to use the Netlify Functions
+// Here's an example which calls our helloWorld function
+// const localURL = "https://netlify--jsjoeio.jsjoeio.coder.app"
+// const prodURL = `${site.url}`
+// const url = import.meta.env.NETLIFY ? prodURL : localURL
+// const response = await fetch(`${url}/.netlify/functions/helloWorld`)
+// console.log(await response.json())
+// Gives you { message: 'Goodbye World' }
+---
+<BaseLayout description={description} canonicalURL={Astro.request.canonicalURL.href} tagline={tagline}>
+
+  <section class="w-100">
+    <p class="text-3xl font-bold">Why hello there</p>
+    <p class="mb-0">My name's Joe and I like getting people excited about webdev, indie hacking and web3.</p>
+  </section>
+  
+  <Spacer />
+  
+  <section>
+    <h2 class="text-lg font-bold">Featured Articles</h2>
+    <p class="mb-2">Articles you should check out first:</p>
+    {featuredArticles.map(article => (
+      <a href={article.url}>
+        <h3 class="font-semibold mb-1">{article.title}</h3>
+      </a>
+    ))}
+  </section>
+
+  <Spacer/>
+
+  <section>
+    <h2 class="text-lg font-bold">Latest Posts</h2>
+    <p class="mb-2">Here are some things I’ve written lately:</p>
+    {lastFivePosts.map(article => (
+      <a href={`${article.slug}`}>
+        <h3 class="font-semibold mb-1">{article.title}</h3>
+      </a>
+    ))}
+    <a class="block mt-2" href="/blog">See all posts</a>
+    
+  </section>
+
+  <Spacer />
+</BaseLayout>
