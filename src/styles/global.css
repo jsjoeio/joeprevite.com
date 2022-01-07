@@ -144,7 +144,7 @@ small {
 }
 
 #post ul {
-  @apply list-disc ml-4 pl-0 list-outside marker:mr-0;
+  @apply list-disc ml-4 my-4 pl-0 list-outside marker:mr-0;
 }
 
 #post p {
