@@ -10,6 +10,13 @@ export interface BlogPostProps {
 function BlogPost(props: BlogPostProps) {
   const { title, html, date } = props;
   const machineFriendlyDate = publishDateToMachineFriendlyDate(date);
+  // Source: https://stackoverflow.com/a/60121079/3015595
+  const friendlyDate = new Date(date)
+    .toLocaleString()
+    .split(/\D/)
+    .slice(0, 3)
+    .map((num) => num.padStart(2, "0"))
+    .join("/");
 
   return (
     <article id="post" className="mx-auto my-8">
@@ -17,7 +24,7 @@ function BlogPost(props: BlogPostProps) {
       <p className="font-xs">
         Last updated:{" "}
         <time className="font-light" dateTime={machineFriendlyDate}>
-          {date}
+          {friendlyDate}
         </time>
       </p>
       <Spacer />
