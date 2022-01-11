@@ -18,6 +18,8 @@ These are my ever-growing notes and learnings that I wish had been easier to fin
 
 ## How to 
 
+How to do X in CodeMirror 6:
+
 ### Use Vim
 
 CodeMirror 5 had a vim keymap I believe. Recently, the team at Replit released a vim extension which ported over the old behavior. See [this repo](https://github.com/replit/codemirror-vim).
