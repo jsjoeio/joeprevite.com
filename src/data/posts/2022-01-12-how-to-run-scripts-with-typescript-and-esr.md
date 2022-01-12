@@ -18,7 +18,7 @@ In 2mins or less, lets show you exactly how to use it:
 
 1. `yarn init -y` - create a new project
 2. `yarn add -D esbuild esbuild-runner` - add dependencies
-3. `echo "console.log('hello world')" > hello-world.ts` - creat a script
+3. `echo "console.log('hello world')" > hello-world.ts` - create a script
 4. `yarn esr hello-world.ts` - run your script
 
 After that, you should see the following output in your terminal:
