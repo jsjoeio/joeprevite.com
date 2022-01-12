@@ -12,7 +12,7 @@ const {title, description, date, tags, tagline, slug, content: { html }, exclude
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} date={date} canonicalURL={Astro.request.canonicalURL} articleSchema astroResolve={Astro.resolve} />
+    <BaseHead title={title} tagline={tagline} description={description} date={date} canonicalURL={Astro.request.canonicalURL} articleSchema astroResolve={Astro.resolve} />
     <link rel="stylesheet" href={Astro.resolve('../styles/prism-dracula.css')}>
   </head>
 
