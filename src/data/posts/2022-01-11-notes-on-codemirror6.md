@@ -38,9 +38,41 @@ There are two main ways to do this. The first is using a package called `@uiw/re
 
 The other way is using [Sandpack](https://sandpack.codesandbox.io/), which uses CodeMirror 6 under the hood. It's not feature-complete but it's in active development and the team is very responsive to feedback.
 
-### Set cursor position
+### Set cursor position and update text in editor
 
-Still working on figuring this one out. Something related to `EditorSelection.cursor` but I think that only works when you're first initializing the editor.
+There are two ways you can do this. You can either create a new state or dispatch a transaction. The latter will preserve history (i.e. hitting the undo shortcut will revert the text) will the former will not.
+
+#### Option 1
+
+```typescript
+let newState = EditorState.create({
+  doc: "hello world!!!",
+  // Updates cursor location
+  selection: EditorSelection.cursor(5),
+});
+
+
+
+view.setState(newState);
+```
+
+#### Option 2
+
+```typescript
+const transaction = view.state.update({
+  changes: {
+    from: 0,
+    to: view.state.doc.length,
+    insert: "my new text",
+  },
+  // Updates cursor location
+  selection: { anchor: 3 },
+});
+
+
+
+view.dispatch(transaction);
+```
 
 ## Summary
 
