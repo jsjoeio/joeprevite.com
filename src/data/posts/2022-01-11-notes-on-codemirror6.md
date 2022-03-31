@@ -62,7 +62,7 @@ view.setState(newState);
 const transaction = view.state.update({
   changes: {
     from: 0,
-    to: view.state.doc.length,
+    to: view.current.state.doc.length,
     insert: "my new text",
   },
   // Updates cursor location
