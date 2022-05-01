@@ -1,11 +1,13 @@
 ---
-slug: "windows-like-macos"
-date: "2021-10-10"
-title: "Make Windows Like macOS"
-description: "A guide to walk you through setting up keyboard shortcuts and applications to feel similar on Windows as they do on macOS."
-tagline: "Switching between operating systems with ease"
+title: Make Windows Like macOS
+description: A guide to walk you through setting up keyboard shortcuts and
+  applications to feel similar on Windows as they do on macOS.
+slug: windows-like-macos
+tagline: Switching between operating systems with ease
+date: 2021-10-10
 published: true
-tags: ["Miscellaneous"]
+tags:
+  - Miscellaneous
 ---
 
 I've been using macOS as my main driver for the past 10 years or so. Last month, I bought a PC.
@@ -25,7 +27,7 @@ Here are a list of applications on macOS and their equivalent on Windows. You'll
 
 - [Rocket](http://www.get-emoji.com/rocket/) -> Windows Emoji Picker (built-in with Windows 10)
   - used to quickly type emojis
-- [Alfred](https://www.alfredapp.com/) -> Windows Shortcut Menu (built-in with Windows 10) \*not sure if this is the correct name
+- [Alfred](https://www.alfredapp.com/) -> PowerToys Run
   - used to quickly open apps, or change computer state (sleep, restart, shutdown)
 - macOS Screenshot Tool -> Windows Snipping Tool (built-in)
   - used to take screenshots
