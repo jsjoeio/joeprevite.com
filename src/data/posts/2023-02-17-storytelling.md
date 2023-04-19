@@ -3,7 +3,7 @@ title: Storytelling
 description: My notes on Storytelling and what I've learned
 slug: storytelling
 tagline: What I've learned so far
-date: 2023-02-17T21:12:58.691Z
+date: 2023-04-18T21:12:58.691Z
 tags:
   - Miscellaenous
 ---
@@ -19,25 +19,25 @@ M﻿y coach and friend [Roger](https://twitter.com/rogertippingII) helped me bre
 
 1. setup
 
-   1. add some foreshadowing
+   * add some foreshadowing
 2. make interactions with person interesting
 
-   1. need something to be interesting before we find out he is a millionaire 
-   2. connect with person first
+   * need something to be interesting before we find out he is a millionaire 
+   * connect with person first
 3. reveal
 
-   1. success
-   2. “now what can i learn from this?”
+   * success
+   * “now what can i learn from this?”
 4. transition from obvious → less obvious ephiphany
-       1. what i learned about \[i
-   nsert topic]
-       2. the real lesson about life
+
+   * what i learned about \[insert topic]
+   * the real lesson about life
 5. transition from what i learned → what audience can learn
 
-   1. “let them share your epiphany” 
-   2. how can they apply it themselves
-   3. connect to them 
-   4. this is the meta (break fourth wall)
+   * “let them share your epiphany” 
+   * how can they apply it themselves
+   * connect to them 
+   * this is the meta (break fourth wall)
 
 ## Summary from Julian's Tweet Thread
 
@@ -53,19 +53,19 @@ Breaking it into individual, you need to be able to:
 
 1. identify stories worth-telling:
 
-   1. moments that are either formative or painful
-   2. moments of triumph or cringe 
+   * moments that are either formative or painful
+   * moments of triumph or cringe 
 2. be charismatic
 
-   1. charisma = confidence + joy + love
+   * charisma = confidence + joy + love
 3. practice public solitude 
 
-   1. speak as if you’re alone in the room
-   2. research Konstantin Stanislavski
+   * speak as if you’re alone in the room
+   * research Konstantin Stanislavski
 4. blow your own mind
 
-   1. relive feelings before speaking
-   2. see Jason Silva as an example
+   * relive feelings before speaking
+   * see Jason Silva as an example
 
 ## Summary from Sam Parr's Talk
 
@@ -87,7 +87,5 @@ S﻿am gave a great [20-min talk at some conference](https://youtu.be/TqTl_FS3hf
     * Story = this guy and his son doing millions with newsletter
     * Figure out headline
     * Figure out where this will be popular
-
-
 
 I﻿ hope to update this as I learn more!
