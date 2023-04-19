@@ -39,7 +39,7 @@ M﻿y coach and friend [Roger](https://twitter.com/rogertippingII) helped me bre
    3. connect to them 
    4. this is the meta (break fourth wall)
 
-## Summary from Julian's Tweet Thread 
+## Summary from Julian's Tweet Thread
 
 [J﻿ulian](https://twitter.com/Julian) wrote a wonderful thread on storytelling [here](https://twitter.com/Julian/status/1563588259942264832). This is my summary:
 
@@ -66,5 +66,28 @@ Breaking it into individual, you need to be able to:
 
    1. relive feelings before speaking
    2. see Jason Silva as an example
+
+## Summary from Sam Parr's Talk
+
+S﻿am gave a great [20-min talk at some conference](https://youtu.be/TqTl_FS3hf0?t=110). Here are my notes:
+
+* Start with **Distribution**
+
+  * Who do I want to reach and where are they?
+  * What medium are they going to be coming from?
+
+    * Search, Facebook, Twitter, etc.
+* Figure out **The Headline**
+* Finally, *What’s the Story?*
+
+  * What’s the emotion I want them to feel?
+* Example: guy from Missouri doing millions with a newsletter
+
+  * * Blew his mind → Emotion = shock
+    * Story = this guy and his son doing millions with newsletter
+    * Figure out headline
+    * Figure out where this will be popular
+
+
 
 I﻿ hope to update this as I learn more!
