@@ -43,7 +43,7 @@ Finally, my friend Brent responded to my tweet with a suggestion that covered ev
 This 4-min video. This explains the exact problem I was having and explains how to solve it in OBS using a combination of filters. It’s a must-watch if you’re facing this problem.
 
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/o5q2y5r5MOk](https://www.youtube.com/embed/o5q2y5r5MOk)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[L﻿ink to video](https://www.youtube.com/watch?v=o5q2y5r5MOk)
 
 
 
