@@ -9,7 +9,7 @@ tags:
 ---
 ## Background
 
-The other day, I was talking to a coworker about microphones. “Yeah, I’ve had this one for a while but I don’t -*love* it.” 
+The other day, I was talking to a coworker about microphones. “Yeah, I’ve had this one for a while but I don’t *love* it.” 
 
 
 
