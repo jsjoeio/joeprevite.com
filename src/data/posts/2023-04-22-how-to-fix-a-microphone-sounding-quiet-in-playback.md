@@ -9,13 +9,9 @@ tags:
 ---
 ## Background
 
-The other day, I was talking to a coworker about microphones. “Yeah, I’ve had this one for a while but I don’t -*love* it.” 
-
-
+The other day, I was talking to a coworker about microphones. “Yeah, I’ve had this one for a while but I don’t *love* it.” 
 
 > “Dude, you should get the setup I have. I knew this guy from college who had a podcast and was an audio engineer. I said to him, ‘I’ll pay you $100 to hop on a call and help me get the best setup for podcasting.” 
-
-
 
 So I reached out to his friend — [Sage Goodwin](https://twitter.com/UplinkPodcast) — and asked if he still recommended the same setup and the answer was yes. So I ordered it a couple weeks later.
 
