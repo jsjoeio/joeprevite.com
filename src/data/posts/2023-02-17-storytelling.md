@@ -18,30 +18,30 @@ Here is what I've learned so far:
 
 My coach and friend [Roger](https://twitter.com/rogertippingII) helped me breakdown the framework:
 
-1. Setup
-   - Add some foreshadowing.
+### 1. Setup
+- Add some foreshadowing.
 
-2. Make interactions with the person interesting
-   - Need something to be interesting before we find out he is a millionaire.
-   - Connect with the person first.
+### 2. Make interactions with the person interesting
+- Need something to be interesting before we find out he is a millionaire.
+- Connect with the person first.
 
-3. Reveal
-   - Success.
-   - "Now what can I learn from this?"
+### 3. Reveal
+- Success.
+- "Now what can I learn from this?"
 
-4. Transition from obvious → less obvious epiphany
-   - What I learned about \[insert topic].
-   - The real lesson about life.
+### 4. Transition from obvious → less obvious epiphany
+- What I learned about [insert topic].
+- The real lesson about life.
 
-5. Transition from what I learned → what the audience can learn
-   - "Let them share your epiphany."
-   - How can they apply it themselves?
-   - Connect to them.
-   - This is the meta (break the fourth wall).
+### 5. Transition from what I learned → what the audience can learn
+- "Let them share your epiphany."
+- How can they apply it themselves?
+- Connect to them.
+- This is the meta (break the fourth wall).
 
 ## Summary from Julian's Tweet Thread
 
-[J﻿ulian](https://twitter.com/Julian) wrote a wonderful thread on storytelling [here](https://twitter.com/Julian/status/1563588259942264832). This is my summary:
+[Julian](https://twitter.com/Julian) wrote a wonderful thread on storytelling [here](https://twitter.com/Julian/status/1563588259942264832). This is my summary:
 
 The **Art of Storytelling** is to:
 
@@ -51,39 +51,37 @@ The **Art of Storytelling** is to:
 
 Breaking it into individual steps, you need to be able to:
 
-1. Identify stories worth telling:
-   - Moments that are either formative or painful.
-   - Moments of triumph or cringe.
+### 1. Identify stories worth telling:
+- Moments that are either formative or painful.
+- Moments of triumph or cringe.
 
-2. Be charismatic:
-   - Charisma = confidence + joy + love.
+### 2. Be charismatic:
+- Charisma = confidence + joy + love.
 
-3. Practice public solitude:
-   - Speak as if you’re alone in the room.
-   - Research Konstantin Stanislavski.
+### 3. Practice public solitude:
+- Speak as if you’re alone in the room.
+- Research Konstantin Stanislavski.
 
-4. Blow your own mind:
-   - Relive feelings before speaking.
-   - See Jason Silva as an example.
+### 4. Blow your own mind:
+- Relive feelings before speaking.
+- See Jason Silva as an example.
 
 ## Summary from Sam Parr's Talk
 
-S﻿am gave a great [20-min talk at some conference](https://youtu.be/TqTl_FS3hf0?t=110). Here are my notes:
+Sam gave a great [20-min talk at some conference](https://youtu.be/TqTl_FS3hf0?t=110). Here are my notes:
 
 - Start with **Distribution**:
   - Who do I want to reach and where are they?
   - What medium are they going to be coming from?
     - Search, Facebook, Twitter, etc.
-
 - Figure out **The Headline**.
-
 - Finally, *What’s the Story?*:
   - What’s the emotion I want them to feel?
 
 Example: A guy from Missouri doing millions with a newsletter.
-  - Blew his mind → Emotion = shock.
-  - Story = this guy and his son doing millions with a newsletter.
-  - Figure out the headline.
-  - Figure out where this will be popular.
+- Blew his mind → Emotion = shock.
+- Story = this guy and his son doing millions with a newsletter.
+- Figure out the headline.
+- Figure out where this will be popular.
 
-I﻿ hope to update this as I learn more!
+I hope to update this as I learn more!
