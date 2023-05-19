@@ -19,26 +19,21 @@ Here is what I've learned so far:
 My coach and friend [Roger](https://twitter.com/rogertippingII) helped me breakdown the framework:
 
 1. Setup
-
    - Add some foreshadowing.
 
 2. Make interactions with the person interesting
-
    - Need something to be interesting before we find out he is a millionaire.
    - Connect with the person first.
 
 3. Reveal
-
    - Success.
    - "Now what can I learn from this?"
 
 4. Transition from obvious → less obvious epiphany
-
    - What I learned about \[insert topic].
    - The real lesson about life.
 
 5. Transition from what I learned → what the audience can learn
-
    - "Let them share your epiphany."
    - How can they apply it themselves?
    - Connect to them.
@@ -57,21 +52,17 @@ The **Art of Storytelling** is to:
 Breaking it into individual steps, you need to be able to:
 
 1. Identify stories worth telling:
-
    - Moments that are either formative or painful.
    - Moments of triumph or cringe.
 
 2. Be charismatic:
-
    - Charisma = confidence + joy + love.
 
 3. Practice public solitude:
-
    - Speak as if you’re alone in the room.
    - Research Konstantin Stanislavski.
 
 4. Blow your own mind:
-
    - Relive feelings before speaking.
    - See Jason Silva as an example.
 
