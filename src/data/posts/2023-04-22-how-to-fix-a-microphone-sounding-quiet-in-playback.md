@@ -39,9 +39,9 @@ Finally, my friend Brent responded to my tweet with a suggestion that covered ev
 This 4-min video. This explains the exact problem I was having and explains how to solve it in OBS using a combination of filters. It’s a must-watch if you’re facing this problem.
 
 
-[L﻿ink to video](https://www.youtube.com/watch?v=o5q2y5r5MOk)
+[Link to video](https://www.youtube.com/watch?v=o5q2y5r5MOk)
 
-
+I'll also recommend reading [Understanding the Mixer](https://obsproject.com/wiki/Understanding-the-Mixer) which was recommended by my friend Levi who said, "Green is for computer sounds, yellow for voice and red is too high." Keep that in mind when adjusting your gain in OBS!
 
 ### Thank you!
 
@@ -55,3 +55,4 @@ Wanted to give a special shoutout to everyone who [helped me](https://twitter.co
 - [Andrew](https://twitter.com/phunkren)
 - [David](https://twitter.com/davidbblocher)
 - [Mark](https://twitter.com/marknca)
+- [Levi](https://twitter.com/liltechnomancer)
