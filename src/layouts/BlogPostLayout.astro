@@ -4,7 +4,6 @@ import Spacer from '../components/Spacer.tsx';
 import Footer from '../components/Footer.tsx';
 import BaseHead from '../components/BaseHead.tsx';
 import BlogPost from '../components/BlogPost.tsx';
-import Newsletter from '../components/Newsletter.tsx';
 
 const {content} = Astro.props;
 const {title, description, date, tags, tagline, slug, content: { html }, excludeNewsletter = false} = content;
@@ -25,7 +24,6 @@ const {title, description, date, tags, tagline, slug, content: { html }, exclude
 
       <Spacer />
       <Spacer />
-      {!excludeNewsletter && <Newsletter />}
       <Spacer />
           
       <Footer />

@@ -1,7 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.tsx';
 import Footer from '../components/Footer.tsx';
-import Newsletter from '../components/Newsletter.tsx';
 import Header from '../components/Header.tsx';
 import Spacer from '../components/Spacer.tsx';
 
@@ -18,7 +17,6 @@ const {title, description, canonicalURL, excludeNewsletter, tagline } = Astro.pr
             <slot/>
         </main>
 
-        {!excludeNewsletter && <Newsletter />}
         <Spacer />
         
         <Footer />

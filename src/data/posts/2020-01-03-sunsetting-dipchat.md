@@ -131,7 +131,7 @@ _Disclaimer_: _please read the code of conduct and see if these groups align wit
 
 ## Stay in touch
 
-If you'd like to stay in touch with me personally, you can [sign up for my newsletter](https://joeprevite.com/newsletter) or [stay connected with me on Twitter](https://twitter.com/jsjoeio).
+If you'd like to stay in touch with me personally, you can [find me on Twitter](https://twitter.com/jsjoeio).
 
 ## Special thanks
 
