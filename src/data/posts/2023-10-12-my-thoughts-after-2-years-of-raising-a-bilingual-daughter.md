@@ -69,7 +69,7 @@ Her speaking has exploded lately. Most of the time, she adjusts her language dep
 
 I realized I needed to adapt when telling her what to say to kids who don't speak Spanish. For instance, suggesting "*decíle no thank you*" instead of "*decíle no gracias*" is more effective because when she says it, she's speaking to an English speaker (like her cousin). I also wish I'd started reading Spanish books with her earlier. But now we go to the library almost once a week and checkout children's books in Spanish.
 
-"How do you feel about raising your daughter bilingual even though you're not Hispanic?"
+### "How do you feel about raising your daughter bilingual even though you're not Hispanic?"
 
 I feel like an "outsider" at times, raising her as a non-Hispanic with Argentinian Spanish. She'll never be Hispanic or Argentinian, but she will be a Spanish speaker. I'm sure that will present it's own challenges as she gets older but we'll help her navigate those as best we can. We plan to expose her to Hispanic culture through food, media, and travel to Spanish-speaking countries.
 
