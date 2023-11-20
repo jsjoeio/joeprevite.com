@@ -101,7 +101,8 @@ As you can see, there's merit for challenging yourself outside your comfort zone
 
 This page is actually really good so here it is for you to read.
 
-![Page 253 from Peak](../assets/images/peak-253.png)
+![Page 253 from Peak](../assets/images/peak-253.jpg)
+
 
 ### Prepping kids for success
 
