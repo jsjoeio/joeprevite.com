@@ -54,7 +54,8 @@ This was genius. Again, it reminds me of storytelling and putting the pieces tog
 ![Page 155 from Peak](../assets/images/peak-155.jpg)
 
 
-![Page 156 from Peak](../assets/images/peak-156.png)
+![Page 156 from Peak](../assets/images/peak-156.jpg)
+
 
 ### The Three Fs 
 
