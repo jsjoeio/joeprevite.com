@@ -110,7 +110,8 @@ While this talks about students in an academic context, I'd like to take this ad
 
 > The best way to help students develop their skills and mental representations in an areas is to give them models they can replicate and learn from, just as Benjamin Franklin did when he improved his writing by reproducing articles from _The Spectator._ They need to try and fail -- but with ready access to models that show what success looks like. 
 
-((Ericsson and Pool, 255).
+(Ericsson and Pool, 255).
+
 
 ## End 
 
