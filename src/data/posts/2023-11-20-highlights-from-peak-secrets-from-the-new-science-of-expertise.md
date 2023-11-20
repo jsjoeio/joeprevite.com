@@ -51,7 +51,8 @@ There is one final exercise I want to share from the book.
 
 This was genius. Again, it reminds me of storytelling and putting the pieces together in a logical way. I loved reading. Here's the two pages if you want to read this full section yourself.
 
-![Page 155 from Peak](../assets/images/peak-155.png)
+![Page 155 from Peak](../assets/images/peak-155.jpg)
+
 
 ![Page 156 from Peak](../assets/images/peak-156.png)
 
