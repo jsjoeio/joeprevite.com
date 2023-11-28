@@ -12,7 +12,7 @@ tags:
 
 Can you actually become the top 1% of programmers from just reading the docs?
 
-https://twitter.com/Ryan_Magoon/status/1723381204844499172
+[![https://twitter.com/Ryan_Magoon/status/1723381204844499172](../assets/images/tweet-1723381204844499172.png)](https://twitter.com/Ryan_Magoon/status/1723381204844499172)
 
 That might get you to into [the 95%](https://danluu.com/p95-skill/) as a programmer due to lower standards these days, but I don’t think that’s enough. Reading and understanding the docs is only part of the picture.
 
