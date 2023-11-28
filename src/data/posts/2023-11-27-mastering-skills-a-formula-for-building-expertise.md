@@ -66,13 +66,13 @@ Now that you have the background, let’s dive into the formula. There are three
 
 ![https://excalidraw.com/#json=5R1tYEg0gpWfqJWEoaBtO,WYFrhgDyiJChPLWdUva0Zw](../assets/images/expertise-three-circles.png)
 
-### **Build a Skill Tree**
+### Build a Skill Tree
 
 The first thing you do is build a skill tree for the domain in which you’re looking to become an expert. For me, I like to break it down into **Macros** and **Micros**. Let me give you an example.
 
 Take backend engineering. Say that’s the domain. You might say one of the **Macros** is databases. Then you slide it smaller into **Micros** with relational and non-relational databases. You could stop there or break it further into specific databases like PostgreSQL and MongoDB.
 
-![https://excalidraw.com/#json=0mLDtRQJUischEX4ad-5f,7DQerxTZfa1BRCu0cwnuxg](../assets/images/expertise-three-circles.png)
+![https://excalidraw.com/#json=0mLDtRQJUischEX4ad-5f,7DQerxTZfa1BRCu0cwnuxg](../assets/images/expertise-backend-eng.png)
 
 Now that you have your skill tree, you can start setting specific goals such as “Be able work with any PostgreSQL database”.
 
@@ -108,8 +108,7 @@ This a bonus because it’s not always possible. Find a Pet Project or something
 #### Feedback — Develop Competence
 
 > When you speak your native language (NL), you don’t need to think about grammar. You navigate your NL through intuition. You can feel what is right and what is wrong. This ability to navigate language intuitively is called “competence”.
->
-> - - [Refold](https://refold.la/simplified/stage-3/c/competence-vs-performance)
+> — [Refold](https://refold.la/simplified/stage-3/c/competence-vs-performance)
 
 I love this definition from the [Refold](https://refold.la/). Competence is knowing what to do in a situation. It's like operating on autopilot. We want to develop competence in any domain we’re working to improve because it lets us lean into our habits and not focus on the little things. It’s like how we don’t have to actively think about breathing in everyday life.
 
@@ -140,3 +139,10 @@ And the beauty of this formula is that you can rinse and repeat. Over and over a
 I am applying this to both programming and language learning and it’s been a blast. It gives me both energy and motivation so I hope it does the same for you.
 
 If you give this formula a try, let me know! Would love to hear your goals and your results. Feel free to reach out at joe (at) joeprevite dot com. I love talking to people about this.
+
+### Thank you
+
+Big thanks to the following friends for reviewing early drafts and providing feedback:
+
+- [Samuel Robertson](https://twitter.com/sm0ol_)
+- [Chad Stewart](https://twitter.com/Chad_R_Stewart)
