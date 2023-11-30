@@ -1,10 +1,10 @@
 ---
-title: "Mastering Skills: a Formula for Building Expertise"
+title: "Mastering Skills: The 1% Formula"
 description: This article gives you a formula you can follow to become an expert
   in something. It's a new mental model for building expertise in a way that's
   practical, approachable and fun.
 slug: expertise-formula
-tagline: The 3-Step Approach
+tagline: Build expertise with this approach
 date: 2023-11-27T15:44:18.123Z
 tags:
   - Miscellaenous
@@ -60,9 +60,9 @@ That has lead me to writing this blog post. Two books have influenced this formu
 
 Right now, I have two domains to which I’m applying both of these formulas: programming and Spanish. Both have a mix of intrinsic and extrinsic motivation. I have an internal desire to improve in both each day. The programming because it’s my career and the Spanish because I love it and I’m [raising my daughter bilingual](https://joeprevite.com/2-years-bilingual-journey).
 
-## The 3 Parts
+## The 1% Formula has 3 Parts
 
-Now that you have the background, let’s dive into the formula. There are three parts. I’ll break down the formula piece by piece and include examples for each component.
+Now that you have the background, let’s dive into the formula. I'm calling it "The 1% Formula" and there are three parts. I’ll break down the formula piece by piece and include examples for each component.
 
 ![https://excalidraw.com/#json=5R1tYEg0gpWfqJWEoaBtO,WYFrhgDyiJChPLWdUva0Zw](../assets/images/expertise-three-circles.png)
 
