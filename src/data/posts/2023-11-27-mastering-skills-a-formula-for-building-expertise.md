@@ -1,5 +1,5 @@
 ---
-title: "Mastering Skills: the 1% Formula"
+title: "Mastering Skills: The 1% Formula"
 description: This article gives you a formula you can follow to become an expert
   in something. It's a new mental model for building expertise in a way that's
   practical, approachable and fun.
