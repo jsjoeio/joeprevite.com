@@ -19,7 +19,7 @@ According to Babbel back in 2018, there were around 60 million people who spoke 
 Why then, would I study Italian first something more practical like...Mandarin?
 
 Well, I decided to study Italian back in college for a few reasons:
-- my other Romance Languages would help (Spanish, Portguese)
+- my other Romance Languages would help (Spanish, Portuguese)
 - my ancestors immigrated from Italy
 - it had a heavy influence on the dialect of Spanish I chose (Rioplatense or Argentinian Spanish)
 
@@ -49,7 +49,11 @@ At the time, it was my best option post-graduation and I thought it'd get me clo
 
 I made the quick decision to pursue a Masters degree in Italian Linguistics and Literature at Cal State Long Beach. The only problem? I only had two semesters under my belt. And I was going to need a lot more in order to complete all my graduate work.
 
-[TODO which classes did I take]
+I﻿ can't remember all the classes I took, but I jumped straight into 300-level undergrad Italian classes and then in my second semester, started some of my graduate level courses (they were tough).
+
+
+
+
 
 ### Leading a Study Abroad in Italy
 
