@@ -80,7 +80,7 @@ That's a story for another time, but I will say, that I showed up to someone's d
 
 The last [two years of raising my daughter bilingual](https://joeprevite.com/2-years-bilingual-journey) has me bitten again by the language learning bug. My goal has been not only to raise her as a Spanish speaker, but also reach native-like fluency with my own Spanish.
 
-It's [very close](https://www.youtube.com/channel/UCk8sQR_jzQrH2Y3Ov8JbgoA) but there's still more I want to go before I consider that goal achieved. 
+My Spanish is [[very close](https://www.youtube.com/channel/UCk8sQR_jzQrH2Y3Ov8JbgoA)](https://www.youtube.com/channel/UCk8sQR_jzQrH2Y3Ov8JbgoA) but there's still more I want to improve before I'm happy with my level (i.e. vocabulary, speed and pronunciation).
 
 However, I'm wanted to get back into Italian for a couple of reasons:
 - I'm wanting something _new_ for 2024
