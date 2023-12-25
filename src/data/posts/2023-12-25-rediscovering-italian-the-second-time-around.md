@@ -51,6 +51,8 @@ I made the quick decision to pursue a Masters degree in Italian Linguistics and 
 
 I﻿ can't remember all the classes I took, but I jumped straight into 300-level undergrad Italian classes and then in my second semester, started some of my graduate level courses (they were tough).
 
+Fortunately, I did record a couple short (2min) videos of my speaking Italian back in November 2016. Here's a [link to the playlist on YouTube](https://www.youtube.com/playlist?list=PLywEq0pjrnU_B6Os_T-U3RLFrTmQgO88H).
+
 
 
 
