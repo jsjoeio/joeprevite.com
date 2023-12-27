@@ -10,7 +10,7 @@ tags:
 ---
 As the new year is approaching, I've been thinking about picking up Italian again. I used to speak it conversationally but lost it when I started studying programming.
 
-If I do start studying it again, I wanted to write this post first to share how much Italian I studied in the past.
+If I do start studying it again, I wanted to write this post first to share how much Italian I studied in the past as a reference point.
 
 ## Why Italian?
 
@@ -23,7 +23,7 @@ Well, I decided to study Italian back in college for a few reasons:
 - my ancestors immigrated from Italy
 - it had a heavy influence on the dialect of Spanish I chose (Rioplatense or Argentinian Spanish)
 
-So with room for an extra elective senior year in college, I decided to take Italian 101
+So with room for an extra elective senior year in college, I decided to take Italian 101.
 
 ### Italian in Undergrad
 
