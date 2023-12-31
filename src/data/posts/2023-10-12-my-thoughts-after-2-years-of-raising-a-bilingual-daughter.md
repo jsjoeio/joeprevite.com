@@ -75,7 +75,7 @@ I feel like an "outsider" at times, raising her as a non-Hispanic with Argentini
 
 It'll be fascinating getting her perspective on this as she grows older.
 
-### "Can we her your daughter speaking Spanish?"
+### "Can we hear your daughter speaking Spanish?"
 
 Here is an audio recording from a video I recorded on my phone today when I was feeding her lunch.
 
