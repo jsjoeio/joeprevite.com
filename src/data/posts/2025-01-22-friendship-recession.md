@@ -10,7 +10,7 @@ Driving through North Phoenix with my kids, I passed Einstein Bagels where I spe
 
 How do friendships -- like ones built over bagels, bad jokes and cream cheese -- melt away before you even notice?
 
-Keeping friends feels harder than ever these days. Maybe it's just me, but between having a second kid and working remotely for five years, 2024 hit me with a Big Realization: 
+Keeping friends feels harder than ever these days. Maybe it's just me, but between having a second kid and working remotely for five years, 2024 hit me with a big realization: 
 
 **I crave deeper friendships**.
 
@@ -22,7 +22,7 @@ As my time with my family grew, I decided I wanted to spend more time with peopl
 
 For the majority of my career, I've found friendship in online communities (e.g. Twitter/X, LinkedIn, Discord). While these friends have helped me through lonely times -- like moving to Seattle at the start of the pandemic -- I realize I'm now at the stage in life where I crave deeper connections. And with having a family, I'd prefer that to be in person.
 
-So as I started spending less time online and more time offline, I realized I didn't have those connections in real life. At least not as many as I had originally thought. Social media gave me some of that, but something was still missing.
+Spending less time online made me realize I don't have those connections IRL anymore. At least not as many as I had originally thought. Social media gave me some of that, but something was still missing.
 
 ## My Experiments in Building Connection
 
@@ -32,13 +32,15 @@ I leaned into two initiatives in 2024. The first was a Bilingual Family Play Gro
 
 I've talked about [raising my daughter bilingual after 2 years](https://joeprevite.com/2-years-bilingual-journey) and one of the things I was missing was community! Community of like-minded parents who value bilingualism and speak Spanish. So in 2024 (well, actually might have been 2023), a friend I met through a Facebook group and I started a WhatsApp group to organize monthly bilingual play dates.
 
-What's cool is the group has served as a natural Friendship Magnet. It gives me an excuse to stay connected with people.
+![One of the playdates where we're sitting and reading books together](../assets/images/bilingual-playdate-tiny.jpg)
+
+What's cool is the group has served as a natural Friendship Magnet[^1]. It gives me an excuse to stay connected with people.
 
 One night at a restaurant, I overheard a dad speaking Spanish to his daughter. A quick chat later, and he was joining our play dates. Without the playgroup, that connection wouldn’t have happened.
 
 The second initiative solved a more personal need. I missed office water cooler chats, wanted to meet local tech folks, and needed something that didn't take time away from my family, so I launched [Cowork With Friends](https://coworkwithfriends.com).
 
-So I decided to launch this project with the idea that you go work from a coffee shop for a few hours with other remote workers. And to my surprise, it caught some momentum!
+The basic idea that you go work from a coffee shop for a few hours with other remote workers. And to my surprise, it caught some momentum!
 
 We had folks launch groups in other parts of the city including Downtown Mesa, Downtown Phoenix and even in other states like Nevada!
 
@@ -66,7 +68,7 @@ So if moving isn't an option, and I'm longing for these friendships that suffer 
 
 It was! And I think it worked in the beginning because it was a supplement. But at some point, people started treating it as a meal replacement. 
 
-Our natural instinct is to do look up someone's social media instead of call or text them. Phone calls feel like a lost art to be honest.
+Our natural instinct is to look up someone's social media instead of call or text them. Phone calls feel like a lost art.
 
 Social media once felt like a connection supplement, but now it’s treated like a replacement. It’s easy, low-effort, and creates a false sense of closeness—like junk food for relationships.
 
@@ -93,7 +95,7 @@ Be intentional with whom you want to keep in touch.
 
 The beauty of the out-of-the-blue phone call. I stole this one from my childhood best friend, who has been doing this for years. I think he started in college. 
 
-Basically, you do why I'm calling "surprise calls". 
+I like to call them "surprise calls." Here's an example:
 
 _*Phone ringing: Joe Previte_
 
@@ -124,6 +126,10 @@ This gives them a little bit more heads-up, which some people like.
 
 ## Be The Change
 
-Be the change. Text an old friend, schedule a drop-in, or pick up the phone and call a friend today. 
+Pull out your phone right now and text or call an old friend. It'll literally take 30 seconds.
+
+Or even better, schedule a drop-in and visit someone you haven't seen in a while.
 
 Let’s bring connection back. Don't let the friendship recession win.
+
+[^1]: something that you use to attract like-minded friends e.g. could be a club or group or something where there's a shared interest.

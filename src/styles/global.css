@@ -176,3 +176,7 @@ small {
   @apply py-6 bg-defaultBg text-center;
   caption-side: bottom;
 }
+
+#post .footnotes p {
+  display: inline;
+}
