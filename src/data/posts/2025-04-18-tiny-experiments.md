@@ -21,7 +21,7 @@ b) The book includes several exercises and prompts I found valuable, and I want 
 Quick disclaimer: this isn’t a sponsored post or affiliate plug. That said, I am biased—I’ve been a longtime fan of Anne-Laure’s writing since her work at Ness Labs first made waves in my indiehacker circles on Twitter many years ago. 
 
 ## Core Themes
-Summarizing an entire book can be challenging. Instead, I want to share a few core themes that stood out to me as I revisited my notes and highlights. For each theme, I’ll include a sentence or two from the book along with my personal reflection and what that stood out to me. Hopefully this will give you just enough of a taste of the book for you to pick up your own copy. 
+Summarizing an entire book can be challenging. Instead, I want to share a few core themes that stood out to me as I revisited my notes and highlights. For each theme, I’ll include a sentence or two from the book along with my personal reflection and why that stood out to me. Hopefully this will give you just enough of a taste of the book for you to pick up your own copy. 
 
 And if you do, let me know! Books are more fun when they're read and discussed amongst friends :)
 
@@ -70,10 +70,6 @@ I like to think of this theme like a movie script.
 
 > Unlearn your scripts. Since childhood, internalized patterns form cognitive scripts that subtly guide our actions in relationships, work, and education.
 
-And it's this idea that a lot of who we tell ourselves we are (e.g. the way we act, talk, feel, etc) is very much based on our childhood. We've internalized these ideas told to us by parents, caregivers, teachers, etc. Most of us (myself included) have never taken the time to unlearn these. 
-
-I've been looking into this lately as I've fallen down the rabbit hole in my podcasts lately around _autoconocimiento_ or self-understanding and self-introspection. I don't have as much to say about this theme compared to the other. This one feels a bit harder to really dive into and take action on if I'm being honest.
-
 The main idea is that much of how we view ourselves —how we speak, act, and feel—is shaped by scripts we absorbed in childhood. These patterns come from parents, caregivers, teachers, and others. And for many of us (myself included), we’ve never paused to question or unlearn them.
 
 Lately, I’ve been exploring this through podcasts focused on _autoconocimiento_—self-understanding and introspection.
@@ -109,7 +105,7 @@ Anne-Laure highlighted two communities that really stuck with me—Tea with Stra
 
 I’ve [built my own local communities](https://joeprevite.com/friendship-recession#my-experiments-in-building-connection)—including [Cowork With Friends](https://coworkwithfriends.com/) and a bilingual family playgroup—but something still feels missing.
 
-My wife is probably tired of me bringing up [living near friends](https://livenearfriends.com/), but it’s something I deeply want: to find my people and intentionally invest in those relationships. It’s a work in progress, but I’m optimistic. I know it’ll take time and effort—but I believe it’ll happen.
+My wife is probably tired of me bringing up [living near friends](https://livenearfriends.com/), but it’s something I deeply want: to find my people and intentionally invest in those relationships. And ideally, live near them! It’s a work in progress, but I’m optimistic. I know it’ll take time and effort—but I believe it’ll happen.
 
 ## Experiments and Reflections
 
