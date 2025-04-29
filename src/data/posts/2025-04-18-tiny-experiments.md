@@ -123,7 +123,7 @@ I reserved this section for reminders of actions I can take on a regular basis t
 
 ### Field Notes
 
-> Create a new note on your phone so you can jot down thoughts as you go about yoru day. Call it "Field Notes" or another title that feels playful or meaningful. Then, whenever soemthing crosses your midn, write a timestamp and a few words.
+> Create a new note on your phone so you can jot down thoughts as you go about your day. Call it "Field Notes" or another title that feels playful or meaningful. Then, whenever soemthing crosses your midn, write a timestamp and a few words.
 > 
 > Ideas to inspire field notes
 > - insights: moments of curiousity, new ideas
