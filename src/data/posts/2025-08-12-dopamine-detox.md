@@ -27,16 +27,16 @@ now, my phone had almost no purpose besides talking to my wife.
 
 everything else was straigthforward. already eating mostly whole foods so didn't need to change much else.
 
-the real magic (and madness) hit in the surprises.
+the real magic (and madness) hit during the detox - here’s what surprised me.
 
 ## surprises
 
-music...holy cow was i taking music for granted! i didn't even realize the amount of joy i get from:
+no music or podcasts for 7 days...holy cow was i taking music for granted! i didn't even realize the amount of joy i get from:
 - putting on Top 50 Argentina while i cook dinner with the kids
 - listening to Frozen en español in the car with my daughter singing "libre soy" on the drives to the park
 - laughing with Shaan & Sam from MFM as if i were sitting on the couch next to them discussing insane business ideas
 
-if you stop reading here and take one thing away from this, let it be this. do your own detox week, even just cutting out music & content. you'll realize the same thing i did.
+if you stop reading here and take one thing away from this, let it be this. try  a week without music, content or podcasts. you'll realize the same thing i did.
 
 another joyful thing i felt was grabbing my pink penny board and skating to the park and around the lake by my house. no phone, no music, nothing. just me & my board. i felt like a dumb teenager in high school again with not a worry on my mind.
 
