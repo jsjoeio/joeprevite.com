@@ -8,7 +8,7 @@ published: true
 tags: ["Book", "Go"]
 ---
 
-![Writing an interpreter in go paperback on wood](../assets/images/book_cover.jpg)
+![Writing an interpreter in go paperback on wood](/assets/images/book_cover.jpg)
 
 When I started my new job, I was told that I would be the "Programming Languages" person. I knew I wanted to learn more not only about specific programming languages like Rust and Reason, but understand them on a higher level.
 
