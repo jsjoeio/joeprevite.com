@@ -83,11 +83,7 @@ function BaseHead(props: BaseHeadProps) {
         href="/assets/favicon-180x180.png"
       />
 
-      {/* Global CSS */}
-      <link rel="stylesheet" href="/src/styles/global.css" />
-      {/* Syntax highlighting */}
-      {/* <link rel="stylesheet" href={`/src/styles/prism-dracula.css`} /> */}
-      {/* Primary Meta Tags */}
+      {/* Google Fonts */}
       <title>{title || site.title}</title>
       <meta name="title" content={title || site.title} />
       <meta name="description" content={description || site.description} />

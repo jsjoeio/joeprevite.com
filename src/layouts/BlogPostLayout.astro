@@ -4,6 +4,8 @@ import Spacer from '../components/Spacer.tsx';
 import Footer from '../components/Footer.tsx';
 import BaseHead from '../components/BaseHead.tsx';
 import publishDateToMachineFriendlyDate from '../utils/publishDateToMachineFriendlyDate';
+import '../styles/global.css';
+import '../styles/prism-dracula.css';
 
 const {content} = Astro.props;
 const {title, description, date, tags, tagline, slug, Content, excludeNewsletter = false} = content;
@@ -19,7 +21,6 @@ const friendlyDate = new Date(date)
 <html lang="en">
   <head>
     <BaseHead title={title} tagline={tagline} description={description} date={date} canonicalURL={Astro.url.href} articleSchema />
-    <link rel="stylesheet" href="/src/styles/prism-dracula.css">
   </head>
 
   <body>
