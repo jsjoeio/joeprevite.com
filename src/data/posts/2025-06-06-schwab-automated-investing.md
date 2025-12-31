@@ -12,8 +12,10 @@ I don't know why it's so hard to find but whenever I want to look at my automate
 Here's how you do it:
 
 1. login to schwab
-2. go to https://client.schwab.com/app/trade/aip/#/home
-3. select an account eligible for mutal funds investing
-4. fill out the form and enroll!
+2. go to https://client.schwab.com/app/accounts/transfer-activity/#/transfer-activity
+3. create a reoccurring transfer. this will be from your bank account to schwab (e.g. $500/month)
+4. then go to https://client.schwab.com/app/trade/aip/#/home
+5. select an account eligible for mutal funds investing
+6. fill out the form and match the amount you set up early for auto-transfer from your bank (e.g. $500/month)
 
 Woot woot! That's it!
