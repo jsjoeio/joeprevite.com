@@ -3,8 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import site from '../data/site';
 import Spacer from '../components/Spacer.tsx'
 
-const allPosts = Astro.fetchContent('../data/posts/*.md')
-const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+const allPosts = await Astro.glob('../data/posts/*.md')
+const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
 const lastFivePosts = sortedPosts.slice(0,5)
 
 const description = site.description;
@@ -33,7 +33,7 @@ const featuredArticles = [
 // console.log(await response.json())
 // Gives you { message: 'Goodbye World' }
 ---
-<BaseLayout title="Joe Previte's Site" description={description} canonicalURL={Astro.request.canonicalURL.href} tagline={tagline}>
+<BaseLayout title="Joe Previte's Site" description={description} canonicalURL={Astro.url.href} tagline={tagline}>
 
   <section class="w-100">
     <p class="text-3xl font-bold">Why hello there</p>
@@ -58,8 +58,8 @@ const featuredArticles = [
     <h2 class="text-lg font-bold">Latest Posts</h2>
     <p class="mb-2">Here are some things I’ve written lately:</p>
     {lastFivePosts.map(article => (
-      <a href={`${article.slug}`}>
-        <h3 class="font-semibold mb-1">{article.title}</h3>
+      <a href={`${article.frontmatter.slug}`}>
+        <h3 class="font-semibold mb-1">{article.frontmatter.title}</h3>
       </a>
     ))}
     <a class="block mt-2" href="/blog">See all posts</a>

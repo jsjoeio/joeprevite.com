@@ -10,7 +10,7 @@ tags: ['GitHub']
 
 Similar to [PR templates](https://joeprevite.com/github-pr-template), issue templates are another favorite of mine when setting up projects on GitHub. You've probably seen them if you've opened an issue on an open source project. It looks like this:
 
-![Gif showing issue template](example-issue-template.gif)
+![Gif showing issue template](/assets/images/example-issue-template.gif)
 
 If you prefer to learn by watching, you can find this on [egghead](https://egghead.io/lessons/github-create-a-github-issue-template?af=fd8rz3).
 

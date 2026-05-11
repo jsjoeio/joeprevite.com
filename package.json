@@ -9,14 +9,22 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@netlify/functions": "^0.10.0",
-    "astro": "^0.22.1",
-    "netlify-cli": "^8.2.4",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.7"
+    "@astrojs/react": "^3.6.2",
+    "@astrojs/tailwind": "^5.1.2",
+    "@netlify/functions": "^2.8.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "astro": "^4.16.19",
+    "netlify-cli": "^17.37.4",
+    "postcss": "^8.4.49",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3"
   },
   "license": "MIT",
   "dependencies": {
+    "@astrojs/rss": "^4.0.14",
     "@jlengstorf/get-share-image": "^0.8.0"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"

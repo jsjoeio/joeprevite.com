@@ -3,23 +3,41 @@ import Header from '../components/Header.tsx';
 import Spacer from '../components/Spacer.tsx';
 import Footer from '../components/Footer.tsx';
 import BaseHead from '../components/BaseHead.tsx';
-import BlogPost from '../components/BlogPost.tsx';
+import publishDateToMachineFriendlyDate from '../utils/publishDateToMachineFriendlyDate';
+import '../styles/global.css';
+import '../styles/prism-dracula.css';
 
 const {content} = Astro.props;
-const {title, description, date, tags, tagline, slug, content: { html }, excludeNewsletter = false} = content;
+const {title, description, date, tags, tagline, slug, Content, excludeNewsletter = false} = content;
+const machineFriendlyDate = publishDateToMachineFriendlyDate(date);
+const friendlyDate = new Date(date)
+  .toLocaleString()
+  .split(/\D/)
+  .slice(0, 3)
+  .map((num) => num.padStart(2, "0"))
+  .join("/");
 ---
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={title} tagline={tagline} description={description} date={date} canonicalURL={Astro.request.canonicalURL} articleSchema astroResolve={Astro.resolve} />
-    <link rel="stylesheet" href={Astro.resolve('../styles/prism-dracula.css')}>
+    <BaseHead title={title} tagline={tagline} description={description} date={date} canonicalURL={Astro.url.href} articleSchema />
   </head>
 
   <body>
     <div class="max-w-xs md:max-w-2xl mx-4 md:mx-auto">
       <Header isBlog />
       <main>
-        <BlogPost title={title} date={date} html={html} />
+        <article id="post" class="mx-auto my-8">
+          <h1 class="mb-4">{title}</h1>
+          <p class="font-xs">
+            Last updated:{" "}
+            <time class="font-light" datetime={machineFriendlyDate}>
+              {friendlyDate}
+            </time>
+          </p>
+          <Spacer />
+          <Content />
+        </article>
       </main>
 
       <Spacer />
@@ -33,4 +51,3 @@ const {title, description, date, tags, tagline, slug, content: { html }, exclude
     </div>
   </body>
 </html>
-

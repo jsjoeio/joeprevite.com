@@ -1,55 +1,32 @@
 ---
 import BlogPostLayout from '../layouts/BlogPostLayout.astro';
 import site from '../data/site.ts'
-// collection
-// import au/thorData from '../data/authors.json';
-// Got this from here: https://github.com/Navillus-BV/sarahsu-co/blob/main/src/pages/%5Bslug%5D.astro
-export async function getStaticPaths({rss}) {
-  const allPosts = Astro.fetchContent('../data/posts/*.md')
 
-  const paths = allPosts.map(( { title, slug, content, date, description, tagline, tags }) => {
+export async function getStaticPaths() {
+  const allPosts = await import.meta.glob('../data/posts/*.md', { eager: true });
+  
+  const paths = Object.entries(allPosts).map(([path, post]: [string, any]) => {
+    const frontmatter = post.frontmatter;
+    
     return {
       params: {
-        slug,
+        slug: frontmatter.slug,
       },
       props: {
-        content: {
-          title,
-          slug,
-          content,
-          description,
-          date,
-          tagline,
-          tags
-        }
+        post
       }
     }
   })
-  
-  // Generate an RSS feed from this collection
-  rss({
-    // The RSS Feed title, description, and custom metadata.
-    title: `${site.name}'s Blog'`,
-    description: site.description,
-    customData: `<language>en-us</language>`,
-    // The list of items for your RSS feed, sorted.
-    items: allPosts.map(post => ({
-      title: post.title,
-      description: post.description,
-      link: post.slug,
-      pubDate: post.date,
-    })),
-  }); 
 
   return paths.filter(({ params }) => !!params.slug)
 }
 
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
-
-const { content } = Astro.props;
+const { post } = Astro.props;
+const { Content } = post;
+const content = {
+  ...post.frontmatter,
+  Content
+};
 ---
 <BlogPostLayout content={content} />
 

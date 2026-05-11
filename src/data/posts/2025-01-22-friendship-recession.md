@@ -32,7 +32,7 @@ I leaned into two initiatives in 2024. The first was a Bilingual Family Play Gro
 
 I've talked about [raising my daughter bilingual after 2 years](https://joeprevite.com/2-years-bilingual-journey) and one of the things I was missing was community! Community of like-minded parents who value bilingualism and speak Spanish. So in 2024 (well, actually might have been 2023), a friend I met through a Facebook group and I started a WhatsApp group to organize monthly bilingual play dates.
 
-![One of the playdates where we're sitting and reading books together](../assets/images/bilingual-playdate-tiny.jpg)
+![One of the playdates where we're sitting and reading books together](/assets/images/bilingual-playdate-tiny.jpg)
 
 What's cool is the group has served as a natural Friendship Magnet[^1]. It gives me an excuse to stay connected with people.
 
@@ -44,7 +44,7 @@ The basic idea that you go work from a coffee shop for a few hours with other re
 
 We had folks launch groups in other parts of the city including Downtown Mesa, Downtown Phoenix and even in other states like Nevada!
 
-![Scottsdale Group at a coffee shop called Luci's](../assets/images/cwf-group-tiny.jpg)
+![Scottsdale Group at a coffee shop called Luci's](/assets/images/cwf-group-tiny.jpg)
 
 Now, you're probably thinking, "This seems like a solid solution! So why didn't these work out?"
 

@@ -12,7 +12,7 @@ tags:
 
 Can you actually become the top 1% of programmers from just reading the docs?
 
-[![https://twitter.com/Ryan_Magoon/status/1723381204844499172](../assets/images/tweet-1723381204844499172.png)](https://twitter.com/Ryan_Magoon/status/1723381204844499172)
+[![https://twitter.com/Ryan_Magoon/status/1723381204844499172](/assets/images/tweet-1723381204844499172.png)](https://twitter.com/Ryan_Magoon/status/1723381204844499172)
 
 That might get you to into [the 95%](https://danluu.com/p95-skill/) as a programmer due to lower standards these days, but I don’t think that’s enough. Reading and understanding the docs is only part of the picture.
 
@@ -64,7 +64,7 @@ Right now, I have two domains to which I’m applying both of these formulas: pr
 
 Now that you have the background, let’s dive into the formula. I'm calling it "The 1% Formula" and there are three parts. I’ll break down the formula piece by piece and include examples for each component.
 
-![https://excalidraw.com/#json=5R1tYEg0gpWfqJWEoaBtO,WYFrhgDyiJChPLWdUva0Zw](../assets/images/expertise-three-circles.png)
+![https://excalidraw.com/#json=5R1tYEg0gpWfqJWEoaBtO,WYFrhgDyiJChPLWdUva0Zw](/assets/images/expertise-three-circles.png)
 
 ### Build a Skill Tree
 
@@ -72,7 +72,7 @@ The first thing you do is build a skill tree for the domain in which you’re lo
 
 Take backend engineering. Say that’s the domain. You might say one of the **Macros** is databases. Then you slide it smaller into **Micros** with relational and non-relational databases. You could stop there or break it further into specific databases like PostgreSQL and MongoDB.
 
-![https://excalidraw.com/#json=0mLDtRQJUischEX4ad-5f,7DQerxTZfa1BRCu0cwnuxg](../assets/images/expertise-backend-eng.png)
+![https://excalidraw.com/#json=0mLDtRQJUischEX4ad-5f,7DQerxTZfa1BRCu0cwnuxg](/assets/images/expertise-backend-eng.png)
 
 Now that you have your skill tree, you can start setting specific goals such as “Be able work with any PostgreSQL database”.
 

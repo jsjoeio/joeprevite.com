@@ -51,10 +51,10 @@ There is one final exercise I want to share from the book.
 
 This was genius. Again, it reminds me of storytelling and putting the pieces together in a logical way. I loved reading. Here's the two pages if you want to read this full section yourself.
 
-![Page 155 from Peak](../assets/images/peak-155.jpg)
+![Page 155 from Peak](/assets/images/peak-155.jpg)
 
 
-![Page 156 from Peak](../assets/images/peak-156.jpg)
+![Page 156 from Peak](/assets/images/peak-156.jpg)
 
 
 ### The Three Fs 
@@ -101,7 +101,7 @@ As you can see, there's merit for challenging yourself outside your comfort zone
 
 This page is actually really good so here it is for you to read.
 
-![Page 253 from Peak](../assets/images/peak-253.jpg)
+![Page 253 from Peak](/assets/images/peak-253.jpg)
 
 
 ### Prepping kids for success
