@@ -42,6 +42,10 @@ Here are a list of applications on macOS and their equivalent on Windows. You'll
 
 This is the main component to syncing your workflows. I found that after remapping these keys and shortcuts, it became 10x more seamless switching between operating systems.
 
+**💡 UPDATE**: There is now an app that gives you MacOS shortcuts on Windows: https://shafqat.dev/mac-shortcuts-for-windows/.
+
+Below is the previous approach:
+
 1. Open PowerToys
 2. Go to Keyboard Manager
 3. Add the following Keys
